@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Documentation',
   tagline: 'TCET Open Source Documentation',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.ico?v=2',
 
   // Set the production url of your site here
   url: 'https://tcet-opensource.github.io',
