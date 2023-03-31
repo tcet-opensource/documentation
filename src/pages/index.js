@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`TCET Open Source`}
       description="TCET Open Source Website & Projects Documentation">
       <HomepageHeader />
       <main>
