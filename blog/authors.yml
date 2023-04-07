@@ -1,17 +1,23 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+gaurang:
+  name: Gaurang Vishwakarma
+  title: Creator of TCET Open Source, DevOps Lead
+  url: https://github.com/demonkillerr
+  image_url: https://github.com/demonkillerr.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+vishal:
+  name: Vishal Rawat
+  title: Co-creator TCET Open Source, Documentation Team Lead
+  url: https://github.com/vish-rt
+  image_url: https://github.com/vish-rt.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+riya:
+  name: Riya Vishwakarma
+  title: Front-End Team Lead
+  url: https://github.com/riyavishwa981
+  image_url: https://github.com/riyavishwa981.png
+
+saasha:
+  name: Saasha Gupta
+  title: Docs Team Member
+  url: https://github.com/saashaspace
+  image_url: https://github.com/saashaspace.png
