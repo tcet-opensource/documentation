@@ -21,7 +21,7 @@ const sidebars =
 {
   docs: 
   [
-    'intro',
+    'about-tcetopensource',
     {
       type: 'category',
       label: 'Projects',

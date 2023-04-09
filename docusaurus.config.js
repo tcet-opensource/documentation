@@ -71,7 +71,8 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
+            type: 'doc',
+            docId: 'about-tcetopensource',
             sidebarId: 'docs',
             position: 'left',
             label: 'Docs',
@@ -92,7 +93,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/about-tcetopensource',
               },
             ],
           },
