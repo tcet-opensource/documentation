@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"First Blog (Guidlines)","permalink":"/blog/first-blog"},{"title":"Breaking The Ice - Open Source","permalink":"/blog/breaking-the-ice-open-source"}]}')}}]);
