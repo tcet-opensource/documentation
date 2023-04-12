@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2184],{4348:a=>{a.exports=JSON.parse('{"label":"Virtaul DOM","permalink":"/blog/tags/virtaul-dom","allTagsPath":"/blog/tags","count":1}')}}]);
