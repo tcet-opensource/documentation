@@ -40,8 +40,9 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // showLastUpdateAuthor: true,
-          // showLastUpdateTime: true,
+          showLastUpdateTime: true,
           sidebarCollapsible: true,
+          breadcrumbs: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -51,6 +52,7 @@ const config = {
           showReadingTime: true,
           blogTitle: "Blogs",
           blogDescription: "TCET Open Source Blogging Page",
+          blogSidebarCount: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
