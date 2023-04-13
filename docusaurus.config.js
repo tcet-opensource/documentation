@@ -39,7 +39,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // showLastUpdateAuthor: true,
+          showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           sidebarCollapsible: true,
           breadcrumbs: true,
