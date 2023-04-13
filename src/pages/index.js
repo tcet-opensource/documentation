@@ -32,6 +32,9 @@ export default function Home() {
     <Layout
       title={`TCET Open Source`}
       description="TCET Open Source Website & Projects Documentation">
+      <Head>
+        <meta property="og:image" content="logo.png" />
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
