@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://opensource.tcetmumbai.in/blog</id>
-    <title>Project Documentation Blog</title>
+    <title>TCET Open Source Blog</title>
     <updated>2023-04-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://opensource.tcetmumbai.in/blog"/>
-    <subtitle>Project Documentation Blog</subtitle>
+    <subtitle>TCET Open Source Blog</subtitle>
     <icon>https://opensource.tcetmumbai.in/img/favicon.ico?v=3</icon>
     <entry>
         <title type="html"><![CDATA[6 Reasons Why React JS is the Future of Web Development!!]]></title>
