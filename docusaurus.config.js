@@ -39,10 +39,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          // showLastUpdateAuthor: true,
+          // showLastUpdateTime: true,
+          sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+           'https://github.com/tcet-opensource/documentation/edit/main/',
         },
         blog: {
           showReadingTime: true,
