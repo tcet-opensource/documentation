@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`TCET Open Source`}
-      description="TCET Open Source Website & Projects Documentation">
+      description="TCET Open Source Website">
       <Head>
         <meta property="og:image" content="logo.png" />
       </Head>
