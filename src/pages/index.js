@@ -32,7 +32,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`TCET Open Source`}
+      title={`Welcome`}
       description="TCET Open Source Website">
       <Head>
         <meta property="og:image" content="logo.png" />

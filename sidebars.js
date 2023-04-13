@@ -28,7 +28,7 @@ const sidebars =
       link: 
       {
         type: 'generated-index',
-        title: 'TCET Open Source Projects',
+        title: 'Project Docs',
         description: 'Official Documentation of all TCET Open Source projects',
         keywords: ['documentation, open-source'],
       },

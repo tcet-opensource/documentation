@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Project Documentation',
-  tagline: 'Documentation of all TCET Open Source Projects',
+  title: 'TCET Open Source',
+  tagline: 'Official Website of TCET Open Source',
   favicon: 'img/favicon.ico?v=3',
 
   // Set the production url of your site here
