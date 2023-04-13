@@ -101,7 +101,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'About TCET Open Source',
                 to: '/docs/about-tcetopensource',
               },
             ],
