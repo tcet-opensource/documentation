@@ -46,6 +46,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: "Blogs",
+          blogDescription: "TCET Open Source Blogging Page",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
