@@ -63,6 +63,7 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       navbar: {
         title: 'TCET Open Source',
         logo: {
