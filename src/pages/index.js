@@ -35,7 +35,7 @@ export default function Home() {
       title={`Welcome`}
       description="TCET Open Source Website">
       <Head>
-        <meta property="og:image" content="logo.png" />
+        <meta property="og:image" content="/img/logo.png" />
       </Head>
       <HomepageHeader />
       <main>
