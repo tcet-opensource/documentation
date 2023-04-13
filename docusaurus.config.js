@@ -65,6 +65,7 @@ const config = {
       image: 'img/logo.png',
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       navbar: {
+        hideOnScroll: true,
         title: 'TCET Open Source',
         logo: {
           alt: 'TCET Open Source Logo',
