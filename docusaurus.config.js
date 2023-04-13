@@ -62,12 +62,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo.png',
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       navbar: {
         title: 'TCET Open Source',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'TCET Open Source Logo',
           src: 'img/logo.png',
         },
         items: [
@@ -98,23 +98,23 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus',
+          //     },
+          //   ],
+          // },
           {
             title: 'More',
             items: [
