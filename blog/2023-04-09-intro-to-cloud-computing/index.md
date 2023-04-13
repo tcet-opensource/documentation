@@ -3,6 +3,8 @@ slug: intro-to-cloud-computing
 title: 'Cloud Computing: Revolutionizing the Way We Store and Access Data'
 authors: [himanshu,mahima]
 tags: [cloud computing, data, source, software]
+description: 'Cloud Computing: Revolutionizing the Way We Store and Access Data'
+keywords: [cloud computing, data, source, software]
 ---
 
 
