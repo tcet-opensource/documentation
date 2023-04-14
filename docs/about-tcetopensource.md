@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
-title: TCET Open Source
+title: About the organization
 id: about-tcetopensource
 sidebar_label: About the Organization
+description: A brief introduction about the TCET Open Source Organization
+keywords: [tcet, open-source, software]
 ---
 
 # TCET Open Source

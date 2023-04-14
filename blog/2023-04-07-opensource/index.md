@@ -3,6 +3,8 @@ slug: breaking-the-ice-open-source
 title: Breaking The Ice - Open Source
 authors: [vishal]
 tags: [free, open, source, software]
+description: Breaking The Ice - Open Source
+keywords: [free, open, source, software]
 ---
 
 Project management is a wild way to make sure things are progressing as they should. There is a project management technique for everything. Well, almost everything. I haven't found a project managing concept to overcome my feelings of procrastination. Someone might create it one day.

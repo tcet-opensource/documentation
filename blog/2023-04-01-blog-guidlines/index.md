@@ -2,7 +2,9 @@
 slug: first-blog-guidelines
 title: First Blog - General Posting Guidelines
 authors: [gaurang, vishal]
-tags: [welcome, hello, guidelines]
+tags: [free, open, source, software]
+description: First Blog - General Posting Guidelines
+keywords: [free, open, source, software]
 ---
 
 ## Welcome to our first blog

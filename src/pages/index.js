@@ -3,7 +3,9 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
 
 import styles from './index.module.css';
 
@@ -30,8 +32,11 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`TCET Open Source`}
-      description="TCET Open Source Website & Projects Documentation">
+      title={`Welcome`}
+      description="TCET Open Source Website">
+      <Head>
+        <meta property="og:image" content="/img/logo.png" />
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

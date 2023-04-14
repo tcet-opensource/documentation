@@ -3,6 +3,8 @@ slug: intro-to-react-js
 title: '6 Reasons Why React JS is the Future of Web Development!!'
 authors: [mahima]
 tags: [ReactJs, JSX, Virtaul DOM, Frontend]
+description: Why React JS is the Future of Web Development
+keywords: [ReactJs, JSX, Virtaul DOM, Frontend]
 ---
 ><b>As</b> technology continues to evolve, web development has become an increasingly important field, and front-end frameworks such as ReactJS have emerged as crucial tools for building dynamic, user-friendly websites. Whether you are just starting out with web development or are looking to enhance your existing skills, I hope that you will find valuable insights and tips within these pages.
 So sit back, grab a cup of coffee, and join me on our journey through the exciting world of ReactJS!
