@@ -35,7 +35,7 @@ The following is the TCET Linux ISO profile directory structure.
 └── syslinux
     ├── archiso_head.cfg
     ├── archiso_pxe.cfg
-    ├── archiso_pxe-linux.cfg ## Legacy Systems
+    ├── archiso_pxe-linux.cfg ## Legacy/MBR Systems
     ├── archiso_sys.cfg
     ├── archiso_sys-linux.cfg
     ├── archiso_tail.cfg
