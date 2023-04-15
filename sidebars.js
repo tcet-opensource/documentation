@@ -46,6 +46,7 @@ const sidebars =
           items: 
           [
             'projects/docs-site/getting-started',
+            'projects/docs-site/navbar'
           ],
         },
         {
