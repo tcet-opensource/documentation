@@ -48,6 +48,19 @@ const sidebars =
             'projects/docs-site/getting-started',
           ],
         },
+        {
+          type: 'category',
+          label: 'TCET Linux',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/tcet-linux/about-tcet-linux',
+          },
+          items: 
+          [
+            'projects/tcet-linux/iso-profile',
+          ],
+        },
       ],
     }
   ],
