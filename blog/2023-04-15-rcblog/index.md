@@ -1,6 +1,6 @@
 ---
 slug: rotaract-club-of-tcet
-title: RCTCET
+title: Rotaract Club of TCET
 authors: [nikita]
 tags: [cultural, social, community, editorial]
 description: About Rotaract Club of TCET
@@ -8,21 +8,21 @@ keywords: [cultural, social, community, editorial]
 ---
 >Are you one of those engineers who are just engrossed in academics and is looking to do something more than that in your college days? Rotaract Club of TCET is one of the perfect choices to go for. I f you are searching to participate in something interesting where you can develop yourself and volunteer as well, you are at the correct place. To know more continue reading this blog.
 
-<br />
+
 
 # **‘Boldly Going:** Rotaract Club of TCET '
-</br>
+
 
 ![RCTCET](RCTCET.png)
-</br>
+
 
 >_"The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience."_ 
 >
 > _-Eleanor Roosevelt_
-</br>
+
 
 Whether you're a musician, artist, athlete, writer, or simply someone who loves trying new things, Rotaract Club of TCET offers a welcoming and inclusive community where you can connect with like-minded individuals and pursue your passions. From workshops and classes to group outings and events, RCTCET provides a variety of opportunities for personal growth, skill development, and social interaction. 
-<br/>
+
 
 # Types of Projects & Events conducted in RCTCET
 
@@ -40,7 +40,7 @@ The main aim of conduction of this event is to make our budding Engineers well a
 <ul><li>Beach Cleanup</li>
 Such events are conducted by keeping the welfare of the community and balance of ecosystem in mind. This could be possible only with the contribution of people who are genuinely interested in volunteering. Afterall,"If you concentrate on small, manageable steps you can cross unimaginable distances."
 </ul>
-<br/>
+
 
 ## 2. Space to Socialize
 
@@ -55,37 +55,37 @@ Joining clubs and organizations is a great way to meet people who share your int
   <li>Badminton Tournament</li>
   <li>Kick it!(Football Tournament)</li>
   </ul></div>
-</br>
+
 
 ## 3. To express Creativity
 
 Rotaract Club of TCET provides a cavity to students where they can express their artistic or literary talents. Members can explore different genres of writing, such as poetry, fiction, creative nonfiction, and screenwriting. They can also participate in writing prompts and exercises, which can help them generate new ideas and experiment with different writing styles. Students can showcase their work through public readings and publications. For our members possessing artistic talent, be it in the form of paper or digitalized form of art they can contribute by means of Digital Communication. They can learn, grow and experiment at the same time. For individuals who love to capture beautiful moments they can come forward and give their photography skills a boost. People who are good at branding they are welcomed as well where they can fully utilise their Social Media Marketing skills.
-</br>
+
 
 ## 4. Development of Overall Personality
 
 Participating in co-curricular activities can be extremely beneficial for your personal and professional development. Our club can help you learn about the business side of engineering and develop skills such as project management, leadership, and communication. We often organize events such as pitch competitions, guest speakers, and mentorship programs.
-</br>
+
 We conduct events wherein students learn how to develop Interpersonal Skills, they can participate in group activities, attend workshops and seminars on communication and collaboration, practice active listening, and seek feedback from peers and instructors. Building strong interpersonal skills takes time and effort, but it is a valuable investment for future success.
-</br>
+
 
 ## 5. Last but not the least, it is a platform where you can create amazing memories!
-</br>
+
 
 ![RCevent](RCevent.jpg)
 >_"Education is not just about academics. It's about building character, improving one's personality, and becoming a better human being."_ 
 >
 >_- Sudha Murty_
-</br>
+
 
 Joining RCTCET can create can create amazing memories for students. It is a complete new experience where you can participate in different kinds of fun events. Opportunities to travel together, whether it's a weekend camping trip or a day trip to a nearby city the experience is wonderful. Volunteering for a social cause develops a sense of responsibility in young individuals. Competing with your peers gives you confidence to do better than before. Sharing same interests with someone new helps you create memorable experiences. College days are something a student cherishes for life and it is grateful to have a platform as such.
-</br>
+
 
 ## To know more about us:
 
-Visit our [**Official Website**](https://www.rctcet.org/)</br>
+Visit our [**Official Website**](https://www.rctcet.org/)
 And do follow us [**@rc_tcet**](https://www.instagram.com/rc_tcet/?hl=en)
-</br>
+
 
 ## Would like to conclude this blog
 
