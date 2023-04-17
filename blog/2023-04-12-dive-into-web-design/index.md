@@ -3,7 +3,7 @@ slug: dive-into-web-design
 title: 'Dive into Web Design 🖌️ | Learn the Mental Model for converting Designs into Code'
 authors: [jayesh]
 tags: [Web Design, HTML, CSS, Mental Model, Resonsiveness]
-description: Why React JS is the Future of Web Development
+description: Understanding Design and Converting it into Code
 keywords: [Web Design, HTML, CSS, Mental Model, Resonsiveness ]
 ---
 # Introduction
