@@ -4,7 +4,7 @@ title: 'Dive into Web Design 🖌️ | Learn the Mental Model for converting Des
 authors: [jayesh]
 tags: [Web Design, HTML, CSS, Mental Model, Resonsiveness]
 description: Understanding Design and Converting it into Code
-keywords: [Web Design, HTML, CSS, Mental Model, Resonsiveness ]
+keywords: [Web Design, HTML, CSS, Mental Model, Resonsiveness]
 ---
 # Introduction
 
