@@ -46,7 +46,24 @@ const sidebars =
           items: 
           [
             'projects/docs-site/getting-started',
-            'projects/docs-site/navbar'
+            {
+              type: 'category',
+              label: 'Navbar',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/docs-site/navbar/navbar',
+              },
+              items: 
+              [
+                [ 
+                  'projects/docs-site/navbar/title-and-logo',
+                  'projects/docs-site/navbar/adding-items',
+                  'projects/docs-site/navbar/adding-links',
+                  'projects/docs-site/navbar/search-bar',
+                ],
+              ],
+            },
           ],
         },
         {
