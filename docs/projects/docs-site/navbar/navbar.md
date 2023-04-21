@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
-title: Using Navbar
+title: Navbar
 id: navbar
-sidebar_label: Using Navbar
+sidebar_label: Navbar
 description: A detailed overview of adding Search bar in Navbar of TCET Open Source Website
 keywords: [tcet, open-source, software]
 ---
