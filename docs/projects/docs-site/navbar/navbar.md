@@ -32,7 +32,7 @@ The **Navbar** in our [**TCET Open Source**](https://opensource.tcetmumbai.in/) 
 
 :::info
 
-If you're looking for more information and detailed references on navbars in Docusaurus, we would recommend checking out the official [**Docusaurus documentation's API navbar page**](https://docusaurus.io/docs/api/navbar.)
+If you're looking for more information and detailed references on navbars in Docusaurus, we would recommend checking out the official [**Docusaurus documentation's API navbar page**](https://docusaurus.io/docs/api/themes/configuration#navbar)
 
 :::
 
