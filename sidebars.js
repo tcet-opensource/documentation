@@ -48,7 +48,7 @@ const sidebars =
             'projects/docs-site/getting-started',
             {
               type: 'category',
-              label: 'Using Navbar',
+              label: 'Navbar',
               link:
               {
                 type: 'doc',
