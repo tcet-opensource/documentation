@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: About the organization
 id: about-tcetopensource
 sidebar_label: About the Organization

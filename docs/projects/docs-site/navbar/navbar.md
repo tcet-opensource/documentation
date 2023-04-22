@@ -2,7 +2,7 @@
 title: Navbar
 id: navbar
 sidebar_label: Navbar
-description: A detailed overview of adding Search bar in Navbar of TCET Open Source Website
+description: A detailed overview of Navbar in TCET Open Source Website
 keywords: [tcet, open-source, software]
 ---
 
