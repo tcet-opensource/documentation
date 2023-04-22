@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Items in Navbar
 id: adding-items
 sidebar_label: Items
@@ -69,4 +68,4 @@ Here's how we made those changes:
 
 <br />
 
-Now that we had [**added items to our navbar**](adding-items), the next step was to start [**adding links**](adding-links) to connect our pages.
+_Now that we had [**added items to our navbar**](adding-items), the next step was to start [**adding links**](adding-links) to connect our pages._

@@ -9,3 +9,12 @@
   height: 200px;
   width: 200px;
 }
+
+code {
+  font-weight: bold;
+}
+
+img[src*='#center'] {
+  display: block;
+  margin: auto;
+}
