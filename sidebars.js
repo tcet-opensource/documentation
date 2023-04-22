@@ -64,6 +64,24 @@ const sidebars =
                 ],
               ],
             },
+            {
+              type: 'category',
+              label: 'Sidebar',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/docs-site/sidebar/sidebar',
+              },
+              items: 
+              [
+                [ 
+                  'projects/docs-site/sidebar/adding-categories',
+                  'projects/docs-site/sidebar/adding-links',
+                  'projects/docs-site/sidebar/adding-items',
+                  'projects/docs-site/sidebar/multiple-sidebars',
+                ],
+              ],
+            },
           ],
         },
         {

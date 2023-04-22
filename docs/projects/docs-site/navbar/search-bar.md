@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Search Bar in Navbar
 id: search-bar
 sidebar_label: Search Bar
@@ -82,7 +81,7 @@ This feature will make it easy for users to access the documentations and blogs 
 
 Following these steps and points, we were able to create a beautiful and interactive navbar . It's final structure looks something like this:
 
-import heroImg from "./navbar-1.png";
+import heroImg from "../navbar/assets/navbar-1.png";
 
 <img src={heroImg} />
 

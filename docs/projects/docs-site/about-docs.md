@@ -19,7 +19,7 @@ By utilizing Docusaurus, **TCET Open Source** will be able to develop a user-fri
 
 <br />
 
-> If you're ready to get started with contributing to **TCET Open Source**, head over to our installation guide for step-by-step instructions on how to [Get Started](getting-started.md) with the Docs site.
+> _If you're ready to get started with contributing to **TCET Open Source**, head over to our installation guide for step-by-step instructions on how to [**Get Started**](getting-started.md) with the Docs site._
 
 
 

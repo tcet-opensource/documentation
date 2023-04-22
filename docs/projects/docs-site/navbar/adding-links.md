@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Links in Navbar
 id: adding-links
 sidebar_label: Links
@@ -52,4 +51,4 @@ keywords: [tcet, open-source, software]
 
 <br />
 
-With the [**links**](adding-links) in place, we then move forward to create the [**search bar**](search-bar) for our navbar.
+_With the [**links**](adding-links) in place, we then move forward to create the [**search bar**](search-bar) for our navbar._
