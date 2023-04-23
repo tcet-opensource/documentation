@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Title and Logo in Navbar
 id: title-and-logo
 sidebar_label: Title and Logo
@@ -55,4 +54,4 @@ Here's a step-by-step guide on how we made those changes:
 
 <br />
 
-With the [**title and logo**](title-and-logo) completed, it's time we move onto [**adding items to our navbar**](adding-items).
+_With the [**title and logo**](title-and-logo) completed, it's time we move onto [**adding items to our navbar**](adding-items)._
