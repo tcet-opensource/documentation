@@ -38,7 +38,7 @@ export default function Home() {
         <meta property="og:image" content="/img/logo.png" />
       </Head>
       <HomepageHeader />
-      <main>
+      <main className='bg-red-400 ' >
         <HomepageFeatures />
       </main>
     </Layout>
