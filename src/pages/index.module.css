@@ -3,11 +3,17 @@
  * and scoped locally.
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.fontSora {
+  font-family: "Sora", sans-serif;
 }
 
 @media screen and (max-width: 996px) {
