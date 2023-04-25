@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  Build:
-    name: Build Docs Site
+  build:
+    name: Test Build
     timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
