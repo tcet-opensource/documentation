@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import UnderDevelopmentProjects from '@site/src/components/UnderdevelopmentProjects';
 
 
 import styles from './index.module.css';
@@ -40,6 +41,7 @@ export default function Home() {
       <HomepageHeader />
       <main className='bg-red-400 ' >
         <HomepageFeatures />
+        <UnderDevelopmentProjects />
       </main>
     </Layout>
   );

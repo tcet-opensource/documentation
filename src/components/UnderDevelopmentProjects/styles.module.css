@@ -1,0 +1,23 @@
+.project_card {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(27, 43, 99, 0.310625) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  width: 100%;
+}
+
+.project_card_inner_box {
+  background: linear-gradient(
+    149.6deg,
+    rgba(0, 0, 0, 0.37) 9.57%,
+    rgba(58, 0, 255, 0.165032) 57.89%,
+    rgba(0, 0, 0, 0.37) 100%
+  );
+  border-radius: 16px;
+}
+
