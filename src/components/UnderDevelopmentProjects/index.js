@@ -44,12 +44,13 @@ const UnderDevelopmentProjects = () => {
     });
 
     return (
-        <div className="bg-[url('/img/under_development_projects_bg.png')] bg-no-repeat bg-cover bg-center min-h-screen p-12 flex flex-col">
+        <div className="overflow-hidden bg-[url('/img/under_development_projects_bg.png')] bg-no-repeat bg-cover bg-center min-h-screen p-12 flex flex-col">
             <h1 className="text-white font-semibold text-7xl">Under Development Projects</h1>
             <h6 className="text-white font-normal text-lg mt-4">These are some projects under development</h6>
-            <div className="flex items-center justify-center h-full grow px-0 lg:px-24">
+            <div className="flex items-center justify-center h-full grow px-0 lg:px-24 ">
                 <Swiper
                     className="w-full"
+                    id="under-development-projects"
                     // install Swiper modules
                     modules={[Navigation, FreeMode, A11y]}
                     freeMode={true}
@@ -77,10 +78,14 @@ const UnderDevelopmentProjects = () => {
                     zoom={true}
                 >
                     {mappedSlides}
-                    <div className="swiper-prev flex items-center justify-center shadow-md shadow-[0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);] absolute z-10 top-1/2 left-0 transform -translate-y-1/2 bg-white w-8 h-8 rounded-full">
+                    <div className="swiper-prev flex items-center justify-center shadow-md 
+                    absolute z-10 top-1/2 -left-7 transform -translate-y-1/2 bg-white w-8 h-8 rounded-full"
+                    
+                    >
                         <img src="/img/chevron-left.svg" alt="prev-image-btn" />
                     </div>
-                    <div className="swiper-next flex items-center justify-center shadow-md shadow-[0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);] absolute z-10 top-1/2 right-0 transform -translate-y-1/2 bg-white w-8 h-8 rounded-full">
+                    <div className="swiper-next flex items-center justify-center shadow-md 
+                     absolute z-10 top-1/2 -right-7 transform -translate-y-1/2 bg-white w-8 h-8 rounded-full">
                         <img src="/img/chevron-right.svg" alt="next-image-btn" />
                     </div>
                 </Swiper>

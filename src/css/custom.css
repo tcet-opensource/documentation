@@ -37,3 +37,12 @@
 .swiper-button-disabled {
   display: none;
 }
+
+#under-development-projects > .swiper-wrapper {
+  align-items: center!important;
+  
+}
+
+#under-development-projects {
+  overflow: visible;
+}
