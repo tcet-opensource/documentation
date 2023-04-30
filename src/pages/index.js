@@ -1,3 +1,10 @@
+import React from 'react';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
@@ -6,7 +13,9 @@ import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Hero from '../components/HomepageFeatures/Hero'
+import UnderDevelopmentProjects from '@site/src/components/UnderdevelopmentProjects';
 import Teams from "../components/Teams/teams";
+
 
 
 import styles from "./index.module.css";
@@ -44,6 +53,7 @@ export default function Home() {
       <Hero />
       <main className='bg-red-400 ' >
         <HomepageFeatures />
+        <UnderDevelopmentProjects />
         <Teams />
       </main>
     </Layout>
