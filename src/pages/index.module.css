@@ -12,14 +12,6 @@
   overflow: hidden;
 }
 
-.fontSora {
-  font-family: "Sora", sans-serif;
-}
-
-.aboutBackground{
-  background: linear-gradient(180deg, #01000A 0%, #261660 100%),#FFFFFF;
-}
-
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

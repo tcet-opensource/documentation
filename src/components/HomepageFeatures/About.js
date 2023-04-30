@@ -1,8 +1,8 @@
 import React from "react";
 import CountUp from "react-countup";
 import clsx from "clsx";
-import img from "../assets/image.png";
-import styles from "./index.module.css";
+import img from "../../assets/image.png";
+import styles from "./styles.module.css";
 
 const About = () => {
   return (
