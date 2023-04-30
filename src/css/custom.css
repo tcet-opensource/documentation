@@ -46,3 +46,7 @@
 #under-development-projects {
   overflow: visible;
 }
+
+html {
+  overflow-x: hidden;
+}
