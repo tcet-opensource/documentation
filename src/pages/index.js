@@ -8,6 +8,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 
 import styles from './index.module.css';
+import About from '../components/HomepageFeatures/About';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -41,6 +42,7 @@ export default function Home() {
       <main className='bg-red-400 ' >
         <HomepageFeatures />
       </main>
+      <About />
     </Layout>
   );
 }
