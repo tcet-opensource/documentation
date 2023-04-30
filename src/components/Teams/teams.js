@@ -1,17 +1,17 @@
 import React from "react";
-import AiCard from "./assets/AiCard.jpg";
-import BackendCard from "./assets/BackendCard.jpg";
-import CreativeCard from "./assets/CreativeCard.jpg";
-import DevOpsCard from "./assets/DevOpsCard.jpg";
-import DocsCard from "./assets/DocsCard.jpg";
-import FrontendCard from "./assets/FrontendCard.jpg";
-import UIUXCard from "./assets/UIUXCard.jpg";
-import AITeamIcon from "./assets/AITeamIcon.png";
-import CreativeIcon from "./assets/CreativeIcon.png";
-import DevOpsIcon from "./assets/DevOpsIcon.png";
-import DocsIcon from "./assets/DocsIcon.png";
-import UIUXIcon from "./assets/UIUXIcon.png";
-import WebIcon from "./assets/WebIcon.png";
+import AiCard from "../../../static/img/TeamsSectionImages/AiCard.jpg";
+import BackendCard from "../../../static/img/TeamsSectionImages/BackendCard.jpg";
+import CreativeCard from "../../../static/img/TeamsSectionImages/CreativeCard.jpg";
+import DevOpsCard from "../../../static/img/TeamsSectionImages/DevOpsCard.jpg";
+import DocsCard from "../../../static/img/TeamsSectionImages/DocsCard.jpg";
+import FrontendCard from "../../../static/img/TeamsSectionImages/FrontendCard.jpg";
+import UIUXCard from "../../../static/img/TeamsSectionImages/UIUXCard.jpg";
+import AITeamIcon from "../../../static/img/TeamsSectionImages/AITeamIcon.png";
+import CreativeIcon from "../../../static/img/TeamsSectionImages/CreativeIcon.png";
+import DevOpsIcon from "../../../static/img/TeamsSectionImages/DevOpsIcon.png";
+import DocsIcon from "../../../static/img/TeamsSectionImages/DocsIcon.png";
+import UIUXIcon from "../../../static/img/TeamsSectionImages/UIUXIcon.png";
+import WebIcon from "../../../static/img/TeamsSectionImages/WebIcon.png";
 
 function Teams() {
   const TeamsCard = [
@@ -107,7 +107,7 @@ function Teams() {
     <div className="flex flex-col items-center justify-center bg-[#07001D]">
       <h1 className="font-semibold text-5xl mt-16 text-[#FCFCFD]">Teams</h1>
       <div className="w-screen lg:px-20">
-        <div className="flex flex-row flex-wrap my-16  lg:justify-between justify-center">
+        <div className="flex flex-row flex-wrap my-16 justify-around">
           {card}
         </div>
       </div>
