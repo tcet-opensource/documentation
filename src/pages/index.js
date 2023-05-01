@@ -7,7 +7,6 @@ import Head from "@docusaurus/Head";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import styles from "./index.module.css";
-import ProjectSection from "../components/ProjectSection";
 
 const link = document.createElement('link');
 link.rel = 'preconnect';
@@ -56,13 +55,11 @@ export default function Home() {
       <Head>
         <meta property="og:image" content="/img/logo.png" />
       </Head>
-      {/* <HomepageHeader /> */}
-      {/* <main className="bg-red-400 "> */}
-      {/* <HomepageFeatures /> */}
-      {/* </main> */}
-      <main className="h-full md:pb-20 bg-gradient-to-t to-[#01000A] from-[#261660]">
-        <ProjectSection />
+      <HomepageHeader /> 
+      <main className="bg-red-400 ">
+      <HomepageFeatures />
       </main>
+      
     </Layout>
   );
 }
