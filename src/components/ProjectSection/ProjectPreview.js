@@ -8,8 +8,8 @@ const ProjectPreview = ({ img, tools }) => {
         alt="project-img"
         className="object-cover md:rounded-3xl"
       />
-      <div className="absolute hidden bottom-5 left-5 md:bottom-14 md:left-28 md:flex">
-        <div className="justify-start pl-2 font-semibold md:text-2xl">
+      <div className="absolute hidden md:block bottom-5 left-5 md:bottom-14 md:left-28">
+        <div className="flex justify-start pl-2 font-semibold md:text-2xl">
           TOOL:
         </div>
         {tools.map(tool =>
