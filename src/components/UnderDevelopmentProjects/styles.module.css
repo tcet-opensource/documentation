@@ -1,0 +1,78 @@
+.project_card {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(27, 43, 99, 0.310625) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  margin: 0px 40px;
+  transition: all 300ms ease-in-out;
+}
+
+.project_card_inner_box {
+  background: linear-gradient(
+    149.6deg,
+    rgba(0, 0, 0, 0.37) 9.57%,
+    rgba(58, 0, 255, 0.165032) 57.89%,
+    rgba(0, 0, 0, 0.37) 100%
+  );
+  border-radius: 16px;
+  width: fit-content;
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes fadeOutImage {
+  from {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(200%);
+    height: 0%;
+    width: 0%;
+  }
+}
+
+.inner_box_image {
+  display: relative;
+  width: 0%;
+  height: 0%;
+  /* left: 50%; */
+  transform: translateY(200%);
+  margin: 0 auto;
+  border-radius: 16px;
+  animation: fadeOutImage 300ms ease-in-out forwards;
+}
+.project_card {
+  display: relative;
+}
+.project_card:hover {
+  transform: scaleX(1.15);
+  /* width: 150%; */
+}
+.project_card:hover  .inner_box_image {
+  animation: fadeInImage 300ms ease-in-out forwards;
+}
+
+
+/* .project_card:hover {
+  transform: scale(1.1);
+} */

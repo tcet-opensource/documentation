@@ -33,3 +33,20 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* For Disabled Swiper Buttons */
+.swiper-button-disabled {
+  display: none;
+}
+
+#under-development-projects > .swiper-wrapper {
+  align-items: center!important;
+  
+}
+
+#under-development-projects {
+  overflow: visible;
+}
+
+html {
+  overflow-x: hidden;
+}
