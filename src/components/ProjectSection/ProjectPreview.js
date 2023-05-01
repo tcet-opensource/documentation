@@ -1,29 +1,22 @@
 import React from "react";
 
-const ProjectPreview = ({ img, tools, name, description }) => {
+const ProjectPreview = ({ img, tools }) => {
   return (
-    <div>
-      {/* <div className="flex flex-col">
-        <div className="flex text-xl font-semibold md:text-5xl">
-          {name}
+    <div className="relative flex object-cover h-[90%] text-white md:px-12">
+      <img
+        src={"/img/ProjectSection/" + img}
+        alt="project-img"
+        className="object-cover md:rounded-3xl"
+      />
+      <div className="absolute bottom-5 left-5 md:bottom-14 md:left-28">
+        <div className="flex justify-start pl-2 font-semibold md:text-2xl">
+          TOOL:
         </div>
-        <div className="flex text-gray-400">
-          {description}
-        </div>
-      </div> */}
-      <div className="relative flex text-white md:px-12">
-        <img
-          src={"/img/ProjectSection/" + img}
-          alt="project-img"
-          className="rounded-lg"
-        />
-        <div className="absolute md:bottom-36 md:left-36 bottom-10 left-10">
-          {tools.map(tool =>
-            <sapn>
-              {tool + " "}
-            </sapn>
-          )}
-        </div>
+        {tools.map(tool =>
+          <sapn className="px-2 font-light md:text-2xl">
+            {tool + " "}
+          </sapn>
+        )}
       </div>
     </div>
   );
