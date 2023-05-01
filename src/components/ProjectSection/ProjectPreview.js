@@ -6,7 +6,7 @@ const ProjectPreview = ({ img, tools }) => {
       <img
         src={"/img/ProjectSection/" + img}
         alt="project-img"
-        className="object-cover md:rounded-3xl"
+        className="object-cover rounded-none md:rounded-3xl"
       />
       <div className="absolute hidden md:block bottom-5 left-5 md:bottom-14 md:left-28">
         <div className="flex justify-start pl-2 font-semibold md:text-2xl">

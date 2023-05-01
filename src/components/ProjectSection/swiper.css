@@ -36,7 +36,7 @@
   display: flex;
   height: 90%;
   width: 100%;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
 }
 
 .mySwiper {
@@ -75,4 +75,29 @@
   .swiper-button-next {
     display: none;
   }
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.project-pagination > .swiper-pagination-bullet {
+  border: 1px white solid;
+  background-color: transparent;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.project-pagination > .swiper-pagination-bullet:hover {
+  background-color: gray;
+}
+
+.project-pagination > .swiper-pagination-bullet-active:hover {
+  background-color: white;
+}
+
+.project-pagination > .swiper-pagination-bullet-active {
+  background-color: white;
+  
 }
