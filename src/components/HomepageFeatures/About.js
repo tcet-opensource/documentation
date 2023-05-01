@@ -31,7 +31,7 @@ const About = () => {
               competition is the order of the day.
             </div>
             <div className='flex items-start justify-between w-full'>
-              <div className='flex flex-col items-start p-3 w-[45%] gap-2 bg-[#302261] rounded-xl'>
+              <div className='flex flex-col items-start p-3 w-[45%] gap-2 border border-[#60548A] bg-[#302261] rounded-xl'>
                 <div className='text-[28px] leading-9 max-xs:text-lg'>
                   <CountUp
                     start={0}
@@ -39,10 +39,10 @@ const About = () => {
                   />+
                 </div>
                 <div>
-                  <div className='#D0D5DD text-md max-xs:text-sm'>Number of Line code</div>
+                  <div className='text-slate-300 text-md max-xs:text-sm'>Number of Line code</div>
                 </div>
               </div>
-              <div className='flex flex-col items-start p-3 w-[45%] gap-2 bg-[#302261] rounded-xl'>
+              <div className='flex flex-col items-start p-3 w-[45%] gap-2 border border-[#60548A] bg-[#302261] rounded-xl'>
                 <div className='text-[28px] leading-9 max-xs:text-lg'>
                   <CountUp
                     start={0}
@@ -50,7 +50,7 @@ const About = () => {
                   />+
                 </div>
                 <div>
-                  <div className='#D0D5DD text-md max-xs:text-sm'>Number of Line code</div>
+                  <div className='text-slate-300 text-md max-xs:text-sm'>Number of Line code</div>
                 </div>
               </div>
             </div>
