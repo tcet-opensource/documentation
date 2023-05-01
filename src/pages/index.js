@@ -44,7 +44,7 @@ export default function Home() {
       {/* <main className="bg-red-400 "> */}
       {/* <HomepageFeatures /> */}
       {/* </main> */}
-      <main className="h-full md:pb-20 bg-gradient-to-t to-[#01000A] from-[#261660]">
+      <main className="h-full bg-gradient-to-t to-[#01000A] from-[#261660]">
         <ProjectSection />
       </main>
     </Layout>

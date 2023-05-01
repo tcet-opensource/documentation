@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // import Swiper core and required modules
 import "./swiper.css";
 import { Navigation, Thumbs, FreeMode, Pagination } from "swiper";
@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ProjectPreview from "./ProjectPreview";
-import clsx from "clsx";
 
 const projects = [
   {
@@ -59,8 +58,8 @@ const ProjectSection = () => {
     const currentNameDesc = tempProjects.filter(
       project => swiper.activeIndex === tempProjects.indexOf(project)
     );
-    setNameDes(p => ({
-      ...p,
+    setNameDes(previousNameDesc => ({
+      ...previousNameDesc,
       name: currentNameDesc[0].name,
       desc: currentNameDesc[0].description
     }));
@@ -93,12 +92,12 @@ const ProjectSection = () => {
               "--swiper-pagination-color": "#fff"
             }}
             spaceBetween={10}
-            navigation={true}
             thumbs={{ swiper: thumbsSwiper }}
             modules={[FreeMode, Navigation, Thumbs, Pagination]}
             className="mySwiper2"
             onSlideChange={handleSlideChange}
             pagination={pagination}
+            navigation={true}
           >
             {projects.map(project => {
               return (
@@ -117,8 +116,9 @@ const ProjectSection = () => {
         <div className="items-center justify-center hidden md:flex md:col-span-2 md:pb-10">
           <Swiper
             onSwiper={setThumbsSwiper}
-            loop={true}
-            spaceBetween={10}
+            spaceBetween={
+              10 // loop={true}
+            }
             slidesPerView={3}
             freeMode={true}
             watchSlidesProgress={true}
@@ -126,18 +126,21 @@ const ProjectSection = () => {
             className="mySwiper"
             direction="vertical"
           >
-            {projects.map(projectImg =>
+            {projects.map(projectInfo =>
               <SwiperSlide className="swiper-vertical">
+                <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  {projectInfo.name}
+                </span>
                 <img
-                  src={"/img/ProjectSection/" + projectImg.img}
-                  className="rounded-lg"
+                  src={"/img/ProjectSection/" + projectInfo.img}
+                  className="bg-cover rounded-lg"
                 />
               </SwiperSlide>
             )}
           </Swiper>
         </div>
       </div>
-      <div className="hidden md:shadow" />
+      <img src="/img/ProjectSection/shadow.svg" />
     </div>
   );
 };

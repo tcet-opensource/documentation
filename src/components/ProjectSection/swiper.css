@@ -67,18 +67,12 @@
 .swiper-vertical {
   height: 25rem;
   width: 10rem;
+  object-fit: cover;
 }
 
-.shadow {
-  /* Ellipse 4 */
-
-  position: absolute;
-  width: 1000px;
-  height: 30px;
-  left: calc(50% - 1133.29px/2 + 11.65px);
-  top: calc(65% - 34.44px/2 + 400.72px);
-
-  background: #000000;
-  opacity: 0.8;
-  filter: blur(37.6687px);
+@media only screen and (min-width: 800px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 }
