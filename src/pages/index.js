@@ -10,7 +10,9 @@ import UnderDevelopmentProjects from '@site/src/components/UnderdevelopmentProje
 import Teams from "../components/Teams/teams";
 import ProjectSection from "../components/ProjectSection";
 
-import styles from "./index.module.css";
+
+import styles from './index.module.css';
+import About from '../components/HomepageFeatures/About';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -51,6 +53,7 @@ export default function Home() {
         {/* <HomepageFeatures /> */}
         <ProjectSection />
         <UnderDevelopmentProjects />
+        <About />
         <Teams />
       </main>
     </Layout>
