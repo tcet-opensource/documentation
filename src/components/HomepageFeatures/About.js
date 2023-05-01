@@ -13,9 +13,10 @@ const About = () => {
             <img src={img} alt='img' />
           </div>
           <div className='flex flex-col items-start gap-6 lg:w-1/2'>
+            <div className="bg-[#1D2939] rounded-3xl py-1 px-2.5">About</div>
             <div
               className={clsx(
-                "text-4xl text-center w-full max-xs:text-[2rem] lg:text-start lg:w-[110%]",
+                "text-4xl w-full max-xs:text-[2rem] text-start lg:w-[110%]",
                 styles.fontSora
               )}
             >
@@ -27,29 +28,26 @@ const About = () => {
               Engineering and Technology. Therefore, Training and Placement
               (T&P) was set up with a view to provide necessary impetus to
               launch our students into the real world where cut-throat
-              competition is the order of the day.{" "}
+              competition is the order of the day.
             </div>
             <div className='flex items-start justify-between w-full'>
               <div className='flex flex-col items-start p-3 w-[45%] gap-2 bg-[#302261] rounded-xl'>
-                <div>
+                <div className='text-[28px] leading-9 max-xs:text-lg'>
                   <CountUp
                     start={0}
                     end={852}
-                    className='text-[28px] leading-9 max-xs:text-lg'
-                  />
+                  />+
                 </div>
                 <div>
                   <div className='#D0D5DD text-md max-xs:text-sm'>Number of Line code</div>
                 </div>
               </div>
               <div className='flex flex-col items-start p-3 w-[45%] gap-2 bg-[#302261] rounded-xl'>
-                <div>
-                  {" "}
+                <div className='text-[28px] leading-9 max-xs:text-lg'>
                   <CountUp
                     start={0}
                     end={7400}
-                    className='text-[28px] leading-9 max-xs:text-lg'
-                  />
+                  />+
                 </div>
                 <div>
                   <div className='#D0D5DD text-md max-xs:text-sm'>Number of Line code</div>
