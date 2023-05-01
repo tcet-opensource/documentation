@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ProjectPreview from "./ProjectPreview";
+import clsx from "clsx";
 
 const projects = [
   {
