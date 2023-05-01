@@ -47,7 +47,7 @@ export default function Home() {
         {/* <HomepageFeatures /> */}
 
       <Hero />
-      <main className='bg-red-400 ' >
+      <main className=' ' >
         {/* <HomepageFeatures /> */}
         <ProjectSection />
         <UnderDevelopmentProjects />

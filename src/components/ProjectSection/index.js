@@ -72,7 +72,7 @@ const ProjectSection = () => {
     },
   };
   return (
-    <div className="relative mx-5 my-10 md:my-10">
+    <div className="relative px-5  md:pt-10 xl:pt-20  bg-gradient-to-b from-[#01000A] to-[#261660]">
       <button className="inline-block px-2 bg-gray-700 md:mx-12 rounded-xl">
         Developed Projects
       </button>
