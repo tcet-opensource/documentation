@@ -2,16 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
-      screens: {
-      'xs': '440px',
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
-      }
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/static/img/HeroImages/hero-background.png')",
+      },
+      boxShadow: {
+        "1xl": "inset 0px 2px 1px",
+      },
+    },
   },
   plugins: [],
-}
-
+};
