@@ -26,7 +26,7 @@ These are the following teams and sub teams in the organization.
 - Documenation Team
 
 
-### Projects
+### Projects:
 The problems that the organization is currently working are-
 1. **Activity Dekho**: The website shows the past activities details of a TCET student including all the committees. clubs and social bodies of the college. 
 
