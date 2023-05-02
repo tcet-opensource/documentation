@@ -10,8 +10,23 @@ keywords: [tcet, open-source, software]
 
 TCET Open Source is an organization where software is not just a commodity to be bought and sold, but a collaborative effort that brings people together to solve problems and build something greater than themselves. This is the community of open source, where the boundaries between creators and users blur, and the collective knowledge and creativity of the community combine to create something truly remarkable. 
 
-TCET open source is more than just a movement, it's a philosophy that values transparency, inclusivity, and the power of community, having a strength of 40+ individuals currently. 
+TCET open source is more than just a movement, it's a philosophy that values transparency, inclusivity, and the power of community, having a strength of 50+ individuals currently, across various teams.
 
+### TCET Open Source teams
+These are the following teams and sub teams in the organization.
+- Web Team
+    - UI/UX Design Team
+    - Front End Engineering
+    - Backend Engineering
+- AI Team
+    - Data Engineering
+    - Machine Learning
+    - Automation
+- DevOps Team
+- Documenation Team
+
+
+### Projects
 The problems that the organization is currently working are-
 1. **Activity Dekho**: The website shows the past activities details of a TCET student including all the committees. clubs and social bodies of the college. 
 
