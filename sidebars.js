@@ -107,6 +107,8 @@ const sidebars =
               [
                 [ 
                   'projects/tcet-linux/iso-profile/rootfs',
+                  'projects/tcet-linux/iso-profile/bootloaders',
+                  'projects/tcet-linux/iso-profile/scripts',
                 ],
               ],
             },
