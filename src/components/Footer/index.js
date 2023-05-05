@@ -8,11 +8,11 @@ import Youtube from "../../../static/img/FooterSectionIcons/youtube.svg";
 function Footer() {
   return (
     <div className="bg-[#07001D]">
-      <div className="flex px-10 py-10 w-screen flex-col md:flex-row justify-center items-center lg:justify-between flex-wrap">
+      <div className="flex px-10 pt-10 w-screen flex-col md:flex-row justify-center items-center lg:justify-between flex-wrap">
         <div className="flex items-center">
           <img src={Logo} alt="tcet-icon" className="h-12 w-12 inline" />
           <div className="inline text-[#FCFCFD] font-semibold text-2xl mx-4">
-            TECT Open Source
+            TCET Open Source
           </div>
         </div>
         <div className="text-[#FCFCFD] flex flex-col items-center md:flex-row text-base font-light my-4">
@@ -54,6 +54,7 @@ function Footer() {
           </a>
         </div>
       </div>
+      <div className="h-px bg-[#EBE9FE] bg-opacity-10 mx-10 my-5" />
       <div className="flex px-10 pb-12 w-screen flex-col md:flex-row justify-center items-center lg:justify-between flex-wrap">
         <div className="text-[#FCFCFD] text-sm mr-8 lg:mx-0">
           Copyright 2022-2023 @ TCET Opensource.
@@ -83,6 +84,7 @@ function Footer() {
           >
             <Instagram />
           </a>
+
         </div>
       </div>
     </div>
