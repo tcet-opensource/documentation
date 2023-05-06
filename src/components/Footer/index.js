@@ -6,6 +6,7 @@ import Twitter from "../../../static/img/FooterSectionIcons/twitter.svg";
 import Youtube from "../../../static/img/FooterSectionIcons/youtube.svg";
 
 function Footer() {
+
   return (
     <div className="bg-[#07001D]">
       <div className="flex px-10 pt-10 w-screen flex-col md:flex-row justify-center items-center lg:justify-between flex-wrap">
@@ -61,25 +62,25 @@ function Footer() {
         </div>
         <div className="text-[#FCFCFD] flex flex-row font-light my-4">
           <a
-            href="*"
+            href="https://linkedin.com/company/tcet-opensource/"
             className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
           >
            <Linkedin/>
           </a>
           <a
-            href="*"
+            href="https://www.youtube.com/@TCETMumbaiOfficial"
             className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
           >
             <Youtube />
           </a>
           <a
-            href="*"
+            href="https://twitter.com/tcetopensource"
             className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
           >
             <Twitter />
           </a>
           <a
-            href="*"
+            href="https://instagram.com/tcetopensource/"
             className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
           >
             <Instagram />
@@ -87,6 +88,7 @@ function Footer() {
 
         </div>
       </div>
+
     </div>
   );
 }
