@@ -104,25 +104,16 @@ const config = {
                 label: 'About TCET Open Source',
                 to: '/docs/about-tcetopensource',
               },
+              {
+                label: 'Documentation Website',
+                to: '/docs/projects/docs-site/about-docs',
+              },
+              {
+                label: 'TCET Linux',
+                to: '/docs/projects/tcet-linux/about-tcet-linux',
+              }
             ],
           },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
           {
             title: 'More',
             items: [
@@ -130,9 +121,35 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/tcet-opensource/documentation',
+                label: 'Github',
+                to: 'https://github.com/tcet-opensource/documentation',
+              },
+              {
+                label: 'LinkedIn',
+                to: 'https://www.linkedin.com/company/tcet-opensource/mycompany/',
+              },
+              {
+                label: 'Discord',
+                to: 'https://t.co/bov6iUrZcB',
+              },
+            ],
+          },
+          {
+            title: 'Connect with us',
+            items: [
+              {
+                label: 'Instagram',
+                to: "https://www.instagram.com/tcetopensource/  ",
+              },
+              {
+                label: 'Twitter',
+                to: 'https://twitter.com/tcetopensource',
               },
             ],
           },
