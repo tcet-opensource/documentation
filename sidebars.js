@@ -94,7 +94,24 @@ const sidebars =
           },
           items: 
           [
-            'projects/tcet-linux/iso-profile',
+            'projects/tcet-linux/getting-started',
+            {
+              type: 'category',
+              label: 'ISO Profile',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tcet-linux/iso-profile/iso-profile',
+              },
+              items: 
+              [
+                [ 
+                  'projects/tcet-linux/iso-profile/rootfs',
+                  'projects/tcet-linux/iso-profile/bootloaders',
+                  'projects/tcet-linux/iso-profile/scripts',
+                ],
+              ],
+            },
           ],
         },
       ],

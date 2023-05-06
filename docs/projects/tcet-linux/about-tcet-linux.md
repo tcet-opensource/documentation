@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: TCET Linux
 id: about-tcet-linux
 sidebar_label: What is TCET Linux
