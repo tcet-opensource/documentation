@@ -77,7 +77,11 @@ authors:
     url: https://github.com/author1
     image_url: https://github.com/author2.png
 ```
-`url:` can also be an authors' personal website or portfolio.
+#### Important things to take note of:
+- `url:` can also be an authors' personal website or portfolio.
+- `image_url:` requires a user to have a profile pic on their Github Account. We recommend to append a Github Profile Icon.
+
+
 
 :::
 
