@@ -136,7 +136,7 @@ const config = {
               },
               {
                 label: 'Discord',
-                to: 'https://t.co/bov6iUrZcB',
+                to: 'https://discord.gg/r7ZhAREg2M',
               },
             ],
           },
