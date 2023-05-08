@@ -1,7 +1,23 @@
 ---
 slug: tmai-april-2023
 title: This Month in AI - April 2023
-authors: [kunal, deexith, keval, ananta]
+authors:
+  - name: Kunal Agrawal
+    title: President - Mind Benders | SSoC'22
+    url: https://github.com/kunalagra
+    image_url: https://github.com/kunalagra.png
+  - name: Keval Waghate
+    title: Publication Head - Mind Benders
+    url: https://github.com/KevalW
+    image_url: https://github.com/KevalW.png
+  - name: Deexith Madas
+    title: Treasurer -  Mind Benders
+    url: https://github.com/MDeexith
+    image_url: https://github.com/MDeexith.png
+  - name: Ananta Pandey
+    title: Jt. Publication Head - Mind Benders
+    url: https://github.com/Ananta564
+    image_url: https://github.com/Ananta564.png
 tags: [mind-benders, ai, tmai]
 description: Latest News & Breakthroughs in the Month of April 2023 in AI/ML/DS.
 keywords: [GPT, ai, yolo-nas, hugging -face, tmai]
