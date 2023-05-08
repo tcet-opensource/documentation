@@ -2,7 +2,7 @@
 title: Organization's Internal Workflow
 id: internal-workflow
 sidebar_label: Internal Workflow
-description: The Workflow of Version Control within the Organization's Teams
+description: The Workflow to be practiced within the Organization
 keywords: [internal, version, control, organization, branches, PR]
 ---
 

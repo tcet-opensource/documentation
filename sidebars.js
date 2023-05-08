@@ -115,6 +115,38 @@ const sidebars =
           ],
         },
       ],
+    },
+    {
+      type: 'category',
+      label: 'Resources',
+      link: 
+      {
+        type: 'generated-index',
+        title: 'Resources',
+        description: 'Resources created by the Organization to understand our workflow.',
+        keywords: ['organization, resources'],
+      },
+      collapsed: false,
+      //to be edited
+      items: 
+      [
+        {
+          type: 'category',
+          label: 'Workflows',
+          link: 
+          {
+            type: 'generated-index',
+            title: 'Workflows',
+            description: 'A workflow is a series of steps that are followed to design, develop, test, and release software. The software development workflow typically can involve multiple stages, each with its own set of tasks and deliverables.',
+            keywords: ['organization, workflow'],
+          },
+          items: 
+          [
+            'resources/workflows/internal-workflow/internal-workflow',
+            'resources/workflows/external-workflow/external-workflow',
+          ],
+        },
+      ],
     }
   ],
 }
