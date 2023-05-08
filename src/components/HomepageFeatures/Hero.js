@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Hero() {
+  useEffect(() => {
+    const handleScroll = () => {
+      let parallaxElements = document.getElementsByClassName("parallax");
+      let scrollPosition = window.pageYOffset;
+
+      for (let i = 0; i < parallaxElements.length; i++) {
+        let element = parallaxElements[i];
+        let speed = parseFloat(element.dataset.speed);
+        let offset = -(scrollPosition * speed);
+
+        element.style.transform = `translateY(${offset}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section className="relative text-white bg-slate-950 bg-hero-pattern bg-cover bg-no-repeat bg-bottom p-6 pb-0">
       <div className="flex flex-col items-center justify-center mx-auto max-w-prose">
@@ -10,20 +31,31 @@ export default function Hero() {
           Cras massa lectus lacinia urna nec felis facilisi a <br />
           interdum. Neque ipsum diam pharetra eu sed.
         </p>
-        <button className="group flex items-center justify-center text-white gap-x-2 p-2 pl-4 
+        <button
+          className="group flex items-center justify-center text-white gap-x-2 p-2 pl-4 
         md:mb-0 mb-3 shadow-1xl shadow-indigo-400 font-semibold rounded-full 
         bg-indigo-600 hover:scale-110 cursor-pointer hover:bg-indigo-700 duration-300
-        active:bg-indigo-600 ">
+        active:bg-indigo-600 "
+        >
           View Projects
           <div className="group-hover:bg-indigo-600 group-hover:rotate-[360deg] duration-300 bg-indigo-800 p-2 rounded-full">
             <img src={`/img/HeroImages/arrow-down.svg`} alt="arrow-down" />
           </div>
         </button>
       </div>
-      <img src={`/img/HeroImages/hero-section-left.svg`} className="absolute lg:scale-100 sm:scale-75 scale-50 origin-left md:top-48 sm:top-44 top-28 left-0
-      " alt="hero-section-left" />
-      <img src={`/img/HeroImages/hero-section-center.svg`} className="mx-auto" alt="hero-section-center" />
-      <img src={`/img/HeroImages/hero-section-right.svg`} className="absolute lg:scale-100 sm:scale-75 scale-50 origin-right md:top-56 sm:top-56 top-36 right-0" alt="hero-section-right" />
+      <img
+        src={`/img/HeroImages/hero-section-left.svg`}
+        className="absolute lg:scale-100 sm:scale-75 scale-50 origin-left md:top-48 sm:top-44 top-28 left-0 parallax"
+        data-speed="0.15"
+        alt="hero-section-left"
+      />
+      <img src={`/img/HeroImages/hero-section-center.svg`} className="mx-auto parallax" data-speed="0.2" alt="hero-section-center" />
+      <img
+        src={`/img/HeroImages/hero-section-right.svg`}
+        className="absolute lg:scale-100 sm:scale-75 scale-50 origin-right md:top-56 sm:top-56 top-36 right-0 parallax"
+        data-speed="0.18"
+        alt="hero-section-right"
+      />
     </section>
   );
 }
