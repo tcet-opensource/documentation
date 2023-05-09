@@ -1,39 +1,113 @@
-# EXTERNAL WORKFLOW FOR GITHUB
-Third party contributions on GitHub follow a particular series of steps that need to be followed and known well enough especially when you are contributing to a repository for the first time and are not declared as a contributor already.
+---
+title: Organization's External Workflow
+id: external-workflow
+sidebar_label: External Workflow
+description: The Workflow to be practiced from outside the Organization
+keywords: [External, version, control, organization, forks, PR]
+---
 
-*Pre-requisites*
-You obviously need to have Git installed on your device in order to use the Git commands in the terminal. An IDE, VS-Code being the best recommendation, must also be installed.
+This document discusses the Git workflow for the contributors outside the Organization. All contributors are requested to be thorough with this workflow in order to keep up with the fast paced developement/production life cycle of our software.
 
-Listed below are the sequential steps you need to know so as to make your contribution :-
+## Pre-requisites
+You need to have Git installed on your device in order to use the Git commands in the terminal. Visit [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git) to set-up Git on your device.
+
+As an IDE, Visual Studio Code being the best recommendation, must also be installed.
+
+**Listed below are the sequential steps you need to know so as to make your contribution :-**
 
 ## Forking the repository
-As an outside contributor, you do not have an access to the repository and so you need to have a copy of the same on your local system in order to make changes. There is no git command required for this particular action, as the GitHub interface itself provides a "Fork" tab in the top right of the repository page as shown below. 
+As an outside contributor, you do not have an access to the repository and so you need to have a copy of the same repository on your account in order to work on the project.
 
-![Fork-the-repository](fork.png)
+:::info Note
 
-## Cloning
-The next step involves cloning the system to your local repository. In the terminal, use the command "git clone" and paste the URL of the repository page you are looking forward to make changes in.
+There is no Git command required for this particular action, as the GitHub interface itself provides a **Fork** tab in the top right of the repository page as shown below. 
 
-![Clone-the-repository](clone.png)
+![Forking the repository](fork.png)
 
-## Making changes
-- Now that you've a copy of the entire folder on your local system, you can easily make changes in it.
-- Branching plays an important role here. The branch name should be informative and to-the-point when creating a new branch. The issue name should be the branch name itself.
-- If you are supposed to be working with an existing branch, make sure that the issue name is crisp and gives an idea of what you have added or changed.
-- Use "git add" command to add a single file and "git add ." to add all the files.
+Upon creating a fork, a copy of the repository will be available on your GitHub account.
 
-## Commit your changes
-- In order to showcase the changes you made to the local repository over onto the main repository, committing the change is mandatory.
-- The syntax goes like : git commit -m "*commit message*"
-- Note that the commit message should be a short one-liner description of the changes you made or added.
+:::
 
-![Committing-changes](commit.png)
+## Working on your repository
+### Cloning the repository
+The next step involves cloning the system to your local repository. In the terminal, use the command `git clone` and paste your repository's URL to make changes in the project.
 
-## Git Pull
-Use the "git pull origin develop" command to bring all the changes in the main repository to your local repository so as to avoid any obsolete code.
-It is advisable to always pull before pushing your changes.
+![Cloning the repository](clone.png)
 
-## Resolve conflicts and Push
-- In case of any merge conflicts, feel free to contact the team lead to resolve them.
-- Create a push request, 
+The clone command would look like the following. Note that your repository's URL would have your account's name in it.
+```
+git clone <your repository url>
+```
 
+### Keeping your repository and local up-to-date
+- While you are working on your project, several versions of code are scattered within the main repository in the Organizatione. You need to make sure that you always have the updated code before pushing to GitHub to avoid **merge conflicts**.
+- Before starting to work on your code, you must ensure that your repository is up-to-date with the main repository.
+
+:::info 
+
+- Referring the above screenshot, the forked repository is not up-to-date with the repository.
+- If your repository is *n commits behind main*, you need to click on `Sync Fork` to fetch the changes from main repository to yours.
+- To bring these changes in your local, use the following command:
+```
+git pull
+```
+
+:::
+
+It is a good developer practice to always pull updated code before pushing your modified code to the repository.
+
+### Reflecting your changes on GitHub
+
+At any given time, you can check the status of your modifications on the local:
+```
+git status
+```
+
+#### Staging Area
+- Staging Area in Git is is the middle ground between what you have done to your files and what was last committed in the repository.
+- Before reflecting your changes on GitHub, all files are needed to be added to this staging area.
+- To add files to staging area, use the following command:
+```
+git add index.html
+```
+- This adds `index.html` to the staging area. If you want to add all files, use `git add .`
+
+### Commits and Pushes
+- GitHub is a version control tool. To track all past versions, GitHub uses `commits` made by contributors to show changes made to the files.
+- To reflect your local changes on GitHub, they need to be committed first with the following command:
+```
+git commit -m "<your commit message>"
+```
+- You must ensure that `<your commit message>` is a valid explanation of the changes you have made to the files.
+
+Finally, once all of the above are done, push your changes to GitHub:
+```
+git push
+```
+
+## Creating a Pull Request
+As you keep pushing changes on your repository, it will start adding the commits it is ahead of main. To reflect these changes in the Organization, you need to create a **Pull Request** upon pushing all the changes done on your local.
+
+![Creating a pull request](pr.png)
+
+By following the above step, you will be able to edit the PR on GitHub's editor.
+
+:::info Writing good Pull Requests
+
+- Your pull request title should suggest what changes you have done in your repository.
+- The title should start with a prefix within square brackets. It can reflect `[FEATURE]`, `[FIX]`, `[MINOR]`, `[MAJOR]`, `[PAGE]`, `[DEPLOYMENT]`, etc.
+- As a good developer practice, you should elaboratively describe what changes you have made to the code and highlight them in the description.
+
+:::
+
+- Upon submitting the pull request, the administrator is notified of your changes and can **approve**, **reject** or **request changes** to your pull request.
+- You can also notify repository maintainers and engage conversations with them on the pull request. An example of such conversation can be observed here:
+
+![Conversation](conversation.png)
+
+## The Next Steps
+If the maintainer requests changes in your pull request, you can add further commits on the pull request and *mark the changes as resolved* for further approval from the maintainer.
+
+Once a maintainer approves your changes, then finally your pull request will be merged to the Organization repository.
+
+This is the entire developer cycle for a contributor working from outside the Organization. Every time a new issue is raised, you should follow the same make meaningful contributions to our projects.

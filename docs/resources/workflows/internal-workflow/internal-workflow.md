@@ -99,6 +99,7 @@ By following the above step, you will be able to edit the PR on GitHub's editor.
 
 :::info Writing good Pull Requests
 
+- The `main` branch is only merged into by your Team Lead. You should push to `staging` or any other branch decided by the Team to work on.
 - Your pull request title should suggest what changes you have done in your branch.
 - The title should start with a prefix within square brackets. It can reflect `[FEATURE]`, `[FIX]`, `[MINOR]`, `[MAJOR]`, `[PAGE]`, `[DEPLOYMENT]`, etc.
 - As a good developer practice, you should elaboratively describe what changes you have made to the code and highlight them in the description.
