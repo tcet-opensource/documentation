@@ -13,10 +13,13 @@ You need to have Git installed on your device in order to use the Git commands i
 
 As an IDE, Visual Studio Code being the best recommendation, must also be installed.
 
-**Listed below are the sequential steps you need to know so as to make your contribution :-**
+## Raising issues
+Issues are the standard way to for communication between maintainers, contributors and end users on GitHub. They can be raised by anyone highlighting **task allocation**, **bug reports**, **feature request**, **security vulnerablity**, etc.
+
+If you wish to contribute to a specific part of the project, `raise an issue` and request the maintainers to assign it to you. This is where your work within the project begins.
 
 ## Forking the repository
-As an outside contributor, you do not have an access to the repository and so you need to have a copy of the same repository on your account in order to work on the project.
+As an outside contributor, you do not have an access to directly push changes to our repositories. Hence you need to have a copy of the same repository on your account in order to work on the project.
 
 :::info Note
 
@@ -40,7 +43,7 @@ git clone <your repository url>
 ```
 
 ### Keeping your repository and local up-to-date
-- While you are working on your project, several versions of code are scattered within the main repository in the Organizatione. You need to make sure that you always have the updated code before pushing to GitHub to avoid **merge conflicts**.
+- While you are working on your project, several versions of code are scattered within the main repository in the Organization. You need to make sure that you always have the updated code before pushing to GitHub to avoid **merge conflicts**.
 - Before starting to work on your code, you must ensure that your repository is up-to-date with the main repository.
 
 :::info 
@@ -86,7 +89,7 @@ git push
 ```
 
 ## Creating a Pull Request
-As you keep pushing changes on your repository, it will start adding the commits it is ahead of main. To reflect these changes in the Organization, you need to create a **Pull Request** upon pushing all the changes done on your local.
+As you keep pushing changes on your repository, GitHub will start adding the number of commits you are ahead of main. To reflect these changes in the Organization, you need to create a **Pull Request** upon pushing all the changes done on your local by clicking on `Contribute`.
 
 ![Creating a pull request](pr.png)
 
@@ -110,4 +113,4 @@ If the maintainer requests changes in your pull request, you can add further com
 
 Once a maintainer approves your changes, then finally your pull request will be merged to the Organization repository.
 
-This is the entire developer cycle for a contributor working from outside the Organization. Every time a new issue is raised, you should follow the same make meaningful contributions to our projects.
+This is the entire developer cycle for a contributor working from outside the Organization. Every time a maintainer approves your issue, you should follow the same make meaningful contributions to our projects.

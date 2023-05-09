@@ -12,7 +12,7 @@ This document discusses the Git workflow for members of the Organization. All me
 Assuming you already are a part of the Organization, you might not need to do this. But if you don't have Git set-up on your local system, visit [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git) to set-up everything before beginning work in the projects.
 
 ## Understanding Issues
-Issues are the standard way to for communication between maintainers, contributors and end users on GitHub. They can be raised by anyone highlighting task allocation, bug reports, feature request, security vulnerablity, etc. Team Leads are responsible to assign an issue to you. This is where your work within the project begins.
+Issues are the standard way to for communication between maintainers, contributors and end users on GitHub. They can be raised by anyone highlighting **task allocation**, **bug reports**, **feature request**, **security vulnerablity**, etc. Team Leads are responsible to assign an issue to you. This is where your work within the project begins.
 
 ## Branches - Your personal workspace
 Let's say your Team Lead has assigned you an issue. It would look something like this:
@@ -21,7 +21,7 @@ Let's say your Team Lead has assigned you an issue. It would look something like
 
 Comments within an issue can be used by the Team Lead to explain to you the task assigned and how to approach it. Your issue may also contain labels to highlight what kind of work you'll be doing and what's the expectations of the end user.
 
-To work on the task assigned to you, the very first thing you need to do is to **Create a Branch** which is *linked to your issue*. It is necessary to do so in order to link your work toYou can do this within the issue itself.
+To work on the task assigned to you, the very first thing you need to do is to **Create a Branch** which is *linked to your issue*. It is necessary to do so in order to link your work to the issue. You can do this within the issue itself.
 
 ![Creating a branch](create-branch.png)
 
