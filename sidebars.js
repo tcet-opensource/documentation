@@ -115,6 +115,37 @@ const sidebars =
           ],
         },
       ],
+    },
+    {
+      type: 'category',
+      label: 'Resources',
+      link: 
+      {
+        type: 'generated-index',
+        title: 'Resources',
+        description: 'Resources created by the Organization to understand our workflow.',
+        keywords: ['organization, resources'],
+      },
+      collapsed: false,
+      items: 
+      [
+        {
+          type: 'category',
+          label: 'Workflows',
+          link: 
+          {
+            type: 'generated-index',
+            title: 'Workflows',
+            description: 'Workflows are practiced within an Organization to ensure that all contributions done are as per a given set of practices to have quality code and proper communication with the maintainers. All contributions are welcome in TCET Open Source as long as the workflows are followed: from coding practices of every project to pushing changes on GitHub. Our Organization follows the below mentioned workflows whether you are a part of our Teams or contributing from outside the Organization and expect everyone to follow the same.',
+            keywords: ['organization, workflow'],
+          },
+          items: 
+          [
+            'resources/workflows/internal-workflow/internal-workflow',
+            'resources/workflows/external-workflow/external-workflow',
+          ],
+        },
+      ],
     }
   ],
 }
