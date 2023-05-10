@@ -92,6 +92,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'search',
+            position: 'right',
+          }
         ],
       },
       footer: {
