@@ -9,6 +9,7 @@ A mention to all of our contributors :-
 7. Kunal Agrawal (https://github.com/kunalagra)
 8. Mahima Churi (https://github.com/Mahitej28)
 9. Saasha Gupta (https://github.com/saashaspace)
+10. Alston Soares (https://github.com/Alstudd)
  
 <a href="https://github.com/tcet-opensource/documentation/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=tcet-opensource/documentation" />
