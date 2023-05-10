@@ -127,7 +127,6 @@ const sidebars =
         keywords: ['organization, resources'],
       },
       collapsed: false,
-      //to be edited
       items: 
       [
         {
