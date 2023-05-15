@@ -32,12 +32,12 @@ const sidebars =
         description: 'Official Documentation of all TCET Open Source projects',
         keywords: ['documentation, open-source'],
       },
-      collapsed: false,
+      collapsed: true,
       items: 
       [
         {
           type: 'category',
-          label: 'Docs Site',
+          label: 'Docs Site', 
           link: 
           {
             type: 'doc',
@@ -56,12 +56,10 @@ const sidebars =
               },
               items: 
               [
-                [ 
                   'projects/docs-site/navbar/title-and-logo',
                   'projects/docs-site/navbar/adding-items',
                   'projects/docs-site/navbar/adding-links',
                   'projects/docs-site/navbar/search-bar',
-                ],
               ],
             },
             {
@@ -74,12 +72,10 @@ const sidebars =
               },
               items: 
               [
-                [ 
                   'projects/docs-site/sidebar/adding-categories',
                   'projects/docs-site/sidebar/adding-links',
                   'projects/docs-site/sidebar/adding-items',
                   'projects/docs-site/sidebar/multiple-sidebars',
-                ],
               ],
             },
           ],
@@ -105,11 +101,9 @@ const sidebars =
               },
               items: 
               [
-                [ 
                   'projects/tcet-linux/iso-profile/rootfs',
                   'projects/tcet-linux/iso-profile/bootloaders',
                   'projects/tcet-linux/iso-profile/scripts',
-                ],
               ],
             },
           ],
@@ -126,7 +120,7 @@ const sidebars =
         description: 'Resources created by the Organization to understand our workflow.',
         keywords: ['organization, resources'],
       },
-      collapsed: false,
+      collapsed: true,
       items: 
       [
         {

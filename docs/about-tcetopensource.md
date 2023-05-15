@@ -12,35 +12,67 @@ TCET Open Source is an organization where software is not just a commodity to be
 
 TCET open source is more than just a movement, it's a philosophy that values transparency, inclusivity, and the power of community, having a strength of 50+ individuals currently, across various teams.
 
-### TCET Open Source teams
+## Teams
 These are the following teams and sub teams in the organization.
-- Web Team
-    - UI/UX Design Team
-    - Front End Engineering
-    - Backend Engineering
-- AI Team
-    - Data Engineering
-    - Machine Learning
-    - Automation
-- DevOps Team
-- Documenation Team
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem'
+import styles from '../src/components/HomepageFeatures/styles.module.css';
 
-### Projects:
-The problems that the organization is currently working are-
-1. **Activity Dekho**: The website shows the past activities details of a TCET student including all the committees. clubs and social bodies of the college. 
+<Tabs>
+  <TabItem value="Web Team" attributes={{className: styles.unique}}>
+    <li>UI/UX Design</li>
+    <li>Frontend Engineering</li>
+    <li>Backend Engineering</li>
+  </TabItem>
+  <TabItem value="AI Team" attributes={{className: styles.unique}}>
+    <li>Data Engineering</li>
+    <li>Machine Learning</li>
+    <li>Automation</li>
+  </TabItem>
+  <TabItem value="DevOps Team" attributes={{className: styles.unique}}>
+    <li>DevOps Team</li>
+  </TabItem>
+  <TabItem value="Documentation Team" attributes={{className: styles.unique}}>
+    <li>Documentation Team</li>
+  </TabItem>
+</Tabs>
 
-2. **SORT Club website**: Its represents the SORT and Literary Club' Website which if the part of TCET Open Source.
+---
 
-3. **Fill My Cycle**: An application that predicts the average subject-wise score of a TCET student.
+## Projects
 
-Not only these, but the projects that are under development of the organization include-
+### Live Projects
+The organization has successfully completed and currently maintains several projects that cater to the needs of TCET students. These include:
+
+1. **Activity Dekho** <br/>This live website showcases past activities organized by TCET students, including committees, clubs, and social bodies. It serves as an archive of the college's vibrant extracurricular life, providing students with a glimpse into the diverse range of activities.
+
+2. **SORT Club website** <br/>Its represents the SORT and Literary Club's Website which is the part of TCET Open Source.
+
+3. **Fill My Cycle**: <br/>This live application predicts the average subject-wise score of TCET students. By utilizing advanced algorithms, it offers valuable insights into academic performance, helping students understand their strengths and areas for improvement.
+
+### Ongoing Projects
+Additionally, the organization is actively working on several exciting projects to further enhance the TCET community. These projects under development include:
+
 1. **TnP website**
 2. **TCET Linux**
 3. **Resume Screener**
+4. **Documentation Website**
 
-The upcoming projects are-
+### Upcoming Projects
+Looking ahead, the organization has plans for upcoming projects that will further enhance various aspects of college life, including:
+
 1. **ERP**
 2. **Canteen Management System**
 
-So if you're looking for a way to make a difference in the organization, to contribute to something greater than yourself, and to be a part of a vibrant and passionate community, look no further than this community of open source. 
+<br />
+
+
+
+import Admonition from '@theme/Admonition';
+
+<Admonition type="tip" icon="📢" title="ANNOUCEMENT">
+    <p>
+        So if you're looking for a way to make a difference in the organization, to contribute to something greater than yourself, and to be a part of a vibrant and passionate community, look no further than this community of open source.
+    </p>
+</Admonition>
