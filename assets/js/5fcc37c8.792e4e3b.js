@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[930],{7761:a=>{a.exports=JSON.parse('{"label":"Data Science","permalink":"/blog/tags/data-science","allTagsPath":"/blog/tags","count":1}')}}]);
