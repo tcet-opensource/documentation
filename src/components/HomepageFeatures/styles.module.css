@@ -18,3 +18,12 @@ img[src*='#center'] {
   display: block;
   margin: auto;
 }
+
+.unique[aria-selected='true'] {
+  border-bottom-color: purple;
+  border-color: purple;
+  color:purple;
+}
+.unique[aria-selected='false'] {
+  color:black
+}
