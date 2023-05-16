@@ -31,7 +31,8 @@ import styles from '../src/components/HomepageFeatures/styles.module.css';
     <li>Automation</li>
   </TabItem>
   <TabItem value="DevOps Team" attributes={{className: styles.unique}}>
-    <li>DevOps Team</li>
+    <li>Production Engineering</li>
+    <li>TCET Linux Development</li>
   </TabItem>
   <TabItem value="Documentation Team" attributes={{className: styles.unique}}>
     <li>Documentation Team</li>
