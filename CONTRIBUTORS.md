@@ -1,20 +1,23 @@
-A mention to all of our contributors :-
+# Contributors ✨
 
-1. Gaurang Vishwakarma (https://github.com/demonkillerr)
-2. Vishal Rawat (https://github.com/vish-rt)
-3. Jayesh Potlabattinikunalagra (https://github.com/JayeshVP24)
-4. Himanshu Agarwal (https://github.com/himanshu-03)
-5. Sakshi Porwal (https://github.com/SakshiPorwal)
-6. Nikita Shukla (https://github.com/NikitaSShukla)
-7. Kunal Agrawal (https://github.com/kunalagra)
-8. Mahima Churi (https://github.com/Mahitej28)
-9. Saasha Gupta (https://github.com/saashaspace)
- 
-<a href="https://github.com/tcet-opensource/documentation/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tcet-opensource/documentation" />
-</a>
-
-
+<table>
+ <tbody>
+  <tr>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/demonkillerr"><img src="https://avatars.githubusercontent.com/u/55846983?v=4"><br /><sub><v>Gaurang Vishwakarma</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/vish-rt"><img src="https://avatars.githubusercontent.com/u/93420999?v=4"><br /><sub><b>Vishal Rawat</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/JayeshVP24"><img src="https://avatars.githubusercontent.com/u/59532173?v=4"><br /><sub><b>Jayesh Potlabattini</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/himanshu-03"><img src="https://avatars.githubusercontent.com/u/97957777?v=4"><br /><sub><b>Himanshu Agarwal</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/SakshiPorwal"><img src="https://avatars.githubusercontent.com/u/111149835?v=4"><br /><sub><b>Sakshi Porwal</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/NikitaSShukla"><img src="https://avatars.githubusercontent.com/u/122997061?v=4"><br /><sub><b>Nikita Shukla</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/kunalagra"><img src="https://avatars.githubusercontent.com/u/66416646?v=4"><br /><sub><b>Kunal Agrawal</b></sub></img></a>
+  </tr>
+  <tr>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mahitej28"><img src="https://avatars.githubusercontent.com/u/98276915?v=4"><br /><sub><b>Mahima Churi</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/saashaspace"><img src="https://avatars.githubusercontent.com/u/114816254?v=4"><br /><sub><b>Saasha Gupta</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/demonkillerr"><img src="https://avatars.githubusercontent.com/u/73842058?v=4"><br /><sub><b>Nidhi Worah</b></sub></img></a>
+  </tr>
+ </tbody>
+</table>
 
 
  
