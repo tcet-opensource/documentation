@@ -20,10 +20,8 @@ img[src*='#center'] {
 }
 
 .unique[aria-selected='true'] {
-  border-bottom-color: purple;
-  border-color: purple;
-  color:purple;
+  border-bottom-color: rgb(189, 5, 189);
+  border-color: rgb(189, 5, 189);
+  color:rgb(189, 5, 189);
 }
-.unique[aria-selected='false'] {
-  color:black
-}
+
