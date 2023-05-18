@@ -71,6 +71,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
+      announcementBar: {
+        id: 'opensource-recruitment',
+        content: `ANNOUNCEMENT: We are hiring interns for the month of June. Apply 
+        <a href="https://bit.ly/tcetosrecruitment" target=_blank>here</a>.`,
+      },
       navbar: {
         hideOnScroll: true,
         title: 'TCET Open Source',
@@ -88,6 +93,11 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            label: 'Join us',
+            href: 'https://bit.ly/tcetosrecruitment',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/tcet-opensource/documentation',
             label: 'GitHub',
             position: 'right',
@@ -102,14 +112,14 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'About',
             items: [
               {
-                label: 'About TCET Open Source',
+                label: 'TCET Open Source',
                 to: '/docs/about-tcetopensource',
               },
               {
-                label: 'Documentation Website',
+                label: 'Docs Website',
                 to: '/docs/projects/docs-site/about-docs',
               },
               {
@@ -122,8 +132,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Blogs',
                 to: '/blog',
+              },
+              {
+                label: 'Workflows',
+                to: '/docs/category/workflows',
               },
             ],
           },
@@ -133,10 +147,6 @@ const config = {
               {
                 label: 'Github',
                 to: 'https://github.com/tcet-opensource/documentation',
-              },
-              {
-                label: 'LinkedIn',
-                to: 'https://www.linkedin.com/company/tcet-opensource/mycompany/',
               },
               {
                 label: 'Discord',
@@ -154,6 +164,10 @@ const config = {
               {
                 label: 'Twitter',
                 to: 'https://twitter.com/tcetopensource',
+              },
+              {
+                label: 'LinkedIn',
+                to: 'https://www.linkedin.com/company/tcet-opensource/mycompany/',
               },
             ],
           },
