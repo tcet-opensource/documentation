@@ -1,5 +1,5 @@
 ---
-slug: first-blog-guidelines
+slug: blog-posting-guidelines
 title: First Blog - General Posting Guidelines
 authors: [gaurang, vishal]
 tags: [free, open, source, software]
