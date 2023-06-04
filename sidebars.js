@@ -82,6 +82,32 @@ const sidebars =
         },
         {
           type: 'category',
+          label: 'T&P Site',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/tnp-website/about-tnp-website',
+          },
+          items: 
+          [
+            'projects/tnp-website/frontend/getting-started', 
+            {
+              type: 'category',
+              label: 'Frontend',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tnp-website/frontend/components',
+              },
+              items: 
+              [
+                  
+              ],
+            },    
+          ],
+        },
+        {
+          type: 'category',
           label: 'TCET Linux',
           link: 
           {
