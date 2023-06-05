@@ -2,7 +2,7 @@
 title: Components
 id: components
 sidebar_label: Components
-description: Components info (dummy)
+description: List of components that are used in making T&P Website
 keywords: [astrojs, open-source, docs]
 ---
 
