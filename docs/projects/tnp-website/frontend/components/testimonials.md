@@ -3,4 +3,55 @@ title: Testimonials
 id: testimonials
 description: Testimonials Component in T&P Website
 sidebar_label: Testimonials
+keywords: [astrojs, open-source, docs]
 ---
+Introducing Testimonials of TNP Website!
+
+The **Student Testimonials** and **Company Testimonials** section of the website provides you feedbacks and experiences shared by the students and the companies visiting in TCET. 
+It is a responsive and touch-enabled slider which includes data like feedback, student's image or company logo, name and position. It supports slide touch gestures and is situated at the bottom of the [Home Page](https://tnp.tcetmumbai.in/) of TNP website. 
+
+### Adding Testimonials
+
+To add reviews on the website, we need to edit `studentTestimonials` or `companyTestimonial` array in `index.astro` file. Both of these array contain multiple testimonial objects of the type `TestimonialType`.
+
+Here's how we made those changes: 
+
+1. Opening `index.astro` file in our projects root directory
+
+2. Locating the  `studentTestimonials` or `companyTestimonial` array
+
+3. To add a new testimonial, we created a new object which would be defined as follows:
+
+   ```jsx title="index.astro"
+       {
+          info: //Testimonial content,
+          photo: //file name or url of an image,
+          name: //name of the student/company,
+          position: //position or role of the student/company recruiter,
+        }
+    ```
+4. To add or change the testimonial content, we edited the `info` property and also, updated the `photo` property with the required name of the file or url of the image.
+
+5. To add the name of the reviewer and position they hold, we located the `name` and `position` property of the array.
+
+6. Save the `index.astro` file.
+
+7. Run `yard start` or `npm start` to see the changes made in your local environment. 
+
+### Displaying Testimonials
+
+ To display a testimonial slider, a `data` prop is given to the `TestimonialSwiper` component in `TestimonialSwiper.tsx` file. `TestimonialSwiper` is a react functional component that recieves an array of `TestimonialType` objects. 
+
+ `Swiper` and `SwiperSlide` components are used within the `TestimonialSwiper`provided by the `Swiper.js` library. Within the `Swiper` component, data array is mapped. For each testominial object, a `SwiperSlide` component is rendered. 
+ 
+ The `Testi` component represents an individual testimonial. It receives the testimonial's `info`, `photo`, `name`, and `position` as props and renders them accordingly. The component includes HTML elements and CSS classes to structure and style the testimonial content.
+
+<br/>
+
+:::note
+ Check out the official documentation for more information on [Swiper.js](https://swiperjs.com/get-started)
+:::
+
+<br/>
+
+_Now, we have successfully understood how to [**add and display testimonials**](testimonials). Let's move on to the [**Internships**](internships) section_
