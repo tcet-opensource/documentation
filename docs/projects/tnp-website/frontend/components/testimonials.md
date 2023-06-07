@@ -16,13 +16,13 @@ To add reviews on the website, we need to edit `studentTestimonials` or `company
 
 Here's how we made those changes: 
 
-1. Opening `index.astro` file in our projects root directory
+1. Opening `index.astro` file in our projects root directory.
 
-2. Locating the  `studentTestimonials` or `companyTestimonial` array
+2. Locating the  `studentTestimonials` or `companyTestimonial` array.
 
 3. To add a new testimonial, we created a new object which would be defined as follows:
 
-   ```jsx title="index.astro"
+   ```jsx title="index.astro" {2-5} showLineNumbers
        {
           info: //Testimonial content,
           photo: //file name or url of an image,
@@ -32,7 +32,7 @@ Here's how we made those changes:
     ```
 4. To add or change the testimonial content, we edited the `info` property and also, updated the `photo` property with the required name of the file or url of the image.
 
-     ```jsx {2,3} showLineNumbers
+     ```jsx title="index.astro" {2,3} showLineNumbers
        {
           info: "As I stare out the window, I can see the leaves of the trees rustling in the wind. The sun is setting, freshly cut grass. I take a deep breath and let it out slowly, feeling the tension in my body release. In this moment, everything feels perfect, and I am grateful for the simple joys in life.",
           photo: "pfp-pixelated.png",
@@ -43,7 +43,7 @@ Here's how we made those changes:
 
 5. To add the name of the reviewer and position they hold, we located the `name` and `position` property of the array.
 
-    ```jsx {4,5} showLineNumbers
+    ```jsx title="index.astro" {4,5} showLineNumbers
        {
           info: //Testimonial content,
           photo: //file name or url of an image,
@@ -58,11 +58,11 @@ Here's how we made those changes:
 
 ### Displaying Testimonials
 
- To display a testimonial slider, a `data` prop is given to the `TestimonialSwiper` component in `TestimonialSwiper.tsx` file. `TestimonialSwiper` is a react functional component that recieves an array of `TestimonialType` objects. 
+To display a testimonial slider, a `data` prop is given to the `TestimonialSwiper` component in `TestimonialSwiper.tsx` file. `TestimonialSwiper` is a react functional component that recieves an array of `TestimonialType` objects. 
 
- `Swiper` and `SwiperSlide` components are used within the `TestimonialSwiper`provided by the `Swiper.js` library. Within the `Swiper` component, the behaviour and appearance of the component is configured. 
+1. `Swiper` and `SwiperSlide` components are used within the `TestimonialSwiper` provided by the `Swiper.js` library. Within the `Swiper` component, the behaviour and appearance of the component is configured. 
 
- ```jsx title="TestimonialSwiper.tsx" showLineNumbers
+ ```jsx title="TestimonialSwiper.tsx" {2-5} showLineNumbers
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -72,9 +72,9 @@ Here's how we made those changes:
         // onSlideChange={() => console.log("slide change")}
       >
  ```
- For each testominial object, a `SwiperSlide` component is rendered to define the content for individual slides within the Swiper component. 
+2. For each testominial object, a `SwiperSlide` component is rendered to define the content for individual slides within the Swiper component. 
 
- ```jsx title="TestimonialSwiper.tsx" showLineNumbers
+ ```jsx title="TestimonialSwiper.tsx" {3-8} showLineNumbers
         {data.map((testimonial) => (
       <SwiperSlide key={testimonial.name}>
         <Testi
@@ -87,14 +87,14 @@ Here's how we made those changes:
         ))}
  ```
  
- The `Testi` component represents an individual testimonial. It receives the testimonial's `info`, `photo`, `name`, and `position` as props and renders them accordingly. The component includes HTML elements and CSS classes to structure and style the testimonial content.
+The `Testi` component represents an individual testimonial. It receives the testimonial's `info`, `photo`, `name`, and `position` as props and renders them accordingly. The component includes HTML elements and CSS classes to structure and style the testimonial content.
 
 <br/>
 
-:::note
+:::info
  Check out the official documentation for more information on [Swiper.js](https://swiperjs.com/get-started)
 :::
 
 <br/>
 
-_Now that we have completed implementing [**Testimonials**](testimonials) section, let's move on to the next step of creating [**Internships**](internships) page._
+_Now that we have completed implementing [**Testimonials**](testimonials) section, let's move forward to see how we implemented [**Internships**](internships) page in our [**T&P Website**](https://tnp.tcetmumbai.in)._
