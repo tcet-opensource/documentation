@@ -6,19 +6,19 @@ sidebar_label: Internships
 keywords: [astrojs, open-source, docs]
 ---
 
-The website's **Internship** page helps you learn about the various corporations that visit TCET to recruit students with internship offers. To be more transparent it gives statistics on the number of companies that have visited and the number of students who got hired. It is accesible through the navigation bar of the website.
+The **Internship** page of the website gives you information on various corporations that visit TCET to recruit students. To be more transparent, the website provides statistics on the number of companies that have visited and the number of students who got hired. It is accesible through the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
 
 ### Adding Company Details
 
-To add a company's information to the website, we need to edit the `data` array in the `InternshipCompanies.tsx` file. The `data` array is a collection of company information where each item represents a company and contains the name and image of the company's logo. 
+To add a company's information to the website, we need to edit the `data` array in the **InternshipCompanies.tsx** file. The `data` array is a collection of company information where each item represents a company and contains the name and image of the company's logo. 
 
 Here's how those changes were made:
 
-1. Opening `InternshipCompanies.tsx` file in our projects root directory. 
+1. Opening **InternshipCompanies.tsx** file in our projects root directory. 
 
-2. Locating the `data` array. To add a new company's details, we created a new object which would be defined as follows:
+2. Locating the `data` array. To add a company's details, we created a new object which would be defined as follows:
    
-    ```jsx title="InternshipCompanies.tsx" showLineNumbers 
+    ```jsx title="InternshipCompanies.tsx" {3-4} showLineNumbers 
        const data = [
         {
             caption:  "Name of the company",
@@ -40,9 +40,9 @@ Here's how we proceeded with the steps:
 
 1. Opening `CompanyCard.tsx` file. 
 
-2. `Props` is defined of `type` declaration to create two properties: `imgLink` and `caption` both of type `String`. 
+2. `Props` is defined with two properties: `imgLink` and `caption` both of type **"String"**. 
      
-     ```jsx title="CompanyCard.tsx" showLineNumbers 
+     ```jsx title="CompanyCard.tsx" {2-3} showLineNumbers 
         type Props = {
               imgLink: String;
               caption: String;
@@ -84,11 +84,20 @@ Here's how we proceeded with the steps:
 
 7. Run `yard preview` on the terminal to see the changes made in your local environment.
 
+On executing the above steps, the individual cards look like this:
+
+import cardImg from "../components/assets/companyCard.png";
+
+<img src={cardImg} />
+
+<br />
+<br />
+
 ### Displaying Companies
 
 In this step, we need to create a card to display all the company cards created in the previous step. This step will help in listing all the companies that have conducted internship drives in TCET. 
 
-1. Opening `InternshipCompanies.tsx` file in our projects root directory. 
+1. Opening **InternshipCompanies.tsx** file in our projects root directory. 
 
 2. Creating a react functional component `InternshipCompanies` which will be defined as follows:
  
@@ -99,9 +108,10 @@ In this step, we need to create a card to display all the company cards created 
          );
       };
     ```
+
 3. A `<div>` element is created which uses inline CSS style to set the background of the component. Within outer `<div>`, `<h1>` is created for the heading of the section-`"Companies Offering Internships"`. It also contains nested `<div>` element with a class which serves as an underline below the heading. 
 
-    ```jsx title="InternshipCompanies.tsx" showLineNumbers
+    ```jsx title="InternshipCompanies.tsx" {3-8} showLineNumbers
        const InternshipCompanies: React.FC<{}> = () => {
             return (
                 <div style={{ background: "radial-gradient(42.83% 57.11% at 50% 100%, rgba(255, 225, 185, 0.7) 0%, rgba(255, 245, 232, 0.3) 100%)" }}>
@@ -114,7 +124,7 @@ In this step, we need to create a card to display all the company cards created 
         };
     ```
 
-4. A `<div>` is created below `<h1>` to create grids for the company cards. A javascript expression `"{data.map((d, index) => {.....})}"` is used to map `data` array to display each company card.
+4. A `<div>` is created below `<h1>` element to create grids for the company cards. A javascript expression `"{data.map((d, index) => {.....})}"` is used to map `data` array to display each company card.
 
     ```jsx title="InternshipCompanies.tsx"{8-12} showLineNumbers
         const InternshipCompanies: React.FC<{}> = () => {
@@ -136,6 +146,12 @@ In this step, we need to create a card to display all the company cards created 
 5. Save the file.
 
 6. Run `yard preview` on the terminal to see the changes made in your local environment.
+
+After completing the above steps, the **Internship Companies** card looks like this:
+
+import CardImg from "../components/assets/Card.png";
+
+<img src={CardImg} />
 
 <br/> <br/>
 
