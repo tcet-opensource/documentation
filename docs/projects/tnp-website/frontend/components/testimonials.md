@@ -54,7 +54,7 @@ Here's how we made those changes:
 
 6. Save the `index.astro` file.
 
-7. Run `yard start` or `npm start` to see the changes made in your local environment. 
+7. Run `yard preview` on the terminal to see the changes made in your local environment. 
 
 ### Displaying Testimonials
 
