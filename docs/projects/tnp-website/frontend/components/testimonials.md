@@ -32,7 +32,25 @@ Here's how we made those changes:
     ```
 4. To add or change the testimonial content, we edited the `info` property and also, updated the `photo` property with the required name of the file or url of the image.
 
+     ```jsx {2,3} showLineNumbers
+       {
+          info: "As I stare out the window, I can see the leaves of the trees rustling in the wind. The sun is setting, freshly cut grass. I take a deep breath and let it out slowly, feeling the tension in my body release. In this moment, everything feels perfect, and I am grateful for the simple joys in life.",
+          photo: "pfp-pixelated.png",
+          name: //name of the student/company,
+          position: //position or role of the student/company recruiter,
+        }
+    ```
+
 5. To add the name of the reviewer and position they hold, we located the `name` and `position` property of the array.
+
+    ```jsx {4,5} showLineNumbers
+       {
+          info: //Testimonial content,
+          photo: //file name or url of an image,
+          name: "Rahil",
+          position: "badeLog",
+        }
+    ```
 
 6. Save the `index.astro` file.
 
@@ -42,7 +60,32 @@ Here's how we made those changes:
 
  To display a testimonial slider, a `data` prop is given to the `TestimonialSwiper` component in `TestimonialSwiper.tsx` file. `TestimonialSwiper` is a react functional component that recieves an array of `TestimonialType` objects. 
 
- `Swiper` and `SwiperSlide` components are used within the `TestimonialSwiper`provided by the `Swiper.js` library. Within the `Swiper` component, data array is mapped. For each testominial object, a `SwiperSlide` component is rendered. 
+ `Swiper` and `SwiperSlide` components are used within the `TestimonialSwiper`provided by the `Swiper.js` library. Within the `Swiper` component, the behaviour and appearance of the component is configured. 
+
+ ```jsx title="TestimonialSwiper.tsx" showLineNumbers
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+      >
+ ```
+ For each testominial object, a `SwiperSlide` component is rendered to define the content for individual slides within the Swiper component. 
+
+ ```jsx title="TestimonialSwiper.tsx" showLineNumbers
+        {data.map((testimonial) => (
+      <SwiperSlide key={testimonial.name}>
+        <Testi
+            info={testimonial.info}
+            photo={testimonial.photo}
+            name={testimonial.name}
+            position={testimonial.position}
+        />
+       </SwiperSlide>
+        ))}
+ ```
  
  The `Testi` component represents an individual testimonial. It receives the testimonial's `info`, `photo`, `name`, and `position` as props and renders them accordingly. The component includes HTML elements and CSS classes to structure and style the testimonial content.
 
@@ -54,4 +97,4 @@ Here's how we made those changes:
 
 <br/>
 
-_Now, we have successfully understood how to [**add and display testimonials**](testimonials). Let's move on to the [**Internships**](internships) section_
+_Now that we have completed implementing [**Testimonials**](testimonials) section, let's move on to the next step of creating [**Internships**](internships) page._
