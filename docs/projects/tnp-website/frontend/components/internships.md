@@ -30,7 +30,7 @@ To add a company's information to the website, we need to edit the `data` array 
 
 4. Save the file. 
 
-5. Run `yard preview` on the terminal to see the changes made in your local environment.
+5. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
 ### Creating Company Card
 
@@ -82,9 +82,9 @@ Now that we have created `data` array, we need to create a card for each company
     ```
 6. Save the file. 
 
-7. Run `yard preview` on the terminal to see the changes made in your local environment.
+7. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
-**On executing the above steps, the individual car**ds look like this:
+**On executing the above steps, the individual cards look like this:**
 
 import cardImg from "../components/assets/companyCard.png";
 
@@ -145,7 +145,7 @@ In this step, we need to create a card to display all the company cards created 
     ```
 5. Save the file.
 
-6. Run `yard preview` on the terminal to see the changes made in your local environment.
+6. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
 **After completing the above steps, the Internship Companies card looks like this:**
 

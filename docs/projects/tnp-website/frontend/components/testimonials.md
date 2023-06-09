@@ -87,7 +87,7 @@ To add reviews on the website, we need to edit **"studentTestimonials"** or **"c
  
  The `Testi` component represents an individual testimonial. It receives the testimonial's `info`, `photo`, `name`, and `position` as props and renders them accordingly. The component includes HTML elements and CSS classes to structure and style the testimonial content.
 
-3. Save the file and run `yard preview` on the terminal to see the changes made in your local environment.
+3. Save the file and run `yarn dev` on the terminal to see the changes made in your local environment.
 
 <br />
 
