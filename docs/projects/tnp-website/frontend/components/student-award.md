@@ -6,7 +6,7 @@ sidebar_label: Student Award
 keywords: [astrojs, open-source, docs]
 ---
 
-The Student Award section aims at recognizing the contributions of the students and showcasing their achievements. This section is situated below the [**hero section**](hero) of [**TNP Home Page**](https://tnp.tcetmumbai.in/). It consists of two slides with description and image regarding the awards and achievements recieved by the students.  
+The Student Award section aims at recognizing the contributions of the students and showcasing their achievements. This section is situated below the [**hero section**](hero) of [**TNP Home Page**](https://tnp.tcetmumbai.in/). 
 
 ### Creating Achievement and Award Slides
 
@@ -52,7 +52,7 @@ In order to implement **Student Award Section**, we need to create react functio
 
 3. Two data arrays, `achievementSlideObj` and `awardSlideObj` are defined in the above component to store and edit data for achievement and award slides. 
  
-    ```jsx title="StudentAward.jsx" {2-5,9-11} showLineNubers
+    ```jsx title="StudentAward.jsx" {2-5,9-11} showLineNumbers
         const achievementSlideObj = [
             studentImg: //image comes here,
             achievementType: //define type of achievement,
@@ -95,7 +95,7 @@ In order to implement **Student Award Section**, we need to create react functio
    To understand more about JSX, refer the **[JSX documentation](https://legacy.reactjs.org/docs/introducing-jsx.html)** properly.
 :::
 
-5. Swiper Components by passing the JSX for achievements and award slides are defined in this step. This is done in the following way:
+5. Swiper Components by passing the JSX for achievements and award slides are defined in this step. **This is done in the following way:**
 
     ```jsx title="StudentAward.jsx" {8-14,18-24} showLineNumbers
         const StudentAward = () => {
