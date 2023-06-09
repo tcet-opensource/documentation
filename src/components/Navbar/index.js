@@ -5,7 +5,7 @@ const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false);
     const ref = useRef(null);
     return (
-        <div className="bg-[#07001D]">
+        <div className="bg-[#070419]">
             
             <div className="flex px-4 lg:px-20 pt-4 w-screen flex-row justify-between items-center">
                 {/* Logo  */}
@@ -14,7 +14,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Nav Links  */}
-                <div className="hidden md:block text-[#FCFCFD] flex items-center flex-row text-base font-light my-4">
+                <div className="hidden md:block text-[#FCFCFD] items-center flex-row text-base font-light my-4">
                     <a
                         href="*"
                         className="hover:no-underline hover:text-[#FCFCFD] mx-2 lg:mx-4 my-3"
@@ -108,7 +108,7 @@ const Navbar = () => {
 
             {/* Mobile Nav Bar  */}
             {navOpen && (<div class="transition duration-300">
-                    <ul class="font-medium text-white text-sm text-center bg-[#07001D] ">
+                    <ul class="font-medium text-white text-sm text-center bg-[#070419] ">
                         <li><a href="#" class="block px-2 py-2">Docs</a></li>
                         <li><a href="#" class="block px-2 py-2">Blogs</a></li>
                         <li><a href="#" class="block px-2 py-2">Live Projects</a></li>
