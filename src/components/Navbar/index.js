@@ -19,6 +19,10 @@ export const navLinks = [
     href: "/#cooking",
   },
   {
+    title: "About us",
+    href: "/#about",
+  },
+  {
     title: "Team",
     href: "/#team",
   },

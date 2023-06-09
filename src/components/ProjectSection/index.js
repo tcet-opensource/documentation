@@ -72,7 +72,7 @@ const ProjectSection = () => {
     },
   };
   return (
-    <div className="relative px-5  md:pt-10 xl:pt-20  bg-gradient-to-b from-[#01000A] to-[#261660]">
+    <section id="live" className="relative px-5  md:pt-10 xl:pt-20  bg-gradient-to-b from-[#01000A] to-[#261660]">
       <button className="inline-block px-3 bg-gray-700 md:mx-12 rounded-xl text-stone-50">
         Developed Projects
       </button>
@@ -153,7 +153,7 @@ const ProjectSection = () => {
         </div>
       </div>
       <img src="/img/ProjectSection/shadow.svg" />
-    </div>
+    </section>
   );
 };
 

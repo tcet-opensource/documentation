@@ -31,8 +31,9 @@ export default function Hero() {
           Cras massa lectus lacinia urna nec felis facilisi a <br />
           interdum. Neque ipsum diam pharetra eu sed.
         </p>
-        <button
-          className="group flex items-center justify-center text-white gap-x-2 p-2 pl-4 
+        <a
+        href="/#live"
+          className="group hover:no-underline hover:text-white flex items-center justify-center text-white gap-x-2 p-2 pl-4 
         md:mb-0 mb-3 shadow-1xl shadow-indigo-400 font-semibold rounded-full 
         bg-indigo-600 hover:scale-110 cursor-pointer hover:bg-indigo-700 duration-300
         active:bg-indigo-600 "
@@ -41,7 +42,7 @@ export default function Hero() {
           <div className="group-hover:bg-indigo-600 group-hover:rotate-[360deg] duration-300 bg-indigo-800 p-2 rounded-full">
             <img src={`/img/HeroImages/arrow-down.svg`} alt="arrow-down" />
           </div>
-        </button>
+        </a>
       </div>
       <img
         src={`/img/HeroImages/hero-section-left.svg`}

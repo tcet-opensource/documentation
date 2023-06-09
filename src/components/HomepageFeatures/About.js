@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 const About = () => {
   return (
-    <div className={clsx("", styles.aboutBackground)}>
+    <section id="about" className={clsx("", styles.aboutBackground)}>
       <div className="flex justify-center items-center w-[90%] m-auto text-slate-50 ">
         <div className="flex flex-col items-center gap-12 px-16 py-20 max-sm:px-0 max-sm:py-16 lg:flex-row 2xl:px-32 lg:py-40">
           <div>
@@ -57,7 +57,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

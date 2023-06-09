@@ -44,7 +44,7 @@ const UnderDevelopmentProjects = () => {
     });
 
     return (
-        <div className="overflow-hidden bg-[url('/img/under_development_projects_bg.png')] bg-no-repeat bg-cover bg-center min-h-screen p-12 flex flex-col">
+        <section id="cooking" className="overflow-hidden bg-[url('/img/under_development_projects_bg.png')] bg-no-repeat bg-cover bg-center min-h-screen p-12 flex flex-col">
             <h1 className="text-white font-semibold text-7xl">Under Development Projects</h1>
             <h6 className="text-white font-normal text-lg mt-4">These are some projects under development</h6>
             <div className="flex items-center justify-center h-full grow px-0 lg:px-24 ">
@@ -90,7 +90,7 @@ const UnderDevelopmentProjects = () => {
                     </div>
                 </Swiper>
             </div>
-        </div>
+        </section>
     );
 };
 
