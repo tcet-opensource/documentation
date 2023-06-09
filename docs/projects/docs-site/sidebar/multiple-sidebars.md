@@ -174,7 +174,11 @@ _This marks the end of the project documentation on configuring the sidebar of [
 
 **Here's a snapshot of how our sidebar looks after meeting all the requirements.**
 
-![Sidebar](./assets/sidebar.png#center)
+import heroImg from "./assets/sidebar.png";
+
+<img src={heroImg} style={{ border: "2px solid gray", display: "block", margin: "0 auto" }} />
+
+<br />
 
 :::info
 In the upcoming section, we will delve into the process of configuring the `docusaurus.config.js` file, which is crucial for seamlessly integrating our previously created [**sidebar**](sidebar.md) with the [**navbar**](../navbar/navbar.md) of our website built using Docusaurus.
