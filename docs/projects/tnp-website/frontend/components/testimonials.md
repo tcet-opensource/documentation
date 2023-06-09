@@ -8,13 +8,13 @@ keywords: [astrojs, open-source, docs]
 Introducing Testimonials of TNP Website!
 
 The **Student Testimonials** and **Company Testimonials** section of the website provides you feedbacks and experiences shared by the students and the companies visiting in TCET. 
-It is a responsive and touch-enabled slider which includes data like feedback, student's image or company logo, name and position. It supports slide touch gestures and is situated at the bottom of the [Home Page](https://tnp.tcetmumbai.in/) of TNP website. 
+It is a responsive and touch-enabled slider which includes data like feedback, student's image or company logo, name and position. It supports slide touch gestures and is situated at the bottom of the **[Home Page](https://tnp.tcetmumbai.in/)** of TNP website. 
 
 ### Adding Testimonials
 
 To add reviews on the website, we need to edit **"studentTestimonials"** or **"companyTestimonial"** array in `index.astro` file. Both of these array contain multiple testimonial objects of the type **TestimonialType**.
 
-Here's how we made those changes: 
+**Here's how we made those changes: **
 
 1. Opening `index.astro` file in our projects root directory.
 
@@ -89,17 +89,19 @@ Here's how we made those changes:
 
 3. Save the file and run `yard preview` on the terminal to see the changes made in your local environment.
 
-After following the above steps, the **Testimonials** section looks like this:
+<br />
+
+**After following the above steps, the Testimonials section looks like this:**
 
 import testiImg from "../components/assets/testimonials.png";
 
-<img src={testiImg} />
+<img src={testiImg} style={{ border: "2px solid gray" }} />
 
 <br />
 <br />
 
 :::info
- Check out the official documentation for more information on [Swiper.js](https://swiperjs.com/get-started)
+ Check out the official documentation for more information on **[Swiper.js](https://swiperjs.com/get-started)**
 :::
 
 <br/>

@@ -12,7 +12,7 @@ The **Internship** page of the website gives you information on various corporat
 
 To add a company's information to the website, we need to edit the `data` array in the **InternshipCompanies.tsx** file. The `data` array is a collection of company information where each item represents a company and contains the name and image of the company's logo. 
 
-Here's how those changes were made:
+**Here's how those changes were made:**
 
 1. Opening **InternshipCompanies.tsx** file in our projects root directory. 
 
@@ -36,7 +36,7 @@ Here's how those changes were made:
 
 Now that we have created `data` array, we need to create a card for each company featuring the company name and logo. 
 
-Here's how we proceeded with the steps:
+**Here's how we proceeded with the steps:**
 
 1. Opening `CompanyCard.tsx` file. 
 
@@ -84,11 +84,11 @@ Here's how we proceeded with the steps:
 
 7. Run `yard preview` on the terminal to see the changes made in your local environment.
 
-On executing the above steps, the individual cards look like this:
+**On executing the above steps, the individual car**ds look like this:
 
 import cardImg from "../components/assets/companyCard.png";
 
-<img src={cardImg} />
+<img src={cardImg} style={{ border: "2px solid gray" }} />
 
 <br />
 <br />
@@ -147,11 +147,11 @@ In this step, we need to create a card to display all the company cards created 
 
 6. Run `yard preview` on the terminal to see the changes made in your local environment.
 
-After completing the above steps, the **Internship Companies** card looks like this:
+**After completing the above steps, the Internship Companies card looks like this:**
 
 import CardImg from "../components/assets/Card.png";
 
-<img src={CardImg} />
+<img src={CardImg} style={{ border: "2px solid gray" }} />
 
 <br/> <br/>
 
