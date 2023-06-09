@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 const About = () => {
   return (
     <div className={clsx("", styles.aboutBackground)}>
-      <div className="flex justify-center items-center w-[90%] m-auto">
+      <div className="flex justify-center items-center w-[90%] m-auto text-slate-50 ">
         <div className="flex flex-col items-center gap-12 px-16 py-20 max-sm:px-0 max-sm:py-16 lg:flex-row 2xl:px-32 lg:py-40">
           <div>
             <img src={img} alt="img" />
@@ -17,7 +17,7 @@ const About = () => {
               <div className="bg-[#1D2939] w-max rounded-3xl py-1 px-2.5 ">About</div>
               <div
                 className={clsx(
-                  "md:text-4xl w-full text-[2rem] text-start lg:w-[110%] mt-2",
+                  "md:text-4xl w-full text-[2rem] text-start lg:w-[110%] mt-2  ",
                   styles.fontSora
                 )}
               >
