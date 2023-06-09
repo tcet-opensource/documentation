@@ -12,39 +12,22 @@ import Teams from "../components/Teams/teams";
 import ProjectSection from "../components/ProjectSection";
 import Footer from "../components/Footer";
 import styles from "./index.module.css";
-import About from "../components/HomepageFeatures/About";
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/about-tcetopensource"
-          >
-            Start Reading 📖
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
+import About from "../components/About";
+import "../css/custom.css"
 export default function Home() {
   // const { siteConfig } = useDocusaurusContext();
   return (
-    <>
+    <div className="font-sans" >
       <Head>
         <meta property="og:image" content="/img/logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
 
       <Navbar />
       <Hero />
-      <main className=" ">
+      <main className="">
         {/* <HomepageFeatures /> */}
         <ProjectSection />
         <UnderDevelopmentProjects />
@@ -52,6 +35,6 @@ export default function Home() {
         <Teams />
         <Footer/>
       </main>
-    </>
+    </div>
   );
 }

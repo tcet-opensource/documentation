@@ -72,12 +72,16 @@ const ProjectSection = () => {
     },
   };
   return (
-    <div className="relative px-5  md:pt-10 xl:pt-20  bg-gradient-to-b from-[#01000A] to-[#261660]">
-      <button className="inline-block px-2 bg-gray-700 md:mx-12 rounded-xl">
+    <section id="live" className="relative px-5  pt-10 xl:pt-20"
+    style={{
+      background: "linear-gradient(180deg, #000000 0%, #291A60 78.96%, #060314 100%)"
+    }}
+    >
+      <button className="inline-block px-3 bg-gray-700 md:mx-12 rounded-xl text-slate-50">
         Developed Projects
       </button>
       <div className="flex flex-col my-3 md:gap-3 md:mx-12">
-        <div className="text-xl font-semibold md:text-5xl">{nameDes.name}</div>
+        <div className="text-3xl font-semibold md:text-5xl text-stone-50 font-title">{nameDes.name}</div>
         <div className="text-gray-400 ">{nameDes.desc}</div>
       </div>
       <div className="md:grid md:grid-cols-10 items-center mt-4 lg:mt-8">
@@ -140,7 +144,7 @@ const ProjectSection = () => {
           >
             {projects.map((projectInfo) => (
               <SwiperSlide className="swiper-vertical">
-                <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-white ">
                   {projectInfo.name}
                 </span>
                 <img
@@ -153,7 +157,7 @@ const ProjectSection = () => {
         </div>
       </div>
       <img src="/img/ProjectSection/shadow.svg" />
-    </div>
+    </section>
   );
 };
 

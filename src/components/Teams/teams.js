@@ -82,7 +82,7 @@ function Teams() {
 
   const card = TeamsCard.map((data) => {
     return (
-      <div
+      <section id="team"
         className="lg:h-64 md:h-60 h-fit lg:w-[40%] max-w-xl overflow-hidden text-white flex flex-col md:flex-row lg:flex-wrap lg:rounded-2xl md:rounded-xl rounded-lg m-6 "
         style={{
           backgroundImage: `linear-gradient(180deg, ${data.gradientStart} 0%, ${data.gradientEnd} 100%)`,
@@ -99,13 +99,13 @@ function Teams() {
           <div className="border w-full my-3 bg-[#344054]" />
           <div className="text-base lg:text-sm xl:text-base text-[#D0D5DD]">{data.description}</div>
         </div>
-      </div>
+      </section>
     );
   });
 
   return (
     <div className="flex flex-col items-center justify-center bg-[#07001D]">
-      <h1 className="font-semibold text-5xl mt-16 text-[#FCFCFD]">Teams</h1>
+      <h1 className="font-semibold text-5xl mt-16 text-[#FCFCFD] font-title ">Teams</h1>
       <div className="w-screen lg:px-20">
         <div className="flex flex-row flex-wrap my-16 justify-around">
           {card}
