@@ -5,6 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 // import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
 // import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Navbar from "../components/Navbar";
 import Hero from "../components/HomepageFeatures/Hero";
 import UnderDevelopmentProjects from "../components/UnderDevelopmentProjects";
 import Teams from "../components/Teams/teams";
@@ -41,8 +42,7 @@ export default function Home() {
         <meta property="og:image" content="/img/logo.png" />
       </Head>
 
-      {/* <HomepageFeatures /> */}
-
+      <Navbar />
       <Hero />
       <main className=" ">
         {/* <HomepageFeatures /> */}
