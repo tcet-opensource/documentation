@@ -6,7 +6,7 @@ sidebar_label: Student Award
 keywords: [astrojs, open-source, docs]
 ---
 
-The Student Award section aims at recognizing the contributions of the students and showcasing their achievements. This section is situated below the [**hero section**](hero) of [**TNP Home Page**](https://tnp.tcetmumbai.in/). 
+The Student Award section aims at recognizing the contributions of the students and showcasing their achievements. This section is situated below the [**Hero Section**](hero) of [**TNP Home Page**](https://tnp.tcetmumbai.in/). 
 
 ### Creating Achievement and Award Slides
 
@@ -133,7 +133,7 @@ In order to implement **Student Award Section**, we need to create react functio
 
 8. Run `yarn dev` to see the changes in your local system.
 
-### The above steps results into the following output:
+<h3>The above steps results into the following output:</h3>
 
 import awardImg from "../components/assets/Awards.png";
 

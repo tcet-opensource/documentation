@@ -129,7 +129,7 @@ Each event section will contain **logo**, **name**, **description** and `Industr
 
 8. Save your progress. 
 
-### This is what the page's hero section looks like:
+<h3>This is what the page's hero section looks like:</h3>
 
 import industryheroImg from "../components/assets/industryhero.png";
 
@@ -221,13 +221,12 @@ In order to create slides of images, we need to create a react functional compon
 9. Run `yarn dev` to see the changes in your local environment.
 
 
-### Here's the event section with the Swiper component:
- 
+<h3>Here's the event section with the Swiper component:</h3>
+
+
 import industryImg from "../components/assets/industryInteraction.png";
 
 <img src={industryImg} style={{border: "2px solid grey"}}/>
-
 <br /><br />
 
-
-Congratulations, we have successfully implemented the [**Industry Interaction**](industry-interaction) page. Let's continue to find out how we implemented the [**Event Page**](student-award) of the [**TNP website**](https://tnp.tcetmumbai.in/). 
+_Congratulations, we have successfully implemented the [**Industry Interaction**](industry-interaction) page. Let's continue to find out how we implemented the [**Event Page**](student-award) of the [**TNP website**](https://tnp.tcetmumbai.in/). _
