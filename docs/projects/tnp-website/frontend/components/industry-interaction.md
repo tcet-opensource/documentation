@@ -55,10 +55,10 @@ To set up a basic layout of the page and to create a section that would briefly 
     ```jsx title="industry-interaction.astro" {2-7} showLineNumbers
         <div class="w-full flex flex-col-reverse md:flex-row">
             <div class="h-full xl:w-1/2 md:w-1/2 sm:w-full p-3">
-            <p class="text-4xl 2xl:text-6xl font-title mb-4">Industry Interaction</p>
-            <p class="text-slate-600">
-            // description text
-            </p>
+                <p class="text-4xl 2xl:text-6xl font-title mb-4">Industry Interaction</p>
+                <p class="text-slate-600">
+                // description text
+                </p>
             </div>
             // other elements
         </div>
