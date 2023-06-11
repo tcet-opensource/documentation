@@ -26,21 +26,22 @@ The **HugeEvents** Component, defined in the `index.astro` file, is a flexible a
 
     ```jsx title="index.astro" {4-5,8,11-14} showLineNumbers
     <div class="flex flex-col md:flex-row md:justify-center gap-y-4">
-    <div class="flex flex-col md:w-1/2">
-        <div class="py-3 pl-3 text-3xl font-title bg-blue-50 rounded-lg text-blue-600">
-        <!-- Event name goes here -->
-        Hacktoberfest - GDSC-TCET
+        <div class="flex flex-col md:w-1/2">
+            <div class="py-3 pl-3 text-3xl font-title bg-blue-50 rounded-lg text-blue-600">
+                <!-- Event name goes here -->
+                Hacktoberfest - GDSC-TCET
+            </div>
+            <div>
+                <img class="mt-4 object-contain w-full rounded-t-xl" src="../../events/pic_1.png" alt="pic_1">  
+            </div>
+            <div class="bg-blue-100 text-slate-700 font-Inter text-sm sm:text-base rounded-b-xl p-4">
+                <!-- Event description goes here -->
+                College level Hacktoberfest event was conducted to encourage students to
+                contribute to open source projects and to learn about the open source
+                community.
+            </div>
         </div>
-        <div>
-        <img class="mt-4 object-contain w-full rounded-t-xl" src="../../events/pic_1.png" alt="pic_1">
-        </div>
-        <div class="bg-blue-100 text-slate-700 font-Inter text-sm sm:text-base rounded-b-xl p-4">
-        <!-- Event description goes here -->
-        College level Hacktoberfest event was conducted to encourage students to
-        contribute to open source projects and to learn about the open source
-        community.
-        </div>
-    </div>
+        <!--Other Huge Events--> 
     </div>
     ```
 
@@ -76,26 +77,26 @@ It was implemented in a similar way as the **[Huge Events Section](#huge-events-
 
     ```jsx title="index.astro" {3-4,7-8,14-18,19} showLineNumbers
     <div class="flex flex-col justify-center align-middle sm:w-2/6">
-    <div class="font-semibold text-2xl xl:text-3xl font-Inter pb-2 uppercase">
-        <!-- Title of the student bodies section -->
-        professional student bodies of training and placement cell
-    </div>
-    <div class="text-slate-700 font-Inter text-lg">
-        <!-- Description of the student bodies section -->
-        Working together for a better Future!!
-    </div>
+        <div class="font-semibold text-2xl xl:text-3xl font-Inter pb-2 uppercase">
+            <!-- Title of the student bodies section -->
+            professional student bodies of training and placement cell
+        </div>
+        <div class="text-slate-700 font-Inter text-lg">
+            <!-- Description of the student bodies section -->
+            Working together for a better Future!!
+        </div>
     </div>
     <div class="md:flex-col sm:w-3/5 mt-4">
-    <!-- Student body section 1 -->
-    <div class="flex justify-left xl:justify-center gap-x-4 items-center bg-gray-50 rounded-lg p-6">
-        <img 
-            class="w-10 object-contain" 
-            src="../../logos/tcet_shastra.png" 
-            alt="tcet_shastra" 
-        />
-        <span class="text-lg">TCET Shastra Coding Club</span>
-    </div>
-    <!-- More student body sections can be added here -->
+        <!-- Student body section 1 -->
+        <div class="flex justify-left xl:justify-center gap-x-4 items-center bg-gray-50 rounded-lg p-6">
+            <img 
+                class="w-10 object-contain" 
+                src="../../logos/tcet_shastra.png" 
+                alt="tcet_shastra" 
+            />
+            <span class="text-lg">TCET Shastra Coding Club</span>
+        </div>
+        <!-- More student body sections can be added here -->
     </div>
     ```
 
@@ -161,22 +162,24 @@ While implementing **Hero Section**, we wanted to add a Carousel Section where w
     ```jsx title="index.astro" {3,7,10,13-16} showLineNumbers
     <div class="grid lg:grid-rows-2 lg:grid-cols-3 sm:grid-rows-3 sm:grid-cols-2 grid-cols-1 grid-rows-6 gap-4">
         <div>
-        <Carousel client:load />
+            <Carousel client:load />
         </div>
         <div class="flex flex-col gap-y-3 p-4 rounded-2xl border border-[#CCC6FF] bg-[#EEECFF]">
-        <div class="w-14 h-14 bg-[#A488F0] p-4 flex items-center justify-center rounded-full">
-            <img src="/misc/stacks.svg" alt="stack-of-books-icon" />
+            <div class="w-14 h-14 bg-[#A488F0] p-4 flex items-center justify-center rounded-full">
+                <img src="/misc/stacks.svg" alt="stack-of-books-icon" />
+            </div>
+            <h2 class="lg:text-2xl md:text-2xl text-xl font-title font-normal">
+                Aptitude Training
+            </h2>
+            <p class="lg:text-base md:text-sm text-[#475467] text-sm">
+                The main objective of this program is to make students employable by
+                providing them training on aptitude skills and soft skills. Under this,
+                we conduct various mock activities like Aptitude test, Group discussion
+                and personal interviews and more!
+            </p>
         </div>
-        <h2 class="lg:text-2xl md:text-2xl text-xl font-title font-normal">
-            Aptitude Training
-        </h2>
-        <p class="lg:text-base md:text-sm text-[#475467] text-sm">
-            The main objective of this program is to make students employable by
-            providing them training on aptitude skills and soft skills. Under this,
-            we conduct various mock activities like Aptitude test, Group discussion
-            and personal interviews and more!
-        </p>
-        </div>
+        <!-- Other activites added -->
+    </div>
     ```
 
 :::tip
