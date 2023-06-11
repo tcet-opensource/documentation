@@ -177,6 +177,7 @@ While implementing **Hero Section**, we wanted to add a Carousel Section where w
             and personal interviews and more!
         </p>
         </div>
+    ```
 
 :::tip
 Similar steps were carried out to add multiple **[Training Activities](#hero-section)**. 
