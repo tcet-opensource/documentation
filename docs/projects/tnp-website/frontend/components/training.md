@@ -3,7 +3,10 @@ title: Training
 id: training
 description: Training Component in T&P Website
 sidebar_label: Training
+keyword: [training, professional-bodies, huge-events]
 ---
+
+The Training page on our website showcases a variety of training activities conducted by **Training and Placement Cell** along with professional student bodies under the **T&P department**. It highlights the initiatives aimed at **enhancing the skills** and **knowledge** of students, preparing them for future careers. Additionally, the page features major events organized by these student bodies, providing valuable opportunities for **networking** and **career development**.
 
 ## Huge Events Section
 
