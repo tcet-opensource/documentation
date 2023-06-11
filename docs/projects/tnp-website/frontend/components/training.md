@@ -195,4 +195,4 @@ After completing the above steps, we successfully incorporated the **Hero** sect
 
 <br />
 
-_With the successful implementation of the provided code, we have successfully incorporated the **[Training](./training.md)** page into our website. Moving forward, let's now explore how we integrated the **[Placement](./placement.md)** page into the **[T&P Website](https://tnp.tcetmumbai.in)**_
+_With the successful implementation of the provided code, we have successfully incorporated the **[Training](training)** page into our website. Moving forward, let's now explore how we integrated the **[Placement](placement)** page into the **[T&P Website](https://tnp.tcetmumbai.in)**_
