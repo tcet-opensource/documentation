@@ -64,7 +64,7 @@ The website provides updated information regarding training, internships, and pl
 
 ### Our Approach
 
-**Here is the set of approach we kept in designing our website:**
+**Here is the set of approach we kept in mind while designing our website:**
  
 #### 1. Header & Navbar Redesigned
  * Header and Navbar are supposed to be easy to use and are very important for User Experience (UX). 
