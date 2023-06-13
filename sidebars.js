@@ -89,14 +89,29 @@ const sidebars =
             id: 'projects/tnp-website/about-tnp-website',
           },
           items: 
-          [ 
+          [
+            'projects/tnp-website/objectives',
+            'projects/tnp-website/approach',
+            {
+              type: 'category',
+              label: 'Getting Started',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tnp-website/getting-started',
+              },
+              items:
+              [
+                'projects/tnp-website/getting-started/directory-structure',
+              ],
+            },
             {
               type: 'category',
               label: 'Frontend',
               link:
               {
                 type: 'doc',
-                id: 'projects/tnp-website/frontend/getting-started',
+                id: 'projects/tnp-website/frontend/tech-stacks',
               },
               items: 
               [
