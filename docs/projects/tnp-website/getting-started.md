@@ -3,12 +3,11 @@ title: Getting Started
 id: getting-started
 description: Setup the project on your local machine
 sidebar_label: Getting Started
+keywords: [astro, install, local]
 ---
 
 :::info 
-
 The TCET Training and Placment page is built using AstroJS, an all-in-one web framework designed for speed.
-
 :::
 
 ### Steps to run the site on your local system: 
@@ -24,7 +23,7 @@ Follow these steps to install git in your computer.
 Open Git Bash in any folder and paste the following command
 
 ```bash
-git clone -b experiment https://github.com/tcet-opensource/documentation.git
+git clone https://github.com/tcet-opensource/tnp-website
 ```
 
 ### Install NodeJS
@@ -34,9 +33,7 @@ git clone -b experiment https://github.com/tcet-opensource/documentation.git
 3. Download the 64-bit .msi version. Follow the steps and install NodeJS.
 
 :::note
-
 It is important to have NodeJS in your system
-
 :::
 
 ### Open the folder in VS Code
@@ -49,13 +46,6 @@ Install yarn globally
 
 ```bash
 npm install -g yarn
-```
-
-### Run the site live locally + making changes
-
-You can run the site by running the following command in VC Code terminal.
-```bash
-npm run start
 ```
 
 You can make changes to your respective files and changes will be shown once you have saved the file.
