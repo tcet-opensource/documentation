@@ -28,7 +28,7 @@ export const navLinks = [
   },
   {
     title: "Contact",
-    href: "/#contact",
+    href: "mailto:opensource@tcetmumbai.in",
   },
 ];
 
