@@ -7,7 +7,7 @@ import img from "../../assets/image.png";
 const About = () => {
   return (
     <section id="about" className="bg-[#07001D] ">
-      <div className="flex justify-center items-center w-[90%] m-auto text-slate-50 ">
+      <div className="flex justify-center items-center w-[90%] px-5 m-auto text-slate-50 ">
         <div className="flex flex-col items-center gap-12 px-16 py-20 max-sm:px-0 max-sm:py-16 lg:flex-row 2xl:px-32 lg:py-40">
           <div>
             <img src={img} alt="img" />
@@ -31,9 +31,9 @@ const About = () => {
               launch our students into the real world where cut-throat
               competition is the order of the day.
             </div>
-            <div className="flex items-start justify-between w-full">
-              <div className="flex flex-col items-start p-3 w-[45%] gap-2 border border-[#60548A] bg-[#302261] rounded-xl">
-                <div className=" leading-9 text-3xl font-title">
+            <div className="flex items-start justify-between gap-4 w-full flex-wrap">
+              <div className="flex flex-col items-start p-3 w-max flex-1 gap-2 border border-[#60548A] bg-[#302261] rounded-xl">
+                <div className=" leading-9 text-3xl font-title w-max">
                   <CountUp start={0} end={852} />+
                 </div>
                 <div>
@@ -42,8 +42,8 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-start p-3 w-[45%] gap-2 border border-[#60548A] bg-[#302261] rounded-xl">
-                <div className=" leading-9 text-3xl font-title ">
+              <div className="flex flex-col items-start p-3 w-max flex-1 gap-2 border border-[#60548A] bg-[#302261] rounded-xl">
+                <div className=" leading-9 text-3xl font-title w-max ">
                   <CountUp start={0} end={7400} />+
                 </div>
                 <div>

@@ -9,27 +9,25 @@ const ProjectCard = ({ data }) => {
           <div className={styles.inner_box_image}>
             <img
               src={data.image}
-              loading="eager"
+              loading="eager"              
               alt="Project Image"
               className="w-full h-full object-cover rounded-t-2xl"
             />
           </div>
-          <div className="px-4 pt-6 pb-16">
-            <h6 className="text-white font-semibold text-lg">{data.title}</h6>
-            <p className="text-slate-300 font-medium text-xs md:text-sm  mt-2">
+          <div className="px-4 pt-6 pb-16 ">
+            <h6 className="text-white font-semibold text-xl lg:text-2xl ">{data.title}</h6>
+            <p className="text-slate-300  text-xs md:text-sm  mt-2">
               {data.description}
             </p>
           </div>
         </div>
         <div className="flex text-xs gap-2 md:text-sm font-medium items-center justify-around -mt-5 ">
-          <button
-            className="bg-lime-100 text-lime-950 py-1  flex items-center px-4 rounded-full"
+          <a
+          href={data.github}
+            className="bg-violet-800 text-lime-100 hover:text-lime-100 hover:bg-violet-600 hover:no-underline py-1  flex items-center px-4 rounded-full"
           >
-            Button1
-          </button>
-          <button className="bg-white text-black py-1  flex items-center px-4 rounded-full">
-            Button2
-          </button>
+            Github
+          </a>
         </div>
       </div>
     </div>

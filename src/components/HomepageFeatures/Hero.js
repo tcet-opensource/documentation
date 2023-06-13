@@ -51,7 +51,7 @@ export default function Hero() {
         data-speed="0.15"
         alt="hero-section-left"
       />
-      <img src={`/img/HeroImages/hero-section-center.svg`} className="mx-auto parallax lg:w-2/4" data-speed="0.2" alt="hero-section-center" />
+      <img src={`/img/HeroImages/hero-section-center.svg`} className="mx-auto pointer-events-none -z-10  parallax lg:w-2/4" data-speed="0.2" alt="hero-section-center" />
       <img
         src={`/img/HeroImages/hero-section-right.svg`}
         className="absolute lg:scale-100 sm:scale-75 scale-50 origin-right md:top-56 sm:top-56 top-36 right-0 "

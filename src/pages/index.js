@@ -11,7 +11,7 @@ import UnderDevelopmentProjects from "../components/UnderDevelopmentProjects";
 import Teams from "../components/Teams/teams";
 import ProjectSection from "../components/ProjectSection";
 import Footer from "../components/Footer";
-import styles from "./index.module.css";
+// import styles from "./index.module.css";
 import About from "../components/About";
 import "../css/custom.css"
 export default function Home() {

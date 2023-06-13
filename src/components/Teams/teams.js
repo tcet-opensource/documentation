@@ -104,9 +104,9 @@ function Teams() {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center bg-[#07001D]">
+    <div className="flex flex-col items-center justify-center bg-[#07001D] px-5 ">
       <h1 className="font-semibold text-5xl mt-16 text-[#FCFCFD] font-title ">Teams</h1>
-      <div className="w-screen lg:px-20">
+      <div className="lg:px-20">
         <div className="flex flex-row flex-wrap my-16 justify-around">
           {card}
         </div>
