@@ -115,7 +115,33 @@ const sidebars =
               },
               items: 
               [
-                'projects/tnp-website/frontend/astro'
+                {
+                  type: 'category',
+                  label: 'Components',
+                  link:
+                  {
+                    type: 'doc',
+                    id: 'projects/tnp-website/frontend/components/components',
+                  },
+                  items:
+                  [
+                    'projects/tnp-website/frontend/components/header',
+                    'projects/tnp-website/frontend/components/hero',
+                    'projects/tnp-website/frontend/components/training',
+                    'projects/tnp-website/frontend/components/placement',
+                    'projects/tnp-website/frontend/components/top-placed-students',
+                    'projects/tnp-website/frontend/components/placed-students',
+                    'projects/tnp-website/frontend/components/student-award',
+                    'projects/tnp-website/frontend/components/testimonials',
+                    'projects/tnp-website/frontend/components/internships',
+                    'projects/tnp-website/frontend/components/industry-interaction',
+                    'projects/tnp-website/frontend/components/event-page',
+                    'projects/tnp-website/frontend/components/companies',
+                    'projects/tnp-website/frontend/components/top-recruiters',
+                    'projects/tnp-website/frontend/components/about-us',
+                    'projects/tnp-website/frontend/components/footer',
+                  ],
+                },
               ],
             },    
           ],
