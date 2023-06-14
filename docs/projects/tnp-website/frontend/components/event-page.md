@@ -105,11 +105,12 @@ import Hero_img from "/docs/projects/tnp-website/assets/Hero_img.png";
     ];
     ```
 
-3. Make sure you have the testimonial image file available and it's location. Within the function `Testimonial`, insert or edit the following code snippet 
+3. Make sure you have the testimonial image file available and it's location. Within the function `Testimonial`, insert or edit the following code snippet.
 
-    ```jsx title="Testimonial.jsx" {29} showLineNumbers
-    <img src="/misc/purpleTesti.svg" className="h-30" />
+    ```jsx title="Testimonial.jsx" {1} showLineNumbers
+        <img src="/misc/purpleTesti.svg" className="h-30" />
     ```
+
 This code snippet adds an image element to the `testimonial`, `img src` displaying the image location inside the `" "` in the svg format.
 
 4. The `h-30` class sets the height of the image to 30 units. You can adjust the height by modifying the class or using inline styles.
