@@ -90,21 +90,8 @@ const sidebars =
           },
           items: 
           [
-            'projects/tnp-website/objectives',
-            'projects/tnp-website/approach',
-            {
-              type: 'category',
-              label: 'Getting Started',
-              link:
-              {
-                type: 'doc',
-                id: 'projects/tnp-website/getting-started',
-              },
-              items:
-              [
-                'projects/tnp-website/getting-started/directory-structure',
-              ],
-            },
+            'projects/tnp-website/getting-started/directory-structure',
+            'projects/tnp-website/getting-started',
             {
               type: 'category',
               label: 'Frontend',
