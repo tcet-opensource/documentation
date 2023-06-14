@@ -51,7 +51,7 @@ The **HugeEvents** Component, defined in the `index.astro` file, is a flexible a
 Similar steps were carried out for multiple **[Huge Events](#huge-events-section)**. 
 ::: 
 
-import HugeEvents from "./assets/HugeEvents.png";
+import HugeEvents from "/docs/projects/tnp-website/assets/HugeEvents.png";
 
 After completing the above steps, we successfully incorporated the **Huge Events** section in our website. **You can see the snapshot below:**
 
@@ -104,7 +104,7 @@ It was implemented in a similar way as the **[Huge Events Section](#huge-events-
 Similar steps were carried out to add multiple **[Professional Student Bodies](#professional-bodies-section)**. 
 ::: 
 
-import ProfessionalBodies from "./assets/ProfessionalBodies.png";
+import ProfessionalBodies from "/docs/projects/tnp-website/assets/ProfessionalBodies.png";
 
 After completing the above steps, we successfully incorporated the **Professional Bodies** section in our website. **You can see the snapshot below:**
 
@@ -186,7 +186,7 @@ While implementing **Hero Section**, we wanted to add a Carousel Section where w
 Similar steps were carried out to add multiple **[Training Activities](#hero-section)**. 
 ::: 
 
-import HeroTraining from "./assets/HeroTraining.png";
+import HeroTraining from "/docs/projects/tnp-website/assets/HeroTraining.png";
 
 After completing the above steps, we successfully incorporated the **Hero** section in our website. **You can see the snapshot below:**
 

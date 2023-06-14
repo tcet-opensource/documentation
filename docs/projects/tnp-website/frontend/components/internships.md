@@ -86,7 +86,7 @@ Now that we have created `data` array, we need to create a card for each company
 
 **On executing the above steps, the individual cards look like this:**
 
-import cardImg from "../components/assets/companyCard.png";
+import cardImg from "/docs/projects/tnp-website/assets/companyCard.png";
 
 <img src={cardImg} style={{ border: "2px solid gray" }} />
 
@@ -149,7 +149,7 @@ In this step, we need to create a card to display all the company cards created 
 
 **After completing the above steps, the Internship Companies card looks like this:**
 
-import CardImg from "../components/assets/Card.png";
+import CardImg from "/docs/projects/tnp-website/assets/industryhero.png";
 
 <img src={CardImg} style={{ border: "2px solid gray" }} />
 

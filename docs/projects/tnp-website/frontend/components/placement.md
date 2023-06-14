@@ -83,7 +83,7 @@ The Placement Hero Section tell us about the placements scenarios in TCET, and a
     Similar steps were carried out for multiple **[CountUp Components](#placement-hero-section)**. 
     ::: 
 
-import PlacementHero from "./assets/PlacementHero.png";
+import PlacementHero from "/docs/projects/tnp-website/assets/PlacementHero.png";
 
 After completing the above steps, we successfully implemented the **Hero** section of Placements in our website. **You can see the snapshot below:**
 
@@ -100,10 +100,10 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem'
 import styles from '/src/components/HomepageFeatures/styles.module.css';
 
-import SuperDream from "./assets/SuperDream.png";
-import Dream from "./assets/Dream.png";
-import Normal from "./assets/Normal.png";
-import Core from "./assets/Core.png";
+import SuperDream from "/docs/projects/tnp-website/assets/SuperDream.png";
+import Dream from "/docs/projects/tnp-website/assets/Dream.png";
+import Normal from "/docs/projects/tnp-website/assets/Normal.png";
+import Core from "/docs/projects/tnp-website/assets/Core.png";
 
 <Tabs>
   <TabItem value="Super Dream Companies" attributes={{className: styles.unique}}>

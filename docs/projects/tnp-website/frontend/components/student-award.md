@@ -135,7 +135,7 @@ In order to implement **Student Award Section**, we need to create react functio
 
 <h3>The above steps results into the following output:</h3>
 
-import awardImg from "../components/assets/Awards.png";
+import awardImg from "/docs/projects/tnp-website/assets/Awards.png";
 
 <img src={awardImg} style={{border: "2px solid grey"}} />
 

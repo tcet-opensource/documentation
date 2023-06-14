@@ -131,7 +131,7 @@ Each event section will contain **logo**, **name**, **description** and `Industr
 
 <h3>This is what the page's hero section looks like:</h3>
 
-import industryheroImg from "../components/assets/industryhero.png";
+import industryheroImg from "/docs/projects/tnp-website/assets/industryhero.png";
 
 
 <img src={industryheroImg} style={{border: "2px solid grey"}}/>
@@ -224,7 +224,7 @@ In order to create slides of images, we need to create a react functional compon
 <h3>Here's the event section with the Swiper component:</h3>
 
 
-import industryImg from "../components/assets/industryInteraction.png";
+import industryImg from "/docs/projects/tnp-website/assets/industryInteraction.png";
 
 <img src={industryImg} style={{border: "2px solid grey"}}/>
 <br /><br />

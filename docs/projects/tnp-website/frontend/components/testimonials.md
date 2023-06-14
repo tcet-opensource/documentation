@@ -93,7 +93,7 @@ To add reviews on the website, we need to edit **"studentTestimonials"** or **"c
 
 **After following the above steps, the Testimonials section looks like this:**
 
-import testiImg from "../components/assets/testimonials.png";
+import testiImg from "/docs/projects/tnp-website/assets/testimonials.png";
 
 <img src={testiImg} style={{ border: "2px solid gray" }} />
 
