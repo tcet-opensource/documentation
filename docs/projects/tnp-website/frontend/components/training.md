@@ -67,7 +67,7 @@ This section showcases the **professional student bodies** of the Training and P
 
 It was implemented in a similar way as the **[Huge Events Section](#huge-events-section)**. **Lets have a look at the changes that were made to achieve this.**
 
-1. Opeening `index.astro` file for _Professional Bodies Section_.
+1. Opening `index.astro` file for _Professional Bodies Section_.
 
 2. The first `<div>` container contains the main heading of the section.
 
