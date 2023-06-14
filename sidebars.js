@@ -90,7 +90,7 @@ const sidebars =
           },
           items: 
           [
-            'projects/tnp-website/getting-started/directory-structure',
+            'projects/tnp-website/directory-structure',
             'projects/tnp-website/getting-started',
             {
               type: 'category',
