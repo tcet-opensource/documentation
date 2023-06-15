@@ -90,7 +90,7 @@ The **Event** page of the website gives you information about various training a
 
 **On executing the above steps, the individual cards look like this:**
 
-import CompanyCard_img from "F:/documentation/docs/projects/tnp-website/frontend/components/assets/Hero_img.png";
+import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/components/assets/Hero_img.png";
 
 <img src={CompanyCard_img} style={{ border: "2px solid gray" }} />
 
@@ -228,11 +228,12 @@ import CompanyCard_img from "F:/documentation/docs/projects/tnp-website/frontend
   );
   ```
 
-5. Make sure you have the testimonial image file available and it's location. Within the function `Testimonial`, insert or edit the following code snippet 
+3. Make sure you have the testimonial image file available and it's location. Within the function `Testimonial`, insert or edit the following code snippet 
 
-    ```jsx title="Testimonial.jsx" {29} showLineNumbers
-    <img src="/misc/purpleTesti.svg" className="h-30" />
+    ```jsx title="Testimonial.jsx" {1} showLineNumbers
+        <img src="/misc/purpleTesti.svg" className="h-30" />
     ```
+
 This code snippet adds an image element to the `testimonial`, `img src` displaying the image location inside the `" "` in the svg format.
 
 6. The `h-30` class sets the height of the image to 30 units. You can adjust the height by modifying the class or using inline styles.
@@ -269,7 +270,7 @@ This code snippet adds an image element to the `testimonial`, `img src` displayi
 
 **On executing the above steps, the individual cards look like this:**
 
-import Testimonial_img from "F:/documentation/docs/projects/tnp-website/frontend/components/assets/Testimonial_img.png";
+import Testimonial_img from "/docs/projects/tnp-website/assets/Testimonial_img.png";
 
 <img src={Testimonial_img} style={{ border: "2px solid gray" }} />
 
