@@ -3,7 +3,7 @@ title: Student Award
 id: student-award
 description: Student Award Component in T&P Website
 sidebar_label: Student Award
-keywords: [astrojs, open-source, docs]
+keywords: [awards, awards-objective]
 ---
 
 The Student Award section aims at recognizing the contributions of the students and showcasing their achievements. This section is situated below the [**Hero Section**](hero) of [**TNP Home Page**](https://tnp.tcetmumbai.in/). 

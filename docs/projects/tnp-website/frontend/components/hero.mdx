@@ -3,8 +3,8 @@ title: Hero
 id: hero
 description: Hero Component in T&P Website
 sidebar_label: Hero
+keywords: [countup, hero, swiper]
 ---
-Introducing the Hero Component
 
 The Hero component represents the first section of the T&P Home page. It is one of the most crucial component as it is designed in a certain way which can grab attention of the target audience. The page likely presents data on the **number of students successfully placed**, the **count of companies that have visited** and **the count of students securing 10+ LPA packages**. This page provides a perfect platform to display the pictures of the namely events conducted. The above factors of this components emphasizes it to be the `Hero component` of the website.
 
@@ -70,16 +70,16 @@ The program for this component is a React component in JavaScript which uses the
 
  6. The last line of the code exports the `CountUpComponent` as the default export of the module, making it available to use in other parts of the application.
 
-```jsx title="CountUpComponent.jsx" {8} showLineNumbers
-    import CountUp from "react-countup";
+   ```jsx title="CountUpComponent.jsx" {8} showLineNumbers
+      import CountUp from "react-countup";
 
-       const CountUpComponent = ({ start, end, title }) => {
-          return (
-            // Sections of CountUp component
-          );
-      };
-   export default CountUpComponent;  
-```
+         const CountUpComponent = ({ start, end, title }) => {
+            return (
+               // Sections of CountUp component
+            );
+         };
+      export default CountUpComponent;  
+   ```
 
 ## Hero Section
 
@@ -143,7 +143,7 @@ The code involved in this section is a blend of JavaScript and HTML language. Ja
 
  * Introducing the `svg` icon, it is a **graphical icon** which has made in use for the arrow in button. It's code is provided with the specifications of svg's `structures` and `attributes`. It is represented by the lines **11-25**.
  
- The result of this code represents the SVG as a rounded rectangle with a light gray fill, and it has three lines forming an arrow shape. The arrow points horizontally in a direction from left to right, and its lines have a dark gray stroke with rounded endpoints and corners.
+The result of this code represents the SVG as a rounded rectangle with a light gray fill, and it has three lines forming an arrow shape. The arrow points horizontally in a direction from left to right, and its lines have a dark gray stroke with rounded endpoints and corners.
 
  4. The `div` element used here is for the purpose to display a custom font with varying text size based on screen size. It displays quoted text. We have used it to define the `Headlines` and `paragraph` in our web page.
 
@@ -157,7 +157,7 @@ The code involved in this section is a blend of JavaScript and HTML language. Ja
        </section>
     ```
 
- 8. The `View more` element in this section, is programmed using the `<a> anchor` element. The CSS classes are applied to it including the **hover effect**. The anchor element here is representing the `hyperlink` which is redirecting to [*About Us*](https://tnp.tcetmumbai.in/about-us/).
+ 5. The `View more` element in this section, is programmed using the `<a> anchor` element. The CSS classes are applied to it including the **hover effect**. The anchor element here is representing the `hyperlink` which is redirecting to [*About Us*](https://tnp.tcetmumbai.in/about-us/).
 
     ```jsx title="HeroSection.astro" {4-10} showLineNumbers
        <section
@@ -174,7 +174,7 @@ The code involved in this section is a blend of JavaScript and HTML language. Ja
           // Other Sections of HeroSection component
        </section>
     ```
- 9. The  CountUpComponent displayed in the code handles the **counting animation** of numbers. There are props passed to `CountUpComponent`, which are as follows:
+ 6. The  CountUpComponent displayed in the code handles the **counting animation** of numbers. There are props passed to `CountUpComponent`, which are as follows:
 
   * **client:only="react":** It has a specific purpose within the CountUpComponent component. It is used to determine whether the code is running or not on the client side with React.
 
@@ -326,7 +326,7 @@ import heroswiper from "/docs/projects/tnp-website/assets/heroswiper.png";
 For more comprehensive and detailed information, you can refer the official Swiper library documentation-**[Swiper.js](https://swiperjs.com/get-started)**
 :::
 
-
+_The [**Hero Section of Home Page**](hero) was succesfully executed! Let's move on and see how we created the [**Training**](training) component of the **[TNP Website](https://tnp.tcetmumbai.in)**._
 
     
 

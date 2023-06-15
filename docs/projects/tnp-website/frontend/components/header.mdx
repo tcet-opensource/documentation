@@ -3,7 +3,7 @@ title: Header
 id: header
 description: Header Component in T&P Website
 sidebar_label: Header
-keywords: [astrojs, open-source, docs]
+keywords: [mobile-nav, navbar, accordion]
 ---
 The **Header** section is an informative element which is present at the top of every page of the website. With its navigational features, it facilitates easy access to each and every page of the [**Training and Placement Website**](https://tnp.tcetmumbai.in/). It consists of **TCET Logo**, **Thakur Educational Group Logo**, **Title & Description** and a **Menu** presenting a list of links to different pages. Hence providing essential information and contributing to user-friendly experience. 
 
@@ -35,14 +35,12 @@ In order to create a menu for smaller screens for TNP website, we need to create
 
 4. The `MobileNav` component returns the navigational menu. The `<button>` element inside the `<div>` serves as a switch to open and close the menu. The `onClick()` event handler changes the value of `navOpen` whenever the button is clicked. 
 
-    ```jsx title="MobileNav.tsx" {8} showLineNumbers
+    ```jsx title="MobileNav.tsx" {6} showLineNumbers
          <div className="relative" >
             <button
                 data-collapse-toggle="mobile-menu-2"
                 type="button"
-                className="inline-flex items-center p-2 ml-1 text-sm text-slate-700 rounded-lg  focus:outline-none"
-                aria-controls="mobile-menu-2"
-                aria-expanded="false"
+                // Styling
                 onClick={() => setNavOpen(!navOpen)}
             >
         </div>
@@ -51,6 +49,7 @@ In order to create a menu for smaller screens for TNP website, we need to create
 5. The button displays an `svg` icon that is defined according to the condition whether the value of `navOpen` is "true" or "false". 
 
     ```jsx title="MobileNav.tsx" {2-9} showLineNumbers
+    // Other sections of code
         {!navOpen ? ( // when the navOpen is set to false
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -77,20 +76,21 @@ In order to create a menu for smaller screens for TNP website, we need to create
 
 6. After the `<button>` element, `<aside>` displays the menu when `navOpen` variable is set to `true`. It contains two `<nav>` elements, one for the primary links section. This section also links to [**thakureducation.org**](https://thakureducation.org). It maps over `primaryLinks` array to display each link as an anchor element.  
 
-    ```jsx title="MobileNav.tsx" showLineNumbers
-            {primaryLinks.map((p) => (
-              <a
-                key={p.title}
-                href={p.link}
-                className=" text-sm w-full  text-slate-900 hover:underline"
-              >
-                {p.title}
-              </a>
-            ))}
-    ```
-
+  ```jsx title="MobileNav.tsx" {2-8} showLineNumbers
+          {primaryLinks.map((p) => (
+            <a
+              key={p.title}
+              href={p.link}
+              className=" text-sm w-full  text-slate-900 hover:underline"
+            >
+              {p.title}
+            </a>
+          ))}
+  ```
+:::tip
 In the same way, the secondary `<nav>` is used to display `secondaryLinks`. If a link has `subLinks`, an [**Accordian component**](#accordian-component) is rendered for each sublink. 
- 
+:::
+
 7. Save the file.
 
 8. Run `yarn dev` to see the changes in your local environment.
@@ -174,53 +174,56 @@ import collapsible from "/docs/projects/tnp-website/assets/collapsible.png";
 
 ### Primary links and Secondary links
 
-The links for [**ERP**](http://erp.tcetmumbai.in/), [**Alumni**](https://tcetmumbai.in/aboutAlumni.html) and [**Careers**](https://tcetmumbai.in/careers.html) are defined in the `primaryLinks` array of type `link[]` in **"index.astro"** file. To add links for **Alumni** and **Career** pages, create objects in the following way with **"title"** and **"link"** properties:   
+1. The links for [**ERP**](http://erp.tcetmumbai.in/), [**Alumni**](https://tcetmumbai.in/aboutAlumni.html) and [**Careers**](https://tcetmumbai.in/careers.html) are defined in the `primaryLinks` array of type `link[]` in **"index.astro"** file. To add links for **Alumni** and **Career** pages, create objects in the following way with **"title"** and **"link"** properties:   
 
-```jsx title="index.astro" {3,4} showLineNumbers
-        const primaryLinks: link[] = [
-            {
-                title: "ERP",
-                link: "http://erp.tcetmumbai.in/",
-            },
-        ]
-```
+  ```jsx title="index.astro" {3,4} showLineNumbers
+          const primaryLinks: link[] = [
+              {
+                  title: "ERP",
+                  link: "http://erp.tcetmumbai.in/",
+              },
+              // Other links
+          ]
+  ```
+:::tip
+  In the same way `secondaryLinks` array is created with **"title"** and **"link"** properties. This array lists links of various pages of the **TNP website**. Some links also have `sublinks`. The sublinks have the same properties as `secondaryLinks` objects.  To add sublinks, **create link objects in the following way:**
+:::
 
-In the same way `secondaryLinks` array is created with **"title"** and **"link"** properties. This array lists links of various pages of the **TNP website**. Some links also have `sublinks`. The sublinks have the same properties as `secondaryLinks` objects.  To add sublinks, **create link objects in the following way:**
-
-```jsx title="index.astro" {5-10} showLineNumbers
-        const secondaryLinks: link[] = [
-            {
-                title: "Placement",
-                link: "/placement",
-                subLinks: [
-                    {
-                        title: "Placement",
-                        link: "/placement",
-                    },
-                ],
-            },
-        ]
-```
+  ```jsx title="index.astro" {5-10} showLineNumbers
+          const secondaryLinks: link[] = [
+              {
+                  title: "Placement",
+                  link: "/placement",
+                  subLinks: [
+                      {
+                          title: "Placement",
+                          link: "/placement",
+                      },
+                  ],
+              },
+              // Other links and sublinks
+          ]
+  ```
 ### Displaying Navigational Menu
 
 **To display the main menu, we executed the follwing steps**:
 
-A `<div>` element in the `<header>` of **"index.astro"** file is created where the `secondaryLinks` array is iterated. Inside the `<span>` element, it checks if there are any sub-links. In case of no sub-links, it displays the anchor tag `<a>` with the **link** and **title** of the item. If there are sub-links, it renders an `<Accordian>` component. 
+1. A `<div>` element in the `<header>` of **"index.astro"** file is created where the `secondaryLinks` array is iterated. Inside the `<span>` element, it checks if there are any sub-links. In case of no sub-links, it displays the anchor tag `<a>` with the **link** and **title** of the item. If there are sub-links, it renders an `<Accordian>` component. 
 
-```jsx title="index.astro" {5-8} showLineNumbers
-        <div class="hidden lg:flex text-slate-800 justify-evenly py-2 border-b">
-        {
-            secondaryLinks.map((s) => (
-            <span class="flex items-center gap-2">
-                {!s.subLinks && <a class="text-xs xl:text-sm   hover:underline" href={s.subLinks?"":s.link}>
-                {s.title}
-                </a>}
-                {s.subLinks && <Accordian title={s.title} client:load links={s.subLinks} />}
-            </span>
-            ))
-        }
-        </div>
-```
+  ```jsx title="index.astro" {5-8} showLineNumbers
+          <div class="hidden lg:flex text-slate-800 justify-evenly py-2 border-b">
+          {
+              secondaryLinks.map((s) => (
+              <span class="flex items-center gap-2">
+                  {!s.subLinks && <a class="text-xs xl:text-sm   hover:underline" href={s.subLinks?"":s.link}>
+                  {s.title}
+                  </a>}
+                  {s.subLinks && <Accordian title={s.title} client:load links={s.subLinks} />}
+              </span>
+              ))
+          }
+          </div>
+  ```
 
 :::info
    The primary links are listed in the same container where the site's logo and title are placed. Refer the [**index.astro**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/Header/index.astro#LL139C1-L180C11) file.
@@ -232,17 +235,17 @@ A `<div>` element in the `<header>` of **"index.astro"** file is created where t
 
 2. TNP logo is displayed in the extreme left of the header. Within the `<div>` element of `<header>`, anchor tags are used. **This is how it was executed:**
 
-```jsx title="index.astro" {2-8} showLineNumbers
-    <div class="space-y-2 md:flex md:mr-4">
-      <a href="/">
-        <img
-          src="/Images/TCET Logo.png"
-          class="object-contain w-14 lg:w-24"
-          alt="TCET Logo"
-        />
-      </a>
-    </div>
-```
+  ```jsx title="index.astro" {2-8} showLineNumbers
+      <div class="space-y-2 md:flex md:mr-4">
+        <a href="/">
+          <img
+            src="/Images/TCET Logo.png"
+            class="object-contain w-14 lg:w-24"
+            alt="TCET Logo"
+          />
+        </a>
+      </div>
+  ```
 :::info
    Similar steps were carried out for displaying [**Thakur Education Group logo**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/Header/index.astro#LL106C1-L113C11) for smaller screens. 
 :::

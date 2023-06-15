@@ -3,7 +3,7 @@ title: Internships
 id: internships
 description: Internships Component in T&P Website
 sidebar_label: Internships
-keywords: [astrojs, open-source, docs]
+keywords: [internships, cards]
 ---
 
 The **Internship** page of the website gives you information on various corporations that visit TCET to recruit students. To be more transparent, the website provides statistics on the number of companies that have visited and the number of students who got hired. It is accesible through the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
