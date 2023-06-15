@@ -10,7 +10,7 @@ The **Top Recruiters** page of the website gives you information about the top c
 
 ### Adding Marquee component to the page
 
-**How to add the Logo Marquee Component of a Company**
+**Steps to add a Marquee Component:*
 
 1. Opening `LogosMarquee.tsx` file in our projects root directory.
 
@@ -31,8 +31,11 @@ The **Top Recruiters** page of the website gives you information about the top c
 
 4. The `data` prop is an array of objects, where each object has two properties: `imgUrl` (string) and `name` (string). The mapping iterates over each object in the `data` array and generates an `<img>` element for each logo image. The `key` prop is set to the name property for efficient rendering.
 
-    ```jsx title="LogosMarquee.tsx" {9-18} showLineNumbers
-    {data.map((d) => (
+    ```jsx title="LogosMarquee.tsx" {4-9} showLineNumbers
+    // Other part of section
+    return (
+    <Marquee  direction={oppDirection ? "right" : "left"} speed={30}>
+      {data.map((d) => (
         <img
           key={d.name}
           className="h-8 object-contain"
@@ -43,25 +46,26 @@ The **Top Recruiters** page of the website gives you information about the top c
     </Marquee>
     ```
 
-5 Save the changes.
+5. Save the changes.
 
 6. Run `yarn dev` on the terminal to see the changes made in your local environment. 
 
 ### Adding Logo and Content
 
-**How to add Logo and Content of the company to the page**
+**Here's how we added logo and content of the company in the [Top Recruiters](top-recruiters) section**
 
 1. Opening `index.astro` in the 'Top Recruiters` component file in our projects root directory.
 
 2. An array called `data`, which contains multiple objects representing different logos. Each object has two properties: `name` (the name of the company) and `imgUrl` (the URL of the company's logo image).
 
-    ```jsx title="index.astro" {4-9} showLineNumbers
+    ```jsx title="index.astro" {3-6} showLineNumbers
     const data = [
         {
             name: "Accenture",
             imgUrl:
                 "https://images.squarespace-cdn.com/content/v1/5d23ae890b7dee000180ec51/1586367987659-BZ5L8BA1UZBLNVFMATYK/ke17ZwdGBToddI8pDm48kPjg6bM-W17gCtBWJ8Mjp2AUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnBItPiluyZS-UhYJJ6omcW3Y-2_8y8J8iHad74oPUfQWBOqOCHXbC31Z0m-iT7ZRQQ/accenturelogo.png",
         }
+        // Repeated multiple times in a marquee
     ]
     ```
   
@@ -99,3 +103,5 @@ import LogoMarquee_img from "/docs/projects/tnp-website/assets/LogoMarquee_img.p
 
 <br />
 <br />
+
+_After successfully implementing the **[Top Recruiters](top-recruiters)** component of the **[TNP (Training and Placement)](https://tnp.tcetmumbai.in)** website, the next step is to move forward with the implementation of the **[About Us](about-us)** component._
