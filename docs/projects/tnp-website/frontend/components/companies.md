@@ -36,7 +36,7 @@ The **Companies** page of the website gives you information about various compan
 
 **On executing the above steps, the Company cards look like this:**
 
-import CompanyCard_img from "F:/documentation/docs/projects/tnp-website/assets/CompanyCard_img.png";
+import CompanyCard_img from "/docs/projects/tnp-website/assets/CompanyCard_img.png";
 
 <img src={CompanyCard_img} style={{ border: "2px solid gray" }} />
 
@@ -124,7 +124,7 @@ import CompanyCard_img from "F:/documentation/docs/projects/tnp-website/assets/C
 
 **On executing the above steps, the Read More Section look like this:**
 
-import ReadMore_img from "F:/documentation/docs/projects/tnp-website/assets/ReadMore_img.png";
+import ReadMore_img from "/docs/projects/tnp-website/assets/ReadMore_img.png";
 
 <img src={ReadMore_img} style={{ border: "2px solid gray" }} />
 

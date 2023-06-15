@@ -8,15 +8,15 @@ keywords: [astrojs, open-source, docs]
 
 The **Event** page of the website gives you information about various training and placement events falling under aptitude training and student development programs. It is accesible through the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
 
-### Adding Event to the page
+### Adding Carousel to the Hero Section
 
-**How to add Image of the event to the page**
+**Here are the steps we performed to add a Caraousel in our Event page**
 
-1. Opening `HeroCarousel.jsx` file in our projects root directory.
+1. Opening `HeroCarousel.tsx` file in our projects root directory.
 
 2. The array of objects named `heroSlideObj` that contains the image links and alt text for the event, will be loacted. For each object in the array, it generates a `<SwiperSlide>` component with an `<img>` element inside.
 
-    ```jsx title="HeroCarousel.tsx" {22-25} showLineNumbers
+    ```jsx title="HeroCarousel.tsx" {3-4} showLineNumbers
     const heroSlideObj = [
         {
             img: "EventPage.png",
@@ -27,7 +27,7 @@ The **Event** page of the website gives you information about various training a
 
 3. The `<Swiper>` component is rendered, which is a container for the event images. It accepts several props to configure its behavior and appearance. 
 
-    ```jsx title="HeroCarousel.tsx" {46-56} showLineNumbers
+    ```jsx title="HeroCarousel.tsx" {4-7} showLineNumbers
     const heroSlide = heroSlideObj.map((data) => {
         return (
             <SwiperSlide>
@@ -43,7 +43,7 @@ The **Event** page of the website gives you information about various training a
 
 4. The `modules` prop is used to specify additional modules for the `Swiper` library. The `autoplay` prop is used to enable autoplay for the slideshow. The `spaceBetween` prop defines the spacing between each slide. The `slidesPerView` prop sets the number of slides to display at once. The `onSwiper` and `onSlideChange` props are optional event handlers. 
 
-    ```jsx title="HeroCarousel.tsx" {58-74} showLineNumbers
+    ```jsx title="HeroCarousel.tsx" {5-13} showLineNumbers
     return (
         <Swiper
             className="h-auto xl:w-[540px] lg:w-[480px] md:w-full border rounded-lg xl:rounded-xl "
@@ -68,18 +68,28 @@ The **Event** page of the website gives you information about various training a
 
 7. Run `yarn dev` on the terminal to see the changes made in your local environment. 
 
-### Adding purpose of the event to the page
+### Adding Purpose of the Event Section
 
-**How to add Purpose of the event to the page**
+**After adding Carousel, let's have a look at  how we implemented the Purpose of the Event Section**
 
 1. Opening `index.astro` file inside the `Hero` component our projects root directory.
 
 2. Locate the following code snippet inside the component or section where you want to display it.
 
-    ```jsx title="index.astro" {10-14} showLineNumbers
-    <p class="lg:text-lg text-sm font-sans font-light text-[#475466]">
-        {/* Add your purpose text here */}
-    </p>
+    ```jsx title="index.astro" {5-7,9-11} showLineNumbers
+    <div>
+      //Other styling
+        <div class="md:w-1/2 pr-8">
+          <h1 class="text-[42px] font-title">Purpose</h1>
+          <p class="lg:text-lg text-sm  font-sans font-light text-[#475466]">
+            {purpose}
+          </p>
+        </div>
+        <div class="md:w-1/2 w-full h-full lg:mt-0 mt-6">
+          <Hero heroSlideObj={heroSlideObj} client:load />
+        </div>
+      // Other parts of the component
+    </div>
     ```
 
 3. Replace the `{/* Add your purpose text here */}` comment with the actual purpose text you want to display.
@@ -90,35 +100,30 @@ The **Event** page of the website gives you information about various training a
 
 **On executing the above steps, the individual cards look like this:**
 
-import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/components/assets/Hero_img.png";
+import Hero_img from "/docs/projects/tnp-website/assets/Hero_img.png";
 
-<img src={CompanyCard_img} style={{ border: "2px solid gray" }} />
+<img src={Hero_img} style={{ border: "2px solid gray" }} />
 
 <br />
 <br />
 
 
-### Adding Objective 
+### Adding Objective of the Event Section
 
-**How to add Objective to the event**
+**Let's have a look at how we integrated this section in our Event page.**
 
 1. Opening `index.astro` file inside the `Testimonial` component our projects root directory.
 
 2. Insert the following code snippet into your HTML or JSX file where you want to display the objective:
 
-    ```jsx title="index.astro" {4-17} showLineNumbers
-    <div class="my-8 xl:my-16 2xl:my-20 block w-full py-8 px-8 md:px-16"
-        style={{
-            background:
-                "radial-gradient(42.83% 57.11% at 50% 100%, rgba(212, 185, 255, 1) 0%, rgba(251, 248, 255, 1) 100%)",
-        }}
-    >
+    ```jsx title="index.astro" {3-6} showLineNumbers
+    <div>
+      // Other parts and styling of the container
         <h1 class="font-title text-[42px] mb-[15px]">Objective</h1>
-        <p
-            class="lg:text-lg text-sm  font-sans font-light text-[#475466] lg:w-[60%] md:w-[70%]"
-        >
+        <p class="lg:text-lg text-sm  font-sans font-light text-[#475466] lg:w-[60%] md:w-[70%]">
             {objective}
         </p>
+      // Other parts of the container
     </div>
     ```
 
@@ -128,10 +133,11 @@ import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/compon
 
 5. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
+import Objective from "/docs/projects/tnp-website/assets/objective.png";
 
-### Adding faculty testimonial
+<img src={Objective} style={{ border: "2px solid gray" }} />
 
-**How to add testimonial to the page**
+### Adding Faculty Testimonial Section
 
 1. Opening `Testimonial.jsx` file in our projects root directory.
 
@@ -145,15 +151,10 @@ import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/compon
     ```
 3. For each `testimonial` object, it generates a `<SwiperSlide>` component with the testimonial content inside. It has a inline `style`, `<p>`, `<img>` element for applying a radial gradient background, to display the text and the photo respectievely. 
 
-    ```jsx title="Testimonial.jsx" {19-48} showLineNumbers
+    ```jsx title="Testimonial.jsx" {6,8-13,15,18,21} showLineNumbers
     return (
-      <SwiperSlide
-        className=" h-auto border-none rounded-lg xl:rounded-xl"
-        style={{
-          background:
-            "radial-gradient(61.56% 85.33% at 50% 100%, rgba(212, 185, 255, 0.7) 0%, rgba(241, 232, 255, 0.3) 100%)",
-        }}
-      >
+      <SwiperSlide>
+        // Other styling properties for SwiperSlide
         <div className="flex flex-col items-center text-center p-8">
           <div className="absolute bottom-28 left-8 hidden md:block ">
             <img src="/misc/purpleTesti.svg" className="h-30 " />
@@ -179,7 +180,7 @@ import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/compon
     ```
 4. The `<Swiper>` component is rendered, which is a container for the `testimonials`. It accepts several props to configure its behavior and appearance. The `modules` prop is used to specify additional modules for the `Swiper` library. The `autoplay` prop is used to enable autoplay for the testimonials. The `pagination` prop configures the pagination component for the testimonials. The `clickable` property is set to true, enabling clickable pagination bullets. The `spaceBetween` prop defines the spacing between each testimonial. The `slidesPerView` prop sets the number of testimonials to display at once. 
 
-    ```jsx title="Testimonial.jsx" {51-96} showLineNumbers
+    ```jsx title="Testimonial.jsx" {6-8,11-17,20-21,23,} showLineNumbers
     return (
     <div>
       <Swiper
@@ -189,9 +190,7 @@ import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/compon
         autoplay={{
           delay: 3000,
         }}
-        // pagination={{
-        //     dynamicBullets: true,
-        //   }}
+
         pagination={{ clickable: true }}
         spaceBetween={32}
         slidesPerView={1}
@@ -199,29 +198,14 @@ import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/compon
           640: {
             slidesPerView: 1,
           },
-          768: {
-            slidesPerView: 1,
-          },
-          1024: {
-            slidesPerView: 2,
-          },
-          1280: {
-            slidesPerView: 2,
-          },
+          // Other config properties
         }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
         {TestiSlide}
         <div className="m-10"></div>
-        <style>{`
-            .swiper-pagination-bullet-active {
-              background-color: #344054;
-            }
-            // .swiper-pagination  {
-            //   padding-top: 1rem;
-            // }
-          `}</style>
+        // Styling Files
         <div className="swiper-pagination" />
       </Swiper>
     </div>
@@ -236,8 +220,6 @@ import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/compon
 
 This code snippet adds an image element to the `testimonial`, `img src` displaying the image location inside the `" "` in the svg format.
 
-6. The `h-30` class sets the height of the image to 30 units. You can adjust the height by modifying the class or using inline styles.
-
 7. Save the file. 
 
 8. Run `yarn dev` on the terminal to see the changes made in your local environment.
@@ -248,7 +230,7 @@ This code snippet adds an image element to the `testimonial`, `img src` displayi
 
 2. Inside the `testiObj` array of the code, add a faculty's details which would be defined as follows:
 
-    ```jsx title="index.astro" {4-12} showLineNumbers
+    ```jsx title="index.astro" {4-9} showLineNumbers
     const testiObj = 
     [
         {
@@ -276,3 +258,5 @@ import Testimonial_img from "/docs/projects/tnp-website/assets/Testimonial_img.p
 
 <br />
 <br />
+
+_Congratulations, we have successfully implemented the [**Event Page**](event-page). Let's continue to find out how we implemented the [**Companies**](companies) Section of the [**TNP website**](https://tnp.tcetmumbai.in/). _
