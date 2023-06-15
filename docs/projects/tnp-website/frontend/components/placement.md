@@ -120,7 +120,7 @@ import Core from "/docs/projects/tnp-website/assets/Core.png";
   </TabItem>
 </Tabs>
 
-This sections are already made in our **[Internships](internships)** component.
+This sections are already made in our **[Internships](internships)** and **[Companies](companies)** component.
 
 :::tip
 Similar steps were carried out for adding multiple **[Companies Category Sections](#internships)**. 

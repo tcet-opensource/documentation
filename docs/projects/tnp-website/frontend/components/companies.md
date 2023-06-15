@@ -8,15 +8,15 @@ keywords: [astrojs, open-source, docs]
 
 The **Companies** page of the website gives you information about various companies that visit the institute for the placement procedure. It is accesible through the Placement section on the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
 
-### Adding Comapny Card to the page
+### Adding Company Card to the page
 
 **How to add the Company Card to the page**
 
-1. Opening `ComapnyCard.tsx` file in our projects root directory.
+1. Opening `CompanyCard.tsx` file in our projects root directory.
 
 2. The `CompanyCard` component is defined as a functional component that accepts two props: `img` and `name`.
 
-    ```jsx title="CompanyCard.tsx" {4-11} showLineNumbers
+    ```jsx title="CompanyCard.tsx" {4-5} showLineNumbers
     const CompanyCard: React.FC<{} & CompanyCardType> = ({ img, name }) => {
         return (
             <div className="flex flex-col items-center justify-center gap-3">
@@ -28,7 +28,7 @@ The **Companies** page of the website gives you information about various compan
     ```
 3. An `<img>` element is added to display the company logo. The `alt` attribute is set to "company-logo" for accessibility purposes. The `name` prop is used to populate the content of the `<p>` element.
 
-4. The companies section is divided into different sub sections including Super Dream Companies, Dream Companies, Normal and Core Companies. The company card is added to the page as per the category of the company.
+4. The companies section is divided into different sub sections including **Super Dream Companies**, **Dream Companies**, **Normal** and **Core Companies**. The company card is added to the page as per the category of the company.
 
 4. Save the changes.
 
@@ -43,7 +43,7 @@ import CompanyCard_img from "/docs/projects/tnp-website/assets/CompanyCard_img.p
 <br />
 <br />
 
-### Adding ReadMore Section 
+### Adding Read More Button
 
 **How to display the company in the  ReadMore section**
 
@@ -51,7 +51,7 @@ import CompanyCard_img from "/docs/projects/tnp-website/assets/CompanyCard_img.p
 
 2. The `ReadMore` component is defined as a functional component that accepts two props: `companies` (an array of CompanyCardType) and `title` (a string representing the section title). The `useState` hook is imported which determines whether the "Read More" section is expanded or collapsed.
 
-    ```jsx title="ReadMore.tsx" {5-8} showLineNumbers
+    ```jsx title="ReadMore.tsx" {2-3,5} showLineNumbers
     const ReadMore: React.FC<{
         companies: CompanyCardType[];
         title: string;
@@ -61,7 +61,7 @@ import CompanyCard_img from "/docs/projects/tnp-website/assets/CompanyCard_img.p
     ```
 3. A `<button>` element is added and it has a click event handler attached to the `onClick` attribute, which toggles the `readMore` state when clicked. Inside the `<button>` element, there is a text label "Read More" and an SVG icon representing an arrow.
 
-    ```jsx title="ReadMore.tsx" {11-33} showLineNumbers
+    ```jsx title="ReadMore.tsx" {3,6-8,10-15,18-20} showLineNumbers
     return (
     <div>
       <button
@@ -85,23 +85,21 @@ import CompanyCard_img from "/docs/projects/tnp-website/assets/CompanyCard_img.p
           />
         </svg>
       </button>
+    // Other parts of the code
     )
       ```
 
 4. A grid layout is used to display the company cards. The grid is responsive and adapts the number of columns based on screen size. The `companies` prop is mapped over to render multiple `CompanyCard` components, passing the `name` and `img` props.
 
-    ```jsx title="ReadMore.tsx" {34-59} showLineNumbers
+    ```jsx title="ReadMore.tsx" {11,15-17} showLineNumbers
+    // Code from last section
     {readMore && (
         <>
           <div
             onClick={() => setReadMore(false)}
             className="w-screen h-screen bg-black bg-opacity-60 fixed transition-opacity top-0 left-0 "
           />
-          <div
-            className="w-11/12  max-h-[80%] overflow-scroll fixed top-[50%] translate-y-[-50%]  bg-white rounded-xl 
-            shadow-xl mx-auto lg:py-20 left-[50%] translate-x-[-50%]
-             p-12 "
-          >
+            // Styling
             <div className="pb-4 lg:pb-6 xl:pb-10 ">
               <h1 className=" text-2xl 2xl:text-3xl text-center font-title">
                 {title}
@@ -122,6 +120,11 @@ import CompanyCard_img from "/docs/projects/tnp-website/assets/CompanyCard_img.p
 
 6. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
+:::tip
+  Similar steps were carried out for adding multiple categories of  **[Companies](#adding-company-card-to-the-page)**. 
+::: 
+
+
 **On executing the above steps, the Read More Section look like this:**
 
 import ReadMore_img from "/docs/projects/tnp-website/assets/ReadMore_img.png";
@@ -139,7 +142,7 @@ import ReadMore_img from "/docs/projects/tnp-website/assets/ReadMore_img.png";
 
 2. The `Props` interface is defined, which specifies the prop types expected by the component. It is used to edit properties such as `companies` (an array of CompanyCardType), `title` (a string representing the section title), `subtitle` (an optional string for a subtitle), and `background` (a string representing the background color).
 
-    ```jsx title="index.astro" {6-13} showLineNumbers
+    ```jsx title="index.astro" {2-4,6} showLineNumbers
     interface Props {
         companies: CompanyCardType[];
         title: string;
@@ -152,7 +155,7 @@ import ReadMore_img from "/docs/projects/tnp-website/assets/ReadMore_img.png";
 
 3. The `strippedCompanies` array is mapped over to render `CompanyCard` components, passing the `img` and `name` props. Conditional rendering is used to display the `ReadMore` component if the companies array length is greater than 12. The `title` and `companies` props are passed to the `ReadMore` component.
 
-    ```jsx title="index.astro" {46-56} showLineNumbers
+    ```jsx title="index.astro" {2-3,8-9} showLineNumbers
     {
       strippedCompanies.map((d) => {
         return <CompanyCard img={d.img} name={d.name} />;
