@@ -76,17 +76,17 @@ In order to create a menu for smaller screens for TNP website, we need to create
 
 6. After the `<button>` element, `<aside>` displays the menu when `navOpen` variable is set to `true`. It contains two `<nav>` elements, one for the primary links section. This section also links to [**thakureducation.org**](https://thakureducation.org). It maps over `primaryLinks` array to display each link as an anchor element.  
 
-    ```jsx title="MobileNav.tsx" {2-8} showLineNumbers
-            {primaryLinks.map((p) => (
-              <a
-                key={p.title}
-                href={p.link}
-                className=" text-sm w-full  text-slate-900 hover:underline"
-              >
-                {p.title}
-              </a>
-            ))}
-    ```
+  ```jsx title="MobileNav.tsx" {2-8} showLineNumbers
+          {primaryLinks.map((p) => (
+            <a
+              key={p.title}
+              href={p.link}
+              className=" text-sm w-full  text-slate-900 hover:underline"
+            >
+              {p.title}
+            </a>
+          ))}
+  ```
 :::tip
 In the same way, the secondary `<nav>` is used to display `secondaryLinks`. If a link has `subLinks`, an [**Accordian component**](#accordian-component) is rendered for each sublink. 
 :::
