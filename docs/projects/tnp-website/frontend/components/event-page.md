@@ -90,9 +90,9 @@ The **Event** page of the website gives you information about various training a
 
 **On executing the above steps, the individual cards look like this:**
 
-import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/components/assets/Hero_img.png";
+import CompanyCard_img from "F:/documentation/docs/projects/tnp-website/frontend/components/assets/Hero_img.png";
 
-<img src={Hero_img} style={{ border: "2px solid gray" }} />
+<img src={CompanyCard_img} style={{ border: "2px solid gray" }} />
 
 <br />
 <br />
