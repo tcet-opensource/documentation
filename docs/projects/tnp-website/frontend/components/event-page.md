@@ -14,7 +14,7 @@ The **Event** page of the website gives you information about various training a
 
 1. Opening `HeroCarousel.jsx` file in our projects root directory.
 
-2. The array of objects named `heroSlideObj` that contains the image links and alt text for the event, will be loacted. 
+2. The array of objects named `heroSlideObj` that contains the image links and alt text for the event, will be loacted. For each object in the array, it generates a `<SwiperSlide>` component with an `<img>` element inside.
 
     ```jsx title="HeroCarousel.tsx" {22-25} showLineNumbers
     const heroSlideObj = [
@@ -25,11 +25,50 @@ The **Event** page of the website gives you information about various training a
     ]
     ```
 
-3. Each object should have a `img` property that specifies the image file name and an`alt` property that specifies the alternative text for the image.
+3. The `<Swiper>` component is rendered, which is a container for the event images. It accepts several props to configure its behavior and appearance. 
 
-4. Save the changes.
+    ```jsx title="HeroCarousel.tsx" {46-56} showLineNumbers
+    const heroSlide = heroSlideObj.map((data) => {
+        return (
+            <SwiperSlide>
+                <img
+                src={`/EventsPage/${data.img}`}
+                className="object-cover h-full w-full"
+                alt={data.alt}
+            />
+        </SwiperSlide>
+        );
+    });
+    ```
 
-5. Run `yarn dev` on the terminal to see the changes made in your local environment. 
+4. The `modules` prop is used to specify additional modules for the `Swiper` library. The `autoplay` prop is used to enable autoplay for the slideshow. The `spaceBetween` prop defines the spacing between each slide. The `slidesPerView` prop sets the number of slides to display at once. The `onSwiper` and `onSlideChange` props are optional event handlers. 
+
+    ```jsx title="HeroCarousel.tsx" {58-74} showLineNumbers
+    return (
+        <Swiper
+            className="h-auto xl:w-[540px] lg:w-[480px] md:w-full border rounded-lg xl:rounded-xl "
+            // install Swiper modules
+            modules={[Autoplay]}
+            autoplay={{
+                delay: 3000,
+            }}
+            spaceBetween={30}
+            slidesPerView={1}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+        >
+            {heroSlide}
+        </Swiper>
+    );
+    ```
+
+5. Each object should have a `img` property that specifies the image file name and an`alt` property that specifies the alternative text for the image.
+
+6. Save the changes.
+
+7. Run `yarn dev` on the terminal to see the changes made in your local environment. 
+
+### Adding purpose of the event to the page
 
 **How to add Purpose of the event to the page**
 
@@ -104,19 +143,103 @@ import Hero_img from "F:/documentation/docs/projects/tnp-website/frontend/compon
         // Add your testimonial objects here
     ];
     ```
+3. For each `testimonial` object, it generates a `<SwiperSlide>` component with the testimonial content inside. It has a inline `style`, `<p>`, `<img>` element for applying a radial gradient background, to display the text and the photo respectievely. 
 
-3. Make sure you have the testimonial image file available and it's location. Within the function `Testimonial`, insert or edit the following code snippet 
+    ```jsx title="Testimonial.jsx" {19-48} showLineNumbers
+    return (
+      <SwiperSlide
+        className=" h-auto border-none rounded-lg xl:rounded-xl"
+        style={{
+          background:
+            "radial-gradient(61.56% 85.33% at 50% 100%, rgba(212, 185, 255, 0.7) 0%, rgba(241, 232, 255, 0.3) 100%)",
+        }}
+      >
+        <div className="flex flex-col items-center text-center p-8">
+          <div className="absolute bottom-28 left-8 hidden md:block ">
+            <img src="/misc/purpleTesti.svg" className="h-30 " />
+          </div>
+          <p className="mb-8 md:text-lg text-slate-800">{data.review}</p>
+          <img
+            src={`/EventsPage/${data.photo}`}
+            className="object-cover h-20 w-20 rounded-full"
+            alt=""
+          />
+          <div className="bg-white text-sm text-slate-700 py-px px-2 mt-4 mb-1 rounded-full">
+            {data.position}
+          </div>
+          <div className="my-1 font-semibold text-lg">
+            {data.name}
+          </div>
+          <div className="text-slate-500">
+            {data.department}
+          </div>
+        </div>
+      </SwiperSlide>
+    );
+    ```
+4. The `<Swiper>` component is rendered, which is a container for the `testimonials`. It accepts several props to configure its behavior and appearance. The `modules` prop is used to specify additional modules for the `Swiper` library. The `autoplay` prop is used to enable autoplay for the testimonials. The `pagination` prop configures the pagination component for the testimonials. The `clickable` property is set to true, enabling clickable pagination bullets. The `spaceBetween` prop defines the spacing between each testimonial. The `slidesPerView` prop sets the number of testimonials to display at once. 
+
+    ```jsx title="Testimonial.jsx" {51-96} showLineNumbers
+    return (
+    <div>
+      <Swiper
+        className="h-auto my-7"
+        // install Swiper modules
+        modules={[Autoplay, Pagination]}
+        autoplay={{
+          delay: 3000,
+        }}
+        // pagination={{
+        //     dynamicBullets: true,
+        //   }}
+        pagination={{ clickable: true }}
+        spaceBetween={32}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+          1280: {
+            slidesPerView: 2,
+          },
+        }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+      >
+        {TestiSlide}
+        <div className="m-10"></div>
+        <style>{`
+            .swiper-pagination-bullet-active {
+              background-color: #344054;
+            }
+            // .swiper-pagination  {
+            //   padding-top: 1rem;
+            // }
+          `}</style>
+        <div className="swiper-pagination" />
+      </Swiper>
+    </div>
+  );
+  ```
+
+5. Make sure you have the testimonial image file available and it's location. Within the function `Testimonial`, insert or edit the following code snippet 
 
     ```jsx title="Testimonial.jsx" {29} showLineNumbers
     <img src="/misc/purpleTesti.svg" className="h-30" />
     ```
 This code snippet adds an image element to the `testimonial`, `img src` displaying the image location inside the `" "` in the svg format.
 
-4. The `h-30` class sets the height of the image to 30 units. You can adjust the height by modifying the class or using inline styles.
+6. The `h-30` class sets the height of the image to 30 units. You can adjust the height by modifying the class or using inline styles.
 
-5. Save the file. 
+7. Save the file. 
 
-6. Run `yarn dev` on the terminal to see the changes made in your local environment.
+8. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
 **How to add faculty information to the testimonial**
 
