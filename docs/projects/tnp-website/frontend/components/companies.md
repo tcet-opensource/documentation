@@ -172,3 +172,5 @@ import ReadMore_img from "/docs/projects/tnp-website/assets/ReadMore_img.png";
 4. Save the changes.
 
 5. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+_The [**Companies**](companies) section was succesfully executed! Let's move on and see how we created the [**Top Recruiters**](top-recruiters) section of the **[TNP Website](https://tnp.tcetmumbai.in)**._
