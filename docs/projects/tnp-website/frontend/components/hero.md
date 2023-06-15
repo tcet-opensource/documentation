@@ -3,6 +3,7 @@ title: Hero
 id: hero
 description: Hero Component in T&P Website
 sidebar_label: Hero
+keywords: [countup, hero, swiper]
 ---
 
 The Hero component represents the first section of the T&P Home page. It is one of the most crucial component as it is designed in a certain way which can grab attention of the target audience. The page likely presents data on the **number of students successfully placed**, the **count of companies that have visited** and **the count of students securing 10+ LPA packages**. This page provides a perfect platform to display the pictures of the namely events conducted. The above factors of this components emphasizes it to be the `Hero component` of the website.

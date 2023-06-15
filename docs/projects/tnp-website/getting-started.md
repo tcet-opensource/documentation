@@ -3,7 +3,7 @@ title: Getting Started
 id: getting-started
 description: Setup the project on your local machine
 sidebar_label: Getting Started
-keywords: [astro, install, local]
+keywords: [astro, install, local, node, approach]
 ---
 
 :::info 

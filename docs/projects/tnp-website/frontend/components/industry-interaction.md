@@ -3,7 +3,7 @@ title: Industry Interaction
 id: industry-interaction
 description: Industry Interaction Component in T&P Website
 sidebar_label: Industry Interaction
-keywords: [astrojs, open-source, docs]
+keywords: [interaction, industry]
 ---
 
 To bridge the gap between academics and expectations from industries, *TNP cell of TCET* facilitates students to engage with various industries, gain practical exposure and develop industry relevant skills. 

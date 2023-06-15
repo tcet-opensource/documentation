@@ -3,7 +3,7 @@ title: Header
 id: header
 description: Header Component in T&P Website
 sidebar_label: Header
-keywords: [astrojs, open-source, docs]
+keywords: [mobile-nav, navbar, accordion]
 ---
 The **Header** section is an informative element which is present at the top of every page of the website. With its navigational features, it facilitates easy access to each and every page of the [**Training and Placement Website**](https://tnp.tcetmumbai.in/). It consists of **TCET Logo**, **Thakur Educational Group Logo**, **Title & Description** and a **Menu** presenting a list of links to different pages. Hence providing essential information and contributing to user-friendly experience. 
 

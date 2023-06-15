@@ -3,7 +3,7 @@ title: Event Page
 id: event-page
 description: Event Page Component in T&P Website
 sidebar_label: Event Page
-keywords: [astrojs, open-source, docs]
+keywords: [event, purpose, objective]
 ---
 
 The **Event** page of the website gives you information about various training and placement events falling under aptitude training and student development programs. It is accesible through the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).

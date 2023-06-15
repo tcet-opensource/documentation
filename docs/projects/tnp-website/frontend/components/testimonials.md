@@ -3,7 +3,7 @@ title: Testimonials
 id: testimonials
 description: Testimonials Component in T&P Website
 sidebar_label: Testimonials
-keywords: [astrojs, open-source, docs]
+keywords: [testimonails, faculty]
 ---
 Introducing Testimonials of TNP Website!
 

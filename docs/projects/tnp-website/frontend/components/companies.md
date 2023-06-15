@@ -3,7 +3,7 @@ title: Companies
 id: companies
 description: Companies Component in T&P Website
 sidebar_label: Companies
-keywords: [astrojs, open-source, docs]
+keywords: [company-card, details, category]
 ---
 
 The **Companies** page of the website gives you information about various companies that visit the institute for the placement procedure. It is accesible through the Placement section on the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
