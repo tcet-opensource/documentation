@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+require('dotenv').config()
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -31,7 +32,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  customFields: {
+    'apiKey': process.env.API_KEY,
+    'appId': process.env.APPLICATION_ID,
+  },
   presets: [
     [
       'classic',
@@ -107,6 +111,11 @@ const config = {
             position: 'right',
           }
         ],
+      },
+      algolia: {
+        apiKey: process.env.API_KEY,
+        appId: process.env.APPLICATION_ID,
+        indexName: process.env.index
       },
       footer: {
         style: 'dark',
