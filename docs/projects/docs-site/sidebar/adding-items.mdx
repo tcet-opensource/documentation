@@ -67,7 +67,9 @@ Previously we looked at how we added the [**categories**](adding-categories) and
 
 *Thanks to these changes, we have successfully [**added various items**](adding-items) to the Sidebar of [**TCET Open Source**](https://opensource.tcetmumbai.in/) website, making it more **informative** and **user-friendly**.* Here's how it looks:
 
-![Sidebar Items](./assets/sidebar-items.png#center)
+import heroImg from "./assets/sidebar-items.png";
+
+<img src={heroImg} style={{ border: "2px solid gray", display: "block", margin: "0 auto" }} />
 
 <br />
 

@@ -132,6 +132,10 @@ const config = {
                 to: '/docs/projects/docs-site/about-docs',
               },
               {
+                label: 'T&P Website',
+                to: '/docs/projects/tnp-website/about-tnp-website',
+              },
+              {
                 label: 'TCET Linux',
                 to: '/docs/projects/tcet-linux/about-tcet-linux',
               }
