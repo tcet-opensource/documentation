@@ -2,7 +2,7 @@
 
 This repository contains the source code of the Documentation Website.
 
-One of the key visions of the TCET Open Source Organization is to provide users of our software and others willing to contribute with access to project documentation for all of our current projects. The organization recognizes the importance of clear and concise documentation when creating open-source software, to ensure it's development is rapid, continous and traceble. 
+One of the key visions of the TCET Open Source Organization is to provide users of our software and others willing to contribute with access to project documentation for all of our current projects. The organization recognizes the importance of clear and concise documentation when creating open-source software, to ensure it's development is rapid, continous and traceble.
 
 The **Documentation Website** will act as our Organization's website. It will consist of the *documentation of all projects* undertaken by TCET Open Source. The website will also have dedicated *blogs contributed by the community* covering various different interests.
 
