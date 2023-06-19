@@ -15,7 +15,8 @@
    <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mahitej28"><img src="https://avatars.githubusercontent.com/u/98276915?v=4"><br /><sub><b>Mahima Churi</b></sub></img></a>
    <td align="center" valign="top" width="14.28%"><a href="https://github.com/saashaspace"><img src="https://avatars.githubusercontent.com/u/114816254?v=4"><br /><sub><b>Saasha Gupta</b></sub></img></a>
    <td align="center" valign="top" width="14.28%"><a href="https://github.com/Nidhi-1223"><img src="https://avatars.githubusercontent.com/u/73842058?v=4"><br /><sub><b>Nidhi Worah</b></sub></img></a>
-   <td align="center" valign="top" width="14.28%"><a href="https://github.com/aryadubey03"><img src="https://avatars.githubusercontent.com/u/121982519?v=4"><br /><sub><b>Nidhi Worah</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/aryadubey03"><img src="https://avatars.githubusercontent.com/u/121982519?v=4"><br /><sub><b>Arya Dubey</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/harshau007"><img src="https://avatars.githubusercontent.com/u/49197635?v=4"><br /><sub><b>Harsh Upadhyay</b></sub></img></a>
   </tr>
  </tbody>
 </table>
