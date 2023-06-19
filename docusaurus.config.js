@@ -75,11 +75,6 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
-      announcementBar: {
-        id: 'opensource-recruitment',
-        content: `ANNOUNCEMENT: We are hiring interns for the month of June. Apply 
-        <a href="https://bit.ly/tcetosrecruitment" target=_blank>here</a>.`,
-      },
       navbar: {
         hideOnScroll: true,
         title: 'TCET Open Source',
