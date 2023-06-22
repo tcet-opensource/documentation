@@ -74,6 +74,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/logo.png',
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       navbar: {
         hideOnScroll: true,
