@@ -14,7 +14,7 @@ const ProjectCard = ({ data }) => {
               className="w-full h-full object-cover rounded-t-2xl"
             />
           </div>
-          <div className="px-4 pt-6 pb-16 ">
+          <div className="px-4 pt-6 pb-16 text-left">
             <h6 className="text-white font-semibold text-xl lg:text-2xl ">{data.title}</h6>
             <p className="text-slate-300  text-xs md:text-sm  mt-2">
               {data.description}

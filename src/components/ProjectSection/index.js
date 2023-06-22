@@ -72,7 +72,7 @@ const ProjectSection = () => {
     },
   };
   return (
-    <section id="live" className="relative px-5  pt-10 xl:pt-20"
+    <section id="live" className="relative p-5 xl:p-16"
     style={{
       background: "linear-gradient(180deg, #000000 0%, #291A60 78.96%, #060314 100%)"
     }}
