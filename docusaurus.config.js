@@ -96,11 +96,11 @@ const config = {
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            label: 'Join us',
-            href: 'https://bit.ly/tcetosrecruitment',
-            position: 'left',
-          },
+          // {
+          //   label: 'Join us',
+          //   href: 'https://bit.ly/tcetosrecruitment',
+          //   position: 'left',
+          // },
           {
             href: 'https://github.com/tcet-opensource/documentation',
             label: 'GitHub',
