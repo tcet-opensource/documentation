@@ -74,6 +74,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/logo.png',
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       navbar: {
         hideOnScroll: true,
@@ -91,11 +96,11 @@ const config = {
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            label: 'Join us',
-            href: 'https://bit.ly/tcetosrecruitment',
-            position: 'left',
-          },
+          // {
+          //   label: 'Join us',
+          //   href: 'https://bit.ly/tcetosrecruitment',
+          //   position: 'left',
+          // },
           {
             href: 'https://github.com/tcet-opensource/documentation',
             label: 'GitHub',
