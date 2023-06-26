@@ -3,7 +3,7 @@ title: Event Page
 id: event-page
 description: Event Page Component in T&P Website
 sidebar_label: Event Page
-keywords: [event, purpose, objective]
+keywords: [event, purpose, objective, outcomes]
 ---
 
 The **Event** page of the website gives you information about various training and placement events falling under aptitude training and student development programs. It is accesible through the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
@@ -137,112 +137,103 @@ import Objective from "/docs/projects/tnp-website/assets/objective.png";
 
 <img src={Objective} style={{ border: "2px solid gray" }} />
 
-### Adding Faculty Testimonial Section
+
+### Adding Testimonial Section
+
+**Let's understand how we add the statistics testimonial to the event page**
 
 1. Opening `Testimonial.jsx` file in our projects root directory.
 
-2. Pass the testimonial data to the `Testimonial` component as a prop. This can be done by defining a variable that holds the testimonial data and passing it as a prop to the `Testimonial` component:
+2. Create a new functional component called `Testimonial` and pass the `data` prop to it.
 
-    ```jsx title="Testimonial.jsx" {18} showLineNumbers
-    const testimonialData = [
-        // Array of testimonial objects with properties like review, photo, position, name, and department
-        // Add your testimonial objects here
-    ];
-    ```
-3. For each `testimonial` object, it generates a `<SwiperSlide>` component with the testimonial content inside. It has a inline `style`, `<p>`, `<img>` element for applying a radial gradient background, to display the text and the photo respectievely. 
+  ```jsx title="Testimonial.jsx" {17} showLineNumbers
+  function Testimonial({ data }) {
+    // ... code continues
+  
+  ```}
 
-    ```jsx title="Testimonial.jsx" {6,8-13,15,18,21} showLineNumbers
+3. Inside the `Testimonial` component, map through the `data` array to create `SwiperSlide` components dynamically. This will generate a testimonial slide for each item in the `data` array.
+
+  ```jsx title="Testimonial.jsx" {3-10} showLineNumbers
+  const TestiSlide = data.map((data) => {
     return (
-      <SwiperSlide>
-        // Other styling properties for SwiperSlide
-        <div className="flex flex-col items-center text-center p-8">
-          <div className="absolute bottom-28 left-8 hidden md:block ">
-            <img src="/misc/purpleTesti.svg" className="h-30 " />
-          </div>
-          <p className="mb-8 md:text-lg text-slate-800">{data.review}</p>
-          <img
-            src={`/EventsPage/${data.photo}`}
-            className="object-cover h-20 w-20 rounded-full"
-            alt=""
-          />
-          <div className="bg-white text-sm text-slate-700 py-px px-2 mt-4 mb-1 rounded-full">
-            {data.position}
-          </div>
-          <div className="my-1 font-semibold text-lg">
-            {data.name}
-          </div>
-          <div className="text-slate-500">
-            {data.department}
-          </div>
-        </div>
+      <SwiperSlide
+        className=" h-auto border-none rounded-lg xl:rounded-xl"
+        style={{
+          background:
+            "radial-gradient(61.56% 85.33% at 50% 100%, rgba(212, 185, 255, 0.7) 0%, rgba(241, 232, 255, 0.3) 100%)",
+        }}>
+        {/* ... testimonial content */}
       </SwiperSlide>
     );
-    ```
-4. The `<Swiper>` component is rendered, which is a container for the `testimonials`. It accepts several props to configure its behavior and appearance. The `modules` prop is used to specify additional modules for the `Swiper` library. The `autoplay` prop is used to enable autoplay for the testimonials. The `pagination` prop configures the pagination component for the testimonials. The `clickable` property is set to true, enabling clickable pagination bullets. The `spaceBetween` prop defines the spacing between each testimonial. The `slidesPerView` prop sets the number of testimonials to display at once. 
+  });
+  ```
+Here, you can edit objects containing testimonial information such as `review`, `photo`, `position`, `name`, and `department`. Update the paths of the images or adjust the styling as desired.
 
-    ```jsx title="Testimonial.jsx" {6-8,11-17,20-21,23,} showLineNumbers
-    return (
-    <div>
-      <Swiper
-        className="h-auto my-7"
-        // install Swiper modules
-        modules={[Autoplay, Pagination]}
-        autoplay={{
-          delay: 3000,
-        }}
+4. Configure the `Swiper` component's properties such as `autoplay`, `pagination`, and `breakpoints` according to your requirements.
 
-        pagination={{ clickable: true }}
-        spaceBetween={32}
-        slidesPerView={1}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-          },
-          // Other config properties
-        }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        {TestiSlide}
-        <div className="m-10"></div>
-        // Styling Files
-        <div className="swiper-pagination" />
-      </Swiper>
-    </div>
+  ```jsx title="Testimonial.jsx" {6-9,12-17} showLineNumbers
+  return (
+  <div>
+    <Swiper
+      className="h-auto my-7"
+      modules={[Autoplay, Pagination]}
+      autoplay={{
+        delay: 3000,
+      }}
+      pagination={{ clickable: true }}
+      spaceBetween={32}
+      slidesPerView={1}
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+        },
+        // Other config properties
+      }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      {TestiSlide}
+      {/* ... other elements */}
+      <div className="swiper-pagination" />
+    </Swiper>
+  </div>
   );
+
   ```
 
-3. Make sure you have the testimonial image file available and it's location. Within the function `Testimonial`, insert or edit the following code snippet 
+5. Save the file to update the changes.
 
-    ```jsx title="Testimonial.jsx" {1} showLineNumbers
-        <img src="/misc/purpleTesti.svg" className="h-30" />
-    ```
+6. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
-This code snippet adds an image element to the `testimonial`, `img src` displaying the image location inside the `" "` in the svg format.
+**On executing the above steps, the individual cards look like this:**
 
-7. Save the file. 
+import testimonial_img from "/docs/projects/tnp-website/assets/Testimonial_img.png";
 
-8. Run `yarn dev` on the terminal to see the changes made in your local environment.
+<img src={testimonial_img} style={{ border: "2px solid gray" }} />
 
-**How to add faculty information to the testimonial**
+<br />
+<br />
+
+**How to add information to the testimonial**
 
 1. Opening `index.astro` file in `Testimonial` component in our projects root directory.
 
 2. Inside the `testiObj` array of the code, add a faculty's details which would be defined as follows:
 
-    ```jsx title="index.astro" {4-9} showLineNumbers
-    const testiObj = 
-    [
-        {
-            name: "Name of the Faculty",
-            photo: "/faculty-image.jpg",
-            review:
-                "Reviews and detail about the Faculty",
-            position: "Position of the Faculty",
-            department: "Department of the Faculty"
-        }
-    ]
-    ```
+  ```jsx title="index.astro" {4-9} showLineNumbers
+      const testiObj = 
+      [
+          {
+              name: "Name of the Faculty",
+              photo: "/faculty-image.jpg",
+              review:
+                  "Reviews and detail about the Faculty",
+              position: "Position of the Faculty",
+              department: "Department of the Faculty"
+          }
+      ]
+  ```
 
 3. Edit the above terms `name`. `photo`, `review`, `position`, `department` to include the faculty information to the testimonial. 
 
@@ -250,11 +241,42 @@ This code snippet adds an image element to the `testimonial`, `img src` displayi
 
 5. Run `yarn dev` on the terminal to see the changes made in your local environment.
 
+
+### Adding Outcome Section
+
+**Let's understand how to add the Outcome Section to the Event Page**
+
+1. Opening `index.astro` file in `Outcome` component in our projects root directory.
+
+2. Define an interface called `Props` that includes a property `outcomes` of type `string[].`
+
+  ```jsx title="index.astro" {2} showLineNumbers
+  interface Props {
+    outcomes: string[];
+  }
+  ```
+
+3. Use the `map` function to iterate over the `outcomes` array and generate a `<p>` element for each outcome.
+
+  ```jsx title="index.astro" {2-6} showLineNumbers
+  {outcomes.map((item, index) => (
+    <p
+      className="lg:text-lg text-sm font-sans font-light text-475466 lg:w-60% md:w-70% py-1"
+      key={index} >
+      {item}
+    </p>
+  ))}
+  ```
+
+4. Save the file.
+
+5. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
 **On executing the above steps, the individual cards look like this:**
 
-import Testimonial_img from "/docs/projects/tnp-website/assets/Testimonial_img.png";
+import outcomes_img from "/docs/projects/tnp-website/assets/outcomes_img.png";
 
-<img src={Testimonial_img} style={{ border: "2px solid gray" }} />
+<img src={outcomes_img} style={{ border: "2px solid gray" }} />
 
 <br />
 <br />
