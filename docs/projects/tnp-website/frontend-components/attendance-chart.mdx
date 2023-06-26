@@ -1,22 +1,22 @@
 ---
-title: Attendence Chart
+title: Attendance Chart
 id: attendance-chart
-description: Attendence Chart Component in T&P Website
-sidebar_label: Attendence Chart
-keywords: [attendence]
+description: Attendance Chart Component in T&P Website
+sidebar_label: Attendance Chart
+keywords: [Attendance]
 ---
 
-The **Attendence-Chart** component provided is a reusable component designed to display attendance data in the form of a bar chart.It is accesible through the [**TNP Website**](https://tnp.tcetmumbai.in/).
+The **Attendance-Chart** component provided is a reusable component designed to display attendance data in the form of a bar chart.It is accesible through the [**TNP Website**](https://tnp.tcetmumbai.in/).
 
-### Adding Attendence Chart 
+### Adding Attendance Chart 
 
-** Let's understand how to add the Attendence Bar Chart to the Page**
+** Let's understand how to add the Attendance Bar Chart to the Page**
 
-1. Opening `index.tsx` of the `Attendence-Chart` component file in our projects root directory.
+1. Opening `index.tsx` of the `Attendance-Chart` component file in our projects root directory.
 
 2. Define the `AttendanceChart` component using the `React.FC` type. It accepts props of `type { data: ChartData<"bar">, title: string }`. The `data` prop represents the chart data, and the `title` prop represents the chart title.
 
-    ```jsx title="index.tsx" {44-53} showLineNumbers
+    ```jsx title="index.tsx" {2-3} showLineNumbers
     const AttendanceChart: React.FC<{
     data: ChartData<"bar">;
     title: string;
@@ -36,3 +36,13 @@ The **Attendence-Chart** component provided is a reusable component designed to 
 5. Run `yarn dev` on the terminal to see the changes made in your local environment. 
 
 
+**On executing the above steps, the individual attendance bar charts look like this:**
+
+import AttendanceChart from "/docs/projects/tnp-website/assets/testimonial_img.png";
+
+<img src={AttendanceChart} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+_We inserted this **[Attendance Chart](attendance-chart)** in many of our events and other pages of **[TNP Website](https://tnp.tcetmumbai.in)**. Next we will be seeing on how we integrated the **[Placements](placement)** component._ 
