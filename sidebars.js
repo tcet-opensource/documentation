@@ -156,6 +156,40 @@ const sidebars =
         },
         {
           type: 'category',
+          label: 'Resume Screener Website',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/resume-screener-website/about-resume-screener-website',
+          },
+          items: 
+          [
+            'projects/resume-screener-website/getting-started',
+            {
+              type: 'category',
+              label: 'Frontend Components',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/resume-screener-website/frontend-components/tech-stacks',
+              },
+              items: 
+              [
+                'projects/resume-screener-website/frontend-components/header',
+                'projects/resume-screener-website/frontend-components/hero',
+                'projects/resume-screener-website/frontend-components/about-us',
+                'projects/resume-screener-website/frontend-components/guideline',
+                'projects/resume-screener-website/frontend-components/ats-resume-template',
+                'projects/resume-screener-website/frontend-components/ats-resume-test-scan',
+                'projects/resume-screener-website/frontend-components/features',
+                'projects/resume-screener-website/frontend-components/card',
+                'projects/resume-screener-website/frontend-components/footer',
+              ],
+            },    
+          ],
+        },
+        {
+          type: 'category',
           label: 'TCET Linux',
           link: 
           {
