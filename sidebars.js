@@ -135,20 +135,20 @@ const sidebars =
             'projects/fmc-website/getting-started',
             {
               type: 'category',
-              label: 'Frontend Components',
+              label: 'Components',
               link:
               {
                 type: 'doc',
-                id: 'projects/fmc-website/frontend-components/tech-stacks',
+                id: 'projects/fmc-website/components/tech-stacks',
               },
               items: 
               [
-                'projects/fmc-website/frontend-components/header-help',
-                'projects/fmc-website/frontend-components/defining-cycle',
-                'projects/fmc-website/frontend-components/displaying-cycle',
-                'projects/fmc-website/frontend-components/cycle-result',
-                'projects/fmc-website/frontend-components/button-instructions',
-                'projects/fmc-website/frontend-components/footer',
+                'projects/fmc-website/components/header-help',
+                'projects/fmc-website/components/defining-cycle',
+                'projects/fmc-website/components/displaying-cycle',
+                'projects/fmc-website/components/cycle-result',
+                'projects/fmc-website/components/button-instructions',
+                'projects/fmc-website/components/footer',
               ],
             },    
             'projects/fmc-website/mathematical-logic',
