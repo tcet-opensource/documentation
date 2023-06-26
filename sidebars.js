@@ -124,6 +124,104 @@ const sidebars =
         },
         {
           type: 'category',
+          label: 'Fill My Cycle Website',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/fmc-website/about-fmc-website',
+          },
+          items: 
+          [
+            'projects/fmc-website/getting-started',
+            {
+              type: 'category',
+              label: 'Components',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/fmc-website/components/tech-stacks',
+              },
+              items: 
+              [
+                'projects/fmc-website/components/header-help',
+                'projects/fmc-website/components/defining-cycle',
+                'projects/fmc-website/components/displaying-cycle',
+                'projects/fmc-website/components/cycle-result',
+                'projects/fmc-website/components/button-instructions',
+                'projects/fmc-website/components/footer',
+              ],
+            },    
+            'projects/fmc-website/mathematical-logic',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Resume Screener Website',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/resume-screener-website/about-resume-screener-website',
+          },
+          items: 
+          [
+            'projects/resume-screener-website/getting-started',
+            {
+              type: 'category',
+              label: 'Frontend Components',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/resume-screener-website/frontend-components/tech-stacks',
+              },
+              items: 
+              [
+                'projects/resume-screener-website/frontend-components/header',
+                'projects/resume-screener-website/frontend-components/hero',
+                'projects/resume-screener-website/frontend-components/about-us',
+                'projects/resume-screener-website/frontend-components/guideline',
+                'projects/resume-screener-website/frontend-components/ats-resume-template',
+                'projects/resume-screener-website/frontend-components/ats-resume-test-scan',
+                'projects/resume-screener-website/frontend-components/features',
+                'projects/resume-screener-website/frontend-components/card',
+                'projects/resume-screener-website/frontend-components/footer',
+              ],
+            },    
+          ],
+        },
+        {
+          type: 'category',
+          label: 'TCET Linux Website',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/tcet-linux-website/about-tcet-linux-website',
+          },
+          items: 
+          [
+            'projects/tcet-linux-website/getting-started',
+            {
+              type: 'category',
+              label: 'Frontend Components',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tcet-linux-website/frontend-components/tech-stacks',
+              },
+              items: 
+              [
+                'projects/tcet-linux-website/frontend-components/navbar',
+                'projects/tcet-linux-website/frontend-components/footer',
+                'projects/tcet-linux-website/frontend-components/copy-to-clipboard',
+                'projects/tcet-linux-website/frontend-components/download-section',
+                'projects/tcet-linux-website/frontend-components/hero',
+                'projects/tcet-linux-website/frontend-components/installation-steps',
+                'projects/tcet-linux-website/frontend-components/verify-downloads', 
+              ],
+            },    
+          ],
+        },
+        {
+          type: 'category',
           label: 'TCET Linux',
           link: 
           {
