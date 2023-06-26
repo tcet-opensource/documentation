@@ -105,6 +105,7 @@ const sidebars =
                 'projects/tnp-website/frontend-components/header',
                 'projects/tnp-website/frontend-components/hero',
                 'projects/tnp-website/frontend-components/training',
+                'projects/tnp-website/frontend-components/attendance-chart',
                 'projects/tnp-website/frontend-components/placement',
                 'projects/tnp-website/frontend-components/top-placed-students',
                 'projects/tnp-website/frontend-components/placed-students',

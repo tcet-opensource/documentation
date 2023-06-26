@@ -154,7 +154,7 @@ import Objective from "/docs/projects/tnp-website/assets/objective.png";
 
 3. Inside the `Testimonial` component, map through the `data` array to create `SwiperSlide` components dynamically. This will generate a testimonial slide for each item in the `data` array.
 
-  ```jsx title="Testimonial.jsx" {18-49} showLineNumbers
+  ```jsx title="Testimonial.jsx" {3-10} showLineNumbers
   const TestiSlide = data.map((data) => {
     return (
       <SwiperSlide
@@ -162,8 +162,7 @@ import Objective from "/docs/projects/tnp-website/assets/objective.png";
         style={{
           background:
             "radial-gradient(61.56% 85.33% at 50% 100%, rgba(212, 185, 255, 0.7) 0%, rgba(241, 232, 255, 0.3) 100%)",
-        }}
-      >
+        }}>
         {/* ... testimonial content */}
       </SwiperSlide>
     );
@@ -173,7 +172,7 @@ Here, you can edit objects containing testimonial information such as `review`, 
 
 4. Configure the `Swiper` component's properties such as `autoplay`, `pagination`, and `breakpoints` according to your requirements.
 
-  ```jsx title="Testimonial.jsx" {51-97} showLineNumbers
+  ```jsx title="Testimonial.jsx" {6-9,12-17} showLineNumbers
   return (
   <div>
     <Swiper
@@ -189,15 +188,7 @@ Here, you can edit objects containing testimonial information such as `review`, 
         640: {
           slidesPerView: 1,
         },
-        768: {
-          slidesPerView: 1,
-        },
-        1024: {
-          slidesPerView: 2,
-        },
-        1280: {
-          slidesPerView: 2,
-        },
+        // Other config properties
       }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
@@ -207,8 +198,9 @@ Here, you can edit objects containing testimonial information such as `review`, 
       <div className="swiper-pagination" />
     </Swiper>
   </div>
-);
-```
+  );
+
+  ```
 
 5. Save the file to update the changes.
 
@@ -229,19 +221,19 @@ import testimonial_img from "/docs/projects/tnp-website/assets/testimonial_img.p
 
 2. Inside the `testiObj` array of the code, add a faculty's details which would be defined as follows:
 
-    jsx title="index.astro" {4-12} showLineNumbers
-    const testiObj = 
-    [
-        {
-            name: "Name of the Faculty",
-            photo: "/faculty-image.jpg",
-            review:
-                "Reviews and detail about the Faculty",
-            position: "Position of the Faculty",
-            department: "Department of the Faculty"
-        }
-    ]
-    
+  ```jsx title="index.astro" {4-9} showLineNumbers
+      const testiObj = 
+      [
+          {
+              name: "Name of the Faculty",
+              photo: "/faculty-image.jpg",
+              review:
+                  "Reviews and detail about the Faculty",
+              position: "Position of the Faculty",
+              department: "Department of the Faculty"
+          }
+      ]
+  ```
 
 3. Edit the above terms `name`. `photo`, `review`, `position`, `department` to include the faculty information to the testimonial. 
 
@@ -258,7 +250,7 @@ import testimonial_img from "/docs/projects/tnp-website/assets/testimonial_img.p
 
 2. Define an interface called `Props` that includes a property `outcomes` of type `string[].`
 
-  ```jsx title="index.astro" {2-4} showLineNumbers
+  ```jsx title="index.astro" {2} showLineNumbers
   interface Props {
     outcomes: string[];
   }
@@ -266,12 +258,11 @@ import testimonial_img from "/docs/projects/tnp-website/assets/testimonial_img.p
 
 3. Use the `map` function to iterate over the `outcomes` array and generate a `<p>` element for each outcome.
 
-  ```jsx title="index.astro" {15-23} showLineNumbers
+  ```jsx title="index.astro" {2-6} showLineNumbers
   {outcomes.map((item, index) => (
     <p
       className="lg:text-lg text-sm font-sans font-light text-475466 lg:w-60% md:w-70% py-1"
-      key={index}
-    >
+      key={index} >
       {item}
     </p>
   ))}
