@@ -24,7 +24,7 @@ saasha:
 
 himanshu:
   name: Himanshu Agarwal
-  title: Docs Team Member | 2x Kaggle Expert | Software Developer | Data Analyst
+  title: Docs Team Lead | 2x Kaggle Expert | Software Developer | Data Analyst
   url: https://github.com/himanshu-03
   image_url: https://github.com/himanshu-03.png
 
@@ -45,3 +45,9 @@ jayesh:
   title: Web Team Lead | Typescript Enthusiast | Full Stack Web Developer
   url: https://github.com/JayeshVP24
   image_url: https://github.com/JayeshVP24.png
+
+nidhi:
+  name: Nidhi Worah
+  title: Machine Learning Enthusiast
+  url: https://github.com/Nidhi-1223
+  image_url: https://github.com/Nidhi-1223.png

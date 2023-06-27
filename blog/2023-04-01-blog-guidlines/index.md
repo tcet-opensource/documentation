@@ -1,5 +1,5 @@
 ---
-slug: first-blog-guidelines
+slug: blog-posting-guidelines
 title: First Blog - General Posting Guidelines
 authors: [gaurang, vishal]
 tags: [free, open, source, software]
@@ -52,10 +52,38 @@ Before moving any further, a blogger must know the following:
 
 > - `slug` - It is the last part of the URL address that serves as a unique identifier of the blog post.
 > - `title` - The main title of the blog post. Note that the blog title should be relevant to the content within the post.
-> - `authors` - The list of authors who have worked on the blog post. Authors can be added by editing the `authors.yml` file.
+> - `authors` - The list of authors who have worked on the blog post. Look below to understand how to add authors.
 > - `tags` - It highlights the key words of the post to boost it's visibility on the internet and improve the SEO.
 
 These four information are necessary to be present in every post. Without these, no posts will be approved and merged within the blog.
+
+
+:::info Mention Authors
+
+Authors can be added in two ways.
+- Internally in `index.md` (recommended, for outside organization contributors)
+- In the `authors.yml` file. (**TCET Open Source Members only**)
+
+If you are not a member of the organization, you can simply append your author(s) in the following way:
+
+```md
+authors:
+  - name: Name of Author 1
+    title: Designation, Post or About
+    url: https://github.com/author1
+    image_url: https://github.com/author1.png
+  - name: Name of Author 2
+    title: Designation, Post or About
+    url: https://github.com/author1
+    image_url: https://github.com/author2.png
+```
+#### Important things to take note of:
+- `url:` can also be an authors' personal website or portfolio.
+- `image_url:` requires a user to have a profile pic on their Github Account. We recommend to append a Github Profile Icon.
+
+
+
+:::
 
 ### Adding images
 
@@ -67,7 +95,7 @@ Tired of good ol' _textbook nerdy_ look on your post? Introducing: **images**. I
 ```
 * Here, `image.png` stands for the name of the image you have in the blog directory. Markdown supports a great amount of image formats, ranging from png, jpg, svg, and even gifs.
 
-:::note
+:::note WONDERING
 Is gif pronounced _gif_ or _jif_? Something to ponder upon.
 :::
 

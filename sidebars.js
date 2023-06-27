@@ -32,12 +32,12 @@ const sidebars =
         description: 'Official Documentation of all TCET Open Source projects',
         keywords: ['documentation, open-source'],
       },
-      collapsed: false,
+      collapsed: true,
       items: 
       [
         {
           type: 'category',
-          label: 'Docs Site',
+          label: 'Docs Site', 
           link: 
           {
             type: 'doc',
@@ -46,7 +46,80 @@ const sidebars =
           items: 
           [
             'projects/docs-site/getting-started',
-            'projects/docs-site/navbar'
+            {
+              type: 'category',
+              label: 'Navbar',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/docs-site/navbar/navbar',
+              },
+              items: 
+              [
+                  'projects/docs-site/navbar/title-and-logo',
+                  'projects/docs-site/navbar/adding-items',
+                  'projects/docs-site/navbar/adding-links',
+                  'projects/docs-site/navbar/search-bar',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Sidebar',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/docs-site/sidebar/sidebar',
+              },
+              items: 
+              [
+                  'projects/docs-site/sidebar/adding-categories',
+                  'projects/docs-site/sidebar/adding-links',
+                  'projects/docs-site/sidebar/adding-items',
+                  'projects/docs-site/sidebar/multiple-sidebars',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'T&P Site',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/tnp-website/about-tnp-website',
+          },
+          items: 
+          [
+            'projects/tnp-website/directory-structure',
+            'projects/tnp-website/getting-started',
+            {
+              type: 'category',
+              label: 'Frontend Components',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tnp-website/frontend-components/tech-stacks',
+              },
+              items: 
+              [
+                'projects/tnp-website/frontend-components/header',
+                'projects/tnp-website/frontend-components/hero',
+                'projects/tnp-website/frontend-components/training',
+                'projects/tnp-website/frontend-components/attendance-chart',
+                'projects/tnp-website/frontend-components/placement',
+                'projects/tnp-website/frontend-components/top-placed-students',
+                'projects/tnp-website/frontend-components/placed-students',
+                'projects/tnp-website/frontend-components/student-award',
+                'projects/tnp-website/frontend-components/testimonials',
+                'projects/tnp-website/frontend-components/internships',
+                'projects/tnp-website/frontend-components/industry-interaction',
+                'projects/tnp-website/frontend-components/event-page',
+                'projects/tnp-website/frontend-components/companies',
+                'projects/tnp-website/frontend-components/top-recruiters',
+                'projects/tnp-website/frontend-components/about-us',
+                'projects/tnp-website/frontend-components/footer',
+              ],
+            },    
           ],
         },
         {
@@ -59,7 +132,53 @@ const sidebars =
           },
           items: 
           [
-            'projects/tcet-linux/iso-profile',
+            'projects/tcet-linux/getting-started',
+            {
+              type: 'category',
+              label: 'ISO Profile',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tcet-linux/iso-profile/iso-profile',
+              },
+              items: 
+              [
+                  'projects/tcet-linux/iso-profile/rootfs',
+                  'projects/tcet-linux/iso-profile/bootloaders',
+                  'projects/tcet-linux/iso-profile/scripts',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Resources',
+      link: 
+      {
+        type: 'generated-index',
+        title: 'Resources',
+        description: 'Resources created by the Organization to understand our workflow.',
+        keywords: ['organization, resources'],
+      },
+      collapsed: true,
+      items: 
+      [
+        {
+          type: 'category',
+          label: 'Workflows',
+          link: 
+          {
+            type: 'generated-index',
+            title: 'Workflows',
+            description: 'Workflows are practiced within an Organization to ensure that all contributions done are as per a given set of practices to have quality code and proper communication with the maintainers. All contributions are welcome in TCET Open Source as long as the workflows are followed: from coding practices of every project to pushing changes on GitHub. Our Organization follows the below mentioned workflows whether you are a part of our Teams or contributing from outside the Organization and expect everyone to follow the same.',
+            keywords: ['organization, workflow'],
+          },
+          items: 
+          [
+            'resources/workflows/internal-workflow/internal-workflow',
+            'resources/workflows/external-workflow/external-workflow',
           ],
         },
       ],

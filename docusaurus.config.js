@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+require('dotenv').config()
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -31,7 +32,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  customFields: {
+    'apiKey': process.env.API_KEY,
+    'appId': process.env.APPLICATION_ID,
+  },
   presets: [
     [
       'classic',
@@ -70,6 +74,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/logo.png',
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       navbar: {
         hideOnScroll: true,
@@ -87,52 +96,91 @@ const config = {
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   label: 'Join us',
+          //   href: 'https://bit.ly/tcetosrecruitment',
+          //   position: 'left',
+          // },
           {
             href: 'https://github.com/tcet-opensource/documentation',
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'search',
+            position: 'right',
+          }
         ],
+      },
+      algolia: {
+        apiKey: process.env.API_KEY,
+        appId: process.env.APPLICATION_ID,
+        indexName: process.env.index
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'About',
             items: [
               {
-                label: 'About TCET Open Source',
+                label: 'TCET Open Source',
                 to: '/docs/about-tcetopensource',
               },
+              {
+                label: 'Docs Website',
+                to: '/docs/projects/docs-site/about-docs',
+              },
+              {
+                label: 'T&P Website',
+                to: '/docs/projects/tnp-website/about-tnp-website',
+              },
+              {
+                label: 'TCET Linux',
+                to: '/docs/projects/tcet-linux/about-tcet-linux',
+              }
             ],
           },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Blogs',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/tcet-opensource/documentation',
+                label: 'Workflows',
+                to: '/docs/category/workflows',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Github',
+                to: 'https://github.com/tcet-opensource/documentation',
+              },
+              {
+                label: 'Discord',
+                to: 'https://discord.gg/r7ZhAREg2M',
+              },
+            ],
+          },
+          {
+            title: 'Connect with us',
+            items: [
+              {
+                label: 'Instagram',
+                to: "https://www.instagram.com/tcetopensource/  ",
+              },
+              {
+                label: 'Twitter',
+                to: 'https://twitter.com/tcetopensource',
+              },
+              {
+                label: 'LinkedIn',
+                to: 'https://www.linkedin.com/company/tcet-opensource/mycompany/',
               },
             ],
           },

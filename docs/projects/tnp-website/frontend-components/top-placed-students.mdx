@@ -1,0 +1,110 @@
+---
+title: Top Placed Students
+id: top-placed-students
+description: Top Placed Students Component in T&P Website
+sidebar_label: Top Placed Students
+---
+
+The **Top Placed Students** section is present on the [**Home Page**](https://tnp.tcetmumbai.in/) of **Training and Placement website** right after the [**Student Awards**](student-award) section.
+This section gives an overview of the top students who got recruited in good companies.
+
+### Top Placed Students Component
+
+For this section. we need to create a carousel of slides with information such as **student's image**, **name**, **company name**,
+and **package**. For this, we need to create a functional component that will create slides for each student
+and a carousel with navigational buttons. 
+
+1. Open **"TopPlacedStudents.jsx"** file.
+
+2. An array is created where each object represents a slide with student's information with the following properties:
+
+```jsx title="TopPlacedStudents.jsx" {3-6} showLineNumbers
+   const slideObj = [
+        {
+            studentImg: "TopPlacedDummy.jpg",
+            studentName: "Jayesh Potlabattini",
+            companyName: "Company",
+            salary: "20 Lakhs",
+        },
+        // Other objects representing different students
+    ];
+```
+
+3. In the next step, we will map through each object within `slideObj` array and create a set of Swiper slides. A `<SwiperSlide>`
+component is rendered for each student object. Within `<SwiperSlide>` component, we are going to see how we displayed student's information:
+
+**For student's image:**
+
+```jsx title="TopPlacedStudents.jsx" {3-6} showLineNumbers
+   <SwiperSlide
+    <div className="min-w-full">
+        <img
+            src={`/TopPlacedStudent/${data.studentImg}`}
+            alt={data.studentName}
+        />
+    </div>
+    >
+    </SwiperSlide>
+```
+
+:::info
+   Similarly, other information such as [**studentName**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/TopPlacedStudents/TopPlacedStudents.jsx#LL75C22-L75C22), [**companyName**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/TopPlacedStudents/TopPlacedStudents.jsx#LL76C13-L76C13) and [**salary**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/TopPlacedStudents/TopPlacedStudents.jsx#LL78C1-L83C17) is displayed.  
+:::
+
+4. A `<Swiper>` component is created which displays all the mapped slides in a container.
+It defines the overall behaviour of the carousel and is configured with various props. 
+`breakpoints` is a prop defined that denotes the change in the number of slides based on the width of the screen.
+
+```jsx title="TopPlacedStudents.jsx" {3-20} showLineNumbers
+    <Swiper
+        //swiper modules
+         breakpoints={{
+          420: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+          1280: {
+            slidesPerView: 6,
+          },
+        }}
+        //swiper modules
+        >
+    </Swiper>
+```
+`navigation` prop specifies navigation elements and their associated classes. The elements which are defined with these classes will identify as either **previous button** or **next button**.
+
+```jsx title="TopPlacedStudents.jsx" {3-7} showLineNumbers
+    <Swiper
+        //swiper modules
+        navigation={{
+          prevEl: ".swiper-prev", //previous button.
+          nextEl: ".swiper-next", //next button.
+          disabledClass: "swiper-button-disabled", 
+        }}
+        //swiper modules
+    >    
+    </Swiper>
+```
+4. Two div elements for the previous and next navigation buttons are defined. These elements contain image elements for the navigation buttons which can be seen 
+in [**TopPlacedStudents.jsx**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/TopPlacedStudents/TopPlacedStudents.jsx#LL125C1-L130C15). Also, refer 
+[**index.astro**](https://github.com/tcet-opensource/tnp-website/blob/main/src/components/TopPlacedStudents/index.astro) to see how we displayed the heading of the section.
+
+**The above steps gives the following output:**
+
+import tps from "/docs/projects/tnp-website/assets/TopPlacedStudents.png";
+
+<figure>
+    <img src={tps} style={{ border: "2px solid gray"}} />
+    <center><b><figcaption>Top Placed Students Section</figcaption></b></center>
+</figure>
+
+_Let's move on to the next section, where we will see how we implemented [**Placed Students**](placed-students) section._

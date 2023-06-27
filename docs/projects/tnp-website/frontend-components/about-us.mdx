@@ -1,0 +1,127 @@
+---
+title: About Us
+id: about-us
+description: About Us Component in T&P Website
+sidebar_label: About Us
+keywords: [contact-us, staff]
+---
+
+The **About Us** page of the website provides information about the training and placement organization. It is often one of the most visited pages as it helps visitors understand the purpose, history, and values of the entity. It is accesible through the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
+
+### Adding Contact Form 
+
+**Here are the steps on how we integrated Contact Form in About Us Component**
+
+1. Opening `ContactForm.tsx` file in our projects root directory.
+
+2. Declared a functional component called `ContactForm` having it's `<form>` element with the various attributes of the form. The email address that the form data will be sent to when submitted is specified here.
+
+    ```jsx title="ContactForm.tsx" {3-5} showLineNumbers
+    const ContactForm = () => {
+        return (
+            <form className="flex flex-col gap-4"
+            action="mailto:tcet.tnp@thakureducation.org" method="GET"
+        >
+        )
+    }
+    ```
+
+3. Inside the `<form>` element, there are several form fields. The `<label>` elements provide a description for each form field, and the `<input>` and `<textarea>` elements are the actual input fields where the user can enter their data. There are used to fill `firstname`, `lastname`, `subject` and `messege` into the form. Each field has specific attributes like `type`, `placeholder`, `name`, `cols`, and `rows` to define its behavior and appearance. There's a `<button>` element at the end of the form with styling classes.
+
+    ```jsx title="ContactForm.tsx" {5,13,28} showLineNumbers
+    const ContactForm = () => {
+        return (
+            <form className="flex flex-col gap-4"
+            action="mailto:tcet.tnp@thakureducation.org" method="GET"
+        <label className="text-sm pb-1 text-slate-600">First Name</label>
+        <input
+            placeholder="Eg: John Doe"
+            type="text"
+            className="h-11 bg-gray-50 border border-gray-200 rounded-lg p-3"
+        />
+        // Similar for Last Name and Subject
+        <span className="flex flex-col">
+            <label className="text-sm pb-1 text-slate-600 ">Message</label>
+            <textarea
+            name="body"
+            id="text-area"
+            cols={15}
+            rows={5}
+            className="bg-gray-50 border border-gray-200 rounded-lg p-3"
+            placeholder="Enter your message"
+            />
+
+        <button
+            className="flex w-max justify-center items-center bg-blue-500 rounded-lg py-2 px-12 text-white text-base hover:bg-blue-400 mt-2"
+            placeholder="message"
+            type="submit"
+            >
+            Submit
+            </button>
+        </form>
+        );
+    };
+    ```
+
+4. Save the changes.
+
+5. Run `yarn dev` on the terminal to see the changes made in your local environment. 
+
+**On executing the above steps, the form look like this:**
+
+import ContactForm_img from "/docs/projects/tnp-website/assets/ContactForm_img.png";
+
+<img src={ContactForm_img} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+### Adding Staff Cards
+
+**How to add Staff and their Information to the page**
+
+1. Opening `Staff.tsx` file in our projects root directory.
+
+2. An array of staff data in the format is defined by the `StaffTNP` type. The `StaffTNP` type defines the structure of each staff member's information, such as `staffPhoto`, `StaffName`, `designation`, and `experties`. This information can be changes using these attributes.
+
+    ```jsx title="Staff.tsx" {2-4,12-14} showLineNumbers
+    const Staff: React.FC<{
+    data: StaffTNP[];
+    }> = ({ data }) => {
+    return <div className="md:flex grid grid-cols-1  md:justify-between pt-4 flex-wrap gap-8">{data.map(staff => <StaffPost {...staff}/>)}</div>;
+    };
+
+    export default Staff;
+
+    const StaffPost = (staffInfo: StaffTNP) => {
+        return (
+            <div className="border bg-[#f9fafb] rounded-lg p-4 flex flex-col justify-center items-center gap-2">
+                <img src={"/Testimonials/"+staffInfo.staffPhoto} alt="staffFoto" className="w-52 rounded-xl"/>
+                <div className="font-semibold">{staffInfo.StaffName}</div>
+                <div>{staffInfo.designation}</div>
+                <div className="bg-[#E4E7EC] px-3 py-2 rounded-lg text-sm w-full text-slate-600 text-center">{staffInfo.experties}</div>
+            </div>
+        )
+    }
+    ``` 
+
+Add the staff images in the appropriate directory `(/Testimonials/)` relative to the staff.
+
+3. Save the changes to the file.
+
+4. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+:::tip
+Similar steps were carried out for adding multiple cards **[Staff Cards](#adding-staff-cards)**. 
+::: 
+
+**On executing the above steps, the staff section looks like this:**
+
+import Staff_img from "/docs/projects/tnp-website/assets/Staff_img.png";
+
+<img src={Staff_img} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+_After successfully implementing the **[About Us](about-us)** component of the **[TNP (Training and Placement)](https://tnp.tcetmumbai.in)** website, the next step we did was to move forward with the implementation of **[Footer](footer)** component._

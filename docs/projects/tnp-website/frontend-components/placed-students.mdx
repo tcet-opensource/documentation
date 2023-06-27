@@ -1,0 +1,186 @@
+---
+title: Placed Students
+id: placed-students
+description: Placed Students Component in T&P Website
+sidebar_label: Placed Students
+---
+
+The [**Students Placed**](https://tnp.tcetmumbai.in/students-placed/) page displays information about the students who secured placements in renowned companies 
+and bagged a good package. This section is categorized into **Super Star Performers**, **Star Performers** and 
+**All Star Performers**. 
+
+- **Super Star Performers:** Displays Students who have performed exceptionally well throughout the years. 
+- **Star Performers:** Displays top students from each academic year (2019-2023) who have performed well. 
+- **All Star Performers:** A list of pdfs with all the top performers from each year.
+
+### Super Star Performers 
+
+To create a carousel of cards with the information about the Super Star Performers of TCET, we need to create a functional
+component `SuperStarPerformers`. 
+
+**Here's what we did:**
+
+1. Open **"SuperStarPerformers.tsx"** file.
+
+2. **"SuperStarPerformers"** component is created. This component returns `<SwiperSlide>` component to create slides for each performer. Within the `<div>`
+element information such as **image**, **batch**, **name**, **company**, **branch** and **package** will be displayed.
+
+**This is how we displayed the image of the student:**
+
+```jsx title="SuperStarPerformers.tsx" {2-6} showLineNumbers
+    <div className="min-w-full">
+        <img
+            className="rounded-lg w-full h-40 object-cover"
+            src={superStarPerformer.img}
+            alt="Super Star Performer Photo"
+        />
+    </div>
+```
+
+**Batch of the student:**
+
+```jsx title="SuperStarPerformers.tsx" {3} showLineNumbers
+    <div className="mt-2">
+        <span className="text-sm font-medium px-2 py-1 rounded-full bg-gray-200 text-gray-700">
+                {superStarPerformer.batch}
+        </span>
+    </div>
+```
+
+:::info
+   In the same way, we displayed name, company, branch and package information of the students in 
+   [**SuperStarPerformers.tsx**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/PlacedStudents/SuperStarPerformers/SuperStarPerformers.tsx#LL100C1-L126C19).
+:::
+
+3. This component also returns a `<swiper>` component which represents the main container and defines the overall behaviour of the carousal. 
+It is configured with various props. `'breakpoints'` is a prop defined that denotes the change in the number of slides 
+based on the width of the screen.
+
+```jsx title="SuperStarPerformers.tsx" {3-16} showLineNumbers
+     <Swiper
+        //swiper modules
+        breakpoints={{
+            450: {
+                slidesPerView: 2,
+                },
+            768: {
+                slidesPerView: 3,
+                },
+            1024: {
+                slidesPerView: 4,
+                },
+            1280: {
+                slidesPerView: 5,
+                },
+        }}
+        //swiper modules
+        >
+        </Swiper>
+```
+
+4. `'navigation'` prop specifies navigation elements and their associated classes. The elements
+with these classes will identify as either **previous button** or **next button**.
+
+```jsx title="SuperStarPerformers.tsx" {4,5} showLineNumbers
+     <Swiper
+        //swiper modules
+        navigation={{
+          prevEl: ".swiper-prev", //previous button.
+          nextEl: ".swiper-next", //next button.
+          disabledClass: "swiper-button-disabled", 
+        }}
+        //swiper modules
+    >    
+    </Swiper>
+```
+
+### Star Performers 
+
+This section is similar to [**Super Star Performers**](#super-star-performers) section, where star achievers are displayed batch wise. 
+For each batch a separate carousel is created. 
+
+For this `starPerformers` array is created which contains information about different batches of students
+and their placement data. Each batch has a property **batch** , **color** associated with it and an array of **data** 
+containing information about individual students.
+
+```jsx title="index.astro" {3-14} showLineNumbers
+    const starPerformers = [
+        {
+            batch: 2023,
+            color: "#FFFAEB",
+            data: [
+                {
+                    img: "/studentPlaced/student_image.jpg",
+                    name: "Student Name1",
+                    branch: "Branch Name",
+                    company: "Meta",
+                    package: "23 Lakhs",
+                },
+                // Other student objects...
+            ],
+        },
+        // Other batch objects...
+    ];
+```
+`StarPerformers` component is rendered for the corresponding data for each batch as we saw in [**Super Star Performers**](#super-star-performers).
+
+
+
+### All Star Performers
+
+This section contains downloadable links of pdf containing information about all the star performers from each batch.
+Each container is a `<button>` which contains an `svg` icon and anchor tag linking to a pdf that can be 
+downloaded upon mouse click. 
+
+```jsx title="index.astro" {3-5} showLineNumbers
+    <button>
+    <span class="font-title text-lg">
+            <a href={item.link} download>
+              {item.batch} PDF
+            </a>
+    </span>
+    </button>
+```
+:::tip
+   To create svg icon for each batch, refer: [**index.astro**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/PlacedStudents/AllStarPerformers/index.astro#LL31C1-L47C19)
+:::
+
+**This is how different sections of the page looks like:**
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem'
+import styles from '/src/components/HomepageFeatures/styles.module.css';
+
+import SuperStarPerformers from "/docs/projects/tnp-website/assets/SuperStarPerformers.png";
+import Star2023 from "/docs/projects/tnp-website/assets/StarPerformers2023.png";
+import Star2022 from "/docs/projects/tnp-website/assets/StarPerformers2022.png";
+import Star2021 from "/docs/projects/tnp-website/assets/StarPerformers2021.png";
+import Star2020 from "/docs/projects/tnp-website/assets/StarPerformers2020.png";
+import Star2019 from "/docs/projects/tnp-website/assets/StarPerformers2019.png";
+import Allstars from "/docs/projects/tnp-website/assets/AllStars.png";
+
+<Tabs>
+  <TabItem value="Super Star Performers" attributes={{className: styles.unique}}>
+    <img src={SuperStarPerformers} style={{ border: "2px solid gray" }} />
+  </TabItem>
+  <TabItem value="Star Performers 2023" attributes={{className: styles.unique}}>
+    <img src={Star2023} style={{ border: "2px solid gray" }} />
+  </TabItem>
+    <TabItem value="Star Performers 2022" attributes={{className: styles.unique}}>
+    <img src={Star2022} style={{ border: "2px solid gray" }} />
+  </TabItem>
+    <TabItem value="Star Performers 2021" attributes={{className: styles.unique}}>
+    <img src={Star2021} style={{ border: "2px solid gray" }} />
+  </TabItem>
+    <TabItem value="Star Performers 2020" attributes={{className: styles.unique}}>
+    <img src={Star2020} style={{ border: "2px solid gray" }} />
+  </TabItem>
+    <TabItem value="Star Performers 2019" attributes={{className: styles.unique}}>
+    <img src={Star2019} style={{ border: "2px solid gray" }} />
+  </TabItem>
+  <TabItem value="All Star Performers" attributes={{className: styles.unique}}>
+    <img src={Allstars} style={{ border: "2px solid gray" }} />
+  </TabItem>
+</Tabs>
+
+_In this section, we saw how we created [**Placed Students**](placed-students) page. Let's see how we implemented [**Student Awards**](student-award) page in the next section!_ 

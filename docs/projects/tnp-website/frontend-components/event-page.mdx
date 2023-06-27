@@ -1,0 +1,284 @@
+---
+title: Event Page
+id: event-page
+description: Event Page Component in T&P Website
+sidebar_label: Event Page
+keywords: [event, purpose, objective, outcomes]
+---
+
+The **Event** page of the website gives you information about various training and placement events falling under aptitude training and student development programs. It is accesible through the navigation bar of the [**TNP Website**](https://tnp.tcetmumbai.in/).
+
+### Adding Carousel to the Hero Section
+
+**Here are the steps we performed to add a Caraousel in our Event page**
+
+1. Opening `HeroCarousel.tsx` file in our projects root directory.
+
+2. The array of objects named `heroSlideObj` that contains the image links and alt text for the event, will be loacted. For each object in the array, it generates a `<SwiperSlide>` component with an `<img>` element inside.
+
+    ```jsx title="HeroCarousel.tsx" {3-4} showLineNumbers
+    const heroSlideObj = [
+        {
+            img: "EventPage.png",
+            alt: "Event 1",
+        }
+    ]
+    ```
+
+3. The `<Swiper>` component is rendered, which is a container for the event images. It accepts several props to configure its behavior and appearance. 
+
+    ```jsx title="HeroCarousel.tsx" {4-7} showLineNumbers
+    const heroSlide = heroSlideObj.map((data) => {
+        return (
+            <SwiperSlide>
+                <img
+                src={`/EventsPage/${data.img}`}
+                className="object-cover h-full w-full"
+                alt={data.alt}
+            />
+        </SwiperSlide>
+        );
+    });
+    ```
+
+4. The `modules` prop is used to specify additional modules for the `Swiper` library. The `autoplay` prop is used to enable autoplay for the slideshow. The `spaceBetween` prop defines the spacing between each slide. The `slidesPerView` prop sets the number of slides to display at once. The `onSwiper` and `onSlideChange` props are optional event handlers. 
+
+    ```jsx title="HeroCarousel.tsx" {5-13} showLineNumbers
+    return (
+        <Swiper
+            className="h-auto xl:w-[540px] lg:w-[480px] md:w-full border rounded-lg xl:rounded-xl "
+            // install Swiper modules
+            modules={[Autoplay]}
+            autoplay={{
+                delay: 3000,
+            }}
+            spaceBetween={30}
+            slidesPerView={1}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+        >
+            {heroSlide}
+        </Swiper>
+    );
+    ```
+
+5. Each object should have a `img` property that specifies the image file name and an`alt` property that specifies the alternative text for the image.
+
+6. Save the changes.
+
+7. Run `yarn dev` on the terminal to see the changes made in your local environment. 
+
+### Adding Purpose of the Event Section
+
+**After adding Carousel, let's have a look at  how we implemented the Purpose of the Event Section**
+
+1. Opening `index.astro` file inside the `Hero` component our projects root directory.
+
+2. Locate the following code snippet inside the component or section where you want to display it.
+
+    ```jsx title="index.astro" {5-7,9-11} showLineNumbers
+    <div>
+      //Other styling
+        <div class="md:w-1/2 pr-8">
+          <h1 class="text-[42px] font-title">Purpose</h1>
+          <p class="lg:text-lg text-sm  font-sans font-light text-[#475466]">
+            {purpose}
+          </p>
+        </div>
+        <div class="md:w-1/2 w-full h-full lg:mt-0 mt-6">
+          <Hero heroSlideObj={heroSlideObj} client:load />
+        </div>
+      // Other parts of the component
+    </div>
+    ```
+
+3. Replace the `{/* Add your purpose text here */}` comment with the actual purpose text you want to display.
+
+4. Save the changes.
+
+5. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+**On executing the above steps, the individual cards look like this:**
+
+import Hero_img from "/docs/projects/tnp-website/assets/Hero_img.png";
+
+<img src={Hero_img} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+
+### Adding Objective of the Event Section
+
+**Let's have a look at how we integrated this section in our Event page.**
+
+1. Opening `index.astro` file inside the `Testimonial` component our projects root directory.
+
+2. Insert the following code snippet into your HTML or JSX file where you want to display the objective:
+
+    ```jsx title="index.astro" {3-6} showLineNumbers
+    <div>
+      // Other parts and styling of the container
+        <h1 class="font-title text-[42px] mb-[15px]">Objective</h1>
+        <p class="lg:text-lg text-sm  font-sans font-light text-[#475466] lg:w-[60%] md:w-[70%]">
+            {objective}
+        </p>
+      // Other parts of the container
+    </div>
+    ```
+
+3. Replace `{objective}` in the code with the actual variable or string that contains the `objective` content. This is where you provide the objective text that you want to display on the page.
+
+4. Save the file. 
+
+5. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+import Objective from "/docs/projects/tnp-website/assets/objective.png";
+
+<img src={Objective} style={{ border: "2px solid gray" }} />
+
+
+### Adding Testimonial Section
+
+**Let's understand how we add the statistics testimonial to the event page**
+
+1. Opening `Testimonial.jsx` file in our projects root directory.
+
+2. Create a new functional component called `Testimonial` and pass the `data` prop to it.
+
+  ```jsx title="Testimonial.jsx" {17} showLineNumbers
+  function Testimonial({ data }) {
+    // ... code continues
+  
+  ```}
+
+3. Inside the `Testimonial` component, map through the `data` array to create `SwiperSlide` components dynamically. This will generate a testimonial slide for each item in the `data` array.
+
+  ```jsx title="Testimonial.jsx" {3-10} showLineNumbers
+  const TestiSlide = data.map((data) => {
+    return (
+      <SwiperSlide
+        className=" h-auto border-none rounded-lg xl:rounded-xl"
+        style={{
+          background:
+            "radial-gradient(61.56% 85.33% at 50% 100%, rgba(212, 185, 255, 0.7) 0%, rgba(241, 232, 255, 0.3) 100%)",
+        }}>
+        {/* ... testimonial content */}
+      </SwiperSlide>
+    );
+  });
+  ```
+Here, you can edit objects containing testimonial information such as `review`, `photo`, `position`, `name`, and `department`. Update the paths of the images or adjust the styling as desired.
+
+4. Configure the `Swiper` component's properties such as `autoplay`, `pagination`, and `breakpoints` according to your requirements.
+
+  ```jsx title="Testimonial.jsx" {6-9,12-17} showLineNumbers
+  return (
+  <div>
+    <Swiper
+      className="h-auto my-7"
+      modules={[Autoplay, Pagination]}
+      autoplay={{
+        delay: 3000,
+      }}
+      pagination={{ clickable: true }}
+      spaceBetween={32}
+      slidesPerView={1}
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+        },
+        // Other config properties
+      }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      {TestiSlide}
+      {/* ... other elements */}
+      <div className="swiper-pagination" />
+    </Swiper>
+  </div>
+  );
+
+  ```
+
+5. Save the file to update the changes.
+
+6. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+**On executing the above steps, the individual cards look like this:**
+
+import testimonial_img from "/docs/projects/tnp-website/assets/Testimonial_img.png";
+
+<img src={testimonial_img} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+**How to add information to the testimonial**
+
+1. Opening `index.astro` file in `Testimonial` component in our projects root directory.
+
+2. Inside the `testiObj` array of the code, add a faculty's details which would be defined as follows:
+
+  ```jsx title="index.astro" {4-9} showLineNumbers
+      const testiObj = 
+      [
+          {
+              name: "Name of the Faculty",
+              photo: "/faculty-image.jpg",
+              review:
+                  "Reviews and detail about the Faculty",
+              position: "Position of the Faculty",
+              department: "Department of the Faculty"
+          }
+      ]
+  ```
+
+3. Edit the above terms `name`. `photo`, `review`, `position`, `department` to include the faculty information to the testimonial. 
+
+4. Save the file. 
+
+5. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+
+### Adding Outcome Section
+
+**Let's understand how to add the Outcome Section to the Event Page**
+
+1. Opening `index.astro` file in `Outcome` component in our projects root directory.
+
+2. Define an interface called `Props` that includes a property `outcomes` of type `string[].`
+
+  ```jsx title="index.astro" {2} showLineNumbers
+  interface Props {
+    outcomes: string[];
+  }
+  ```
+
+3. Use the `map` function to iterate over the `outcomes` array and generate a `<p>` element for each outcome.
+
+  ```jsx title="index.astro" {2-6} showLineNumbers
+  {outcomes.map((item, index) => (
+    <p
+      className="lg:text-lg text-sm font-sans font-light text-475466 lg:w-60% md:w-70% py-1"
+      key={index} >
+      {item}
+    </p>
+  ))}
+  ```
+
+4. Save the file.
+
+5. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+**On executing the above steps, the individual cards look like this:**
+
+import outcomes_img from "/docs/projects/tnp-website/assets/outcomes_img.png";
+
+<img src={outcomes_img} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+_Congratulations, we have successfully implemented the [**Event Page**](event-page). Let's continue to find out how we implemented the [**Companies**](companies) Section of the [**TNP website**](https://tnp.tcetmumbai.in/). _
