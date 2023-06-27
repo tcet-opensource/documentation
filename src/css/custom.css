@@ -11,6 +11,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.tailwind a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 :root {
   --ifm-color-primary: #451d84;
   --ifm-color-primary-dark: #3e1a77;

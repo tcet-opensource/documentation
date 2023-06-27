@@ -36,7 +36,7 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const ref = useRef(null);
   return (
-    <div className="bg-[#070419]">
+    <div className="bg-[#070419] ">
       <div className="flex px-4 lg:px-20 pt-4 w-screen flex-row justify-between items-center">
         {/* Logo  */}
         <div className="flex items-center">
@@ -54,7 +54,7 @@ const Navbar = () => {
             href="https://github.com/tcet-opensource"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-transperent hover:bg-gray-800 text-white hover:text-white font-medium py-2 px-4 border rounded-md border-[#475467] mx-2 lg:mx-4"
+            class="bg-transperent hover:bg-gray-800    hover:text-white font-medium py-2 px-4 border rounded-md border-[#c8c9cb] mx-2 lg:mx-4"
           >
             Contribute
           </a>

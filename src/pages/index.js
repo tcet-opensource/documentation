@@ -13,11 +13,12 @@ import ProjectSection from "../components/ProjectSection";
 import Footer from "../components/Footer";
 // import styles from "./index.module.css";
 import About from "../components/About";
+// import "../css/tailwindCustom.css"
 import "../css/custom.css"
 export default function Home() {
   // const { siteConfig } = useDocusaurusContext();
   return (
-    <div className="font-sans" >
+    <div className={"font-sans tailwind"} >
       <Head>
         <meta property="og:image" content="/img/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
