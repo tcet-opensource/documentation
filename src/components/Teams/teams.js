@@ -38,7 +38,7 @@ function Teams() {
       description:
         "Works on designing, developing, and maintaining the user experience aspects of the software. ",
       gradientStart: "#762B43",
-      gradientEnd: "rgba(25, 65, 133, 0)",
+      gradientEnd: "#00225D",
       teamImg: UIUXCard,
       icon: UIUXIcon,
     },
@@ -47,7 +47,7 @@ function Teams() {
       description:
         "Works on designing, developing, and maintaining the user experience aspects of the software. ",
       gradientStart: "#762B43",
-      gradientEnd: "rgba(25, 65, 133, 0)",
+      gradientEnd: "#00225D",
       teamImg: DocsCard,
       icon: DocsIcon,
     },
@@ -56,7 +56,7 @@ function Teams() {
       description:
         "Works on designing, developing, and maintaining the user experience aspects of the software. ",
       gradientStart: "#2B7669",
-      gradientEnd: "rgba(25, 65, 133, 0)",
+      gradientEnd: "#00225D",
       teamImg: DevOpsCard,
       icon: DevOpsIcon,
     },
@@ -64,8 +64,8 @@ function Teams() {
       teamName: "AI Team",
       description:
         "Works on designing, developing, and maintaining the user experience aspects of the software. ",
-      gradientStart: "##2B7669",
-      gradientEnd: "rgba(25, 65, 133, 0)",
+      gradientStart: "#2B7669",
+      gradientEnd: "#00225D",
       teamImg: AiCard,
       icon: AITeamIcon,
     },
@@ -74,7 +74,7 @@ function Teams() {
       description:
         "Works on designing, developing, and maintaining the user experience aspects of the software. ",
       gradientStart: "#764F2B",
-      gradientEnd: "rgba(25, 65, 133, 0)",
+      gradientEnd: "#00225D",
       teamImg: CreativeCard,
       icon: CreativeIcon,
     },
@@ -85,7 +85,7 @@ function Teams() {
       <section id="team"
         className="lg:h-64 md:h-60 h-fit lg:w-[40%] max-w-xl overflow-hidden text-white flex flex-col md:flex-row lg:flex-wrap lg:rounded-2xl md:rounded-xl rounded-lg m-6 "
         style={{
-          backgroundImage: `linear-gradient(180deg, ${data.gradientStart} 0%, ${data.gradientEnd} 100%)`,
+          backgroundImage: `linear-gradient(180deg, ${data.gradientStart} 0%, ${data.gradientEnd} 125%)`,
         }}
       >
         <img
