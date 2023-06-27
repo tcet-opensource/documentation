@@ -53,7 +53,7 @@ const UnderDevelopmentProjects = () => {
             <h6 className="text-slate-300 font-normal text-lg mt-4">These are some projects under development</h6>
             <div className="flex items-center justify-center py-32 px-0 lg:px-24 lg:mt-10 ">
                 <Swiper
-                    className="w-full"
+                    className="w-full !overflow-visible "
                     id="under-development-projects"
                     // install Swiper modules
                     modules={[Navigation, FreeMode, A11y]}
@@ -79,7 +79,7 @@ const UnderDevelopmentProjects = () => {
                         nextEl: ".swiper-next",
                         disabledClass: "swiper-button-disabled",
                     }}
-                    zoom={true}
+                    // zoom={true}
                 >
                     {mappedSlides}
                     <div className="swiper-prev flex items-center justify-center shadow-md 

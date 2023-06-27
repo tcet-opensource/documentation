@@ -7,8 +7,9 @@ import img from "../../assets/image.png";
 const About = () => {
   return (
     <section id="about" className="bg-[#07001D] ">
-      <div className="flex justify-center items-center w-[90%] px-5 m-auto text-slate-50 ">
-        <div className="flex flex-col items-center gap-12 px-16 py-20 max-sm:px-0 max-sm:py-16 lg:flex-row 2xl:px-32 lg:py-40">
+      {/* <div className="flex justify-center items-center w-[90%] px-5 m-auto text-slate-50 "> */}
+        {/* <div className="flex flex-col items-center gap-12 px-16 py-20 max-sm:px-0 max-sm:py-16 lg:flex-row 2xl:px-32 lg:py-40"> */}
+        <div className="flex flex-col items-center gap-12 p-5 lg:flex-row 2xl:px-32 lg:p-16 text-slate-50">
           <div>
             <img src={img} alt="img" />
           </div>
@@ -55,7 +56,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };
