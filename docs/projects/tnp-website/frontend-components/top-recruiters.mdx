@@ -1,0 +1,107 @@
+---
+title: Top Recruiters
+id: top-recruiters
+description: Top Recruiters Component in T&P Website
+sidebar_label: Top Recruiters
+keywords: [recruiters, astro, Marquee]
+---
+
+The **Top Recruiters** page of the website gives you information about the top companies and the recuiters during the placement procedure. It is accesible through the Home Page of the [**TNP Website**](https://tnp.tcetmumbai.in/).
+
+### Adding Marquee component to the page
+
+**Steps to add a Marquee Component:*
+
+1. Opening `LogosMarquee.tsx` file in our projects root directory.
+
+2. A functional component called `LogosMarquee` and this component accepts two props: `data` and `oppDirection`.
+
+    ```jsx title="LogosMarquee.tsx" {3-6} showLineNumbers
+    const LogosMarquee: React.FC<{
+        data: { imgUrl: string; name: string }[];
+        oppDirection?: boolean | false;
+    }> = ({ data, oppDirection })
+    ```
+
+3. The `Marquee` component accepts two props: `direction` specifies the direction of the marquee animation. If `oppDirection` is `true`, the direction is set to "right", otherwise, it is set to "left", `speed` specifies the speed of the marquee animation. 
+
+    ```jsx title="LogosMarquee.tsx" {8} showLineNumbers
+    <Marquee  direction={oppDirection ? "right" : "left"} speed={30}>
+    ```
+
+4. The `data` prop is an array of objects, where each object has two properties: `imgUrl` (string) and `name` (string). The mapping iterates over each object in the `data` array and generates an `<img>` element for each logo image. The `key` prop is set to the name property for efficient rendering.
+
+    ```jsx title="LogosMarquee.tsx" {4-9} showLineNumbers
+    // Other part of section
+    return (
+    <Marquee  direction={oppDirection ? "right" : "left"} speed={30}>
+      {data.map((d) => (
+        <img
+          key={d.name}
+          className="h-8 object-contain"
+          src={d.imgUrl}
+          alt={d.name}
+        />
+      ))}
+    </Marquee>
+    ```
+
+5. Save the changes.
+
+6. Run `yarn dev` on the terminal to see the changes made in your local environment. 
+
+### Adding Logo and Content
+
+**Here's how we added logo and content of the company in the [Top Recruiters](top-recruiters) section**
+
+1. Opening `index.astro` in the 'Top Recruiters` component file in our projects root directory.
+
+2. An array called `data`, which contains multiple objects representing different logos. Each object has two properties: `name` (the name of the company) and `imgUrl` (the URL of the company's logo image).
+
+    ```jsx title="index.astro" {3-6} showLineNumbers
+    const data = [
+        {
+            name: "Accenture",
+            imgUrl:
+                "https://images.squarespace-cdn.com/content/v1/5d23ae890b7dee000180ec51/1586367987659-BZ5L8BA1UZBLNVFMATYK/ke17ZwdGBToddI8pDm48kPjg6bM-W17gCtBWJ8Mjp2AUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnBItPiluyZS-UhYJJ6omcW3Y-2_8y8J8iHad74oPUfQWBOqOCHXbC31Z0m-iT7ZRQQ/accenturelogo.png",
+        }
+        // Repeated multiple times in a marquee
+    ]
+    ```
+  
+3. This `div` element contains a text section with information about top recruiters. The text can be added added or edited from this section.
+
+    ```jsx title="index.astro" {46-55} showLineNumbers
+    <div class="flex flex-col mt-4 flex-initial xl:w-1/2 md:w-1/2 sm:w-full">
+        <div class="m-8">
+            <p class="text-3xl font-title pb-4">Top Recruiters</p>
+            <p class="text-slate-700 font-Inter">
+            TCET has an enviable record in placement of students. The institute has been accredited by major companies like Infosys, Tata Consultancy Services, iGATE, and Tech mahindra, etc.
+            </p>
+        </div>
+    </div>
+    ```
+
+4. The four `LogosMarquee` components are rendered within the carousel container. They are responsible for displaying the marquee of logos. Each `LogosMarquee` component receives the `data` prop, which is set to the `data` array defined earlier. 
+
+    ```jsx title="index.astro" {68-71} showLineNumbers
+    <LogosMarquee client:only="react" data={data} />
+    <LogosMarquee client:only="react" data={data} oppDirection />
+    <LogosMarquee client:only="react" data={data} />
+    <LogosMarquee client:only="react" data={data} oppDirection />
+    ```
+
+5. Save the changes.
+
+6. Run `yarn dev` on the terminal to see the changes made in your local environment.
+
+**On executing the above steps, the individual cards look like this:**
+
+import LogoMarquee_img from "/docs/projects/tnp-website/assets/LogoMarquee_img.png";
+
+<img src={LogoMarquee_img} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+_After successfully implementing the **[Top Recruiters](top-recruiters)** component of the **[TNP (Training and Placement)](https://tnp.tcetmumbai.in)** website, the next step is to move forward with the implementation of the **[About Us](about-us)** component._

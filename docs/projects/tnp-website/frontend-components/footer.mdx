@@ -1,0 +1,176 @@
+---
+title: Footer
+id: footer
+description: Footer Component in T&P Website
+sidebar_label: Footer
+---
+The footer component is a section of a web page that is placed at the bottom and is separate from the main content area. It serves as a container for information that is relevant to the entire page. In the footer component, we have included **Google map of the institution** as well as the **written address, navigation links, contact details, copyright notices**, and other supplementary information.
+
+## Map Component
+This component is represented by the HTML program which includes a map embedded from Google Maps and an address description.
+
+**Here's the implemented code:**
+
+   ```jsx title="index.astro" {3-9,10-16} showLineNumbers
+       {/* Map And Address */}
+            <div class="w-full lg:w-1/3 xl:w-1/3 m-2">
+                <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7457229439237!2d72.87241691481825!3d19.20630535285474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e57647569d%3A0xc0aec329c82d3555!2sThakur%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1680794472903!5m2!1sen!2sin"
+                            style={{ border: 0, width: "100%", height: "27vh" }}
+                            loading="lazy"
+                            referrer-policy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-4 text-sm">
+                    <p class="text-justify">
+                        Thakur College Of Engineering And Technology. A-Block, Thakur
+                        Educational Campus, Shyamnarayan Thakur Marg, Thakur Village,
+                        Kandivali(E). Mumbai - 400101.
+                    </p>
+                </div>
+            </div>
+  ```
+**Here's a breakdown explanation of the map component:**
+
+ 1. The first `div` element is applied with multiple CSS classes. These are defined with attributes for styling puposes.
+
+ 2. The `div` element in the next line contains `<iframe>` element, which is added in the code to embed content from another source. Here, the `src` atribute is **Google Maps embed URL**, which is used to display map of the college in the footer. The CSS classes have been applied.
+
+ 3. The `loading` attribute is set to **lazy**, which indicates that iframe should be loaded only when it becomes fully visible. 
+
+ 4. The `referrer-policy` is set to **no-referrer-when-downgrade** which is used to restrict the referrer information when loading the embedded Google Maps content. This helps in protecting user's privacy and security.
+
+ 5. The next `div` element introduces the `<p> paragraph` element. It represents the paragraph of text that describes the **college address**. There are CSS classes applied to the element as per our specifications.
+
+import Map from "/docs/projects/tnp-website/assets/Map.png";
+
+<figure>
+    <center><img src={Map} style={{ border: "2px solid gray" }} />
+    <b><figcaption>Map Component</figcaption></b></center>
+</figure>
+
+## Navigation Component
+The code for this section is represented by the HTML language which creates a navigation menu.
+
+**Here's the implemented code:**
+
+   ```jsx title="index.astro" {3-11} showLineNumbers
+        {/* Nav as */}
+            <div class="mt-10 md:mt-0 w-full lg:w-1/3 m-2" >
+                <div class="grid grid-rows gap-2 text-left md:text-center">
+                    <a class="hover:underline" href="/about">Home</a>
+                    <a class="hover:underline" href="/download">Download</a>
+                    <a class="hover:underline" href="/media">Media</a>
+                    <a class="hover:underline" href="/news">News</a>
+                    <a class="hover:underline" href="/mandatory-disclosure">Mandatory Disclosure</a>
+                    <a class="hover:underline" href="/disclaimer">Disclaimer</a>
+                    <a class="hover:underline" href="/content-policy">Content Policy</a>
+                </div>
+            </div>
+   ```
+**Here's a breakdown explanation of the navigation component:**
+
+ 1. The `div` element in the code is used for **styling purposes** with multiple CSS classes applied. The next `div` element have classes which is responsible for **layout & alignment** of the navigation links.
+
+ 2. There are `<a> anchor` elements present in the incoming code which represents the **navigation links**. Each link is wrapped inside the `<a>` element with **hover** effect applied to it. 
+
+ 3. The `href` attribute specifies the **destination URL** for each link.
+
+ 4. The overall section of the code generates a navigation menu with several links which is used to navigate different pages of the website. 
+
+
+import Navigation from "/docs/projects/tnp-website/assets/Navigation.png";
+
+<figure>
+    <center><img src={Navigation} style={{ border: "2px solid gray" }} />
+    <b><figcaption>Navigation Component</figcaption></b></center>
+</figure>
+
+## Contact & Copyrights Component
+
+The code for this section is represented by the HTML language which displays contact information and copyright details.
+
+**Here's the implemented code:**
+
+   ```jsx title="index.astro" {5-16,19-24,27-37,41-43} showLineNumbers
+        {/* Contacts and CopyRight */}
+            <div class="w-full lg:w-1/3 mt-10 md:mt-0 m-2">
+                <div class="text-base">
+                    <div>
+                        <img class="inline mr-2" src="/misc/phone.svg" alt="phone" />
+                        <p class="inline">
+                            <a class="underline" href="tel:022-28461891"> 022 - 28461891</a>{
+                                " "
+                            }
+                            /{" "}
+                            <a class="underline" href="tel:022-67308000"> 022 - 67308000</a>
+                            ,{" "}
+                            <a class="underline" href="tel:022-67308106"> 67308106</a>{" "}
+                            /{" "}
+                            <a class="underline" href="tel:022-67308107"> 07</a>
+                        </p>
+                    </div>
+                     <div class="mt-2">
+                        <img class="inline mr-2" src="/misc/email.svg" alt="email" />
+                        <p class="inline">
+                         <a class="underline" href="mailto:tcet.tnp@thakureducation.org">
+                            tcet.tnp@thakureducation.org
+                         </a>
+                        </p>
+                     </div>
+                 <div class="mt-2">
+                         <img class="inline mr-2" src="/misc/website.svg" alt="website" />
+                         <p class="inline">
+                            Websites:{" "}
+                             <a class="underline" href="https://www.tcetmumbai.in">
+                             www.tcetmumbai.in
+                             </a>{" "}
+                             /{" "}
+                             <a class="underline" href="https://www.thakureducation.org">
+                                 www.thakureducation.org
+                             </a>
+                         </p>
+                     </div>
+                 </div>
+                 <div class="mt-8">
+                     <p class="">
+                         © 2023 Thakur College of Engineering and Technology. All Rights Reserved.
+                     </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+   ```
+**Here's a breakdown explanation of this component:**
+
+ 1. There the `div` elements with multiple CSS classes. Majorly for styling purposes and to set the font for the content inside it.
+
+ 2. The below section of the code is to display the phone contact information. the `<img>` element is used to display the image of the **phone icon**. The `src` element is used to define the **source or file path**. There is `inline CSS` used to make the image and the content **display inline**.
+
+ 3. The `<p>` element in the code conatins theb `<a>` elements which represents phone numbers. Each phone number is wrapped inside the `<a>` anchor element and has the `underline` attribute applied.
+
+ 4. The `underline` attribute adds an **underline** to the content. Here, `href` attribute is set to the respective **phone number links**.
+
+:::tip
+Similar steps were carried out for adding  **[tcet.tnp@thakureducation.org](mailto:tcet.tnp@thakureducation.org)**, **[www.tcetmumbai.in](https://www.tcetmumbai.in)** & **[www.thakureducation.org](https://www.thakureducation.org)** in this section.
+::: 
+
+ 5. To display the copyright content, a `div` element with `<p>` paragraph element inside it is used. The content **"© 2023 Thakur College of Engineering and Technology. All Rights Reserved."** is wrapped inside the paragraph element.
+
+import Contact from "/docs/projects/tnp-website/assets/Contact.png";
+
+<figure>
+    <center><img src={Contact} style={{ border: "2px solid gray" }} />
+    <b><figcaption>Contacts & Copyrights Component</figcaption></b></center>
+</figure>
+
+**Let's take a view of the complete Footer Component:**
+
+import footer from "/docs/projects/tnp-website/assets/footer.png";
+
+<figure>
+    <center><img src={footer} style={{ border: "2px solid gray" }} />
+    <b><figcaption>Footer Component</figcaption></b></center>
+</figure>
+
+_After successfully implementing the **[Footer](footer)** component of the **[TNP (Training and Placement)](https://tnp.tcetmumbai.in)** website, we were ready with out frontend part of the website. Next, we will be seeing on how we incorporated the backend of **[TNP (Training and Placement)](https://tnp.tcetmumbai.in)** website._

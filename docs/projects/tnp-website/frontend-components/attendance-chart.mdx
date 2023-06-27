@@ -1,0 +1,48 @@
+---
+title: Attendance Chart
+id: attendance-chart
+description: Attendance Chart Component in T&P Website
+sidebar_label: Attendance Chart
+keywords: [Attendance]
+---
+
+The **Attendance-Chart** component provided is a reusable component designed to display attendance data in the form of a bar chart.It is accesible through the [**TNP Website**](https://tnp.tcetmumbai.in/).
+
+### Adding Attendance Chart 
+
+** Let's understand how to add the Attendance Bar Chart to the Page**
+
+1. Opening `index.tsx` of the `Attendance-Chart` component file in our projects root directory.
+
+2. Define the `AttendanceChart` component using the `React.FC` type. It accepts props of `type { data: ChartData<"bar">, title: string }`. The `data` prop represents the chart data, and the `title` prop represents the chart title.
+
+    ```jsx title="index.tsx" {2-3} showLineNumbers
+    const AttendanceChart: React.FC<{
+    data: ChartData<"bar">;
+    title: string;
+    }> = ({ data, title }) => {
+        // Component code goes here
+    };
+    ```
+
+3. Render the `Bar` component from `Chart.js` within the `<div>` element. Pass the `data` prop to provide the chart data, and use the `optionGenerator` function to generate the ``chart options based on the `title` prop.
+
+    ```jsx title="index.tsx" {50} showLineNumbers
+    <Bar data={data} options={optionGenerator(title)} />
+    ```
+
+4. Save the file. 
+
+5. Run `yarn dev` on the terminal to see the changes made in your local environment. 
+
+
+**On executing the above steps, the individual attendance bar charts look like this:**
+
+import AttendanceChart from "/docs/projects/tnp-website/assets/Testimonial_img.png";
+
+<img src={AttendanceChart} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+_We inserted this **[Attendance Chart](attendance-chart)** in many of our events and other pages of **[TNP Website](https://tnp.tcetmumbai.in)**. Next we will be seeing on how we integrated the **[Placements](placement)** component._ 

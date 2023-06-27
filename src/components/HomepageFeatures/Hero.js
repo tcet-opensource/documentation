@@ -40,7 +40,7 @@ export default function Hero() {
         active:bg-indigo-600 "
         >
           View Projects
-          <div className="group-hover:bg-indigo-600 group-hover:rotate-[360deg] duration-300 bg-indigo-800 p-2 rounded-full">
+          <div className="group-hover:bg-indigo-600 group-hover:rotate-[360deg] duration-300 bg-indigo-800 px-2 pt-1 rounded-full">
             <img src={`/img/HeroImages/arrow-down.svg`} alt="arrow-down" />
           </div>
         </a>
@@ -51,7 +51,7 @@ export default function Hero() {
         data-speed="0.15"
         alt="hero-section-left"
       />
-      <img src={`/img/HeroImages/hero-section-center.svg`} className="mx-auto pointer-events-none -z-10  parallax lg:w-2/4" data-speed="0.2" alt="hero-section-center" />
+      <img src={`/img/HeroImages/hero-section-center.svg`} className="mx-auto pointer-events-none -z-10 block parallax lg:w-2/4" data-speed="0.2" alt="hero-section-center" />
       <img
         src={`/img/HeroImages/hero-section-right.svg`}
         className="absolute lg:scale-100 sm:scale-75 scale-50 origin-right md:top-56 sm:top-56 top-36 right-0 "

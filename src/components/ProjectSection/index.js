@@ -77,9 +77,9 @@ const ProjectSection = () => {
       background: "linear-gradient(180deg, #000000 0%, #291A60 78.96%, #060314 100%)"
     }}
     >
-      <button className="inline-block px-3 bg-gray-700 md:mx-12 rounded-xl text-slate-50">
+      <span className="inline-block px-3 bg-gray-700 md:mx-12 rounded-xl text-slate-50">
         Developed Projects
-      </button>
+      </span>
       <div className="flex flex-col my-3 md:gap-3 md:mx-12">
         <div className="text-3xl font-semibold md:text-5xl text-stone-50 font-title">{nameDes.name}</div>
         <div className="text-gray-400 ">{nameDes.desc}</div>

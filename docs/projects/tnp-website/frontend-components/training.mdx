@@ -1,0 +1,201 @@
+---
+title: Training
+id: training
+description: Training Component in T&P Website
+sidebar_label: Training
+keyword: [training, professional-bodies, huge-events]
+---
+
+The Training page on our website showcases a variety of training activities conducted by **Training and Placement Cell** along with professional student bodies under the **T&P department**. It highlights the initiatives aimed at **enhancing the skills** and **knowledge** of students, preparing them for future careers. Additionally, the page features major events organized by these student bodies, providing valuable opportunities for **networking** and **career development**.
+
+## Huge Events Section
+
+The **HugeEvents** Component, defined in the `index.astro` file, is a flexible and responsive section that showcases various events organized by **Training and Placement Cell**. . It allows displaying event details such as the **event name**, an **associated image**, and a **description**. This component is designed to provide an engaging and visually appealing way to present event information on the **[T&P Website](https://tnp.tcetmumbai.in)**.
+
+**Lets take a look at how we implemented this component in our website.**
+
+1. Open `index.astro` file.
+
+2. We now added the different events that are conducted by the organizations under **[T&P](https://tnp.tcetmumbai.in)**. 
+
+3. The `<div>` classes in the provided code snippet define the styling and layout of the elements within the component.
+
+4. We them mention the **event name**, and **event description** in the code as shown below.
+
+    **We will see how we implemented those changes:**
+
+    ```jsx title="index.astro" {4-5,8,11-14} showLineNumbers
+    <div class="flex flex-col md:flex-row md:justify-center gap-y-4">
+        <div class="flex flex-col md:w-1/2">
+            <div class="py-3 pl-3 text-3xl font-title bg-blue-50 rounded-lg text-blue-600">
+                <!-- Event name goes here -->
+                Hacktoberfest - GDSC-TCET
+            </div>
+            <div>
+                <img class="mt-4 object-contain w-full rounded-t-xl" src="../../events/pic_1.png" alt="pic_1">  
+            </div>
+            <div class="bg-blue-100 text-slate-700 font-Inter text-sm sm:text-base rounded-b-xl p-4">
+                <!-- Event description goes here -->
+                College level Hacktoberfest event was conducted to encourage students to
+                contribute to open source projects and to learn about the open source
+                community.
+            </div>
+        </div>
+        <!--Other Huge Events--> 
+    </div>
+    ```
+
+5. Also, we added an `image` section in the middle to include some event pictures or banners.
+
+:::tip
+Similar steps were carried out for multiple **[Huge Events](#huge-events-section)**. 
+::: 
+
+import HugeEvents from "/docs/projects/tnp-website/assets/HugeEvents.png";
+
+After completing the above steps, we successfully incorporated the **Huge Events** section in our website. **You can see the snapshot below:**
+
+
+<figure>
+    <img src={HugeEvents} style={{ border: "2px solid gray" }} />
+    <center><b><figcaption>Huge Events Section</figcaption></b></center>
+</figure>
+
+## Professional Bodies Section
+
+This section showcases the **professional student bodies** of the Training and Placement Cell. It provides information about the different student bodies and their respective logos.
+
+It was implemented in a similar way as the **[Huge Events Section](#huge-events-section)**. **Lets have a look at the changes that were made to achieve this.**
+
+1. Opening `index.astro` file for _Professional Bodies Section_.
+
+2. The first `<div>` container contains the main heading of the section.
+
+3. Then, next we added the tagline of the section as shown in **line number 8**.
+
+4. After this we defined another parent container `<div>` which then included the images of the professional bodies withing the `<img>` and their name mentioned in the `<span>` tags.
+
+    ```jsx title="index.astro" {3-4,7-8,14-18,19} showLineNumbers
+    <div class="flex flex-col justify-center align-middle sm:w-2/6">
+        <div class="font-semibold text-2xl xl:text-3xl font-Inter pb-2 uppercase">
+            <!-- Title of the student bodies section -->
+            professional student bodies of training and placement cell
+        </div>
+        <div class="text-slate-700 font-Inter text-lg">
+            <!-- Description of the student bodies section -->
+            Working together for a better Future!!
+        </div>
+    </div>
+    <div class="md:flex-col sm:w-3/5 mt-4">
+        <!-- Student body section 1 -->
+        <div class="flex justify-left xl:justify-center gap-x-4 items-center bg-gray-50 rounded-lg p-6">
+            <img 
+                class="w-10 object-contain" 
+                src="../../logos/tcet_shastra.png" 
+                alt="tcet_shastra" 
+            />
+            <span class="text-lg">TCET Shastra Coding Club</span>
+        </div>
+        <!-- More student body sections can be added here -->
+    </div>
+    ```
+
+:::tip
+Similar steps were carried out to add multiple **[Professional Student Bodies](#professional-bodies-section)**. 
+::: 
+
+import ProfessionalBodies from "/docs/projects/tnp-website/assets/ProfessionalBodies.png";
+
+After completing the above steps, we successfully incorporated the **Professional Bodies** section in our website. **You can see the snapshot below:**
+
+
+<figure>
+    <img src={ProfessionalBodies} style={{ border: "2px solid gray" }} />
+    <center><b><figcaption>Professional Bodies Section</figcaption></b></center>
+</figure>
+
+import Admonition from '@theme/Admonition';
+
+<Admonition type="caution" icon="ℹ️" title="IMPORTANT">
+    <p>
+        Similarly, we have also included the <b><a href="https://opensource.tcetmumbai.in">TCET Open Source</a></b> section in the <b><a href="#professional-bodies-section">Professional Bodies</a></b>.<br/>
+        You can refer it here: <b><a href = "https://github.com/tcet-opensource/tnp-website/blob/main/src/components/Training/TcetOpenSource/index.astro">TCET Open Source section.</a></b>
+    </p>
+</Admonition>
+
+## Hero Section
+
+While implementing **Hero Section**, we wanted to add a Carousel Section where we can display different images, so we created an `Carousel.jsx` file to implement a **Swipe Carousel.**
+
+**Below are the steps for implementation:**
+
+1. An array called `data` is defined, containing objects with `caption` and `imgLink` properties. Each object represents a slide in the Swiper component and holds the caption and image link for the slide.
+
+    ```jsx title="Carousel.jsx" {3-4}   showLineNumbers
+    const data = [
+        {
+            caption: "Massa elementum mi sed magnis",
+            imgLink: "student-workshop.png",    
+        },
+    // Other Image Links and Captions
+    ],
+
+2. We then defined a **Swiper** component in our code to set various configurations and properties. The navigation configurations were updated in this component as we can shee in the highlighted part of the code below:
+
+    ```jsx title="Carousel.jsx" showLineNumbers
+    export default () => {
+    return (
+        <Swiper
+        // install Swiper modules
+        navigation={{
+            prevEl: ".swiper-prev",
+            nextEl: ".swiper-next",
+            disabledClass: "swiper-button-disabled",
+        }}
+        >
+    ```
+
+3. Now we headed over to the `index.astro` file to add other components in the section.
+
+4. We added the **Carousel** component from the `Carousel.jsx` file, and in the next container we defined various activities under training with a short description about the same. The **svg icons** denoting the activites were also added. 
+
+    ```jsx title="index.astro" {3,7,10,13-16} showLineNumbers
+    <div class="grid lg:grid-rows-2 lg:grid-cols-3 sm:grid-rows-3 sm:grid-cols-2 grid-cols-1 grid-rows-6 gap-4">
+        <div>
+            <Carousel client:load />
+        </div>
+        <div class="flex flex-col gap-y-3 p-4 rounded-2xl border border-[#CCC6FF] bg-[#EEECFF]">
+            <div class="w-14 h-14 bg-[#A488F0] p-4 flex items-center justify-center rounded-full">
+                <img src="/misc/stacks.svg" alt="stack-of-books-icon" />
+            </div>
+            <h2 class="lg:text-2xl md:text-2xl text-xl font-title font-normal">
+                Aptitude Training
+            </h2>
+            <p class="lg:text-base md:text-sm text-[#475467] text-sm">
+                The main objective of this program is to make students employable by
+                providing them training on aptitude skills and soft skills. Under this,
+                we conduct various mock activities like Aptitude test, Group discussion
+                and personal interviews and more!
+            </p>
+        </div>
+        <!-- Other activites added -->
+    </div>
+    ```
+
+:::tip
+Similar steps were carried out to add multiple **[Training Activities](#hero-section)**. 
+::: 
+
+import HeroTraining from "/docs/projects/tnp-website/assets/HeroTraining.png";
+
+After completing the above steps, we successfully incorporated the **Hero** section in our website. **You can see the snapshot below:**
+
+<figure>
+    <img src={HeroTraining} style={{ border: "2px solid gray" }} />
+    <center><b><figcaption>Hero Section of Training Component</figcaption></b></center>
+</figure>
+<br/>
+
+<br />
+
+_With the successful implementation of the provided code, we have successfully incorporated the **[Training](training)** page into our website. Moving forward, let's now explore how we integrated the **[Attendance Chart](attendance-chart)** page into the **[T&P Website](https://tnp.tcetmumbai.in)**_

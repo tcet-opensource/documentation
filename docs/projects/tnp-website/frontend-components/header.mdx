@@ -1,0 +1,274 @@
+---
+title: Header
+id: header
+description: Header Component in T&P Website
+sidebar_label: Header
+keywords: [mobile-nav, navbar, accordion]
+---
+The **Header** section is an informative element which is present at the top of every page of the website. With its navigational features, it facilitates easy access to each and every page of the [**Training and Placement Website**](https://tnp.tcetmumbai.in/). It consists of **TCET Logo**, **Thakur Educational Group Logo**, **Title & Description** and a **Menu** presenting a list of links to different pages. Hence providing essential information and contributing to user-friendly experience. 
+
+### Mobile Navigation Menu
+
+In order to create a menu for smaller screens for TNP website, we need to create a react functional component **"MobileNav"** which will display collapsible section.
+
+**Here's how we did it:**
+
+1. Opening the **"MobileNav.tsx"** file. 
+
+2. Inside the component, two props are defined [**primaryLinks and secondaryLinks**](#primary-links-and-secondary-links) which correspond to the primary and secondary links respectively. 
+
+    ```jsx title="MobileNav.tsx" {2-3} showLineNumbers
+            const MobileNav: React.FC<{
+                    primaryLinks: link[];
+                    secondaryLinks: link[];
+            }
+    ```
+
+3. `navOpen` is a state variable used to indicate whether the menu is opened or closed. The `useOnClickOutside` hook is used to detect clicks outside the menu and closes the menu accordingly.
+
+    ```jsx title="MobileNav.tsx" {1,4} showLineNumbers
+            const [navOpen, setNavOpen] = useState(false);
+            const ref = useRef(null);
+            const ref2 = useRef(null);
+            useOnClickOutside(ref, () => setNavOpen(false), ref2);
+    ```
+
+4. The `MobileNav` component returns the navigational menu. The `<button>` element inside the `<div>` serves as a switch to open and close the menu. The `onClick()` event handler changes the value of `navOpen` whenever the button is clicked. 
+
+    ```jsx title="MobileNav.tsx" {6} showLineNumbers
+         <div className="relative" >
+            <button
+                data-collapse-toggle="mobile-menu-2"
+                type="button"
+                // Styling
+                onClick={() => setNavOpen(!navOpen)}
+            >
+        </div>
+    ```
+
+5. The button displays an `svg` icon that is defined according to the condition whether the value of `navOpen` is "true" or "false". 
+
+    ```jsx title="MobileNav.tsx" {2-9} showLineNumbers
+    // Other sections of code
+        {!navOpen ? ( // when the navOpen is set to false
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+            >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+          </svg>
+        ):(<svg
+            //defines the <svg> component when the menu is open
+          >
+          <path
+          //...
+          >
+          </svg>)}
+    ```
+
+6. After the `<button>` element, `<aside>` displays the menu when `navOpen` variable is set to `true`. It contains two `<nav>` elements, one for the primary links section. This section also links to [**thakureducation.org**](https://thakureducation.org). It maps over `primaryLinks` array to display each link as an anchor element.  
+
+  ```jsx title="MobileNav.tsx" {2-8} showLineNumbers
+          {primaryLinks.map((p) => (
+            <a
+              key={p.title}
+              href={p.link}
+              className=" text-sm w-full  text-slate-900 hover:underline"
+            >
+              {p.title}
+            </a>
+          ))}
+  ```
+:::tip
+In the same way, the secondary `<nav>` is used to display `secondaryLinks`. If a link has `subLinks`, an [**Accordian component**](#accordian-component) is rendered for each sublink. 
+:::
+
+7. Save the file.
+
+8. Run `yarn dev` to see the changes in your local environment.
+
+**Main Menu on smaller screens will look like this:**
+
+import menu from "/docs/projects/tnp-website/assets/MainMenu.png";
+
+<figure>
+    <img src={menu} style={{ border: "2px solid gray", height:"500px", width:"300px"}} />
+</figure>
+
+### Accordian Component
+
+A collapsible menu is created for sublinks of **Placement** and **Events** using react functional component called **"Accordian"**. **We created this collapsible menu in following ways:**
+
+1. Open the **"Accordian.tsx"** file. 
+
+2. The **"Accordian"** component contains a `<span>` element which serves as a container for the accordian item. It contains `<p>` element to display the title of the sublink and an `<svg>` element which is responsible for displaying an arrow pointing downwards when `isOn` is set to `false` and a cross when `isOn` is set to `true`. 
+
+    ```jsx title="Accordian.tsx" {1-15} showLineNumbers
+         {!isOn ? ( //when isOn is set to false
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-4 h-4 lg:w-4 lg:h-4 cursor-pointer"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      ) : (
+        <svg
+          // defined when isOn is set to true
+        >
+          <path
+            //...
+          />
+        </svg>
+      )}
+    ```
+
+3. When the `isOn` is set to `true`, it renders a `<span>` element which maps over links in `links` array and displays each link as an anchor element. 
+
+    ```jsx title="Accordian.tsx" {2-7} showLineNumbers
+        {links.map((l) => (
+            <a
+              href={l.link}
+              className=" text-xs xl:text-sm  text-slate-900 hover:underline border-b border-slate-200 pb-2 last:border-0 last:pb-0 w-full"
+            >
+              {l.title}
+            </a>
+          ))}
+    ```
+
+4. The `Accordian` element also handles mouse events. When the mouse hovers over the menu, the `isOn` is set to `true` which opens the collapsible section. When the mouse is out of the accordian menu, the `isOn` is set to `false` which closes the section. 
+
+    ```jsx title="Accordian.tsx" showLineNumbers
+        onMouseOver={() => {
+            // console.log("mouse over");
+            setIsOn(true);
+            }}
+    ```
+
+5. Save your progress.
+
+6. Run `yarn dev` to see the changes in your local system.
+
+**The Accordian Component looks like this:**
+
+import collapsible from "/docs/projects/tnp-website/assets/collapsible.png";
+
+<figure>
+    <img src={collapsible} style={{ border: "2px solid gray", height:"500px", width:"300px"}} />
+</figure>
+
+### Primary links and Secondary links
+
+1. The links for [**ERP**](http://erp.tcetmumbai.in/), [**Alumni**](https://tcetmumbai.in/aboutAlumni.html) and [**Careers**](https://tcetmumbai.in/careers.html) are defined in the `primaryLinks` array of type `link[]` in **"index.astro"** file. To add links for **Alumni** and **Career** pages, create objects in the following way with **"title"** and **"link"** properties:   
+
+  ```jsx title="index.astro" {3,4} showLineNumbers
+          const primaryLinks: link[] = [
+              {
+                  title: "ERP",
+                  link: "http://erp.tcetmumbai.in/",
+              },
+              // Other links
+          ]
+  ```
+:::tip
+  In the same way `secondaryLinks` array is created with **"title"** and **"link"** properties. This array lists links of various pages of the **TNP website**. Some links also have `sublinks`. The sublinks have the same properties as `secondaryLinks` objects.  To add sublinks, **create link objects in the following way:**
+:::
+
+  ```jsx title="index.astro" {5-10} showLineNumbers
+          const secondaryLinks: link[] = [
+              {
+                  title: "Placement",
+                  link: "/placement",
+                  subLinks: [
+                      {
+                          title: "Placement",
+                          link: "/placement",
+                      },
+                  ],
+              },
+              // Other links and sublinks
+          ]
+  ```
+### Displaying Navigational Menu
+
+**To display the main menu, we executed the follwing steps**:
+
+1. A `<div>` element in the `<header>` of **"index.astro"** file is created where the `secondaryLinks` array is iterated. Inside the `<span>` element, it checks if there are any sub-links. In case of no sub-links, it displays the anchor tag `<a>` with the **link** and **title** of the item. If there are sub-links, it renders an `<Accordian>` component. 
+
+  ```jsx title="index.astro" {5-8} showLineNumbers
+          <div class="hidden lg:flex text-slate-800 justify-evenly py-2 border-b">
+          {
+              secondaryLinks.map((s) => (
+              <span class="flex items-center gap-2">
+                  {!s.subLinks && <a class="text-xs xl:text-sm   hover:underline" href={s.subLinks?"":s.link}>
+                  {s.title}
+                  </a>}
+                  {s.subLinks && <Accordian title={s.title} client:load links={s.subLinks} />}
+              </span>
+              ))
+          }
+          </div>
+  ```
+
+:::info
+   The primary links are listed in the same container where the site's logo and title are placed. Refer the [**index.astro**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/Header/index.astro#LL139C1-L180C11) file.
+:::
+
+### Displaying Logo 
+
+1. Open `index.astro` file. 
+
+2. TNP logo is displayed in the extreme left of the header. Within the `<div>` element of `<header>`, anchor tags are used. **This is how it was executed:**
+
+  ```jsx title="index.astro" {2-8} showLineNumbers
+      <div class="space-y-2 md:flex md:mr-4">
+        <a href="/">
+          <img
+            src="/Images/TCET Logo.png"
+            class="object-contain w-14 lg:w-24"
+            alt="TCET Logo"
+          />
+        </a>
+      </div>
+  ```
+:::info
+   Similar steps were carried out for displaying [**Thakur Education Group logo**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/Header/index.astro#LL106C1-L113C11) for smaller screens. 
+:::
+
+:::tip
+   To see how we added title and description on the header, refer [**index.astro**](https://github.com/tcet-opensource/tnp-website/blob/216af67c8878b8ec82cef31162f94f6a04588c8f/src/components/Header/index.astro#LL116C1-L129C9) file from the [**TNP Website**](https://github.com/tcet-opensource/tnp-website) repository. 
+:::
+
+**After adding _Logo_, creating _Menu_ and adding _Title_ & _Description_, the header section can be seen like this:**
+
+import header from "/docs/projects/tnp-website/assets/Header.png";
+
+<figure>
+    <img src={header} style={{ border: "2px solid gray"}} />
+    <center><b><figcaption>Header Section</figcaption></b></center>
+</figure>
+
+_The [**Header Section**](header) is succesfully executed! Let's move on and see how we created the [**Hero Section**](hero) of the **TNP Website**._
+
+
+
+
+
+
+
+
