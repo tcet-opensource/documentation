@@ -25,9 +25,7 @@ Here in the script component we have imported some functions and there is a cons
         import clickToCopyImg from "../assets/clickToCopy.png";
         import infoIconImg from "../assets/infoIcon.png";
         import CopyToClipboard from "./CopyToClipboard";
-
         // stepOne Component
-        
      ```
 
 ### stepOne:
@@ -104,31 +102,31 @@ It includes *headings*, *containers*, *buttons* and *elements* with specific cla
 
   ```jsx title="VerifyDownloads.astro" {2-22} showLineNumbers
               // Import Component
-               <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
+         <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
             <p class="text-[#FFFFFF] w-max ">Steps 1:</p>
           </div>
           <div class="flex mt-6 flex-col xl:flex-row md:flex-row">
-            {
-              stepOne.map((step) => (
-                <div  class="m-4 rounded-2xl  mt-2 mb-2 bg-[#1D2939]">
-                  <div class="p-4 rounded-t-xl">
+              {
+                    stepOne.map((step) => (
+                    <div  class="m-4 rounded-2xl  mt-2 mb-2 bg-[#1D2939]">
+                    <div class="p-4 rounded-t-xl">
                     <p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">
-                      {step.nameOfOS}
+                    {step.nameOfOS}
                     </p>
                     <p class="text-[#E4E7EC]">{step.description}</p>
-                  </div>
-                  <div
+                    </div>
+                    <div
                     class="w-full relative mt-2 overflow-hidden" >
                     <div class="absolute top-0 left-0 verifyDownloadGradient h-20 w-full" />
                     <span class="w-full h-fit flex justify-around align-middle p-3 ">
-                      <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
-                        {step.downloadableFileName}
-                      </p>
-                      <CopyToClipboard client:load text={step.downloadableFileName} />
-                    </span>
-                  </div>
-                </div>
-              ))
+                    <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
+                    {step.downloadableFileName}
+                    </p>
+                   <CopyToClipboard client:load text={step.downloadableFileName} />
+                   </span>
+                   </div>
+                   </div>
+        ))
            // Similarly more cards were added here
             }
   ```
@@ -161,51 +159,46 @@ It includes *headings*, *containers*, *buttons* and *elements* with specific cla
 
   ```jsx title="VerifyDownloads.astro" {2-32,38-43} showLineNumbers
               // Step 1
-                       <div class="pt-4">
-              <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
-                <p class="text-[#FFFFFF] w-max">Steps 2:</p>
-              </div>
-              <div class="w-full mt-6">
-                <p class="text-[#FFFFFF] ml-4 mb-4">
-                  In all the above cases, if the returned value matches with          the sha256sum
-                  given below, your download is authentic.
-                </p>
-                <div class="m-4 rounded-2xl mt-2 mb-2 bg-[#1D2939]">
-                  <div class="p-4 rounded-t-xl">
-                    <p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">
-                      SHA256SUMS Below:
+                <div class="pt-4">
+                    <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
+                        <p class="text-[#FFFFFF] w-max">Steps 2:</p>
+                   </div>
+                    <div class="w-full mt-6">
+                    <p class="text-[#FFFFFF] ml-4 mb-4">
+                         In all the above cases, if the returned value matches with the sha256sum given below, your download is authentic.
                     </p>
-                    <p class="text-[#E4E7EC]">IMAGE: tcetlinux-2023.05.         05-x86_64.iso</p>
-                  </div>
-                  {
-                    /* bg-gradient-to-r from-teal-100 via-indigo-500          to-pink-300 opacity-100 rounded-b-xl */
-                  }
-                  <div
-                    class="w-full relative mt-2  overflow-hidden rounded-b-xl" >
-                    <div
-                      class="absolute top-0 left-0 bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-300 rounded-b-xl h-24 w-full opacity-50 blur-lg
-                      pointer-events-none" >
+                    <div class="m-4 rounded-2xl mt-2 mb-2 bg-[#1D2939]">
+                    <div class="p-4 rounded-t-xl">
+                    <p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">
+                          SHA256SUMS Below:
+                   </p>
+                     <p class="text-[#E4E7EC]">IMAGE: tcetlinux-2023.05. 05-x86_64.iso</p>
+                   </div>
+                       {
+                     /* bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-300 opacity-100 rounded-b-xl */
+                     }
+                    <div class="w-full relative mt-2  overflow-hidden rounded-b-xl" >
+                     <div class="absolute top-0 left-0 bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-300 rounded-b-xl h-24 w-full opacity-50 blur-lg pointer-events-none" >
                     </div>
-                    <span
-                      class="z-20 w-full h-auto flex justify-around align-middle p-3 " >
-                      <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
-                        cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c66          70ac1a2f49
-                      </p>
-                      <CopyToClipboard client:load text= {"cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c66          70ac1a2f49"} />
-                    </span>
+                        <span class="z-20 w-full h-auto flex justify-around align-middle p-3 " >
+                            <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
+                            cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c6670ac1a2f49
+                            </p>
+                      <CopyToClipboard client:load text= {"cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c6670ac1a2f49"} />
+                      </span>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                    <div class="pt-4">
+                        <div class="flex bg-[#1D2939] border-2 border-[#344054] rounded-xl m-4 p-4">
+                           <img src={infoIconImg} class="w-4 h-4 object-contain mt-1" />
+                               <p class="text-[#D0D5DD] ml-2">
+                                    IMAGE is <code>iso-name.iso</code> in <b>step 1</b>. It is the file that you have downloaded. Verification is done to check the authenticity of the file you have downloaded. Large files may get corrupted in the download process. TCET Linux team provides a new checksum for every new release of the operating system.
+                                </p>
+                           </div>
+                       </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="pt-4">
-              <div class="flex bg-[#1D2939] border-2 border-[#344054] rounded-xl m-4 p-4">
-                <img src={infoIconImg} class="w-4 h-4 object-contain mt-1" />
-                <p class="text-[#D0D5DD] ml-2">
-                  IMAGE is <code>iso-name.iso</code> in <b>step 1</b>. It is the file that you have downloaded. Verification is done to check the authenticity of the file you have downloaded. Large files may get corrupted in the download process. TCET Linux team provides a new checksum for every new release of the operating system.
-                </p>
-              </div>
-            </div>
-          </div>
           
   ```
 
