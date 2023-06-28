@@ -12,20 +12,12 @@ The footer component is a section of a web page that is placed at the bottom and
 ## Footer Navigation Component
 The code for this section is represented by the HTML language which creates a navigation menu.
 
-```jsx title="index.astro" {4-5,8-13} showLineNumbers
+```jsx title="index.astro" {4-5} showLineNumbers
     {/*Nav as */}
       <div class="flex items-center gap-2 rounded-full border-2 border-white border-opacity-25" style= "background-image: linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%);
       backdrop-filter: blur(4px);">
         <img src="/Footer/logo.png" alt="" class="h-[48px] p-1" />
         <h2 class="text-white font-{400} text-base pr-2.5 pl-1">Resume screener</h2>
-      </div>
-        <div class="flex flex-col sm:flex-row  h-full gap-3 text-[#D0D5DD]  items-center">
-        <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/docs/category/projects" target="_blank">Docs</a>
-        <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/blog" target="_blank">Blogs</a>
-        <a class="hover:underline font-thin  text-sm  " href="/LiveProjects">Live Projects</a>
-        <a class="hover:underline font-thin  text-sm  " href="/CookingProjects">Cooking Projects</a>
-        <a class="hover:underline font-thin  text-sm  " href="/CookingProjects">Team</a>
-        <a class="hover:underline font-thin  text-sm  " href="mailto:opensource@tcetmumbai.in">Contact</a>
       </div>
 ```
 **Here's a breakdown explanation of the navigation component:**
@@ -39,6 +31,17 @@ import pic4 from "/docs/projects/resume-screener-website/assets/frsbutton.jpg";
 <img src = {pic4} style={{ border: "2px solid gray" }} />
 </p>
 
+```jsx title="index.astro" {3-8} showLineNumbers
+    {/*Nav as */}
+<div class="flex flex-col sm:flex-row  h-full gap-3 text-[#D0D5DD]  items-center">
+        <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/docs/category/projects" target="_blank">Docs</a>
+        <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/blog" target="_blank">Blogs</a>
+        <a class="hover:underline font-thin  text-sm  " href="/LiveProjects">Live Projects</a>
+        <a class="hover:underline font-thin  text-sm  " href="/CookingProjects">Cooking Projects</a>
+        <a class="hover:underline font-thin  text-sm  " href="/CookingProjects">Team</a>
+        <a class="hover:underline font-thin  text-sm  " href="mailto:opensource@tcetmumbai.in">Contact</a>
+      </div>
+```
 3. In the incoming code , we used `<a>` anchor elements which represent the navigation links.You can observe that each link is wrapped inside an `<a>` element where a hover effect is applied to them.
 
 3. Here, the `href` attribute specifies the **destination URL** for each link.
@@ -55,21 +58,14 @@ import pic1 from "/docs/projects/resume-screener-website/assets/fnav.jpg";
 
 The code for this section is represented by the HTML language which displays copyright details and social media handles.
 
-**Here's the implemented code:**
+**Here's the implemented code for copyright and email:**
 
- ```jsx title="index.astro" {3-4,6-10} showLineNumbers
-     {/* CopyRight and Social Media */}
+ ```jsx title="index.astro" {3-4} showLineNumbers
+   {/* CopyRight and Email */}
         <div class=" w-full  flex flex-col-reverse sm:flex-row   sm:justify-between items-center sm:gap-0 gap-4">
     <div class="  text-xs  text-[#D0D5DD] ">Copyright 2022-2023 @ TCET Opensource.</div>
     <a class="  text-xs  text-[#D0D5DD]" href="mailto:linux@tcetmumbai.in">opensource@tcetmumbai.in</a>
-    <div class="flex text-[#D0D5DD] gap-8">
-      <a href="https://www.linkedin.com/company/tcet-opensource/" target="_blank"><img src="/Footer/linkdin.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://www.youtube.com/@TCETMumbaiOfficial" target="_blank"> <img src="/Footer/Youtube.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://twitter.com/tcetopensource" target="_blank"> <img src="/Footer/Twitter.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://www.instagram.com/tcetopensource/" target="_blank"><img src="/Footer/Instagram.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://github.com/tcet-opensource/" target="_blank"><img src="/Footer/Github.png" alt="" class="h-5 cursor-pointer" /></a>
-    </div>
-```
+  ```
 1. Here we mentioned the `div` elements with multiple CSS classes. Majorly for styling purposes and to set the font for the content inside it.
 
 2. The below section of the code is to display the copyright content.
@@ -88,21 +84,42 @@ import pic2 from "/docs/projects/resume-screener-website/assets/femail.jpg";
 <img src = {pic2} style={{ border: "2px solid gray" }} />
 </p>
 
+```jsx title="index.astro" {3-7} showLineNumbers
+  {/* Social Media */}
+    <div class="flex text-[#D0D5DD] gap-8">
+      <a href="https://www.linkedin.com/company/tcet-opensource/" target="_blank"><img src="/Footer/linkdin.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://www.youtube.com/@TCETMumbaiOfficial" target="_blank"> <img src="/Footer/Youtube.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://twitter.com/tcetopensource" target="_blank"> <img src="/Footer/Twitter.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://www.instagram.com/tcetopensource/" target="_blank"><img src="/Footer/Instagram.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://github.com/tcet-opensource/" target="_blank"><img src="/Footer/Github.png" alt="" class="h-5 cursor-pointer" /></a>
+    </div>
+```
+  
 4. The code in `<a>` elements which represents different social media links. Here we applied, `href` attribute is set to the respective **social media links**.
+
+import pic7 from "/docs/projects/resume-screener-website/assets/fsocials.jpg";
+
+<p align="center">
+<img src = {pic7} style={{ border: "2px solid gray" }} />
+</p>
 
 :::tip
 Similar steps were carried out for adding  **[TCET email](mailto:tcet.tnp@thakureducation.org)**, **[Linkedin](www.linkedin.com/company/tcet-opensource)** ,**[Youtube](www.youtube.com/@TCETMumbaiOfficial)** , **[Twitter](twitter.com/tcetopensource)**, **[Instagram](/www.instagram.com/tcetopensource)** & **[Github](github.com/tcet-opensource)** in this section.
 :::
 
-**After we have followed all the steps, our footer looks like the following:**
+**After we have followed all the steps, our footer looks like the following
 
-import pic6 from "/docs/projects/resume-screener-website/assets/footer.jpg";
+import pic6 from "/docs/projects/resume-screener-website/assets/fsocial.jpg";
 
 <p align="center">
   <img src = {pic6} style={{ border: "2px solid gray" }} />
 </p>
 
+<<<<<<< HEAD
+_After successfully implementing the **[Footer](footer)** component of the **[RS (Resume Screener)](https://rs.tcetmumbai.in/)** website, we were ready with our frontend part of the website. Next, we will be seeing the about section of **[TCET Linux](https://linux.tcetmumbai.in/)** website._
+=======
 _After successfully implementing the **[Footer](footer)** component of the **[Resume Screener](https://rs.tcetmumbai.in/)** website, we were ready with out frontend part of the website. Next, we will be seeing how we integrated the backend of the **[Resume Screener](https://rs.tcetmumbai.in/)** website._
+>>>>>>> 4ea536ac1f6ea65df603158736a18bacc20e6d06
 
 
                       
