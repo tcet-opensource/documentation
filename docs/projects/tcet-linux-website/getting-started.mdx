@@ -9,7 +9,6 @@ keywords: [install, tcet-linux,astro, node, approach]
 :::info 
  TCET Linux is an **operating software** made while keeping all the **important ascpects** of engineering in mind for the students at the college.
 :::
-
 ### Steps to run the site on your local system: 
 These are the steps you need to follow to get this site on your local system.
 
@@ -19,25 +18,34 @@ Follow these steps to install git in your computer.
 2. Click on Windows. Download should start.
 3. Go to downloads and install the package.
 
+### Clone the repo
+Open Git Bash in any folder and paste the following command
+
 ```bash
 git clone https://github.com/tcet-opensource/tnp-website
 ```
 
-### Go to TCET Linux
+### Install NodeJS
 
-1. Visit the website [TCET Linux](https://linux.tcetmumbai.in/#download)
-2. Check the requirements for downloading
-3. Download the 64-bit versions
+1. Go to [https://nodejs.org/en/download](https://nodejs.org/en/download)
+2. Select <b>Current</b>.
+3. Download the 64-bit .msi version. Follow the steps and install NodeJS.
 
 :::note
-A USB drive or a DVD, containing the TCET Linux installation files. This bootable media will be used to initiate the installation process and install TCET Linux on your computer.
+It is important to have NodeJS in your system
 :::
 
-###  Linux ISO File 
-1. You will need the TCET Linux ISO file, which can be downloaded from the official TCET Linux website or a trusted source. The ISO file contains the complete installation image of TCET Linux.
+### Open the folder in VS Code
+1. Install [VS Code](https://code.visualstudio.com/docs/?dv=win32user) if not installed. 
+2. Open Windows Terminal in the folder you have cloned the repo, as done in [step 2](#clone-the-repo).
 
-###  Register 
-1. Adding the necessary details required to sucessfully register 
+### Install Important Packages/Dependencies
+
+Install yarn globally 
+
+```bash
+npm install -g yarn
+```
 
 You can make changes to your respective files and changes will be shown once you have saved the file.
 
@@ -46,7 +54,30 @@ You can make changes to your respective files and changes will be shown once you
 1. To run the commands, make sure that you have installed yarn globally first.
 2. All commands are run from the root of the project, from a terminal
 
-### Here are a set of commands used to verify if its authentic:
+Here are a set of commands used to run locally:
+
+| **Command** | **Action** |
+| -------- | -------- |
+| `yarn`   | Installs dependencies |
+| `yarn dev` | Starts local dev server at `localhost:3000` |
+| `yarn build` | Build your production site to `./dist/` |
+| `yarn preview` | Preview your build locally, before deploying |
+| `yarn astro ...` | Run CLI commands like `astro add`, `astro check` |
+| `yarn astro --help` | Get help using the Astro CLI |
+
+### Steps to run after a Pull / Merge: 
+
+1. To install all dependencies
+
+```bash
+yarn
+```
+2. To run local dev environment
+
+```bash
+yarn dev
+```
+
 
 
 1. For Windows
