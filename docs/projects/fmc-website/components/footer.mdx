@@ -4,9 +4,9 @@ id: footer
 description: Footer Component in Fill My Cycle Website 
 sidebar_label: Footer
 ---
-The footer component is a section of our web page that is placed at the bottom and is separate from the main content area. It serves as a container for information that is relevant to the entire page.
+The footer component in **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)** contains the information about the developer and maintainer of the website. Along with this, we also have our organization's logo.
 
-  **Here's How we implemented the code:-**
+**Here's How we implemented the code:-**
 
 ```html {2-5} showLineNumbers
 <hr class="footer-line">
@@ -18,17 +18,26 @@ The footer component is a section of our web page that is placed at the bottom a
 ```
 
 **Here's a breakdown explanation of the Footer component:**
-1. `<hr class="footer-line">`:- This is an HTML `<hr>` (horizontal rule) element with the CSS class `footer-line`. We used it to create a horizontal line as a visual separator.
-2. `<div class="text-center">`:- This is a `<div>` element with the CSS class `text-center`. The class applies a styling rule to center-align the content within the `<div>` horizontally.
-3. `<img src="./assets/images/tos-logo.png" alt="TCET Open Source Logo">`:- This is an `<img>` (image) element that displays our logo. The `src` attribute specifies the path of our logo file, in this case, "./assets/images/tos-logo.png". The `alt` attribute provides alternative text that is displayed if the image cannot be loaded. In this case, the alternative text is "TCET Open Source Logo".  
 
+1. The footer line was defined to create a different footer section on our website.
 
-**The purpose of this code is to create a footer section in our website that includes a horizontal line, information about the website designer and developer, information about the website packager and maintainer, and an image representing Our website.**
+2. The details regarding the **Developer** and **Maintainer** were intergarted in the next container.
 
-:::info
-Fill My Cycle Application Is Now Aslo Available On ***Google Play Store!!*** You can Downlad it.
+3. In the same container, we also centered our **organization's logo**.
+
+**After performing the above steps, our footer looks like this:**
+
+import footer from "/docs/projects/fmc-website/assets/footer.png";
+
+<img src = {footer} style={{ border: "2px solid gray" }} />
+<center><figcaption><b>Footer of FMC Website</b></figcaption></center>
+<br />
+
+:::tip
+**Fill My Cycle Application** Is Now Aslo Available On ***Google Play Store!!*** You can download it here! **[Click here](https://play.google.com/store/apps/details?id=com.sspathare97.fillmycycle&hl=en&gl=US)**
 :::
 
+<br />
 
-_After successfully implementing the **[Footer](footer)** component of the Fill My Cycle website, We are ready with out frontend part of the website and next we will see about the ***mathematical Logic*** Used in our website_
+_After successfully implementing the **[Footer](footer)** component of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)** website, we are ready with ouR frontend part of the website and next we will see about how the the **[Mathematical Logic](../mathematical-logic)** and functions was used to calculate the performance parameters in our website_
 
