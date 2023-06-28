@@ -1,0 +1,229 @@
+---
+title: Verify Download
+id: verify-downloads
+description: Verify Section in TCET Linux Website
+sidebar_label: Verify Download
+keywords: [Verification process, File corruption, Checksum verification, Authenticity, Verify Downloads.astro]
+---
+
+The [***VerifyDownloads.astro***](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/VerifyDownloads.astro) is used as the main component in the [**Fourth section**](https://linux.tcetmumbai.in/#verify) of the [**TCET Linux website**](https://linux.tcetmumbai.in/). The [***Content Section of Verify Section***](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/VerifyDownloads.astro#L31-#L116) provides a simple and stylish **content to the webpage**. Our explanatory text in this section helps users understand the *purpose of the verification process*. It explains that the verification is done to **ensure the authenticity of the downloaded file** and highlights the *potential for file corruption* during the download process. The section mentions that the we have provided a new **checksum** for every new release of the operating system. This information informs users about the checksum update process and assures users that the team is actively maintaining the **authenticity of the downloaded files**. It explains that **if the returned value matches the given value, it confirms that the downloaded file is authentic**.
+
+**Here's a breakdown of the code to understand it's functionality:**
+
+## Script Component
+Here in the script component we have imported some functions and there is a constant variable named stepOne which consists information about components.
+
+### Imports:
+
+1. `clickToCopyImg import:` This imports an image file `clickToCopy.png` used for a *visual representation*, likely for a ***click to copy*** functionality.
+
+2. `infoIconImg import:` This imports an ***image file*** `infoIcon.png` used for displaying an **information icon**.
+
+3. `CopyToClipboard import:` This imports **a component** named `CopyToClipboard` from a separate file. It is used to handle the ***copy-to-clipboard functionality***.
+
+     ```jsx title="VerifyDownloads.astro" {1-3} showLineNumbers
+        import clickToCopyImg from "../assets/clickToCopy.png";
+        import infoIconImg from "../assets/infoIcon.png";
+        import CopyToClipboard from "./CopyToClipboard";
+
+        // stepOne Component
+        
+     ```
+
+### stepOne:
+
+`const stepOne` is an array. This array contains objects representing **different data** to be used after calling them. They contain the information for ***verifying downloaded*** files on **various operating systems**. Each object has properties such as **id**, **nameOfOS**, **description**, and **downloadableFileName** that hold specific information for each step.
+ 
+   ```jsx title="VerifyDownloads.astro" {2,4-6,8,10} showLineNumbers
+        // Import Component
+        const stepOne = [
+              {
+                id: 1,
+                nameOfOS: "Windows",
+                description:
+                  "Open windows terminal (powershell) in the Downloads folder or wherever the ISO is and type:",
+                downloadableFileName: "certutil -hashfile iso-name.iso sha256",
+              },
+              // Similarly more elements can be added
+            ];
+        // Content Section
+  ```
+
+## HTML Markup:
+
+The `HTML markup` represents the *visual structure* of the **verification steps and information**.
+It includes *headings*, *containers*, *buttons* and *elements* with specific classes for styling purposes.
+[***Content Section of Verify Section***](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/VerifyDownloads.astro#L31-#L116) can be *visited*.
+
+### Background & Title:
+
+1. `<div id="verify" class="bg-[#101828] p-4 px-10 lg:px-20">:` This `<div>` element has an `id attribute` set to **verify** and a class attribute with multiple classes. The classes define the *background color* and *padding for the section*.
+
+2. `<p class="font-title text-center text-[#FCFCFD] text-2xl md:text-4xl pt-2 pb-2">`  Verify Your Download`</p>:` This `<p>` element contains the heading ***"Verify Your Download."*** It has classes for font *styling*, *alignment*, and *text size*.
+
+  ```jsx title="VerifyDownloads.astro" {2,4,5,} showLineNumbers
+        // Import Component
+        <div id="verify" class="bg-[#101828] p-4 px-10 lg:px-20">
+                  <p
+                    class="font-title text-center text-[#FCFCFD] text-2xl md:text-4xl pt-2 pb-2" >
+                    Verify Your Download
+                  </p>
+            // Step 1 Section
+       </div>
+  ```
+
+### Step 1
+
+1. `<div class="pt-4">:` This `<div>` *element* adds *top padding*.
+
+2. `<div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">:` This `<div>` element represents a container with a *background color*, *padding*, and *rounded corners*. It is used as a wrapper for the ***"Steps 1"*** section.
+
+3. `<p class="text-[#FFFFFF] w-max">Steps 1:</p>:` This `<p>` element contains the text ***"Steps 1:"*** and has a class for *text color and width*.
+
+4. `<div class="flex mt-6 flex-col xl:flex-row md:flex-row">:` This `<div>` element uses *flexbox* to arrange its *child elements in a column on smaller screens and in a row on larger screens*.
+
+5. `{stepOne.map((step) => ( ... ))}:` This is a *JavaScript* expression that maps over the *stepOne* array to **dynamically generate elements based on its contents**.
+
+6. `<div class="m-4 rounded-2xl mt-2 mb-2 bg-[#1D2939]">:` This `<div>` element represents a container for each step. It has *margin*, *rounded corners*, and a *background color*.
+
+7. `<div class="p-4 rounded-t-xl">:` This `<div>` element provides *padding* and *rounded top corners for the step content*.
+
+8. `<p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">{step.nameOfOS}</p>:` This `<p>` element displays the **name of the operating system** associated with the current step. It has *font styling and padding*.
+
+9.` <p class="text-[#E4E7EC]">{step.description}</p>:` This `<p>` element displays the ***description*** for the current step. It has a class for *text color*.
+
+10. `<div class="w-full relative mt-2 overflow-hidden">:` This `<div>` element has *full width and is positioned relative* to its parent. It contains the **download file information** and the **"CopyToClipboard"** functionality.
+
+11. `<div class="absolute top-0 left-0 verifyDownloadGradient h-20 w-full" />:` This `<div>` element is *positioned absolutely* at the *top-left corner of its parent.* It has a *gradient background and sets the height and width.*
+
+12. `<span class="w-full h-fit flex justify-around align-middle p-3 ">:` This `<span>` element is a *flex container* that aligns its child elements with space around them. It sets the *width to full and has padding.*
+
+13. `<p class="text-[#E4E7EC] flex-1 mt-1 break-all">{step.downloadableFileName}</p>:` This `<p>` element displays the **downloadable file name for the current step**. It has t*ext color, flex layout, and word wrapping.*
+
+14. `<CopyToClipboard client:load text={step.downloadableFileName} />:` This is a custom component **CopyToClipboard** that provides a copy-to-clipboard functionality for the *file name.* It receives the file name as a prop.
+
+  ```jsx title="VerifyDownloads.astro" {2-22} showLineNumbers
+              // Import Component
+               <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
+            <p class="text-[#FFFFFF] w-max ">Steps 1:</p>
+          </div>
+          <div class="flex mt-6 flex-col xl:flex-row md:flex-row">
+            {
+              stepOne.map((step) => (
+                <div  class="m-4 rounded-2xl  mt-2 mb-2 bg-[#1D2939]">
+                  <div class="p-4 rounded-t-xl">
+                    <p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">
+                      {step.nameOfOS}
+                    </p>
+                    <p class="text-[#E4E7EC]">{step.description}</p>
+                  </div>
+                  <div
+                    class="w-full relative mt-2 overflow-hidden" >
+                    <div class="absolute top-0 left-0 verifyDownloadGradient h-20 w-full" />
+                    <span class="w-full h-fit flex justify-around align-middle p-3 ">
+                      <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
+                        {step.downloadableFileName}
+                      </p>
+                      <CopyToClipboard client:load text={step.downloadableFileName} />
+                    </span>
+                  </div>
+                </div>
+              ))
+           // Similarly more cards were added here
+            }
+  ```
+   
+### Steps 2
+
+1. `<div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">`: This `<div>` element represents a container for the ***"Steps 2"*** section. It has a *background color, padding, and rounded corners.*
+
+2. `<p class="text-[#FFFFFF] w-max">Steps 2:</p>`: This `<p>` element displays the heading "Steps 2:" and has s*tyling for text color and width.*
+
+3. `<div class="w-full mt-6">`: This `<div>` element has *full width and top margin.*
+
+4. `<p class="text-[#FFFFFF] ml-4 mb-4">...</p>`: This `<p>` element contains a **description explaining** the purpose of the verification process. It has *styling for text color, left margin, and bottom margin.*
+
+5. `<div class="m-4 rounded-2xl mt-2 mb-2 bg-[#1D2939]">`: This `<div>` element represents a container for the **SHA256SUMS** information. It has *margin, rounded corners, and a background color.*
+
+6. `<div class="p-4 rounded-t-xl">`: This `<div>` element provides *padding and rounded top corners for the content* within the SHA256SUMS container.
+
+7. `<p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">SHA256SUMS Below:</p>`: This `<p>` element displays the heading **"SHA256SUMS Below:"** and has font *styling for the title.*
+
+8. `<p class="text-[#E4E7EC]">IMAGE: tcetlinux-2023.05.05-x86_64.iso</p>`: This `<p>` element displays the name of the **image file to be verified** . It has *styling for text color*.
+
+
+### Verification Explanation
+1. `<div class="flex bg-[#1D2939] border-2 border-[#344054] rounded-xl m-4 p-4">`: This `<div>` element represents a **container** for the verification explanation section. It has a *flex layout, background color, border, and padding.*
+
+2. `<img src={infoIconImg} class="w-4 h-4 object-contain mt-1" />`: This `<img>` element displays an **image** **(presumably an info icon)**. It has a specified source (**`infoIconImg`**) and s*tyling for width, height, and vertical margin.*
+
+3. `<p class="text-[#D0D5DD] ml-2">...</p>`: This `<p>` element contains ***the explanation text for the verification process***. It has styling for *text color, left margin, and a mix of plain text and HTML tags for code (`<code>`) and bold (`<b>`) formatting.*
+
+  ```jsx title="VerifyDownloads.astro" {2-32,38-43} showLineNumbers
+              // Step 1
+                       <div class="pt-4">
+              <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
+                <p class="text-[#FFFFFF] w-max">Steps 2:</p>
+              </div>
+              <div class="w-full mt-6">
+                <p class="text-[#FFFFFF] ml-4 mb-4">
+                  In all the above cases, if the returned value matches with          the sha256sum
+                  given below, your download is authentic.
+                </p>
+                <div class="m-4 rounded-2xl mt-2 mb-2 bg-[#1D2939]">
+                  <div class="p-4 rounded-t-xl">
+                    <p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">
+                      SHA256SUMS Below:
+                    </p>
+                    <p class="text-[#E4E7EC]">IMAGE: tcetlinux-2023.05.         05-x86_64.iso</p>
+                  </div>
+                  {
+                    /* bg-gradient-to-r from-teal-100 via-indigo-500          to-pink-300 opacity-100 rounded-b-xl */
+                  }
+                  <div
+                    class="w-full relative mt-2  overflow-hidden rounded-b-xl" >
+                    <div
+                      class="absolute top-0 left-0 bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-300 rounded-b-xl h-24 w-full opacity-50 blur-lg
+                      pointer-events-none" >
+                    </div>
+                    <span
+                      class="z-20 w-full h-auto flex justify-around align-middle p-3 " >
+                      <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
+                        cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c66          70ac1a2f49
+                      </p>
+                      <CopyToClipboard client:load text= {"cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c66          70ac1a2f49"} />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-4">
+              <div class="flex bg-[#1D2939] border-2 border-[#344054] rounded-xl m-4 p-4">
+                <img src={infoIconImg} class="w-4 h-4 object-contain mt-1" />
+                <p class="text-[#D0D5DD] ml-2">
+                  IMAGE is <code>iso-name.iso</code> in <b>step 1</b>. It is the file that you have downloaded. Verification is done to check the authenticity of the file you have downloaded. Large files may get corrupted in the download process. TCET Linux team provides a new checksum for every new release of the operating system.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+  ```
+
+## Output Image
+
+import VerifySection from "/docs/projects/tcet-linux-website/assets/VerifySection.png";
+
+<img src = {VerifySection} style={{ border: "2px solid gray" }} />
+
+<br />
+<center><b><figcaption>TCET Linux- Verify Section</figcaption></b></center>
+<br />
+
+:::tip
+You can visit
+1. [Verification Section of the TCET Linux website](https://linux.tcetmumbai.in/#verify)
+2. [VerifyDownloads.astro](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/VerifyDownloads.astro)
+:::
+<br />
+
+_The [**Verification Section of Home Page**](verify-downloads) was succesfully executed! You can visit the **[TCET Linux Website](https://linux.tcetmumbai.in/)** to see the output of the code._
