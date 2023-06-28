@@ -7,7 +7,7 @@ keywords: [Cycle Result, cycleresult, result]
 ---
 
 # Cycle-Result
-Cycle-result represents the total marks scored by the student. Here the total marks of both the table is calculated in the respective column and then the average of the total marks is calculated and presented to students.
+**Cycle-result** represents the total marks scored by the student. Here the total marks of both the table is calculated in the respective column and then the average of the total marks is calculated and presented to students.
 
 ## Cycle-result Table explanation
 We have used HTML program for this component.<br />
@@ -16,10 +16,9 @@ Breakdown of the code:
   
 1. `<th>` : We have used `<th>` tag to define the column headers for the  table, which are "Cycle", "TK", "TD", "LI", "B", "C", and "Total".
 	
-
 2. class : We have used class attribute to apply a CSS class to the cells.
  
-```html title="index.html" {} showLineNumbers
+```html title="index.html" {3-4} showLineNumbers
   <thead>
 	    <tr>
 		    <th>Cycle</th>
@@ -32,8 +31,6 @@ Breakdown of the code:
 	    </tr>
   </thead>
 ```
-
-
 ### Data Column :
   
 1. `<tr>` : We have used `<tr>` element to define a row in an HTML table.
@@ -42,7 +39,7 @@ Breakdown of the code:
   
 3. `<td>` : We have used `<td>` tag to define the remaining cells. These rows are used as template for adding actual data to the table.   
 
-```html title="index.html" {} showLineNumbers
+```html title="index.html" {1-3} showLineNumbers
   <tr>
 	  <th>1 to 5</th>
 	  <td></td>
@@ -57,8 +54,7 @@ Breakdown of the code:
 Similarly we have made next column , total and average column. 
 :::
 
-
-4. Cycle-Result picture : 
+4. Cycle Result Table would look like in the following manner: 
 
 import pic2 from "/docs/projects/fmc-website/assets/cycle-result.png";
 
