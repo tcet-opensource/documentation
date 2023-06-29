@@ -11,7 +11,8 @@ keywords: [Cycle Result, cycleresult, result]
 
 ## Cycle Result Table
 We have used HTML for this component.<br />
-Breakdown of the code is as follows:
+
+**Breakdown of the code is as follows:**
 
 ### Column Header 
   
@@ -19,19 +20,20 @@ Breakdown of the code is as follows:
 	
 2. We have used class attribute to apply CSS to the cells.
  
-```html title="index.html" {3-4} showLineNumbers
-  <thead>
-	    <tr>
-		    <th>Cycle</th>
-		    <th class="d">TK</th>
-		    <th class="d">TD</th>
-		    <th class="d">LI</th>
-		    <th class="d">B</th>
-		    <th class="d">C</th>
-		    <th class="d">Total</th>
-	    </tr>
-  </thead>
-```
+	```html title="index.html" {3-4} showLineNumbers
+	<thead>
+			<tr>
+				<th>Cycle</th>
+				<th class="d">TK</th>
+				<th class="d">TD</th>
+				<th class="d">LI</th>
+				<th class="d">B</th>
+				<th class="d">C</th>
+				<th class="d">Total</th>
+			</tr>
+	</thead>
+	```
+	
 ### Data Column 
   
 1. `<tr>` : We have used `<tr>` element to define a row in an HTML table.
@@ -40,17 +42,18 @@ Breakdown of the code is as follows:
   
 3. `<td>` : We have used `<td>` tag to define the remaining cells. These rows are used as template for adding actual data to the table.   
 
-```html title="index.html" {1-3} showLineNumbers
-  <tr>
-	  <th>1 to 5</th>
-	  <td></td>
-	  <td></td>
-	  <td></td>
-	  <td></td>
-	  <td></td>
-	  <td></td>
-  </tr>
-```
+	```html title="index.html" {1-3} showLineNumbers
+	<tr>
+		<th>1 to 5</th>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	```
+
 :::tip
 Similarly we have implemented next column: **Total** and **Average** column. 
 :::
@@ -63,6 +66,8 @@ import pic2 from "/docs/projects/fmc-website/assets/cycle-result.png";
 <img src = {pic2} style={{ border: "2px solid gray" }} />
 </p>
 
-After successfully implementing the **[Cycle Result](cycle-result)** component of the **[Fill my cycle](https://fillmycycle.tcetmumbai.in/#result)** website, the next step we did was to move forward with the implementation of **[button instructions](button-instructions)** component.
+<br />
+
+After successfully implementing the **[Cycle Result](cycle-result)** component of the **[Fill my cycle](https://fillmycycle.tcetmumbai.in/#result)** website, the next step we did was to move forward with the implementation of **[Instructions Button](button-instructions)** component.
 
 
