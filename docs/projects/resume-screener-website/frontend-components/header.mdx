@@ -1,151 +1,131 @@
-## Navbar Component
+---
+title: Header
+id: header
+description: Header Component in Resume Screener Website
+sidebar_label: Header
+keywords: [Header]
+---
 
-The `Navbar` component is responsible for rendering a navigation bar with a logo, menu links, and a responsive hamburger menu for smaller screens.
+The **Header** is a section at the top of a webpage that typically contains branding elements, navigation menus, and important information. It helps establish website identity, improves user experience, and ensures easy access to different sections of a website on various devices.
 
-### Defining Components
+ ### Navigation Links Data
 
-1. We defined an array for navigation links (`navlinks`) that will be displayed in the navigation bar. Each link has a title, link URL, and an optional `newtab` flag indicating whether the link should open in a new tab.
+ This block of code defines an array called `navlinks` which stores objects representing **navigation links**. Each object has a title (the text to display) and a link (the URL to navigate to). 
+  
 
-2. We defined the `Navbar` functional component along with the initialization of the `open` state variable using the `useState` hook. This variable is used to control the state of the responsive menu.
-```jsx
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-}
-```
-3. Then defining the `handleMenu` function, which toggles the `open` state when the menu button is clicked.
-```jsx
-const handleMenu = () => 
-    setOpen((prev) => !prev);
-    console.log(open);
-```
+  ```jsx title="Navbar.jsx"{3-4,7-8}showLineNumbers 
+     const navlinks = [
+       {
+        title: "Home",
+        link: "/#Home",
+       },
+        {
+         title: "About Us",
+         link: "https://opensource.tcetmumbai.in/docs/about-tcetopensource",
+         newtab: true,
+        },
+       // ...
+      ];
+  ````
+  
 
-
-### Rendering the logo and the navigation links
-
-1. In case of larger screen:
-
-```jsx
-<div className="mx-auto p-4 lg:p-8">
-  <div className="flex items-center justify-between h-16 pl-4">
-    {/* Logo */}
-    {/* Rest of the code... */}
-    {/* Navlinks */}
-    <div className="hidden md:flex">
-      {/* Rest of the code... */}
-    </div>
-
-    {/* Rest of the code... */}
-  </div>
-</div>
-```
-:::info 
-For bigger screens, the navigation bar shows all the links in a neat row. You can just click on any link you want to visit that specific page or section of the website. It's simple and straightforward.
+:::info
+   Some objects also have a newtab property set to **true**, indicating that the link should open in a new browser tab.
 :::
+### Adding Logo and Name
 
-### Rendering the logo, which includes an image and the website title:
+This section represents the **logo** and website name **Resume Screener** on the navbar. It displays the logo image, the name "**Resume screener**," and applies some styling including a border, gradient background, and a blur effect.
 
-```jsx
-<div
-  className="flex items-center gap-3 rounded-full border-2 border-white border-opacity-25"
-  style={{
-    background: "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%)",
-    backdrop: "blur(4px)"
-  }}
->
-  <img src="/Footer/logo.png" alt="" className="h-[48px] p-1" />
-  <a href="/" className="text-white">
-    <h2 className="text-white font-{400} text-base pr-2.5">Resume screener</h2>
-  </a>
-</div>
-```
-After implimentation, the changes seen would be like this: 
+  ```jsx title="Navbar.jsx"{2}showLineNumbers
+     <div
+     className="flex items-center gap-3 rounded-full border-2 border-white border-opacity-25"
+     style={{
+        background:
+        "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%)",
+         backdrop: "blur(4px)"
+      }}
+       >
+     {/* ... */}
+     </div>
+  ```
+On performing the above steps, the **logo and name** looked like this: 
 
 import logo from "/docs/projects/resume-screener-website/assets/logo-name.png";
 
-<img src={logo} style={{ border: "1px solid gray" }} />
-
-<br />
-<br />
-
-
-## Rendering the navigation links:
-
-```jsx
-<div className="text-base 2xl:text-lg ml-10 flex items-baseline space-x-2">
-  {navlinks.map((link, index) => (
-    <a
-      key={index}
-      className="text-[#E4E7EC] transition-all duration-500 hover:bg-[#475467] hover:text-[#E0EAFF] px-2 py-1 rounded-md text-md font-medium"
-      href={link.link}
-      target={link.newtab ? "_blank" : ""}
-    >
-      {link.title}
-    </a>
-  ))}
-  <div className="!ml
-
--8 border-2 border-[#475467] rounded-lg">
-    <button className="inline-flex items-center text-[#E0EAFF] border-1 border-white py-1 px-2 focus:outline-none rounded md:mt-0 hover:bg-[#475467] hover:text-[#E0EAFF] text-base 2xl:text-lg">
-      <a href="/#installation">Get Started</a>
-    </button>
-  </div>
+<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+  <img src={logo} style={{ border: "1px solid gray" }} />
 </div>
-```
-These external links can open in a new tab, so you can keep exploring without losing track of where you started.
 
-### Rendering the responsive hamburger menu for smaller screens:
+### Adding Get Started Button
 
-What about mobile screens, like smartphones? That's where the hamburger menu comes into play. You know, the icon with three horizontal lines stacked on top of each other. When you tap on the hamburger, it reveals a hidden menu with all the links neatly listed. This way, you can easily navigate the website, even on your phone. The code to carry this out:
+This section represents the "**Get Started**" button on the desktop version of the navbar. It is styled with a border, text color, hover effects, and rounded corners. The button contains an `a` element that links to "/#installation".
 
-```jsx
-<div className="-mr-2 flex md:hidden">
-  <button
-    type="button"
-    onClick={handleMenu}
-    className="inline-flex items-center justify-center p-2 rounded-lg text-white hover:ring-white focus:outline-none focus:ring-2 focus:rig-offset-2 focus:ring-offset-white focus:ring-white"
-  >
-    <span className="sr-only">Open main menu</span>
-    {open === true ? <FaTimes /> : <FaBars />}
-  </button>
+  ```jsx title="Navbar.jsx"{2-4}showLineNumbers
+     <div className="!ml-8 border-2 border-[#475467] rounded-lg">
+        <button className="inline-flex items-center text-[#E0EAFF] border-1 border-white py-1 px-2 focus:outline-none rounded md:mt-0 hover:bg-[#475467] hover:text-[#E0EAFF] text-base 2xl:text-lg">
+        <a href="/#installation">Get Started</a>
+        </button>
+     </div>
+  ```
+On performing the above steps, the **Get Started** Button looked like this: 
+
+import button from "/docs/projects/resume-screener-website/assets/get-started.png";
+
+<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+  <img src={button} style={{ border: "1px solid gray" }} />
 </div>
-```
+<br  />
 
-### Rendering the mobile navigation menu when the hamburger menu is clicked:
+:::info
+   Similar steps are carried out to display **Logo** and **Get Started** Button on a smaller screen.
+:::
+### Adding three line menu button and Navigation for mobile view 
 
-```jsx
-{open ? (
-  <div className="flex flex-col md:hidden">
-    <div className="px-2 pt-1 pb-3 space-y-1 sm:px-3">
-      {navlinks.map((link, index) => (
-        <a
-          key={index}
-          className="text-center cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          href={link.link}
-        >
-          {link.title}
-        </a>
-      ))}
-      <a
-        href="/Get Started"
-        className="text-center cursor-pointer text-[#E0EAFF] hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-      >
-        Get Started
-      </a>
-    </div>
-  </div>
-) : null}
-```
-:::tip 
-The rendering of a larger screen can be carried out similarly.
+When viewed on phone, the navigation options will be hidden under the three line *menu*. 
+
+  ```jsx title="Navbar.jsx"{2,7-10}showLineNumbers
+      //to keep the navigation options hidden
+      <div className="-mr-2 flex md:hidden">
+       {/* ... */}
+      </div>
+      //three line menu button
+       <button
+         type="button"
+           onClick={handleMenu}
+         className="inline-flex items-center justify-center p-2 rounded-lg text-white hover:ring-white focus:outline-none focus:ring-2 focus:rig-offset-2 focus:ring-offset-white focus:ring-white">
+          {/* ... */}
+       </button>
+  ```
+
+
+On execution of the adove codes, the *menu* and *navigation links* on the mobile looks like this:
+
+import hamburger from "/docs/projects/resume-screener-website/assets/hamburger.png";
+
+<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+  <img src={hamburger} style={{ border: "1px solid gray" }} />
+</div>
+
+import nav from "/docs/projects/resume-screener-website/assets/nav.png";
+
+<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+  <img src={nav} style={{ border: "1px solid gray" }} />
+</div>
+<br/>
+
+
+:::info
+Basically, We have made use of a **Hamburger Menu** which on being clicked will display the **Nvigation links**.
 :::
 
-On completion of the above stated steps, the header would look like: 
+   **After adding *logo*, *navigation links* and *'Get Started' Button* The Header looked like this:**
 
-import header from "/docs/projects/resume-screener-website/assets/header.png";
+import header from "/docs/projects/resume-screener-website/assets/desktop-view.png";
 
-<img src={header} style={{ border: "1px solid gray" }} />
+ <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}> 
+  <img src={header} style={{ border: "1px solid gray" }} />
+ </div> 
 
-<br />
-<br />
 
-_The [**Header Section**](header) is succesfully executed! Let's move on and see how we created the [**Hero component**](hero) of the **Resume Screener Website**._
+_ The [**Header Section**](header) is succesfully executed! Let's move on and see how we created the [**Hero Section**](hero) of the **Resume Screener Website**. _
+
