@@ -1,0 +1,185 @@
+---
+title: Verify Download
+id: verify-downloads
+description: Verify Section in TCET Linux Website
+sidebar_label: Verify Download
+keywords: [Verification process, File corruption, Checksum verification, Authenticity, Verify Downloads.astro]
+---
+
+The ***Verify Downloads*** section is used as the main component in the [**Fourth section**](https://linux.tcetmumbai.in/#verify) of the [**TCET Linux website**](https://linux.tcetmumbai.in/). The content of the Verify Section provides a simple and stylish content to the webpage. It explains that the verification is done to _ensure the authenticity of the downloaded file_ and highlights the *potential for file corruption* during the download process. The section mentions that the we have provided a new **checksum** for every new release of the operating system. It explains that **if the returned value matches the given value, it confirms that the downloaded file is authentic**.
+
+**Here's a breakdown of the code to understand it's functionality:**
+
+## Verify Download Component
+Here in this **component** we have imported some `functions` and there is a constant variable named `stepOne` which consists information about cards.
+
+### Imports
+
+1. `clickToCopyImg` and `infoIconImg`: This imports an image file **"clickToCopy.png"** and **"infoIcon.png"**.
+
+3. `CopyToClipboard:` This imports a component named **"CopyToClipboard"** from a separate file.
+
+     ```jsx title="VerifyDownloads.astro" {1-3} showLineNumbers
+        import clickToCopyImg from "../assets/clickToCopy.png";
+        import infoIconImg from "../assets/infoIcon.png";
+        import CopyToClipboard from "./CopyToClipboard";
+        // stepOne Component
+     ```
+
+### stepOne
+
+`stepOne` is an array. This array contains objects representing different data to be used after calling them. Each object has properties such as **"id"**, **"nameOfOS"**, **"description"**, and **"downloadableFileName"** that hold specific information for each step.
+ 
+   ```jsx title="VerifyDownloads.astro" {4-6,8} showLineNumbers
+        // Import Component
+        const stepOne = [
+              {
+                id: 1,
+                nameOfOS: "Windows",
+                description:
+                  "Open windows terminal (powershell) in the Downloads folder or wherever the ISO is and type:",
+                downloadableFileName: "certutil -hashfile iso-name.iso sha256",
+              },
+              // Similarly more elements can be added
+            ];
+        // Content Section
+  ```
+
+## HTML Markup
+
+The **"HTML markup"** represents the *visual structure* of the **verification steps and information**.
+It includes *headings*, *containers*, *buttons* and *elements* with specific classes for styling purposes.
+[***Content Section of Verify Section***](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/VerifyDownloads.astro#L31-#L116) can be *visited*.
+
+### Background & Title
+
+The `<div>` element has an "id attribute" set to "verify". 
+The `<p>` element contains the heading ***"Verify Your Download."*** Both the element has classes for *background color* and *padding for the section* and  *styling*, *alignment*, *text size* respectively.
+
+  ```jsx title="VerifyDownloads.astro" {2,4,5,} showLineNumbers
+        // Import Component
+        <div id="verify" class="bg-[#101828] p-4 px-10 lg:px-20">
+                  <p
+                    class="font-title text-center text-[#FCFCFD] text-2xl md:text-4xl pt-2 pb-2" >
+                    Verify Your Download
+                  </p>
+          // Step 1 Section
+          </div>
+  ```
+
+### Step 1
+
+1. The first `<div>` element represents a container. It consists of `<p>` element contains the text ***"Steps 1:"***.
+
+2. `{stepOne.map((step) => ( ... ))}` is a *JavaScript* expression that maps over the `stepOne` array to dynamically generate elements based on its contents.
+
+3. The `<p>` element wraped inside two `div` elements displays the **"name"** of the operating system associated with the current step.
+
+4. Similar `<p>` and `div` element displays the ***"description"***, ***"downloadable file name"***.
+
+5. `<CopyToClipboard/>` is a custom component that provides a copy-to-clipboard functionality for a particular file.
+
+  ```jsx title="VerifyDownloads.astro" {3,7,11,13,20,22} showLineNumbers
+              // Import Component
+         <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
+            <p class="text-[#FFFFFF] w-max ">Steps 1:</p>
+          </div>
+          <div class="flex mt-6 flex-col xl:flex-row md:flex-row">
+              {
+                    stepOne.map((step) => (
+                    <div  class="m-4 rounded-2xl  mt-2 mb-2 bg-[#1D2939]">
+                    <div class="p-4 rounded-t-xl">
+                    <p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">
+                    {step.nameOfOS}
+                    </p>
+                    <p class="text-[#E4E7EC]">{step.description}</p>
+                    </div>
+                    <div
+                    class="w-full relative mt-2 overflow-hidden" >
+                    <div class="absolute top-0 left-0 verifyDownloadGradient h-20 w-full" />
+                    <span class="w-full h-fit flex justify-around align-middle p-3 ">
+                    <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
+                    {step.downloadableFileName}
+                    </p>
+                   <CopyToClipboard client:load text={step.downloadableFileName} />
+                   </span>
+                   </div>
+                   </div>
+        ))
+           // Similarly more cards were added here
+            }
+  ```
+
+### Step 2
+
+1. The first `<div>` element represents a container. It consists of `<p>` element containing the text ***"Steps 2"***.
+
+2. The `<p>` inside `<div>` element contains a **description explaining** the purpose of the verification process. Similar steps were carried out for **SHA256SUMS** information, file name and to display key.
+
+ ```jsx title="VerifyDownloads.astro" {3,6-8,11-13,14,23-25,26} showLineNumbers
+      <div class="pt-4">
+          <div class="bg-[#1D2939] w-fit m-4 p-2 rounded-2xl">
+            <p class="text-[#FFFFFF] w-max">Steps 2:</p>
+          </div>
+          <div class="w-full mt-6">
+            <p class="text-[#FFFFFF] ml-4 mb-4">
+                In all the above cases, if the returned value matches with the sha256sum given below, your download is authentic.
+            </p>
+            <div class="m-4 rounded-2xl mt-2 mb-2 bg-[#1D2939]">
+                <div class="p-4 rounded-t-xl">
+                  <p class="font-title text-[#FCFCFD] text-xl md:text-2xl pt-2 pb-2">
+                    SHA256SUMS Below:
+                  </p>
+                  <p class="text-[#E4E7EC]">IMAGE: tcetlinux-2023.05. 05-x86_64.iso</p>
+                  </div>
+                       {
+                     /* bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-300 opacity-100 rounded-b-xl */
+                     }
+                  <div class="w-full relative mt-2  overflow-hidden rounded-b-xl" >
+                    <div class="absolute top-0 left-0 bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-300 rounded-b-xl h-24 w-full opacity-50 blur-lg pointer-events-none" >
+                    </div>
+                    <span class="z-20 w-full h-auto flex justify-around align-middle p-3 " >
+                      <p class="text-[#E4E7EC] flex-1 mt-1 break-all">
+                        cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c6670ac1a2f49
+                      </p>
+                      <CopyToClipboard client:load text= {"cb9257aea691441a0a7c628b8cc199d7746220651daf035d261c6670ac1a2f49"} />
+                    </span>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+  ```
+
+### Verification Explanation 
+This `<div>` element represents a container for the verification explanation section. This `<img>` element displays an **"image** **(an info icon)"**. The `<p>` element contains the explanation text for the verification process. 
+
+  ```jsx title="VerifyDownloads.astro" {3,5} showLineNumbers
+        <div class="pt-4">
+            <div class="flex bg-[#1D2939] border-2 border-[#344054] rounded-xl m-4 p-4">
+                <img src={infoIconImg} class="w-4 h-4 object-contain mt-1" />
+                    <p class="text-[#D0D5DD] ml-2">
+                        IMAGE is <code>iso-name.iso</code> in <b>step 1</b>. It is the file that you have downloaded. Verification is done to check the authenticity of the file you have downloaded. Large files may get corrupted in the download process. TCET Linux team provides a new checksum for every new release of the operating system.
+                    </p>
+            </div>
+        </div>
+  ```
+
+**Above steps give the following output:**
+
+import VerifySection from "/docs/projects/tcet-linux-website/assets/VerifySection.png";
+
+<img src = {VerifySection} style={{ border: "2px solid gray" }} />
+
+<br />
+<center><b><figcaption>TCET Linux- Verify Section</figcaption></b></center>
+<br />
+
+:::tip
+You can visit
+1. [Verification Section of the TCET Linux website](https://linux.tcetmumbai.in/#verify)
+2. [VerifyDownloads.astro](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/VerifyDownloads.astro)
+:::
+<br />
+
+_The [**Verification Section of Home Page**](verify-downloads) was succesfully executed! You can visit the **[TCET Linux Website](https://linux.tcetmumbai.in/)** to see the output of the code._
