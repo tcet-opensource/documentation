@@ -1,0 +1,245 @@
+---
+title: Hero
+id: hero
+description: Hero Component in Tcet Linux Website
+sidebar_label: Hero
+keywords: [Hero, Main,  ]
+---
+
+The **Hero** component represents the first section of the [**TCET Linux Website**](https://linux.tcetmumbai.in/). **Hero** section is designed by our team to make a strong visual impact and introduce the **TCET Linux Operating System** to the Users. We have provides a brief description of the `Operating System's` features and its association with **Arch Linux** and the **TCET Open Source Community**, also we have included buttons for users to explore more about TCET Linux and view the system requirements for installing [**TCET Linux System**](https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/checksum) on your Device .
+
+## Hero Content Section
+
+Our team has created this section with **Basic HTML** and **Javascript (Astro)** code. This Section consist of [**Text Component**](#text-component), [**Explore Component**](#explore-component) and [**Requirements Pop-Up Button**](#requirements-pop-up-button). This Section provides information about TCET Linux and encourages users to explore and view the requirements.
+
+### Text Component
+
+This consist of Major Text Visualisation of the **Hero** Section of the [**TCET Linux Website**](https://linux.tcetmumbai.in/).
+
+**Here is the implementation of code :**
+
+1. The first`<div>` element created by our team is the parent Div of the Whole **Hero Section**. A `<Section>` Element is used by us to create Sub-sections in the component, followed by `<div>` elements with **Css** styling.
+
+2. Our team have used an `<h1>` tag to diaplay the **Title Text** of the Component.
+
+3. `<p>` Tag is used by our team to display the description about **TCET Linux Website**.
+
+ ``` jsx title="Hero.astro" {3,12-21} showLineNumbers
+// Importing Dependencies
+<div>
+ <section class="text-gray-600 body-font bg-[#101828]">
+  <div class="w-11/12 mx-auto flex md:py-16 py-5 md:flex-row flex-col pb-5 items-center">
+  <div
+   class="absolute z-30 py-0 left-0 w-80 h-96 bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-100 opacity-30 blur-3xl flex-none order-4 rounded-xl transform -rotate-45 pointer-events-none"
+   >
+  </div>
+  <div
+   class="lg:flex-grow md:w-1/2 lg:pr-0 md:pr-12 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center font-title"
+  >
+   <h1 class="2xl:text-6xl xl:text-5xl sm:text-4xl text-3xl mb-2 text-white">
+    Enhance your computing experience with TCET Linux
+   </h1>
+   <p class="mb-8 leading-relaxed text-indigo-300 sm:text-sm text-xs">
+    TCET Linux • A 64-bit GNU/Linux distribution for TCET Mumbai
+   </p>
+   <p class="mb-8 leading-relaxed text-[#D0D5DD] sm:text-base text-sm">
+    Powered by Arch Linux & the TCET Open Source Community, TCET Linux the
+    the premier operating system for engineering education in TCET Mumbai.
+   </p>
+//Button Component Code    
+ ```
+
+:::tip
+Further Basic **HTML** Syntax i.e Header (`<h>`) and Paragragh `<p>` Tags to display more text on your Website.
+:::
+
+### Explore Component
+
+This Component contains the `Button` linked to the **Youtube** Video.
+
+  ``` jsx title="Hero.astro" {4-7} showLineNumbers
+  //Text Component
+  <div class="flex items-center gap-2 md: gap-4">
+  <div class="flex justify-center h-min">
+  <a
+  class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700"
+  href="https://www.youtube.com/watch?v=8kL1NEtSIi4"
+  target="_blank">Explore</a
+  >
+  </div>
+  ```
+
+ - This Component created by our developers, consists of `<div>` with `<a>` tag containing an **image**. It has classes and styles applied to it, and it displays an image referenced by the source attribute usinh **href** element.
+
+:::tip
+You can add more Linked Button using same [**Content**](#explore-component).
+:::
+
+### Requirements Pop-Up Button
+
+We created this **Pop-Up Button** to display `System Requirements` in a **dialog** that can be opened and closed by **clicking** the `button`.
+ 
+  ``` jsx title="Hero.astro" {2,4,6-9} showLineNumbers
+  // Explore Component Code
+  <button
+  class="flex flex-row w-fit p-2 px-4 cursor-pointer  gap-2 items-center justify-center border rounded-full border-white hover:bg-blue-50 hover:bg-opacity-20 text-white"
+  id="req-btn"
+  >
+  <span class=" h-6 md:font-semibold">Requirements</span>
+  <span class="p-1 ml-1 bg-custom-btn rounded-full">
+  <img class="w-full h-full"
+  src="images/requirements-icon.svg"
+  alt=""
+  />
+  </span>
+  </button>
+  </div>
+  </div>
+  //Hero Image Code
+  ```
+1. We created a `<button>` element which contains an _**id**_ of **"req-btn"**
+
+2. `<Span>` element are used to display Text in `<h6>` tag and an **icon svg** in `<img src>` tag.
+
+## Hero Image Section 
+
+This section consist of **Image** displayed on the other half of **Hero** Section of the Website.
+
+``` jsx title="Hero.astro" {6-8} showLineNumbers
+//Hero Content Section Code
+<div class="flex sm:w-1/2">
+ <div
+ class="hidden md:flex absolute z-30 pt-20 m-14 w-48 h-52 xl:w-[400px] xl:h-[300px] bg-[#98A2B3] opacity-30 blur-2xl flex-none order-4 rounded-full pointer-events-none"
+ >
+ </div>
+    <div class="z-50 flex align-middle rounded-xl m-2">
+    <img class="w-full object-contain" src="image 1.png" />
+    </div>
+ </div>
+//Pop-Up Button Script code 
+```
+- Basic **HTML** `<img src>` tag is used to display **Hero Image** of **Hero** Section inside `<div>` classes with appropriate **Css** styling.  
+
+:::info
+To understand code more briefly, You can refer [**"Hero.Astro"**](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/Hero.astro) file from [**TCET Linux Website**](https://github.com/tcet-opensource/tcet-linux-website) repo
+:::
+
+## Pop-Up Screen Description
+
+This Component consist of data that is displayed while the **Pop-Up** `Dialog` is **open**. The **dialog** provides a **clear heading**, a **close button**, and a **list of requirements** to help users understand the hardware specifications needed to run **TCET Linux** successfully.
+
+``` jsx title="Hero.astro" {1,2,4,5,7,8} showLineNumbers
+<dialog id="requirements" class="w-5/6 md:w-3/4 lg:w-2/4 p-0 rounded-xl bg-[#0e1624] text-white "  >
+ <div id="inside-req" class="p-6 lg:p-8 w-full h-full space-y-2">
+  <div class="flex justify-between " >
+   <h1 class="text-2xl font-title font-semibold">Requirements</h1>
+   <button id="close-req" class="text-2xl font-medium" >X</button>
+  </div>
+  <ul class="list-disc ml-8" >
+    <li> 64 bit x86_64 processor (Intel/AMD), with atleast 2 CPU cores. (32-bit not supported) </li>
+    <li> Any GPU/iGPU with OpenGl 3.3+ support. </li>
+    <li> Atleast 2GB DDR3/DDR4 RAM. </li>
+    <li> Atleast 10GB HDD/SSD storage. (Although installer will allow min 5.5GB) </li>
+    <li> Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard. </li>
+  </ul>
+ </div>
+</dialog>
+ ``` 
+
+1. We Created `<dialog>` element with an _**id**_ of **"requirements"** and several classes that that is used for **styling**. It is styled to appear as _**a rounded rectangle with a dark background and white text.**_
+
+2. Inside the `<dialog>` element, we defined a `<div>` element with an _**id**_ of **"inside-req"** with classes for styling .
+
+3. We created an `<h1>` element with classes that define the _font size, font family, and font weight_. It displays the heading **"Requirements"**.
+
+4. Next, we defined a `<button>` element with the _**id**_ **"close-req"**. The button displays an **"X"** symbol and is intended to **close** the `dialog` when **clicked**.
+
+5. Following the **header**, we defined an unordered **list `<ul>`** with the **class "list-disc ml-8"**.
+
+   - This styles the list items with _**bullet points**_ and an _**8-pixel left margin**_. 
+
+   - The list items `<li>` represent the `system requirements` for **TCET Linux**.
+
+   - Each requirement is listed as a separate list item.
+
+## Pop-Up Button Script
+
+This Section contains the responsive working of **Pop-Up**
+
+``` jsx title="Hero.asrto" (3-6,7,9,11,13,15-17) showLineNumbers
+// Pop-Up Description Code
+<script>
+  const requirements = document.getElementById("requirements");
+  const req_btn = document.getElementById("req-btn");
+  const insideReq = document.getElementById("inside-req");
+  const closeReq = document.getElementById("close-req");
+  req_btn.addEventListener("click", function () {
+    // console.log("opennnn");
+    requirements.showModal();
+  });
+  closeReq.addEventListener("click", function () {
+    // console.log("closeee");
+    requirements.close();
+  });
+  window.onclick = function (event) {
+    if (event.target.contains(insideReq) && event.target !== insideReq) {
+      requirements.close();
+      // console.log("clickkk outsidee");
+    }
+  };
+</script>
+```
+**Here's the Explanation of the Above code : **
+
+1. Our team created this code which begins by `retrieving several` elements from the **HTML** using their respective `ids`: **requirements**, **req_btn**, **insideReq**, and **closeReq**. These elements represent the `dialog` box itself, the **button** that **opens** the `dialog`, the **content container** of the `dialog`, and the **close button** within the `dialog` respectively .
+
+2. Then we added an **event listener** to the `req_btn` button using the **addEventListener()** method.
+
+  - When the `<button>` is **clicked**, the function provided as the second argument is executed. 
+
+  - In this case, the **function** calls the **showModal()** method on the **requirements** `dialog` element. 
+
+  - This method displays the `dialog` as a **modal window**, **overlaying** the rest of the page and preventing **interaction** with the underlying content.
+
+3. We added another **event listener** to the `closeReq` button. 
+
+  - When the `<button>` is clicked, the function provided, **closes** the **requirements** `dialog` using the **close() method**.
+
+  - This method hides the `dialog` and allows the underlying content to be **interacted** with again.
+
+4. In the last part of the code, we assigned a **click event listener** to the `window object`. 
+
+  - This listener `triggers` when any **click** event occurs on the **window**. 
+  
+  - The **function** provided checks if the clicked element is contained within the **insideReq** element and if it is not the **insideReq** element itself. 
+ 
+  - If these **conditions** are met, it means that the **click** occurred outside the **dialog's** content area.  
+
+  - In this case, the **function closes** the **requirements** `dialog` using the **close() method**.
+
+**After implementing the code, Pop-Up Dialog can be scene like this :**
+
+import Popup from "/docs/projects/tcet-linux-website/assets/popup.jpg";
+
+<figure>
+    <center><img src={Popup} style={{ border: "2px solid gray" }} /></center>
+    <center><b><figcaption>Pop-Up Dialog</figcaption></b></center>
+</figure>
+
+:::tip
+Using Similar code consisting of **Event listeners**, an interactive dialog Can be created with **content** using same [**Pop-Up Screen Description**](#pop-up-screen-description) code.
+:::
+
+**After implementing all components, Hero Section can be scene like this :**
+
+import Hero from "/docs/projects/tcet-linux-website/assets/hero.jpg";
+
+<figure>
+    <center><img src={Hero} style={{ border: "2px solid gray" }} /></center>
+    <center><b><figcaption>Hero Section </figcaption></b></center>
+</figure>
+
+_The [**Hero Section of TCET Linux Webite**](hero) was succesfully executed! Let's move on and see how we created the [**Installation Steps Section **](installation-steps) component of the **[TCET LinuxWebsite](https://linux.tcetmumbai.in)**._
+
+
+
