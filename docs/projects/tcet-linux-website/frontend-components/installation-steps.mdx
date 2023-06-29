@@ -16,21 +16,13 @@ TCET Linux Installation Steps `element` is a step-by-step guide created by us th
 2. In **Installation Steps Element**, We have implemented a `code` that consist a `React` component called **InstallationSteps**. It is a functional component that renders a set of installation steps for **TCET Linux Installation** along with `Corresponding Images` with **Hovering Effect**.
 
   ``` jsx title="InstallationSteps.jsx" {1-2,11-12} showLineNumbers
-import React, { useState } from "react";
-    import welcomeImage from "../assets/image 9.png";
-    import locationImage from "../assets/image 10.png";
-    import keyboardImage from "../assets/image 11.png";
-    import storageImage from "../assets/image 12.png";
-    import userImage from "../assets/image 13.png";
-    import summaryImage from "../assets/image 14.png";
-    import installationImage from "../assets/image 15.png";
-    import finishImage from "../assets/image 16.png";
+//import dependencies
 function InstallationSteps() 
     const [imageFirst, setImageFirst] = useState(welcomeImage);
     const [imageSecond, setImageSecond] = useState(welcomeImage);
     //Futher Code
   ```
-3. Our implemented `code` begins with importing the necessary dependencies. `React`and the **UseState Hook** are imported from the React library. We have also imports several image files using relative paths for our `Requirements`.
+3. Our implemented `code` begins with importing the necessary dependencies and several image files using relative paths for our `Requirements`.
 
 4. We have defined **InstallationSteps** function as the component.
 
@@ -46,7 +38,7 @@ function InstallationSteps()
 
  ```jsx title="InstallationSteps.jsx" {2,4-8} showLineNumbers
    //function defination
-   const installationStepsFirstSet = [
+   const installationStepsFirstSet = 
     {
       id: 1,
       header: "Welcome Screen",
@@ -59,7 +51,7 @@ function InstallationSteps()
 
 3. Each step object has properties such as id, header, description, and image which represents step number, step title, step description, step image file path.
 
-4. Similar Steps were carried out by us to create different object in both the **Arrays**.
+**Similar Steps were carried out by us to create different object in both the [Arrays](#array-defination).**
 
 :::info
 We created this `Arrays` to utilise in **Main** Structure, which shorten's the code length and make it accessible to understand.
@@ -122,7 +114,7 @@ This Component consist of the main Structure of code implemented by our team whi
 
  5. The **installationStepsFirstSet** `array` is mapped over to render each step as a `<div>`. The **onMouseEnter** event is used by us to update the **imageFirst** `state` variable with the corresponding image when a step is hovered over.
 
-**Similar Steps were carried out to created another set of InstallationSteps.**
+**Similar Steps were carried out to created another set of [InstallationSteps](#sets-of-installation-steps).**
 
 :::tip
 Using this Syntax of Javascript Language, Multiple Sets can be created as per your Requirements.
@@ -133,16 +125,16 @@ Using this Syntax of Javascript Language, Multiple Sets can be created as per yo
 import set1 from "/docs/projects/tcet-linux-website/assets/set1.jpg";
 
 <figure>
-    <center><img src={set1} style={{ border: "2px solid gray", width: "400px" }} /></center>
+    <center><img src={set1} style={{ border: "2px solid gray", width: "600px", height: "400px" }} /></center>
     <center><b><figcaption>Installation Steps Set 1</figcaption></b></center>
 </figure>
 
 import set2 from "/docs/projects/tcet-linux-website/assets/set2.jpg";
 
 <figure>
-    <center><img src={set2} style={{ border: "2px solid gray", width: "400px" }} /></center>
+    <center><img src={set2} style={{ border: "2px solid gray", width: "600px" , height: "400px" }} /></center>
     <center><b><figcaption>Installation Steps Set 2</figcaption></b></center>
 </figure>
 
-In this page, we saw how the [Installation Steps](installation-steps) section was put together. Let's go on towards the next stage,the [Verify Downloads](verify-downloads) Section , to see how the component was implemented.
+*In this page, we saw how the [**Installation Steps**](installation-steps) section was put together. Let's go on towards the next stage,the [**Verify Downloads**](verify-downloads) Section , to see how the component was implemented.*
 
