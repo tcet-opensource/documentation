@@ -1,0 +1,30 @@
+---
+title: About Us
+id: about-us
+description: About Us Component in Resume Screener Website
+sidebar_label: About Us
+keywords: [contact-us, staff]
+---
+
+The **About Us** page of the website will help you discover our story, mission, and values as an organization. It can be accessed through the navigation bar of the [**Resume Screener Website**](https://rs.tcetmumbai.in/).
+
+### Adding Star Resume Test Option
+
+**Here are the steps on how we integrated the Option to take the resume test in About Us Component**
+
+1. Opening `about-us.svg` file in our projects root directory.
+
+2. Declared a functional component called `AboutUs` having it's `<button>` element along with the text and pictorial component of about us section.
+
+    ```jsx title="about-us.svg"
+        <button class=" flex flex-row align-start px-4 py-2.5 gap-1.5 bg-[#6938EF] hover:bg-[#3708b7] transition-colors text-[#FFFFFF] rounded">Start Resume Test
+            <img src={arrow} class="p-1"></img>
+        </button>
+    ```
+3. Save all the changes.
+
+4. Run `yarn dev` on the terminal to see the changes made in your local environment. 
+
+**On executing the above steps, the form look like this:**
+
+![pic](file:///C:/Users/prana/Downloads/Resume%20test%20button.png)
