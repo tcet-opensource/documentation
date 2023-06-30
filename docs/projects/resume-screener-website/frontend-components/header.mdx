@@ -81,7 +81,8 @@ import button from "/docs/projects/resume-screener-website/assets/get-started.pn
 :::
 ### Adding three line menu button and Navigation for mobile view 
 
-When viewed on phone, the navigation options will be hidden under the three line *menu*. 
+
+ - When viewed on phone, the navigation options will be hidden under the three line *menu*. 
 
   ```jsx title="Navbar.jsx"{2,7-10}showLineNumbers
       //to keep the navigation options hidden
@@ -97,6 +98,29 @@ When viewed on phone, the navigation options will be hidden under the three line
        </button>
   ```
 
+- The navigation links on mobile view would be hidden under the three line menu. The code for mobile nav: 
+  
+  ```jsx title="Navbar.jsx"{2-11}showLineNumbers
+      {open ? (
+        <div className="flex flex-col  md:hidden">
+          <div className="px-2 pt-1 pb-3 space-y-1 sm:px-3">
+            {navlinks.map((link, index) => (
+              <a
+                key={index}
+                className="text-center cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                href={link.link}>
+                {link.title}
+              </a>
+            ))}
+            <a
+              href="/Get Started"
+              className="text-center cursor-pointer text-[#E0EAFF] hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+              Get Started
+            </a>
+          </div>
+        </div>
+      ) : null}
+  ```
 
 On execution of the adove codes, the *menu* and *navigation links* on the mobile looks like this:
 
