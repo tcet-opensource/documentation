@@ -181,7 +181,6 @@ const sidebars =
                 'projects/resume-screener-website/frontend-components/guideline',
                 'projects/resume-screener-website/frontend-components/ats-resume-template',
                 'projects/resume-screener-website/frontend-components/ats-resume-test-scan',
-                'projects/resume-screener-website/frontend-components/features',
                 'projects/resume-screener-website/frontend-components/card',
                 'projects/resume-screener-website/frontend-components/footer',
               ],

@@ -14,18 +14,19 @@ The **ATS Resume Test/Scan section** provides a free ATS resume scan. It was bui
 1. Creating a `<div>` element with two child `<p>` elements inside it. 
 2. The first `<p>` element displays the heading, and the second `<p>` element provides a tip. 
 
-```jsx title="index.astro" {2-3,5-9} showLineNumbers
-    <div class="p-0 md:w-[50%]">
-        <p class="text-[#FCFCFD] text-3xl font-rubik">
-            Find out if your resume passes ATS resume test
-        </p>
-        <p class="text-[#D0D5DD] py-4">
-            Tip: Score My Resume was bult with all applicant racking
-            systems in mind and acts as a powerful ATS resume test, ts
-            scanned correctly by our platform, you can be confident it
-            wil also be processed correctly by all ATS.
-        </p>       
-```   
+    ```jsx title="index.astro" {2-3,5-9} showLineNumbers
+        <div class="p-0 md:w-[50%]">
+            <p class="text-[#FCFCFD] text-3xl font-rubik">
+                Find out if your resume passes ATS resume test
+            </p>
+            <p class="text-[#D0D5DD] py-4">
+                Tip: Score My Resume was bult with all applicant racking
+                systems in mind and acts as a powerful ATS resume test, ts
+                scanned correctly by our platform, you can be confident it
+                wil also be processed correctly by all ATS.
+            </p>       
+    ```   
+
 **The header and tip look like this:**
 
 import pic from "/docs/projects/resume-screener-website/assets/header and title.png";
@@ -41,15 +42,14 @@ We used CSS classes to style the elements, setting properties such as color, fon
 ### Resume scan button and image 
 **We followed these steps:**
 1. We made a `<button>` element with a class assigned to it. The class contains multiple CSS properties for styling.
-2. The content was added inside the `<button>` element: "**Get Your Free ATS Resume Scan**". This is the text displayed within the button.            
- 
+2. The content was added inside the `<button>` element: "**Get Your Free ATS Resume Scan**". This is the text displayed within the button.           
 
-```jsx title="index.astro" {2,3} showLineNumbers
-    <button
-        class="bg-[#6938ef] hover:bg-[#6533ed] text-white py-2 px-5 md:py-3 md:px-8 rounded-lg mt-4">
-            Get Your Free ATS Resume Scan
-    </button>
-```
+    ```jsx title="index.astro" {2,3} showLineNumbers
+        <button
+            class="bg-[#6938ef] hover:bg-[#6533ed] text-white py-2 px-5 md:py-3 md:px-8 rounded-lg mt-4">
+                Get Your Free ATS Resume Scan
+        </button>
+    ```
 **The resume scan button looks like this:**
 
 import button from "/docs/projects/resume-screener-website/assets/resume scan button.png";
@@ -60,18 +60,18 @@ import button from "/docs/projects/resume-screener-website/assets/resume scan bu
 
 3. We imported a specific file named "**Group 1.svg**" and assigned it to a variable called **Group1**
 
-```jsx title="index.astro" {} showLineNumbers
-import Group1 from "/ATSResumeTest/Group 1.svg";
-```
+    ```jsx title="index.astro" {} showLineNumbers
+    import Group1 from "/ATSResumeTest/Group 1.svg";
+    ```
 
 4. The image is positioned absolutely and styled with CSS classes to set its width, maintain its aspect ratio, and position it relative to its parent container.
 
-```jsx title="index.astro" {2-3} showLineNumbers
-    <img
-        src={Group1}
-        class="absolute w-[50%] h-auto right-[-6rem] bottom-[-12rem]"
-    />
-```
+    ```jsx title="index.astro" {2-3} showLineNumbers
+        <img
+            src={Group1}
+            class="absolute w-[50%] h-auto right-[-6rem] bottom-[-12rem]"
+        />
+    ```
 
 After combining all of the divisions, the **Resume Test/Scan** section can be seen like this:
 
