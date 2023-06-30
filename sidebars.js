@@ -221,6 +221,38 @@ const sidebars =
         },
         {
           type: 'category',
+          label: 'TCET Linux Website',
+          link: 
+          {
+            type: 'doc',
+            id: 'projects/tcet-linux-website/about-tcet-linux-website',
+          },
+          items: 
+          [
+            'projects/tcet-linux-website/getting-started',
+            {
+              type: 'category',
+              label: 'Frontend Components',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tcet-linux-website/frontend-components/tech-stacks',
+              },
+              items: 
+              [
+                'projects/tcet-linux-website/frontend-components/navbar',
+                'projects/tcet-linux-website/frontend-components/footer',
+                'projects/tcet-linux-website/frontend-components/copy-to-clipboard',
+                'projects/tcet-linux-website/frontend-components/download-section',
+                'projects/tcet-linux-website/frontend-components/hero',
+                'projects/tcet-linux-website/frontend-components/installation-steps',
+                'projects/tcet-linux-website/frontend-components/verify-downloads', 
+              ],
+            },    
+          ],
+        },
+        {
+          type: 'category',
           label: 'TCET Linux',
           link: 
           {
