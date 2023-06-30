@@ -28,6 +28,7 @@ The **Header** is a section at the top of a webpage that typically contains bran
       ];
   ````
   
+- The code defines an array called `navlinks` that contains objects representing the **links** in the navbar. Each object has a title and a link property.
 
 :::info
    Some objects also have a newtab property set to **true**, indicating that the link should open in a new browser tab.
@@ -36,29 +37,36 @@ The **Header** is a section at the top of a webpage that typically contains bran
 
 This section represents the **logo** and website name **Resume Screener** on the navbar. It displays the logo image, the name "**Resume screener**," and applies some styling including a border, gradient background, and a blur effect.
 
-  ```jsx title="Navbar.jsx"{2}showLineNumbers
-     <div
-     className="flex items-center gap-3 rounded-full border-2 border-white border-opacity-25"
-     style={{
-        background:
-        "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%)",
-         backdrop: "blur(4px)"
-      }}
-       >
-     {/* ... */}
-     </div>
+  ```jsx title="Navbar.jsx"{8-13}showLineNumbers
+       <div
+         className="flex items-center gap-3 rounded-full border-2 border-white border-opacity-25"
+         style={{
+          background:
+           "linear-gradient(218.92deg, rgba(255, 255, 255, 0.25) 30.2%, rgba(255, 255, 255, 0) 105.59%)",
+          backdrop: "blur(4px)"
+           }}>
+            <img src="/Footer/logo.png" alt="" className="h-[48px] p-1" />
+           <a href="/" className="text-white">
+            <h2 className="text-white font-{400} text-base pr-2.5">
+             Resume screener
+           </h2>
+            </a>
+      </div>
   ```
-On performing the above steps, the **logo and name** looked like this: 
+
+- The `div` represents the logo section of the navbar. It has CSS classes for styling and a style attribute that sets a background gradient and blur effect. Within this `div`, there is an img tag displaying the **logo** image and an a tag wrapping the heading text "*Resume screener*".
+
+- On performing the above steps, the **logo and name** looked like this: 
 
 import logo from "/docs/projects/resume-screener-website/assets/logo-name.png";
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-  <img src={logo} style={{ border: "1px solid gray" }} />
+<img src={logo} style={{ border: "1px solid gray" }} />
 </div>
 
 ### Adding Get Started Button
 
-This section represents the "**Get Started**" button on the desktop version of the navbar. It is styled with a border, text color, hover effects, and rounded corners. The button contains an `a` element that links to "/#installation".
+This section represents the "**Get Started**" button on the desktop version of the navbar. It is styled with a border, text color, hover effects, and rounded corners. The button contains an `a` element that links to "*/#installation*".
 
   ```jsx title="Navbar.jsx"{2-4}showLineNumbers
      <div className="!ml-8 border-2 border-[#475467] rounded-lg">
@@ -67,7 +75,11 @@ This section represents the "**Get Started**" button on the desktop version of t
         </button>
      </div>
   ```
-On performing the above steps, the **Get Started** Button looked like this: 
+
+- The outer `div` has a left margin, border, and rounded corners.
+- Inside the `div`, there's a `button` element styled as an inline-flex container with centered items, specific text and border colors, padding, rounded corners, and hover effects.
+- Within the `button`, there's an a element serving as a link with the text "**Get Started**" and a target URL of */#installation*.
+- On performing the above steps, the **Get Started** Button looked like this: 
 
 import button from "/docs/projects/resume-screener-website/assets/get-started.png";
 
@@ -97,8 +109,10 @@ import button from "/docs/projects/resume-screener-website/assets/get-started.pn
           {/* ... */}
        </button>
   ```
-
-- The navigation links on mobile view would be hidden under the three line menu. The code for mobile nav: 
+- The outer `div` has CSS classes to position it as a flex container with negative margin on the right side. It is hidden on medium-sized screens and larger.
+- The `button` is styled as an inline-flex container with centered items, padding, rounded corners, white text color, and various focus and hover effects.
+- The `onClick` event handler is assigned to the button to trigger the `handleMenu` function when clicked.
+- The **navigation links** on mobile view would be hidden under the three line menu. The code for mobile nav: 
   
   ```jsx title="Navbar.jsx"{2-11}showLineNumbers
       {open ? (
@@ -122,7 +136,12 @@ import button from "/docs/projects/resume-screener-website/assets/get-started.pn
       ) : null}
   ```
 
-On execution of the adove codes, the *menu* and *navigation links* on the mobile looks like this:
+- There is a `div` element with CSS classes that make it a flex container with a column layout. It is hidden on medium-sized screens and smaller.
+- Inside this `div`, there is another `div` element with CSS classes for padding and spacing.
+- Within this inner `div`, there is a mapping over the `navlinks` array using the map function.
+- For each item in the `navlinks` array, an a element is rendered with CSS classes for styling, including text color, hover effects, padding, rounded corners, and font size. The href attribute is set to the link property of the current `navlinks` item, and the text content of the a element is set to the title property of the current `navlinks` item.
+- Lastly, there is an additional a element rendered at the end, separate from the `navlinks` array mapping. It has similar CSS classes but a different href attribute value.
+- On execution of the adove codes, the **menu** and **navigation links** on the mobile looks like this:
 
 import hamburger from "/docs/projects/resume-screener-website/assets/hamburger.png";
 
