@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2499],{5972:s=>{s.exports=JSON.parse('{"label":"mind-benders","permalink":"/blog/tags/mind-benders","allTagsPath":"/blog/tags","count":3}')}}]);
