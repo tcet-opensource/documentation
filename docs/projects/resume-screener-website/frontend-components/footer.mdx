@@ -20,6 +20,7 @@ The code for this section is represented by the HTML language which creates a na
         <h2 class="text-white font-{400} text-base pr-2.5 pl-1">Resume screener</h2>
       </div>
 ```
+
 **Here's a breakdown explanation of the navigation component:**
 1. We used `div` element in the code for **styling** , **layout** & **alignment** of the navigation links.
 
@@ -31,9 +32,9 @@ import pic4 from "/docs/projects/resume-screener-website/assets/frsbutton.jpg";
 <img src = {pic4} style={{ border: "2px solid gray" }} />
 </p>
 
-```jsx title="index.astro" {3-8} showLineNumbers
+  ```jsx title="index.astro" {3-8} showLineNumbers
     {/*Nav as */}
-<div class="flex flex-col sm:flex-row  h-full gap-3 text-[#D0D5DD]  items-center">
+      <div class="flex flex-col sm:flex-row  h-full gap-3 text-[#D0D5DD]  items-center">
         <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/docs/category/projects" target="_blank">Docs</a>
         <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/blog" target="_blank">Blogs</a>
         <a class="hover:underline font-thin  text-sm  " href="/LiveProjects">Live Projects</a>
@@ -41,7 +42,8 @@ import pic4 from "/docs/projects/resume-screener-website/assets/frsbutton.jpg";
         <a class="hover:underline font-thin  text-sm  " href="/CookingProjects">Team</a>
         <a class="hover:underline font-thin  text-sm  " href="mailto:opensource@tcetmumbai.in">Contact</a>
       </div>
-```
+  ```
+
 3. In the incoming code , we used `<a>` anchor elements which represent the navigation links.You can observe that each link is wrapped inside an `<a>` element where a hover effect is applied to them.
 
 3. Here, the `href` attribute specifies the **destination URL** for each link.
@@ -84,16 +86,16 @@ import pic2 from "/docs/projects/resume-screener-website/assets/femail.jpg";
 <img src = {pic2} style={{ border: "2px solid gray" }} />
 </p>
 
-```jsx title="index.astro" {3-7} showLineNumbers
-  {/* Social Media */}
-    <div class="flex text-[#D0D5DD] gap-8">
-      <a href="https://www.linkedin.com/company/tcet-opensource/" target="_blank"><img src="/Footer/linkdin.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://www.youtube.com/@TCETMumbaiOfficial" target="_blank"> <img src="/Footer/Youtube.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://twitter.com/tcetopensource" target="_blank"> <img src="/Footer/Twitter.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://www.instagram.com/tcetopensource/" target="_blank"><img src="/Footer/Instagram.png" alt="" class="h-5 cursor-pointer" /></a>
-      <a href="https://github.com/tcet-opensource/" target="_blank"><img src="/Footer/Github.png" alt="" class="h-5 cursor-pointer" /></a>
-    </div>
-```
+  ```jsx title="index.astro" {3-7} showLineNumbers
+    {/* Social Media */}
+      <div class="flex text-[#D0D5DD] gap-8">
+        <a href="https://www.linkedin.com/company/tcet-opensource/" target="_blank"><img src="/Footer/linkdin.png" alt="" class="h-5 cursor-pointer" /></a>
+        <a href="https://www.youtube.com/@TCETMumbaiOfficial" target="_blank"> <img src="/Footer/Youtube.png" alt="" class="h-5 cursor-pointer" /></a>
+        <a href="https://twitter.com/tcetopensource" target="_blank"> <img src="/Footer/Twitter.png" alt="" class="h-5 cursor-pointer" /></a>
+        <a href="https://www.instagram.com/tcetopensource/" target="_blank"><img src="/Footer/Instagram.png" alt="" class="h-5 cursor-pointer" /></a>
+        <a href="https://github.com/tcet-opensource/" target="_blank"><img src="/Footer/Github.png" alt="" class="h-5 cursor-pointer" /></a>
+      </div>
+  ```
   
 4. The code in `<a>` elements which represents different social media links. Here we applied, `href` attribute is set to the respective **social media links**.
 
@@ -104,7 +106,7 @@ import pic7 from "/docs/projects/resume-screener-website/assets/fsocials.jpg";
 </p>
 
 :::tip
-Similar steps were carried out for adding  **[TCET email](mailto:tcet.tnp@thakureducation.org)**, **[Linkedin](www.linkedin.com/company/tcet-opensource)** ,**[Youtube](www.youtube.com/@TCETMumbaiOfficial)** , **[Twitter](twitter.com/tcetopensource)**, **[Instagram](/www.instagram.com/tcetopensource)** & **[Github](github.com/tcet-opensource)** in this section.
+Similar steps were carried out for adding  **[TCET email](mailto:tcet.tnp@thakureducation.org)**, **[Linkedin](https://linkedin.com/company/tcet-opensource)** ,**[Youtube](https://youtube.com/@TCETMumbaiOfficial)** , **[Twitter](https://twitter.com/tcetopensource)**, **[Instagram](https://instagram.com/tcetopensource)** & **[Github](https://github.com/tcet-opensource)** in this section.
 :::
 
 **After we have followed all the steps, our Resume Screener website footer looks like this:**

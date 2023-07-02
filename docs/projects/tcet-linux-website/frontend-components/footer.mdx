@@ -1,0 +1,136 @@
+---
+title: Footer
+id: footer
+description: Footer Component in Tcet Linux Website
+sidebar_label: Footer
+keywords: [Footer, social media,  ]
+---
+
+The **Footer** elelment of [**TCET Linux Website**](https://linux.tcetmumbai.in/) which is located at the bottom of the website. It serves as a container for information that is relevant to the entire page. It acts as a `Navigation` and `Contact ` guide for users. In the Footer element, We have included links to [**Documentation**](https://opensource.tcetmumbai.in/docs/category/projects/), [**Blogs**](https://opensource.tcetmumbai.in/blog/), **Live projects**, **Teams**, **Copyright Information**, [**Email address**](mailto:linux@tcetmumbai.in) for contact purposes with **TCET LINUX**, and icons linking to the Organization's presence on various social media platforms like [**LinkedIn**](https://www.linkedin.com/company/tcet-opensource/), [**YouTube**](https://www.youtube.com/@TCETMumbaiOfficial), [**Twitter**](https://twitter.com/tcetopensource), [**Instagram**](https://www.instagram.com/tcetopensource/), and [**GitHub**](https://github.com/tcet-opensource/). We created this enhanced footer that helps users easily access relevant resources and connect with the **TCET Opensource Organisation** through multiple channels.
+
+## Top Section
+
+This Section is represented by the **HTML program** with **CSS** which consists of two components : **Logo Component** and **Footlinks Component**.
+
+**Here is the implemented code :**
+
+  ```jsx title="index.astro" {1,3} showLineNumbers
+    <div class="sm:h-[210px] h-full py-6 px-5 sm:py-[48px] sm:px-[41px] border-t bg-[#101828] flex   font-sans gap-5 flex-col">
+    //top section
+    <div class=" w-full min-h-fit  flex flex-col sm:flex-row  justify-between items-center ">
+    //futher sections code
+  ```
+We created the first `<div>` above as the parent div of the **Footer** element and the second `<div>` as the **Sectional div** for Top Section.
+
+### Logo Component
+
+This Component created by us, contains the **Logo** of the TCET Opensource Organization.
+
+  ```jsx title="index.astro" {3,4} showLineNumbers
+   //top section div
+     <div class="flex items-center gap-3">
+        <img src="/Footer/logo.png" alt="" class="h-[49px]" />
+        <h2 class="text-white font-semibold text-2xl">TCET Open Source.</h2>
+      </div>
+   //Footlinks component code
+  ```
+  - `<img src>` tag is used by our team to import the logo and display it in the `<div>` created.
+  - `<h2>` tag is created by us to display the name of the Orgnization.
+
+:::tip
+The Logo of the Orgnization can be updated by changing **img src** pathlink or the image in that path. 
+::: 
+
+### Footlinks Component 
+
+This Component produce by us, contains the **Footlinks** of the TCET Opensource Organization.
+
+  ```jsx title="index.astro" {3-8} showLineNumbers
+   //Logo Component code
+   <div class="flex flex-col sm:flex-row  h-full gap-3 text-[#D0D5DD]  items-center">
+    <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/docs/category/projects" target="_blank">Docs</a>
+    <a class="hover:underline font-thin  text-sm  " href="https://opensource.tcetmumbai.in/blog" target="_blank">Blogs</a>
+    <a class="hover:underline font-thin  text-sm  " href="/LiveProjects">Live Projects</a>
+    <a class="hover:underline font-thin  text-sm  " href="/CookingProjects">Cooking Projects</a>
+    <a class="hover:underline font-thin  text-sm  " href="/CookingProjects">Team</a>
+    <a class="hover:underline font-thin  text-sm  " href="mailto:opensource@tcetmumbai.in">Contact</a>
+   </div>
+   //Bottom Section Code
+  ```
+
+** Explanation of the code :**
+
+ 1. An **`<a>`** tag is created by our team to give **Title** to the footlinks with **href** links corresponding to that **Footlinks**.
+  
+ 2. There are some links created of different pages such as : 
+
+    - **Docs** takes you to a page with documentation about projects.
+    - **Blogst** takes you to a page with interesting articles.
+    - **Live Projects** is a link to see ongoing projects.
+    - **Cooking Projects** is also a link to cooking-related projects.
+    - **Team** is a link to see the people involved.
+    - **Contact** is a link to send an email to "opensource@tcetmumbai.in".
+
+:::tip
+Futher more **`Footlinks`** can be added in the footer element using same syntax of code .
+:::
+
+## Bottom Section
+
+This Section is represented by the **HTML program** with **CSS** which consists of : **Copyright and Email Component**, **Socail Media Component**.
+
+### Copyright and Email Component
+
+This Component created by our team, consists of Copyright text of the Organization.
+
+  ```jsx title="index.astro" {3-4} showLineNumbers
+   //Top Section code
+   <div class=" w-full  flex flex-col-reverse sm:flex-row   sm:justify-between items-center sm:gap-0 gap-4">
+    <div class="  text-xs  text-[#D0D5DD] ">Copyright 2022-2023 @ TCET Opensource.</div>
+    <a class="  text-xs  text-[#D0D5DD]" href="mailto:linux@tcetmumbai.in">linux@tcetmumbai.in</a> 
+  ```
+  1. We created the First `<div>` as the Sectional div for Bottom Section.
+
+  2. Second `<div>` is created to display the Copyright text of this componenet.
+
+  3. We created the `<a>` tag in-order to display Email link in **href** for LINUX-TCET Mumbai. 
+
+:::info
+The Copyright Text may be converted into accessible text with link to the Copyright page of the Organization.
+:::
+
+### Social Media Component 
+
+This Component contains various social media links of TCET Open Source Organization.
+
+ ```jsx title="index.astro" {3-4} showLineNumbers
+   //Copyright and Email Component code
+    <div class="flex text-[#D0D5DD] gap-8">
+      <a href="https://www.linkedin.com/company/tcet-opensource/" target="_blank"><img src="/Footer/linkdin.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://www.youtube.com/@TCETMumbaiOfficial" target="_blank"> <img src="/Footer/Youtube.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://twitter.com/tcetopensource" target="_blank"> <img src="/Footer/Twitter.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://www.instagram.com/tcetopensource/" target="_blank"><img src="/Footer/Instagram.png" alt="" class="h-5 cursor-pointer" /></a>
+      <a href="https://github.com/tcet-opensource/" target="_blank"><img src="/Footer/Github.png" alt="" class="h-5 cursor-pointer" /></a>
+    </div>
+ ```
+1. We have used Basic HTML syntax in this component to fulfill our requirements .
+
+2. The `<a>` tag is used by us to display LinkedIn Platform link in **href** of TCET OpenSource Organization .
+
+3. Similarly using same syntax, we have linked different Social Media Platform Account of TCET OpenSource Organization for contact process of user.
+
+:::tip
+Using similar Basic HTML syntax, more **Social Media** links can be added in the Bottom Component of Footer Element of the Website. 
+:::
+
+**After adding all components, the Footer Element can be scene like this :**
+
+import footer from "/docs/projects/tcet-linux-website/assets/footer.jpg";
+
+
+<figure>
+    <img src={footer} style={{ border: "2px solid gray"}} />
+    <center><b><figcaption>Footer Section</figcaption></b></center>
+</figure>
+
+_After successfully implementing the [**Footer component**](footer) of the [**TCET Linux Website**](https://linux.tcetmumbai.in/) , the next step is to move forward with the implementation of the [**Copy to Clipboard component**](copy-to-clipboard)._
