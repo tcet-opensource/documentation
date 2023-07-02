@@ -17,6 +17,11 @@
    <td align="center" valign="top" width="14.28%"><a href="https://github.com/Nidhi-1223"><img src="https://avatars.githubusercontent.com/u/73842058?v=4"><br /><sub><b>Nidhi Worah</b></sub></img></a>
    <td align="center" valign="top" width="14.28%"><a href="https://github.com/aryadubey03"><img src="https://avatars.githubusercontent.com/u/121982519?v=4"><br /><sub><b>Arya Dubey</b></sub></img></a>
    <td align="center" valign="top" width="14.28%"><a href="https://github.com/harshau007"><img src="https://avatars.githubusercontent.com/u/49197635?v=4"><br /><sub><b>Harsh Upadhyay</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/MJ665"><img src="https://avatars.githubusercontent.com/u/111617351?v=4"><br /><sub><b>Meet Jain</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/AadilRayeen"><img src="https://avatars.githubusercontent.com/u/127043014?v=4"><br /><sub><b>Aadil Rayeen</b></sub></img></a>
+  </tr>
+  <tr>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/maybeoshi"><img src="https://avatars.githubusercontent.com/u/136986605?v=4"><br /><sub><b>Oshi Jamindar</b></sub></img></a>
   </tr>
  </tbody>
 </table>
