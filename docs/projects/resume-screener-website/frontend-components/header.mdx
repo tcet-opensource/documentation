@@ -3,16 +3,15 @@ title: Header
 id: header
 description: Header Component in Resume Screener Website
 sidebar_label: Header
-keywords: [Header]
+keywords: [header]
 ---
 
 The **Header** is a section at the top of a webpage that typically contains branding elements, navigation menus, and important information. It helps establish website identity, improves user experience, and ensures easy access to different sections of a website on various devices.
 
- ### Navigation Links Data
+### Navigation Links Data
 
- This block of code defines an array called `navlinks` which stores objects representing **navigation links**. Each object has a title (the text to display) and a link (the URL to navigate to). 
+This block of code defines an array called `navlinks` which stores objects representing **navigation links**. Each object has a title (the text to display) and a link (the URL to navigate to). 
   
-
   ```jsx title="Navbar.jsx"{3-4,7-8}showLineNumbers 
      const navlinks = [
        {
@@ -28,7 +27,7 @@ The **Header** is a section at the top of a webpage that typically contains bran
       ];
   ````
   
-- The code defines an array called `navlinks` that contains objects representing the **links** in the navbar. Each object has a title and a link property.
+1. The code defines an array called `navlinks` that contains objects representing the **links** in the navbar. Each object has a title and a link property.
 
 :::info
    Some objects also have a newtab property set to **true**, indicating that the link should open in a new browser tab.
@@ -54,15 +53,17 @@ This section represents the **logo** and website name **Resume Screener** on the
       </div>
   ```
 
-- The `div` represents the logo section of the navbar. It has CSS classes for styling and a style attribute that sets a background gradient and blur effect. Within this `div`, there is an img tag displaying the **logo** image and an a tag wrapping the heading text "*Resume screener*".
+1. The `div` represents the logo section of the navbar. It has CSS classes for styling and a style attribute that sets a background gradient and blur effect. Within this `div`, there is an img tag displaying the **logo** image and an a tag wrapping the heading text "*Resume screener*".
 
-- On performing the above steps, the **logo and name** looked like this: 
+**On performing the above steps, the logo and name looked like this:** 
 
 import logo from "/docs/projects/resume-screener-website/assets/logo-name.png";
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-<img src={logo} style={{ border: "1px solid gray" }} />
+  <img src={logo} style={{ border: "1px solid gray" }} />
 </div>
+
+<br />
 
 ### Adding Get Started Button
 
@@ -76,10 +77,10 @@ This section represents the "**Get Started**" button on the desktop version of t
      </div>
   ```
 
-- The outer `div` has a left margin, border, and rounded corners.
-- Inside the `div`, there's a `button` element styled as an inline-flex container with centered items, specific text and border colors, padding, rounded corners, and hover effects.
-- Within the `button`, there's an a element serving as a link with the text "**Get Started**" and a target URL of */#installation*.
-- On performing the above steps, the **Get Started** Button looked like this: 
+1. The outer `div` has a left margin, border, and rounded corners.
+2. Inside the `div`, there's a `button` element styled as an inline-flex container with centered items, specific text and border colors, padding, rounded corners, and hover effects.
+3. Within the `button`, there's an a element serving as a link with the text "**Get Started**" and a target URL of */#installation*.
+4. On performing the above steps, the **Get Started** Button looked like this: 
 
 import button from "/docs/projects/resume-screener-website/assets/get-started.png";
 
@@ -91,10 +92,10 @@ import button from "/docs/projects/resume-screener-website/assets/get-started.pn
 :::info
    Similar steps are carried out to display **Logo** and **Get Started** Button on a smaller screen.
 :::
+
 ### Adding three line menu button and Navigation for mobile view 
 
-
- - When viewed on phone, the navigation options will be hidden under the three line *menu*. 
+1. When viewed on phone, the navigation options will be hidden under the three line *menu*. 
 
   ```jsx title="Navbar.jsx"{2,7-10}showLineNumbers
       //to keep the navigation options hidden
@@ -109,10 +110,10 @@ import button from "/docs/projects/resume-screener-website/assets/get-started.pn
           {/* ... */}
        </button>
   ```
-- The outer `div` has CSS classes to position it as a flex container with negative margin on the right side. It is hidden on medium-sized screens and larger.
-- The `button` is styled as an inline-flex container with centered items, padding, rounded corners, white text color, and various focus and hover effects.
-- The `onClick` event handler is assigned to the button to trigger the `handleMenu` function when clicked.
-- The **navigation links** on mobile view would be hidden under the three line menu. The code for mobile nav: 
+2. The outer `div` has CSS classes to position it as a flex container with negative margin on the right side. It is hidden on medium-sized screens and larger.
+3. The `button` is styled as an inline-flex container with centered items, padding, rounded corners, white text color, and various focus and hover effects.
+4. The `onClick` event handler is assigned to the button to trigger the `handleMenu` function when clicked.
+5. The **navigation links** on mobile view would be hidden under the three line menu. The code for mobile nav: 
   
   ```jsx title="Navbar.jsx"{2-11}showLineNumbers
       {open ? (
@@ -136,12 +137,17 @@ import button from "/docs/projects/resume-screener-website/assets/get-started.pn
       ) : null}
   ```
 
-- There is a `div` element with CSS classes that make it a flex container with a column layout. It is hidden on medium-sized screens and smaller.
-- Inside this `div`, there is another `div` element with CSS classes for padding and spacing.
-- Within this inner `div`, there is a mapping over the `navlinks` array using the map function.
-- For each item in the `navlinks` array, an a element is rendered with CSS classes for styling, including text color, hover effects, padding, rounded corners, and font size. The href attribute is set to the link property of the current `navlinks` item, and the text content of the a element is set to the title property of the current `navlinks` item.
-- Lastly, there is an additional a element rendered at the end, separate from the `navlinks` array mapping. It has similar CSS classes but a different href attribute value.
-- On execution of the adove codes, the **menu** and **navigation links** on the mobile looks like this:
+6. There is a `div` element with CSS classes that make it a flex container with a column layout. It is hidden on medium-sized screens and smaller.
+
+7. Inside this `div`, there is another `div` element with CSS classes for padding and spacing.
+
+8. Within this inner `div`, there is a mapping over the `navlinks` array using the map function.
+
+9. For each item in the `navlinks` array, an a element is rendered with CSS classes for styling, including text color, hover effects, padding, rounded corners, and font size. The href attribute is set to the link property of the current `navlinks` item, and the text content of the a element is set to the title property of the current `navlinks` item.
+
+10. Lastly, there is an additional a element rendered at the end, separate from the `navlinks` array mapping. It has similar CSS classes but a different href attribute value.
+
+11. On execution of the adove codes, the **menu** and **navigation links** on the mobile looks like this:
 
 import hamburger from "/docs/projects/resume-screener-website/assets/hamburger.png";
 
@@ -156,9 +162,8 @@ import nav from "/docs/projects/resume-screener-website/assets/nav.png";
 </div>
 <br/>
 
-
 :::info
-Basically, We have made use of a **Hamburger Menu** which on being clicked will display the **Nvigation links**.
+Basically, We have made use of a **Hamburger Menu** which on being clicked will display the **Navigation links**.
 :::
 
    **After adding *logo*, *navigation links* and *'Get Started' Button* The Header looked like this:**
@@ -169,6 +174,7 @@ import header from "/docs/projects/resume-screener-website/assets/desktop-view.p
   <img src={header} style={{ border: "1px solid gray" }} />
  </div> 
 
+<br /> <br />
 
 _ The [**Header Section**](header) is succesfully executed! Let's move on and see how we created the [**Hero Section**](hero) of the **Resume Screener Website**. _
 
