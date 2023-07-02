@@ -150,8 +150,30 @@ const sidebars =
                 'projects/fmc-website/components/button-instructions',
                 'projects/fmc-website/components/footer',
               ],
+            },
+            {
+              type: 'category',
+              label:  'Mathematical Logic',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/fmc-website/mathematical-logic/scripts',
+              },
+              items:
+              [
+                'projects/fmc-website/mathematical-logic/calculation',
+                'projects/fmc-website/mathematical-logic/checker',
+                'projects/fmc-website/mathematical-logic/average',
+                'projects/fmc-website/mathematical-logic/perform',
+                'projects/fmc-website/mathematical-logic/table-updater',
+                'projects/fmc-website/mathematical-logic/table-row-updater',
+                'projects/fmc-website/mathematical-logic/input-handler',
+                'projects/fmc-website/mathematical-logic/table-calculator',
+                'projects/fmc-website/mathematical-logic/table-manager',
+                'projects/fmc-website/mathematical-logic/table-transformation',
+                'projects/fmc-website/mathematical-logic/page-interaction',
+              ],
             },    
-            'projects/fmc-website/mathematical-logic',
           ],
         },
         {
