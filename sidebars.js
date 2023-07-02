@@ -124,38 +124,6 @@ const sidebars =
         },
         {
           type: 'category',
-          label: 'Fill My Cycle Website',
-          link: 
-          {
-            type: 'doc',
-            id: 'projects/fmc-website/about-fmc-website',
-          },
-          items: 
-          [
-            'projects/fmc-website/getting-started',
-            {
-              type: 'category',
-              label: 'Components',
-              link:
-              {
-                type: 'doc',
-                id: 'projects/fmc-website/components/tech-stacks',
-              },
-              items: 
-              [
-                'projects/fmc-website/components/header-help',
-                'projects/fmc-website/components/defining-cycle',
-                'projects/fmc-website/components/displaying-cycle',
-                'projects/fmc-website/components/cycle-result',
-                'projects/fmc-website/components/button-instructions',
-                'projects/fmc-website/components/footer',
-              ],
-            },    
-            'projects/fmc-website/mathematical-logic',
-          ],
-        },
-        {
-          type: 'category',
           label: 'Resume Screener Website',
           link: 
           {
