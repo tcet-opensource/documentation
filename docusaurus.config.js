@@ -80,6 +80,15 @@ const config = {
         },
       },
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
+      // Do not remove announcement bar. Comment it when not required.
+      // announcementBar: {
+      //   id: 'openconf23',
+      //   content:
+      //     'OpenConf 2023 is on July  21st!!  <a target="_blank" rel="noopener noreferrer" href="https://lu.ma/openconf">Register for the event.</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: true,
+      // },
       navbar: {
         hideOnScroll: true,
         title: 'TCET Open Source',
@@ -97,8 +106,8 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           // {
-          //   label: 'Join us',
-          //   href: 'https://bit.ly/tcetosrecruitment',
+          //   label: 'OpenConf 2023',
+          //   href: 'https://openconf.tcetmumbai.in',
           //   position: 'left',
           // },
           {

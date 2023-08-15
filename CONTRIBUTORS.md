@@ -22,6 +22,9 @@
   </tr>
   <tr>
    <td align="center" valign="top" width="14.28%"><a href="https://github.com/maybeoshi"><img src="https://avatars.githubusercontent.com/u/136986605?v=4"><br /><sub><b>Oshi Jamindar</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/tanishakumar18"><img src="https://avatars.githubusercontent.com/u/135853404?v=4"><br /><sub><b>Tanisha Kumar</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/preyanskhasingh"><img src="https://avatars.githubusercontent.com/u/119097699?v=4"><br /><sub><b>Preyanksha Singh</b></sub></img></a>
+   <td align="center" valign="top" width="14.28%"><a href="https://github.com/oldbilldue18"><img src="https://avatars.githubusercontent.com/u/131285550?v=4"><br /><sub><b>Isha Kotecha</b></sub></img></a>
   </tr>
  </tbody>
 </table>
