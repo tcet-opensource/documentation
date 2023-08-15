@@ -8,7 +8,7 @@ keywords: [Average Function]
 
 The `avg(tbl)` function **helps us find the average of numbers in a table**, make sure it's not too small, *adjust it to be an even number if needed,* and then *put the result in a specific input field.* Imagine you have a *special table with rows of numbers,* and you want to **find average of those numbers.** This function will help us with that.
 
-```jsx title="script.js" {}showLineNumbers
+```jsx title="script.js" {2-5,12-13,14}showLineNumbers
 function avg(tbl){
 	var s=0,n=tbl.children.length;
 	for(var i=0;i<n;i++){
@@ -56,4 +56,4 @@ Now let's go through each lines of the code:
 
 8.	After *all these calculations*, we check which **table we were working with**. If it's a **table** called `tbl01`, we find a **special input** field called `ip1` and **put the average value there.** But if it's a different table, we find a **different input field called `ip2` ** and *put the average value there.*
 
-_We have successfully understood the [**Average**](average) function! Let's move on and understand the [**Perform**](perform) function of the **[Fill My Cycle](fillmycycle.tcetmumbai.in/)**._
+ _We have successfully understood the [**Average**](average) function! Let's move on and understand the [**Perform**](perform) function of the **[Fill My Cycle](fillmycycle.tcetmumbai.in/)**._
