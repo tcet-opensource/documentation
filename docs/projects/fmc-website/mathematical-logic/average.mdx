@@ -1,0 +1,61 @@
+---
+title: Average
+id: average
+description: What does average function do?
+sidebar_label: Average
+keywords: [Average Function]
+---
+
+The `avg(tbl)` function **helps us find the average of numbers in a table**, make sure it's not too small, *adjust it to be an even number if needed,* and then *put the result in a specific input field.* Imagine you have a *special table with rows of numbers,* and you want to **find average of those numbers.** This function will help us with that.
+
+```jsx title="script.js" {2-5,12-13,14}showLineNumbers
+function avg(tbl){
+	var s=0,n=tbl.children.length;
+	for(var i=0;i<n;i++){
+		if(tbl.children[i].lastElementChild.firstElementChild.value){
+			s+= parseInt(tbl.children[i].lastElementChild.firstElementChild.value);
+		}
+		else{
+			return false;
+		}
+	}
+	s/=n;
+	if(s<20) s=20;
+	if(s%2!=0) {
+		if(s%2<1){
+			s=s-s%2;
+		}
+		else{
+			s+=(2-s%2);
+		}
+	}
+	if(tbl==$("#tbl01")[0]){
+		$("#ip1").val(s);
+	}
+	else{
+		$("#ip2").val(s);
+	}
+}
+
+```
+Now let's go through each lines of the code:
+
+1.	We start by getting a table, which is like a special *chart with rows and columns.* We call this table `tbl`. It's the **table we want to work** with and **perform some actions on.**
+
+2.	We *create two special variables,* **"s"** and **"n"**. `s` will help us keep **track of the sum of numbers,** and `n` will **keep track of how many rows there are in the table.** We start with *both variables set to 0.*
+
+3.	Now, we go through each row of the table one by one. We ***start counting from 0*** and keep *going until we reach the last row.* For each row, we *do something special.*
+
+4.	We *check if the first input field in the row has a value in it.* It's like looking at the box in that row and **seeing if there's a number inside.** If there is, we **take that number and add it to our sum variable "s".** But if there's **nothing inside the box,** we ***stop everything and return "false".*** It means *there's a problem,* like a missing number.
+
+5.	After *going through all the rows*, **we divide the sum "s" by the total number of rows "n"** to find the ***average.*** It's like *adding up all the numbers and then dividing the total by how many numbers there are.*
+
+6.	Next, we check if the **average is less than 20.** If it is, we **set it to 20.** It means that even if the average is really **small,** *it should be at least 20.*
+
+7.	Now, we **check if the average is an odd number.** If it is, we *do some special adjustments to make it an even number.* If the average is *slightly less than an even number* (like 21.3), we **subtract the remainder** (in this case, 1) to make it an **even number** (20). But if the average is **slightly more** than an even number (like 22.7), **we add the difference** (in this case, 0.3) to make it the ***next even number*** (24).
+
+8.	After *all these calculations*, we check which **table we were working with**. If it's a **table** called `tbl01`, we find a **special input** field called `ip1` and **put the average value there.** But if it's a different table, we find a **different input field called `ip2` ** and *put the average value there.*
+
+<br />
+
+ _We have successfully understood the [**Average**](average) function! Let's move on and understand the [**Perform**](perform) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

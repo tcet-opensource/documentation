@@ -1,0 +1,36 @@
+---
+title: Table Manager
+id: table-manager
+description: Table manager Component of mathematical script in Fill My Cycle Website 
+sidebar_label: Table Manager
+keywords: [Table Manager, mathematical Table Manager, function]
+---
+
+The `check_man()`** function checks and manages values in two tables.** It calculates some values for each table and performs an action with the calculated results. It's like checking and handling the values in a organized way!
+This function checks and manages values in two tables. Let's go through each step:
+
+``` jsx title="script.js"{5-7} showLineNumbers
+function check_man(){
+	var tbl1=document.getElementById("tbl1");
+	var tbl2=document.getElementById("tbl2");
+	var w=[];
+	w[0]=cal_man(tbl1);
+	w[1]=cal_man(tbl2);
+	cycle(w[0],w[1]);
+}
+```
+1.	We start by **finding a table** with the ID "tbl1" and storing it in the variable "tbl1". It's like picking the first table.
+
+2.	Then, we **find another table** with the ID "tbl2" and store it in the variable "tbl2". It's like picking the second table.
+
+3.	We *create an empty array* called "w". It's like having a list to store values.
+
+4.	We **calculate some values** for the first table using the `cal_man()` function and store the result in the first element of the "w" array (at index 0).
+
+5.	Similarly, we **calculate some values** for the second table using the `cal_man()` function and store the result in the second element of the "w" array (at index 1).
+
+6.	Finally, we call the `cycle()` function, passing the calculated values from the first table (w[0]) and the second table (w[1]) as arguments. It's like performing some action with those values.
+
+<br />
+
+ _We have successfully understood the [**Table Manager**](table-manager) function! Let's move on and understand the [**Table Transformation**](table-transformation) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._
