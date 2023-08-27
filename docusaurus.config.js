@@ -57,6 +57,8 @@ const config = {
           blogTitle: "Blogs",
           blogDescription: "TCET Open Source Blogging Page",
           blogSidebarCount: 'ALL',
+          postsPerPage: 3,
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
