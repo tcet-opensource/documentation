@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2894],{9299:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/mind-benders","page":1,"postsPerPage":3,"totalPages":1,"totalCount":3,"blogDescription":"TCET Open Source Blogging Page","blogTitle":"Blogs"}')}}]);
