@@ -16,6 +16,10 @@
   text-decoration: inherit;
 }
 
+::-webkit-scrollbar {
+  display:none;
+}
+
 :root {
   --ifm-color-primary: #451d84;
   --ifm-color-primary-dark: #3e1a77;
