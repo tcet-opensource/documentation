@@ -13,12 +13,8 @@
 }
 
 .project_card_inner_box {
-  background: linear-gradient(
-    149.6deg,
-    rgba(0, 0, 0, 0.37) 9.57%,
-    rgba(58, 0, 255, 0.165032) 57.89%,
-    rgba(0, 0, 0, 0.37) 100%
-  );
+  background: linear-gradient(150deg, rgba(0, 0, 0, 0.37) 9.57%, rgba(58, 0, 255, 0.17) 57.89%, rgba(0, 0, 0, 0.37) 100%);
+
   border-radius: 16px;
   width: fit-content;
 }
