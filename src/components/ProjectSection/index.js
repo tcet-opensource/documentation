@@ -85,7 +85,7 @@ const ProjectSection = () => {
         <div className="text-gray-400 ">{nameDes.desc}</div>
       </div>
       <div className="md:grid md:grid-cols-10 items-center mt-4 lg:mt-8">
-        <div className="items-center justify-center col-span-8 ">
+        <div className="items-center justify-center col-span-8">
           <Swiper
             style={{
               "--swiper-navigation-color": "#fff",
@@ -108,7 +108,7 @@ const ProjectSection = () => {
           >
             {projects.map((project) => {
               return (
-                <SwiperSlide className="" >
+                <SwiperSlide className="relative" >
                   <ProjectPreview
                     img={project.img}
                     tools={project.tools}
