@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 const ProjectCard = ({ data }) => {
   return (
     <div className={`${styles.project_card}`}>
-      <div className="px-5 pt-8 pb-12">
+      <div className="px-5 pt-8 pb-12 w-72">
         <div className={styles.project_card_inner_box}>
           <div className={styles.inner_box_image}>
             <img
