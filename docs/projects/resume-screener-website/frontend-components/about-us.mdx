@@ -1,0 +1,85 @@
+---
+title: About Us
+id: about-us
+description: About Us Component in Resume Screener Website
+sidebar_label: About Us
+keywords: [contact-us, staff]
+---
+
+The **About Us** page of the website will help you discover our story, mission, and values as an organization. It can be accessed through the navigation bar of the [**Resume Screener Website**](https://rs.tcetmumbai.in/).
+
+**Here are the steps on how we integrated the Option to take the resume test in About Us Component**
+
+## Adding About Us
+
+1. Opening **aboutUs.astro** file in our projects root directory.
+
+2. We then created a section element `section` that would represent the content section. Under this we assigned CSS classes to introduce the required details. 
+
+    ```jsx title="aboutUs.astro" {1} showLineNumbers
+    <section class="w-full bg-[#0C1030] box-border flex justify-between gap-6 lg:gap-12  flex-col lg:flex-row p-4 lg:p-16 ">
+    ```
+
+3. We created a div element `div` to hold an image on the left side of the section. Inside the div, we added an image element `img` that displays the `aboutUsImg` image.
+
+    ```jsx title="aboutUs.astro" {2} showLineNumbers
+    <div class=" w-full flex align-center lg:w-1/2 ">
+        <img src = {aboutUsImg} alt="about-us" class="w-full"/>
+    </div>
+
+**On implementation, the image section would look like this:**
+
+import aboutUsImg from "/docs/projects/resume-screener-website/assets/aboutUsImg.png";
+
+<center><img src={aboutUsImg} style={{ border: "2px solid gray", width: "500px" }} /></center>
+
+<br />
+
+4. Then we created another div element `div` to hold text and a button on the right side of the section. Inside this div, we added a span element `span` to display the title **"About Us"**. Similarly we added another span element to display a **paragraph** describing the purpose of the resume scanner. 
+
+    ```jsx title="aboutUs.astro" {3-5} showLineNumbers
+    // About image section
+    <div class=" w-full flex flex-col items-start   gap-2 lg:gap-6 lg:w-1/2 xl:w-1/2">
+        <span class=" text-4xl md:text-5xl font-semibold leading-14 text-[#FCFCFD] ">About Us</span>
+        <span class="md:text-lg font-normal leading-7 text-[#D0D5DD]">
+            Our free resume scanner ensures that your resume is ATS compliant and will be read correctly by Applicant Tracking Systems (ATS) and resume screening software. It provides detailed feedback on key criteria important to recruiters and hiring managers. Maximize your chances of getting noticed by using our resume scanner today. Don't let your resume be overlooked - get valuable insights and make a strong impression with our ATS compliance evaluation.
+        </span>
+    ```
+
+## Adding Resume test button
+
+1. We added a button element `button` to provide a call-to-action. 
+
+2. Inside the button, we added an image element `img` to display the arrow icon. 
+
+    ```jsx title="aboutUs.astro" {1-3} showLineNumbers
+        <button class=" flex flex-row align-start px-4 py-2.5 gap-1.5 bg-[#6938EF] hover:bg-[#3708b7] transition-colors text-[#FFFFFF] rounded">Start Resume Test
+                <img src={arrow} class="p-1"></img>
+        </button>
+    ```
+
+**On executing the above steps, the buttom looks like this:**
+
+import testButton from "/docs/projects/resume-screener-website/assets/test-button.png";
+
+<img src={testButton} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+:::info 
+You can refer the `aboutUse.astro` file for Resume Screener here! **[Click here to see the source code](https://github.com/tcet-opensource/resume-screener-frontend/blob/main/src/components/AboutUs/aboutUs.astro)**
+
+:::
+
+**Once we exceuted this steps, the about us section looked like this:**
+
+import aboutUs from "/docs/projects/resume-screener-website/assets/aboutUs.png";
+
+<img src={aboutUs} style={{ border: "2px solid gray" }} />
+
+<br />
+<br />
+
+
+_The [**About Us Section**](about-us) is succesfully executed! Let's move on and see how we created the [**Guidelines Component**](guideline) of the **[Resume Screener Website](https://rs.tcetmumbai.in)**._

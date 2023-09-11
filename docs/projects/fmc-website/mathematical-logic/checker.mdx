@@ -1,0 +1,61 @@
+---
+title: Checker
+id: checker
+description: What does checker function do?
+sidebar_label: Checker
+keywords: [checker]
+---
+In simple terms, the **"check()"** function helps us *find things on a web page, move around when we type, do some calculations, and maybe show us some results later.* It's like a **little helper** that does all these tasks for us! It ***retrieves table and input field elements*** by their *IDs, and checks for specific key codes.*
+
+``` jsx title="script.js" {2,4,6-7,10-12,14-16,21-22,27} showLineNumbers
+function check(){
+	var tbl1=document.getElementById("tbl1");
+	var tbl2=document.getElementById("tbl2");
+	var ip1=document.getElementById("ip1");
+	var ip2=document.getElementById("ip2");
+	if(event.keyCode==9 || event.keyCode==16)
+		return false;
+	var ip = event.target || event.srcElement;
+	if(ip.value){
+		if(ip.value.length>=2 && ip.value!="10"){
+			if(ip==ip1){
+				$(ip2).focus();
+			}
+			else if(ip==ip2){
+				$(ip).blur();
+				location.replace("#result");
+			}
+		}
+	}
+	var w=[];
+	if(ip1.value){
+		w[0]=calculate(tbl1,ip1);
+	}
+	if(ip2.value){
+		w[1]=calculate(tbl2,ip2);
+	}
+	cycle(w[0],w[1]);
+	
+}
+```
+
+Let's break it down step by step:
+1.	The function starts by *looking for some important things on the page.* It wants to find **two tables**, one called `"tbl1"` and another called `"tbl2"`. It also wants to **find two input fields**, one called `"ip1"` and another called `"ip2".` It uses special **commands** like `"document.getElementById()"` to **find** these things.
+
+2.	Then, it *checks if a certain key on the keyboard is pressed.* The *keys are like the buttons you press to type letters or numbers.* The function **wants to know** if the key with the **number 9** or the key with the **number 16 is pressed.** If it is, *it will stop doing anything else and just go back to what it was doing before.*
+
+3.	Next, it tries to **figure out** which **input field is being used.** It does this by looking at the *place where you're typing, like the input field you clicked on.* It looks at the **"event"** *happening at that moment.* An **event** is like a *little message that tells the function what is happening.* It tries to **find the input field** you're typing in by using `"event.target"` or `"event.srcElement".`
+
+4.	If *you're typing something in the input field,* the **function checks how long the thing you typed is** and if it's **not equal to "10"**. If it *has at least 2 characters and it's not exactly "10",* something interesting happens!
+
+5.	It *checks which input field you're typing in.* If it's the **first one,** it does something called ***"focusing"*** on the **second input field.** It's like *telling the computer to move the cursor to the second input field, so you can start typing there.* If it's the **second input field,** it does something else. It *stops you from typing more and takes you to a different part of the web page called `#result`.*
+
+6.	After that, the function *checks if there's anything typed in the first input field.* If there is, it uses another **special function** called `calculate()` to do *some calculations using the first table and the first input field.*
+
+7.	Then, it *checks if there's anything typed in the second input field.* If there is, it uses the same `calculate()` function to do **some calculations** using the *second table and the second input field.*
+
+8.	Finally, it does something called `cycle()` and *gives it the results of the calculations it did before.* This `cycle()` function probably does something really important with those results, which we'll see in another section.
+
+<br />
+
+ _We have successfully understood the [**Checker**](checker) function! Let's move on and understand the [**Average**](average) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

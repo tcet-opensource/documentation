@@ -1,0 +1,140 @@
+---
+title: Installation Steps
+id: installation-steps
+description: Installation Steps Component in Tcet Linux Website
+sidebar_label: Installation Steps
+keywords: [Installation Steps, Installation, Steps, Guide, linux guide ]
+---
+TCET Linux Installation Steps `element` is a step-by-step guide created by us that will walk you through the process of installing [**TCET Linux**](https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/checksum) on your system. We have included all the neccessary steps from **Initial Welcome Screen** to selecting your **Location**, **Keyboard Layout**, **Storage Partitioning**, and **User Details**. This `Section` in the [**TCET Linux Website**](https://linux.tcetmumbai.in/) helps the user to easily install `TCET Linux` on their Device.
+
+**Here's how we implemented code of this `Element` :**
+
+## Function Defination
+
+1. Opening the [**"InstallationSteps.jsx"**](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/InstallationSteps.jsx)file.
+
+2. In **Installation Steps Element**, We have implemented a `code` that consist a `React` component called **InstallationSteps**. It is a functional component that renders a set of installation steps for **TCET Linux Installation** along with `Corresponding Images` with **Hovering Effect**.
+
+  ``` jsx title="InstallationSteps.jsx" {1-2,11-12} showLineNumbers
+//import dependencies
+function InstallationSteps() 
+    const [imageFirst, setImageFirst] = useState(welcomeImage);
+    const [imageSecond, setImageSecond] = useState(welcomeImage);
+    //Futher Code
+  ```
+3. Our implemented `code` begins with importing the necessary dependencies and several image files using relative paths for our `Requirements`.
+
+4. We have defined **InstallationSteps** function as the component.
+
+   - Inside the component, two **State Variables** are initialized using the `useState` hook: **imageFirst** and **imageSecond**.
+
+   - The **imageFirst** `state` variable represents the image displayed on the `Left side`, and **imageSecond** represents the image displayed on the `Right` side.
+
+## Array Defination 
+
+1. In this `step`, we have defined an Two `Array` called **installationStepsFirstSet** and **installationStepsSecondSet**. These arrays contain objects representing the installation steps.
+
+2. First **Array** contain the objects for `First Set` of Installation Steps component. Similarly Second **Array** contain the objects for `Second Set` of Installation Steps component.
+
+ ```jsx title="InstallationSteps.jsx" {2,4-8} showLineNumbers
+   //function defination
+   const installationStepsFirstSet = 
+    {
+      id: 1,
+      header: "Welcome Screen",
+      description:
+        "Launch the installer by searching for 'Install TCET Linux'. The installer will look like this.",
+      image: welcomeImage,
+    },
+    //Futher code
+ ```
+
+3. Each step object has properties such as id, header, description, and image which represents step number, step title, step description, step image file path.
+
+**Similar Steps were carried out by us to create different object in both the [Arrays](#array-defination).**
+
+:::info
+We created this `Arrays` to utilise in **Main** Structure, which shorten's the code length and make it accessible to understand.
+:::
+
+:::tip
+You can refer this code from **"InstallationSteps.jsx"** file from our [**TCET Linux Website**](https://github.com/tcet-opensource/tcet-linux-website) repo.
+:::
+
+## Sets of Installation Steps
+
+This Component consist of the main Structure of code implemented by our team which enable the `Sets` section with `hovering image` effect.
+
+   ``` jsx title="InstallationSteps.jsx" {2,6,7,8,11,12,15,16,19,21} showLineNumbers
+   //Main Structure
+<div id="installation" className="overflow-hidden bg-[#101828] py-4 px-4 lg:px-12">
+ <div className="">
+  <div className="py-12 px-6 w-full h-full flex flex-col-reverse xl:flex-row md:flex-row">
+   <div className="w-full xl:w-1/2 relative">
+    <p className="text-[#6172F3] font-bold">INSTALLATION GUIDE</p>
+    <p className="font-title text-[#FCFCFD] text-2xl md:text-4xl pt-2 pb-2">
+      TCET Linux Installation Steps
+    </p>
+    <div className="absolute z-30 top-14 left-0 w-48 h-80  bg-gradient-to-r from-teal-100 via-indigo-500 to-pink-100 opacity-30 blur-2xl flex-none order-4 rounded-xl transform -rotate-45"></div>
+     <div onMouseLeave={() => setImageFirst(welcomeImage)}>
+      {installationStepsFirstSet.map((step) => (
+     <div
+        className="pt-6 cursor-pointer text-sm sm:text-base"
+        onMouseEnter={() => setImageFirst(step.image)}
+        key={step.id}
+       >
+       <p className="text-[#98A2B3] font-semibold">
+       {step.id}. {step.header}
+       </p>
+       <p className="text-[#F9FAFB] pt-2">{step.description}</p>
+    </div>
+                     ))}
+   </div>
+  </div>
+      <div className="relative w-full flex justify-center align-middle xl:w-1/2">
+        <div className="absolute z-30 top-5 w-48 h-52 xl:w-[600px] xl:h-[450px] bg-[#98A2B3] opacity-30 blur-2xl flex-none order-4 rounded-full"></div>
+        <div className="z-50 flex align-middle rounded-xl m-2">
+         <img className="w-full object-contain rounded-lg" src={imageFirst} />
+        </div>
+      </div>
+ </div>
+</div>
+// Similar Set section Code
+```
+
+**Here's the explanation of the code : **
+
+ 1. We defined a JSX is wrapped in a `<div>` element with the id set to "installation" and some CSS classes for styling purposes. 
+
+ 2. Within the component, we defined the JSX structure which is divided into two main sections for the **first** and **second** sets of installation steps.
+
+ 3. In the first section, we created a `<div>` elements containing another div's for the left side content and the right side content.
+ 
+ 4. Inside the left side `<div>`, we created a paragragh tag (`<p>`) element for the title, a `<p>` element for the description of the installation guide and an `<img>` element that displays the image corresponding to the currently selected step. The `image` source is controlled by the **imageFirst** `state` variable.
+
+ 5. The **installationStepsFirstSet** `array` is mapped over to render each step as a `<div>`. The **onMouseEnter** event is used by us to update the **imageFirst** `state` variable with the corresponding image when a step is hovered over.
+
+**Similar Steps were carried out to created another set of [InstallationSteps](#sets-of-installation-steps).**
+
+:::tip
+Using this Syntax of Javascript Language, Multiple Sets can be created as per your Requirements.
+:::
+
+**After implementing all components, the Installation Steps Component can be scene like this :**
+
+import set1 from "/docs/projects/tcet-linux-website/assets/set1.jpg";
+
+<figure>
+    <center><img src={set1} style={{ border: "2px solid gray" }} /></center>
+    <center><b><figcaption>Installation Steps Set 1</figcaption></b></center>
+</figure>
+
+import set2 from "/docs/projects/tcet-linux-website/assets/set2.jpg";
+
+<figure>
+    <center><img src={set2} style={{ border: "2px solid gray" }} /></center>
+    <center><b><figcaption>Installation Steps Set 2</figcaption></b></center>
+</figure>
+
+*In this page, we saw how the [**Installation Steps**](installation-steps) section was put together. Let's go on towards the next stage,the [**Verify Downloads**](verify-downloads) Section , to see how the component was implemented.*
+
