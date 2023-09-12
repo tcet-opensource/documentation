@@ -1,0 +1,73 @@
+---
+Title: Cycle-Result
+id: cycle-result
+Description: Cycle-Result in Fill My Cycle Website
+Sidebar_label: cycle-result
+keywords: [Cycle Result, cycleresult, result]
+---
+
+# Cycle Result
+**Cycle-result** represents the total marks scored by the student. Here the total marks of both the table is calculated in the respective column and then the average of the total marks is calculated and presented to students.
+
+## Cycle Result Table
+We have used HTML for this component.<br />
+
+**Breakdown of the code is as follows:**
+
+### Column Header 
+  
+1. `<th>` : We have used `<th>` tag to define the column headers for the  table, which are **"Cycle"**, **"TK"**, **"TD"**, **"LI"**, **"B"**, **"C"**, and **"Total"**.
+	
+2. We have used class attribute to apply CSS to the cells.
+ 
+	```html title="index.html" {3-4} showLineNumbers
+	<thead>
+			<tr>
+				<th>Cycle</th>
+				<th class="d">TK</th>
+				<th class="d">TD</th>
+				<th class="d">LI</th>
+				<th class="d">B</th>
+				<th class="d">C</th>
+				<th class="d">Total</th>
+			</tr>
+	</thead>
+	```
+	
+### Data Column 
+  
+1. `<tr>` : We have used `<tr>` element to define a row in an HTML table.
+  
+2. `<th>` : We have used `<th>` tag to define the column header ie "1 to 5" on line 2.
+  
+3. `<td>` : We have used `<td>` tag to define the remaining cells. These rows are used as template for adding actual data to the table.   
+
+	```html title="index.html" {1-3} showLineNumbers
+	<tr>
+		<th>1 to 5</th>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	```
+
+:::tip
+Similarly we have implemented next column: **Total** and **Average** column. 
+:::
+
+4. **Cycle Result Table** would look like in the following manner: 
+
+import pic2 from "/docs/projects/fmc-website/assets/cycle-result.png";
+
+<p align="center">
+<img src = {pic2} style={{ border: "2px solid gray" }} />
+</p>
+
+<br />
+
+_After successfully implementing the **[Cycle Result](cycle-result)** component of the **[Fill my cycle](https://fillmycycle.tcetmumbai.in/#result)** website, the next step we did was to move forward with the implementation of **[Instructions Button](button-instructions)** component._
+
+

@@ -1,0 +1,122 @@
+---
+title: Guidelines
+id: guideline
+description: Guidelines 
+sidebar_label: Guidelines
+keywords: [accordion, intro, array]
+---
+The **Guidelines** section provides some guidelines that a user can follow to ensure that their resume gets correctly scanned by all applicant tracking systems.
+
+**The section can be broken down into the following divisions:**
+
+### Guidelines accordion
+**We followed these steps to make the same:**
+1. We used **TypeScript** declaration to initialize a constant variable named `accordions` with a value of an `array` of objects. Each object in the `array` represents a guideline and has two properties: `title` and `data`. 
+2. The `Guidelines[]` type suggests that `accordions` is an `array` containing objects that adhere to the structure defined by the **Guidelines** type.
+
+  ```jsx title="guidelines.tsx" {1,3-4} showLineNumbers
+  const accordions: Guidelines[] =[
+      {
+        title:"Avoid using tables",
+        data : "Label your work experience and education sections with conventional section titles"
+      },
+      {
+      <!--Other guidelines' title and data-->
+      },
+    ];
+  ```
+
+:::tip
+Similar steps were carried out to add `title` and `data` of other guidelines.
+:::
+
+3. We used a **JavaScript** expression to map over the `accordions array`. For each object in the `array`, it returned a **JSX** element representing an `accordion` item.
+
+  ```jsx title="accordion.jsx" {} showLineNumbers
+  {
+                accordions.map(({ title, data, open }) => (
+  ```
+
+4. The `open` attribute is set based on the `open` property of the current item in the `accordions array`. 
+
+5. The class attribute defines the **CSS** classes for styling the `accordion` item, and the style attribute sets inline styles for the background gradient.
+
+  ```jsx title="accordion.jsx" {2-3,5-9} showLineNumbers
+  <details open={open} class="border-box rounded-md p-1 group border border-[#667085]" style="background: linear-gradient(116.05deg, rgba(255, 255, 255, 0.25) 21.76%, rgba(255, 255, 255, 0.0875) 119.92%);">
+  ```
+
+6. We used a **JSX** element to represent the heading part of the `accordion` item and used the `<summary>` HTML tag to define the heading.
+
+7. `{title}` was used to insert the `title` property of the current accordion item within the heading and `{data}` was used to insert the `data` property. 
+
+8. **JavaScript** expression was used to insert an `<img>` element within the heading for the `down arrow`.
+
+9. The class attribute defines **CSS** classes for styling the image, including a `group-open:rotate-180` class that applies a rotation transform when the `accordion` item is open.
+
+  ```jsx title="accordion.jsx" {1-3,7} showLineNumbers
+  <summary class="flex items-center justify-between  text-white p-3 px-6 text-sm">
+                      {title}
+                      {<img src="../GuidelinesSection/Icon.svg" alt="Down arrow" class="h-4 w-4  group-open:rotate-180 "/>}
+                    </summary>
+                    <div class="p-4">
+                    <p class="text-white box-content font-inter text-sm ">
+                      {data}
+                    </p>
+                    </div>
+                  </details>
+                ))
+  ```
+
+**Guidelines accordian:**
+
+import accordion1 from "/docs/projects/resume-screener-website/assets/accordion1.png";
+
+<p align="center">
+<img src={accordion1} style={{ border: "2px solid gray" }} /> 
+</p>
+
+import accordion2 from "/docs/projects/resume-screener-website/assets/accordion2.png";
+
+<p align="center">
+<img src={accordion2} style={{ border: "2px solid gray" }} /> 
+</p>
+
+
+
+### Header and Intro
+**We followed these steps to make the same:**
+1. We used a `div` element with class names which contains the content displayed within the section.
+2. `<p>` element was used to define text styling and display the **header** text "**How do I Make sure my resume is ATS-compliant?**". 
+3. Another `<p>` element was used to display additional text providing the **intro**. 
+
+```jsx title="header.jsx" {,2,4} showLineNumbers
+<div class="text-white text-center">
+      <p class="text-2xl sm:text-4xl font-rubik tracking-tight font-semibold">How do I Make sure my resume is <br>ATS-compliant?
+        </p>
+        <p class="text-md sm:text-lg font-light mt-2">Here are some guidelines you should follow to ensure your <br> resume gets correctly scanned by all applicant tracking<br> systems.</p>
+    </div>
+```
+**Header and Intro:**
+
+import header from "/docs/projects/resume-screener-website/assets/header and intro.png";
+
+<p align="center">
+<img src={header} style={{ border: "2px solid gray" }} /> 
+</p>
+
+:::info
+ We made use of a section element with multiple class names and a style attribute to set the padding, background image, and background color for the section.
+::: 
+
+
+After combining all of the divisions, the **Guidelines** section can be seen like this:
+
+**Guidelines section:**
+
+import guidelines from "/docs/projects/resume-screener-website/assets/guidelines.png";
+
+<p align="center">
+<img src={guidelines} style={{ border: "2px solid gray" }} /> 
+</p>
+
+*The **[Guidelines section](guideline)** has been executed successfully! Let's see how we created the **[ATS Resume template section](ats-resume-template)** of the **[Resume Screener Website](https://rs.tcetmumbai.in/)**.*

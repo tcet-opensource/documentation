@@ -1,0 +1,65 @@
+---
+title: Displaying-Cycle
+id: displaying-cycle
+description: Cycle Display Component in Fill My Cycle Website 
+sidebar_label: Displaying Cycle
+keywords: [Cycle-display, cycle, display]
+---
+# Cycle Display
+In **Cycle Display** component user will be able to see the break down of the average marks scored by them as tickmarks on various cells.<br />
+**As you may see in the image:**
+
+import pic2 from "/docs/projects/fmc-website/assets/cycledisplay1.png";
+
+<p align="center">
+<img src = {pic2} style={{ border: "2px solid gray" }} />
+</p>
+<br />
+
+**Breakdown of the code is as follows:**
+
+### Column Header 
+  
+1. `<th>` : We have used `<th>` tag to define the column headers for the  table, which are **"Par\Perf"**, **"E (5)"**, **"VG (4)"**, **"G (3)"**, **"A (2)"**, and **"BA (1)"**.
+	
+2. We have used class attribute to apply CSS to the cells.
+ 
+	```html title="index.html" {3-4} showLineNumbers
+	<thead>
+		<tr>
+			<th>Par\Perf</th>
+			<th class="c">E (5)</th>
+			<th class="c">VG (4)</th>
+			<th class="c">G (3)</th>
+			<th class="c">A (2)</th>
+			<th class="c">BA (1)</th>
+		</tr>
+	</thead>
+	```
+### Data Column 
+  
+1. `<tr>` : We have used `<tr>` element to define a row in an HTML table.
+  
+2. `<th>` : We have used `<th>` tag to define the column header ie "1 to 5" on line 2.
+  
+3. `<td>` : We have used `<td>` tag to define the remaining cells. These rows are used as template for adding actual data to the table.   
+
+	```html title="index.html" {1-3} showLineNumbers
+	<tr>
+		<th>TK (30)</th>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	```
+	
+:::tip
+Similarly we have implemented next column: **TD (30)** , **LI (10)** , **B (10)** and **C (20)** column. 
+:::
+
+<br />
+
+_After successfully implementing the **[Cycle Display](displaying-cycle)** component of the **[Fill my cycle](https://fillmycycle.tcetmumbai.in/#result)** website, the next step we did was to move forward with the implementation of **[Cycle Result](cycle-result)** component._

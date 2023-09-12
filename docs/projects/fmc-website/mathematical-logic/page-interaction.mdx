@@ -1,0 +1,124 @@
+---
+title: Page Interaction
+id: page-interaction
+description: Page Interaction Component of mathematical script in Fill My Cycle Website 
+sidebar_label: Page Interaction
+keywords: [Page Interaction, mathematical Page Interaction, function]
+---
+
+This function **sets up all the interactions and behaviors for the web page** so that you can use it easily and perform different actions by clicking, typing, or changing values.
+
+```jsx title="script.js" {2-6,8-10,23-27,49-55,31-32,34-35} showLineNumbers
+$(document).ready(function(){
+	$("#c11").focus();
+	$("#c11").click();
+	$("#c11").trigger('click');
+	$("#c11").on("keyup",function(){
+		if(event.keyCode==9 || event.keyCode==16 || event.keyCode>=37 && event.keyCode<=40)
+			return false;
+		var ip = event.target || event.srcElement;
+		var c10=parseInt($("#c10").text());
+		var c11=parseInt($("#c11").val());
+		if(c11>15){
+			$("#c11").val(15)
+		}
+		if(c11>c10){
+			c11change();
+		}
+		if(ip.value.length>=1 && ip.value!="1"){
+			$("#c21").focus();
+		}
+	});
+	$("#c11").on("change",c11change);
+	$("#c21").on("keyup",function(){
+		if(event.keyCode==9 || event.keyCode==16 || event.keyCode>=37 && event.keyCode<=40)
+			return false;
+		var ip = event.target || event.srcElement;
+		var c20=parseInt($("#c20").text());
+		var c21=parseInt($("#c21").val());
+		if(c21>30){
+			$("#c21").val(30)
+		}
+		if(c21>=c20){
+			c21change();
+		}
+		if(ip.value.length>=1 && ip.value!="1" && ip.value!="2" && ip.value!="3"){
+			$("#tbl01 tr input:first").focus();
+		}
+	});
+	$("#c21").on("change",c21change);
+	$("input.exp").on("keyup", expkeyup);
+	$("input.exp").on("change", perform);
+	$("input.ip").on("keyup", check);
+	$("input.ip").on("change", check);
+	$("button.reset").on("click", function(){
+		$('input').val('');
+		perform();
+		var tbl1=document.getElementById("tbl1");
+		var tbl2=document.getElementById("tbl2");
+		var tbl3=document.getElementById("tbl3");
+		for(var i=0;i<5;i++) for(var j=1;j<6;j++)
+			tbl1.children[i].children[j].innerHTML="";
+		for(var i=0;i<5;i++) for(var j=1;j<6;j++)
+			tbl2.children[i].children[j].innerHTML="";
+
+		for(var j=0;j<4;j++) for(var i=0;i<6;i++){
+			tbl3.children[j].children[1+i].innerText="";
+		}
+		if(man_mode){
+			location.replace("#man_mode_br");
+		}
+		else{
+			location.replace("#");
+			$("#c11").focus();
+		}
+	});
+	$("#man_mode").on("click",switch_mode);
+	$("#tbl1 td").click(cell_check);
+	$("#tbl2 td").click(cell_check);
+	$(".instr-ref").click(function(){
+		location.replace("#instructions");
+	});
+	$(".man-mode-ref").click(function(){
+		location.replace("#man_mode_br");
+	});
+});
+```
+:::tip
+Similar Logic has been used in c11 and c21 updater functions.
+:::
+
+
+### Here's what the function does step by step.
+
+1.	It **focuses on a specific field** with an ID called "c11". It's like pointing your finger at that field so you can start typing in it.
+
+2.	It **simulates a click** on the "c11" field. It's like tapping on it with your finger.
+
+3.	It triggers a "click" event on the "c11" field. It's like pretending you clicked on it again.
+
+4.	It *listens for when you press a key on the keyboard while typing in the "c11" field.* If you press certain keys like the Tab key or Shift key, it won't do anything. It's like ignoring those keys.
+
+5.	It gets the value you typed in the "c11" field and **checks if it's greater than 15.** If it is, it changes the value to 15. It's like making sure the number is not too big.
+
+6.	If the value you typed is greater than another field called "c10", it triggers a function called "c11change". It's like telling another part of the page to do something if the number is bigger.
+
+7.	If you typed at least one character in the "c11" field that is not "1", it focuses on another field called "c21". It's like moving your attention to that field.
+
+8.	The function continues and does similar things for the "c21" field. *It listens for key presses, checks the value, triggers a function called "c21change"* if necessary, and focuses on another field if certain conditions are met.
+
+9.	It **sets up listeners for when you type or change values in fields** with a class called "exp". It's like keeping an ear out for any changes you make in those fields.
+
+10.	It sets up listeners for when you type or change values in fields with a class called "ip". It's like keeping an ear out for any changes you make in those fields as well.
+
+11.	It sets up a listener for when ***you click a button with a class called "reset".** When you click that button, it clears all the values in input fields and performs some actions to reset the page.
+
+12.	It sets up a listener for when you click a button with an ID called "man_mode". When you click that button, it switches the page to a different mode.
+
+13.	It sets up listeners for when you click on certain cells in a table with an ID called "tbl1" or "tbl2". When you click on those cells, it triggers a function called "cell_check".
+
+14.	It sets up listeners for when you click on certain elements with classes "instr-ref" or "man-mode-ref". When you click on those elements, it changes the location of the page to show different instructions or information.
+
+<br />
+
+ _We have successfully understood the [**Page Interaction**](page-interaction) function! And here we also complete all the functions of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

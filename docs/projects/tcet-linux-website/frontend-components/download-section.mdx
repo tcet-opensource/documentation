@@ -1,0 +1,143 @@
+---
+title: Download Section
+id: download-section
+description: Download Component in TCET Linux Website
+sidebar_label: Download Section
+keywords: [Download link, Links, Downloads, Installers, DownloadSection]
+---
+
+The Download component represents the Second section of the [**TCET Linux website**](https://linux.tcetmumbai.in/). It is one of the most crucial component as it provides important information and actions related to downloading and verifying the TCET Linux software. This section serves as a gateway for users to access the software and its associated resources. The page likely presents data on the **Download Availability**, the **Verification** and **Additional Resources**. The section informs users that the TCET Linux source code and installers are available for download. It provides direct download links to the software, allowing users to easily obtain the necessary files.
+
+## Download Section & Gradient
+
+**Here's a breakdown of the code to understand it's functionality:**
+
+1. This code represents the start of the DownloadSection component. The `div` element with the `id attribute download` serves as a container for the entire section. It has classes for styling, such as a full width, background color, relative positioning, and hidden horizontal overflow.
+ 
+     ```jsx title="DownloadSection.astro" {1} showLineNumbers
+     <div  id="download"  class="w-full bg-slate-800 relative overflow-x-hidden px-10 lg:px-12">
+            // Gradient Background 
+     </div>
+     ```
+
+2. This `div` element adds a ***gradient background*** to the section. It has the `class downloadSectionGradient` and the style `pointer-events-none` to prevent any interaction with the element.
+ 
+    ```  jsx title="DownloadSection.astro" {2} showLineNumbers
+     // Download Section Component 
+        <div class="downloadSectionGradient pointer-events-none">
+              // Columns
+        </div>
+
+    ```
+
+## Left Column
+
+1. This `div` element displays the heading ***Downloads*** in white text with a **bold font**. The font size varies for different screen sizes.
+
+    ```   jsx title="DownloadSection.astro" {3} showLineNumbers
+    // Gradient Background
+       <div class="text-white font-semibold text-4xl lg:text-6xl mb-4 lg:mb-9">
+            Downloads
+      </div> 
+    // Discription
+
+    ```
+
+2. This `<p>` element contains a paragraph of text in **white color**. It provides information about the **availability of TCET Linux source code and installers for download**.
+
+  ``` jsx title="DownloadSection.astro" {3} showLineNumbers
+    // Heading
+        <p class="text-white flex flex-wrap font-normal text-sm md:text-xl">
+           TCET Linux source code and installers are available for download <br /> for all versions!!
+        </p>
+    // Download Button
+  ```
+
+3. This `<a> tag` *link element* represents the ***download button***. It has classes for styling, including a blue background color, padding, cursor style, rounded corners, and a border. The button contains the text ***Download*** and an image of a ***download icon***. The href attribute specifies the Github URL to downloadable ***iso image file*** which is linked to the [***Download***](https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/tcetlinux-2023.05.05-x86_64.iso). It is represented by line **1-4**. The `button` element in this section represents a **clickable** button. It has styles applied as per our requirements.
+
+``` jsx title="DownloadSection.astro" {2-4} showLineNumbers
+    // Discription
+            <a class="flex flex-row bg-blue-900 w-fit py-3 px-5 cursor-pointer gap-5 items-center justify-center rounded-full border-custom-w border-custom-border-color hover:bg-blue-500 font-semibold text-base" href="https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/tcetlinux-2023.05.05-x86_64.iso" >
+                Download
+                <img class="w-full h-full" src="images/download-icon.svg" alt="" />
+           </a>
+    // Checksum Button
+```
+
+4. This `<a> tag` *link element* represents the ***checksum button***. It has classes for styling, including border, padding, cursor style, and rounded corners. The button contains the text **Checksum** and an image of a **download icon**. The href attribute specifies the URL for the checksum section in the website. It has the text and downward arrow  displaying **"Checksum"** which is linked to the [*Checksum File*](https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/checksum). It is represented by line **2**. The `button` element in this section represents a **clickable** button.
+
+   ``` jsx title="DownloadSection.astro" {3,6,8} showLineNumbers
+    // Download Button
+         <a
+          href="https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/checksum"
+          class="flex flex-row w-max h-fit p-2 px-4 cursor-pointer gap-2 items-center justify-center border rounded-full border-white hover:bg-blue-50 hover:bg-opacity-20 text-white"
+          id="req-btn">
+              <span class="md:font-semibold">Checksum</span>
+              <span class="p-1 ml-1 bg-custom-btn rounded-full">
+                    <img class="w-full h-full" src="images/download-icon.svg" alt="" />
+              </span>
+        </a>
+    // Verify Download Component
+   ```
+
+5. Inside this section there is an `<a> anchor element` representing the *hyperlink* wrapped in the text for **verifying the download**. It has classes for styling, including spacing and underline formatting. The link text is **Verify your download** with an **arrow symbol (→)** indicating a link. It has the text displaying ***Verify your download →*** which is linked to the [`Verify your download →`](https://linux.tcetmumbai.in/#verify). It is represented by line **1,3**.
+
+  ``` jsx title="DownloadSection.astro" {2,4} showLineNumbers
+    // Checksum Button
+        <a class="flex flex-row items-center p-2 gap-2" href="/#verify">
+          <i class="font-semibold text-base underline underline-offset-4 not-italic">
+              Verify your download →;
+          </i>
+        </a>
+    // Tutorials Link
+  ```
+
+6.  This `<div> element` provides information about creating a bootable USB drive. It includes a heading *Create Bootable USB* and *two links for video tutorials* on creating bootable USB drives for Windows and Mac/Linux. The below section of code there is an `<a> anchor` element for the *hyperlink* wrapped in the text. The links have underlined formatting.
+ * The `First <a> tag` displaying **"Windows ↗"** which is linked to the [*Installation tutorial video for Windows*](https://www.youtube.com/watch?v=7ND2fiaFfic). It is represented by line **9**.
+ <br />
+ * The `Second <a> tag` displaying **"Mac/Linux ↗"** which is linked to the [*Installation tutorial video for Mac or Linux*](https://www.youtube.com/watch?v=KQGedNCA1E4). It is represented by line **9**.
+ 
+   ```  jsx title="DownloadSection.astro" {3,5,6} showLineNumbers   
+    // Verify Download Component
+    <div class="text-white  mt-4 lg:mt-8">
+        <span class="font-semibold text-2xl">Create Bootable USB</span>
+        <span class="flex flex-wrap text-lg gap-4">
+            <a href="https://www.youtube.com/watch?v=7ND2fiaFfic" class="underline">Windows &#x2197;</a>
+            <a href="https://www.youtube.com/watch?v=KQGedNCA1E4" class="underline">Mac / Linux &#x2197;</a>
+        </span>
+      </div>
+    // Right Column
+
+   ```
+
+## Right Column
+1. This code represents the `second column of the grid layout`, which contains *an image of a man with a laptop*. The div element has the class **image-content** and is hidden on medium-sized screens (md) and above. The img element specifies the image source, width, height, and alternative text.
+
+   ``` jsx title="DownloadSection.astro" {3} showLineNumbers
+    // Left Column
+        <div class="image-content hidden md:flex items-center align-middle justify-center z-10" >
+            <img class="w-60 h-40 lg:w-96 lg:h-80" src="images/man-with-laptop.png" alt="" />
+        </div>
+    // Left Column
+   ```
+
+## Output Image
+
+import DownloadSection from "/docs/projects/tcet-linux-website/assets/DownloadSection.png";
+
+<img src = {DownloadSection} style={{ border: "2px solid gray" }} />
+
+<br />
+<center><b><figcaption>TCET Linux- Download Section</figcaption></b></center>
+<br />
+
+:::tip
+
+You can visit
+1. [Download Section of the TCET Linux website](https://linux.tcetmumbai.in/#download)
+<br />
+2. [DownloadSection.astro](https://github.com/tcet-opensource/tcet-linux-website/blob/main/src/components/DownloadSection.astro)
+:::
+<br />
+
+_The [**Download Section of Home Page**](download-section) was succesfully executed! Let's move on and see how we created the [**Hero Section**](hero) component of the **[TCET Linux Website](https://linux.tcetmumbai.in/)**._

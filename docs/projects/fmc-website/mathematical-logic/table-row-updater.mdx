@@ -1,0 +1,79 @@
+---
+title: Table Row Updater
+id: table-row-updater
+description: Table Row Updater function of mathematical script in Fill My Cycle Website 
+sidebar_label: Table Row Updater
+keywords: [Table Row updater, mathematical Table Row updater, function]
+---
+The `c21change()` function helps us perform actions when the value of the "c21" field changes. It **adjusts the number of rows in the "tbl02" table** based on the desired value, **updates the displayed range of rows,** and **triggers the `perform()` function.** It's like a handler that responds to changes and keeps things in sync!
+Imagine you have a form with different fields and tables, and you want to perform certain actions when one of the fields changes. This function `c21change()` helps us with that.
+
+Now let's breakdown each line of the code:
+
+```jsx title="script.js"{6,9,13-15,19,23} showLineNumbers
+function c21change(){
+	var c21=parseInt($("#c21").val());
+	var tbl01=document.getElementById("tbl01");
+	var tbl02=document.getElementById("tbl02");
+	var tbl3=document.getElementById("tbl3");
+	if(c21 || c21==0){
+		var c20=parseInt($("#c20").text());
+		var c21=parseInt($("#c21").val());
+		if(c21<=c20){
+			c21=c20;
+			$("#c21").val(c21);
+		}
+		var tot=c21-c20+1;
+		var act=tbl02.children.length;
+		var diff= tot-act;
+		if(diff<0){
+			diff*=-1;
+			while(diff--){
+				tbl02.removeChild(tbl02.lastElementChild);
+			}
+		}
+		else{
+			var ct=c20+tbl02.children.length;
+			while(diff--){
+				$("#tbl02").append('<tr>\
+					<td>'+ct+'</td>\
+					<td><input class="form-control input-sm exp" type="number" min="0" max="100" step="1"/></td>\
+					</tr>');
+				ct++;
+			}
+			$("input.exp").on("keyup", expkeyup);
+			$("input.exp").on("change", perform);
+		}
+```
+
+1.	We start by *getting the value from a field called "c21" and converting it to a number.* It's like looking at a specific spot and reading a number written there.
+
+2.	Next, we **find three special tables** called "tbl01", "tbl02", and "tbl3". These tables have rows and columns, and we use a special code called `document.getElementById()` to find them.
+
+3.	Now, we check if the value of "c21" exists or if it's equal to zero. If it does, we perform some actions inside this condition.
+
+4.	We get the value from another field called "c20" and convert it to a number. This field is located somewhere else, and we read the number written there.
+
+5.	We **check** if the **value of "c21" is less than or equal to the value of "c20".** If it is, we set the value of "c21" to be the same as "c20" and update the field with this new value.
+
+6.	We calculate the **difference between "c21" and "c20" and add 1 to it.** It's like finding out how many rows we need to add or remove in the "tbl02" table.
+
+7.	We calculate the current number of rows in the `tbl02` table and store it in a variable called "act". It's like counting how many rows are currently in the table.
+
+8.	We calculate the *difference between the desired number of rows "tot" and the current number of rows "act".* If the difference is negative, it means we have extra rows that we need to remove.
+
+9.	If the difference is **negative,** we enter a loop and **remove rows** from the bottom of the "tbl02" table based on the absolute value of the difference. It's like removing objects from the table until we reach the desired number of rows.
+
+10.	If the difference is **not negative,** we enter a loop and **add rows** to the "tbl02" table based on the difference. The number in the first column of each new row starts from "c20" plus the current number of rows in "tbl02" and increments by one for each row added.
+
+11.	We set event listeners for input fields with the class "exp". These event listeners listen for keyup and change events and call a function called `perform` when triggered.
+
+12.	We call the `perform()` function, which is not defined in this code snippet but function helps us find and work with specific tables, calculate the averages of the numbers in those tables.
+
+13.	We calculate the current number of rows in the "tbl01" and "tbl02" tables and store them in variables "ct1" and "ct2" respectively.
+
+14.	We **update the text** of specific cells in the "tbl3" table to **display the range of rows** in "tbl01" and "tbl02" tables. It's like updating the labels to show which rows belong to which table.
+
+<br />
+
+ _We have successfully understood the [**Table Row Updater**](table-row-updater) function! Let's move on and understand the [**Input Handler**](input-handler) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

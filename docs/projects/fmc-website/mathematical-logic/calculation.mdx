@@ -1,0 +1,109 @@
+---
+title: Calculation
+id: calculation
+description: What does calculation function do?
+sidebar_label: Calculation
+keywords: [calculation]
+---
+
+The **"Calculate"** function in JavaScript takes a **table and an input field** as **parameters.** It retrieves the *numerical value from the input field and performs various checks and calculations.* If the value meets certain conditions, *it adjusts it, determines a level, distributes the difference, updates the table's cells with images, multiplies values,* and **returns an array.**The calculate function **performs various calculations** and **updates the table and arrays based on the input provided,** and *it returns an array of values (w) at the end.*
+
+```jsx title="script.js" {3-4,6-7,9-12,15,22-25,55-56}showLineNumbers
+function calculate(tbl,ip){
+	var marks=parseFloat(ip.value);
+	if(ip.value.length==2 && ip.value!="10" && marks<=20){
+		ip.value=marks=20;
+	}
+	if(marks>100){
+		ip.value=marks=100;
+	}
+	if(marks>=20 && marks<=100){
+		if(marks%2!=0) {
+			if(marks%2<1){
+				marks=marks-marks%2;
+			}
+			else{
+				marks+=(2-marks%2);
+			}
+			ip.value=marks;
+		}
+		var diff=0;
+		var l=[5,5,5,5,5];
+		var w=[6,6,2,2,4];
+		var lvl=(marks-marks%20)/20+Math.ceil(marks%20/20);
+		l[0]=l[1]=l[2]=l[3]=l[4]=lvl;
+		if(marks%20!=0){
+			diff=20-marks%20;
+		}
+		else{
+			diff=0;
+		}
+		while(diff){
+			if(diff>=6){
+				l[1]--;
+				diff-=6;
+			}
+			if(diff>=4){
+				l[4]--;
+				diff-=4;
+			}
+			if(diff>=2 && diff<=4){
+				l[2]--;
+				diff-=2;
+			}
+			if(diff>=6){
+				l[0]--;
+				diff-=6;
+			}
+			if(diff>=2){
+				l[3]--;
+				diff-=2;
+			}
+		}
+		for(var i=0;i<5;i++) for(var j=1;j<6;j++)
+			tbl.children[i].children[j].innerHTML="";
+		for(var i=0;i<5;i++){
+			tbl.children[i].children[6-l[i] ].innerHTML='<img src="./assets/images/check.png" style= "height:50px; width:60px;">';
+			w[i]*=l[i];
+		}
+		w.push(marks);
+		return w;
+	}
+	return false;
+}
+```
+
+
+In the calculate function, the following operations are performed:
+
+1. The **input value** is parsed as a **float and stored in the marks variable.** 
+
+2. There are three conditional checks:
+
+ * The first condition checks if the *input value has a length of 2, is not equal to "10", and is less than or equal to 20.* If **true**, it **sets** both the **input value and marks to 20.**
+ 
+ * The second condition checks if *marks is greater than 100.* If true, it **sets** both the **input value and marks to 100.**
+ 
+ * The third condition checks if *marks is between 20 and 100 (inclusive).* If **true,** further calculations are performed.
+    
+    Inside the third condition:
+    The **nested if condition checks** if *marks is an odd number.* If **true,** it adjusts **marks** to the ***nearest even number.*** If the *fractional part of marks is less than 1,* it **subtracts** it from marks to make it **even.** Otherwise, it adds *(2 - fractional part)* to marks to make it the next even number.
+
+3. The diff variable is *initialized to 0.*
+
+4. Arrays *l* and *w* are created with initial values `[5, 5, 5, 5, 5]` and `[6, 6, 2, 2, 4]` respectively.
+
+5. The **lvl variable** is *calculated* as `(marks - marks % 20) / 20 + Math.ceil(marks % 20 / 20)`, which **determines** the **level based on marks.**
+
+6. The values in array *l* are *updated to lvl* for all elements. The **diff variable** is *updated* based on the *remainder of marks divided by 20.*
+
+7. Using a **while loop,** the *diff value is gradually reduced by updating the values in array l* based on certain conditions. A **nested loop** is used to **clear** the HTML **content of specific table cells.**
+
+8. Another loop *updates the HTML content of specific table cells* with an ***image of a checkmark,*** based on the *values* in array *l*. The *values in array w* are *multiplied by the corresponding values in array l.*
+
+9. The marks value is **added** to the **end of array w.** The array *w* is **returned.** If *none of the conditions are met, the function returns **false**.*
+
+<br />
+
+
+ _We have successfully understood the [**Calculation**](calculation) function! Let's move on and understand the [**Checker**](checker) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

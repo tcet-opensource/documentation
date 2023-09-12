@@ -1,0 +1,49 @@
+---
+title: Table Calculator
+id: table-calculator
+description: Table calculator function of mathematical script in Fill My Cycle Website 
+sidebar_label: Table Calculator
+keywords: [Table calculator, mathematical Table calculator, function]
+---
+
+The `cal_man(tbl)` function **calculates and manages values based on a table's rows and columns.** It **multiplies and accumulates numbers** based on certain conditions and *returns the updated array of values.* It's like performing some calculations and keeping track of the results! Let's break down the JavaScript function `cal_man(tbl)` in a simple way:
+
+``` jsx title="script.js"{4-6,10-11} showLineNumbers
+function cal_man(tbl){
+	var w=[6,6,2,2,4,0];
+	for(var i=0;i<5;i++){
+		var tr=$(tbl.children[i]);
+		var td=tr.children().children('img').parent();
+		var col=tr.children().index(td)-1;
+		if(col<0){
+			return false;
+		}
+		w[i]*=(5-col);
+		w[5]+=w[i];
+	}
+	return w;
+}
+```
+1. We start with an array called **"w"** which holds some initial values: **[6, 6, 2, 2, 4, 0].** It's like having a list of numbers to work with.
+
+2. We go through a loop that repeats 5 times. In each iteration, we perform some actions.
+
+3. Inside the loop, we **find a specific row** in the table using the variable "tr". It's like picking a row from the table.
+
+4. Then, we find a specific cell in that row which contains an image. We store this cell in the variable "td". It's like selecting a cell with an image.
+
+5. We *calculate the column index of the selected cell relative* to its row. It's like finding the position of the cell within the row.
+
+6. If the calculated column index is **less than 0** (which means it's an invalid index), we stop further execution of the function and return false. It's like checking if the column index is valid.
+
+7. If the column index is valid, we perform some calculations using the values in the "w" array. It's like doing some mathematical operations.
+
+8. We **multiply the value in the "w" array at index "i" by (5 - col),** where `col` is the calculated column index. It's like multiplying a number by another number and storing the result.
+
+9. We add the calculated value to the last element of the "w" array (at index 5). It's like accumulating the calculated values.
+
+10. After the loop is completed, we return the updated "w" array. It's like giving back the final result.
+
+<br />
+
+ _We have successfully understood the [**Table Calculator**](table-calculator) function! Let's move on and understand the [**Table Manager**](table-manager) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._
