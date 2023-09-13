@@ -258,13 +258,13 @@ const sidebars =
               link:
               {
                 type: 'doc',
-                id: 'projects/tcet-linux/installation-steps/requirements-download-verify',
+                id: 'projects/tcet-linux/installation/requirements-download-verify',
               },
               items: 
               [
-                'projects/tcet-linux/installation-steps/installation-in-drive',
-                'projects/tcet-linux/installation-steps/installation-in-vm',
-                'projects/tcet-linux/installation-steps/installation-steps',
+                'projects/tcet-linux/installation/installation-in-drive',
+                'projects/tcet-linux/installation/installation-in-vm',
+                'projects/tcet-linux/installation/installation-steps',
               ],
             },
             'projects/tcet-linux/install-remove-update-package',
