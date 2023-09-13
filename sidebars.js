@@ -251,6 +251,24 @@ const sidebars =
           },
           items: 
           [
+            'projects/tcet-linux/idea-behind-creating-tcet-linux',
+            {
+              type: 'category',
+              label: 'Installation Steps',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tcet-linux/installation-steps/requirements-download-verify',
+              },
+              items: 
+              [
+                'projects/tcet-linux/installation-steps/installation-in-drive',
+                'projects/tcet-linux/installation-steps/installation-in-vm',
+                'projects/tcet-linux/installation-steps/installation-steps',
+              ],
+            },
+            'projects/tcet-linux/install-remove-update-package',
+            'projects/tcet-linux/contribute-tcet-linux',
             'projects/tcet-linux/getting-started',
             {
               type: 'category',
