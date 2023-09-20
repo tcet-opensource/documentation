@@ -83,14 +83,14 @@ const config = {
       },
       metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       // Do not remove announcement bar. Comment it when not required.
-      // announcementBar: {
-      //   id: 'openconf23',
-      //   content:
-      //     'OpenConf 2023 is on July  21st!!  <a target="_blank" rel="noopener noreferrer" href="https://lu.ma/openconf">Register for the event.</a>',
-      //   backgroundColor: '#fafbfc',
-      //   textColor: '#091E42',
-      //   isCloseable: true,
-      // },
+      announcementBar: {
+        id: 'hacktoberfest23',
+        content:
+          'Hacktober Fest 2023 is starting on 1st October!! <a target="_blank" rel="noopener noreferrer" href="https://events.mlh.io/events/10259-hacktoberfest-2023-in-mumbai">Register for the event.</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
       navbar: {
         hideOnScroll: true,
         title: 'TCET Open Source',
