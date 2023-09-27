@@ -6,10 +6,10 @@ sidebar_label: Package Management
 keywords: [Pacman, yay, Installation, Package manager, Arch User Repository (AUR helper), Uninstallation, Package removal, Package updates]
 ---
 
-This guide will help you understand how to **install**, **remove**, and **update** packages on your ***TCET Linux system***. **TCET Linux** follows a package management system named **pacman**, making it *efficient*, *user-friendly* and *easy* to learn and operate. TCET Linux follows *rolling releases of applications and packages* hence packages are updated on regular basis hence it is important to *synchronize the package database* and *update the application*. Many times for *troubleshooting* and *system maintenance* you might need to remove a package, hence the guide will also help you there.
+This guide will help you understand how to **install**, **remove**, and **update** packages on your ***TCET Linux system*** and in **Arch based distributions**. This distributions follows a package management system named **pacman**, making it *efficient*, *user-friendly* and *easy* to learn and operate. This distributions follows *rolling releases of applications and packages* hence packages are updated on regular basis hence it is important to *synchronize the package database* and *update the application*. Many times for *troubleshooting* and *system maintenance* you might need to remove a package, hence the guide will also help you there.
 
 ## Pacman
-Packages in TCET Linux is managed by package manager called pacman. The official releases of packages are published on the pacman package manager. Here `sync`, `install`, `remove`, `autoremove` are the shortcut command that is `alias commands` as mentioned in [**Alias Commands Section**](alias-commands). In this commands, `sudo` is used to run the command with *superuser privileges*, allowing you to *install packages system-wide* and `pacman` is the name of the *package manger*.
+Packages in **Arch based distributions** is managed by package manager called pacman. The official releases of packages are published on the pacman package manager. Here `sync`, `install`, `remove`, `autoremove` are the shortcut command that is `alias commands` as mentioned in [**Alias Commands Section**](alias-commands). In the commands mentioned below, `sudo` is used to run the command with *superuser privileges*, allowing you to *install packages system-wide* and `pacman` is the name of the *package manger*. The detailed explanation of this commands are covered in [**Alias Commands**](alias-commands) section of TCET Linux documentation.
 
 ### Sync
 Before installing any package it is always recommened to **synchronize your package database**. For that use command:
@@ -21,10 +21,7 @@ OR
    sudo pacman -Syyy
    ```
 
-The command `sudo pacman -Syyy` is used to *refresh the package databases* in TCET Linux, with a full refresh. *Here's the breakdown of this command*:
-- The first `y` refreshes the sync databases, updating the package list from the repositories.
-- The second `y` refreshes the package lists again, checking for new versions of packages.
-- The third `y` refreshes the package lists a final time, ensuring that all databases are up to date.
+The command `sudo pacman -Syyy` is used to *refresh the package databases* with a full refresh.
   
 ### Install
 To **install a package** and its necessary depedencies use the following command,
@@ -36,8 +33,7 @@ OR
     sudo pacman -S package_name
    ```
 
-  The command `sudo pacman -S` is used to install packages from the **official repositories** of the in TCET Linux.
-- `-S` Flag is used to specify that you want to install a package.
+  The command `sudo pacman -S` is used to install packages from the **official repositories** of the applications and packages and also from TCET Linux repositories.
 
 ### Remove
 To **remove a package** from your package database use command:
@@ -48,8 +44,7 @@ OR
    ```
     sudo pacman -R package_name
    ```
-   This command `sudo pacman -R` in TCET Linux, is used to **remove packages** from your system **without removing dependencies installed along with it**.
-- `-R` This flag is used to specify that you want to remove a package.
+   This command `sudo pacman -R` is used to **remove packages** from your system **without removing dependencies installed along with it**.
 
 ### Autoremove
 *Packages also come with dependencies* on which package relies on in order to function properly. **To remove package with its dependencies** use command:
@@ -60,10 +55,7 @@ OR
    ```
     sudo pacman -Rns package_name
    ```
-The `sudo pacman -Rns` command in TCET Linux, is used to *remove a package along with its dependencies* that are no longer required by any other installed packages. *Here's the breakdown of this command*:
-- `-R` Flag is used to specify that you want to remove a package.
-- `-n` Flag is used to remove only packages that are no longer required by any other installed packages (orphans).
-- `-s` Flag is used to remove package dependencies as well.
+The `sudo pacman -Rns` command in TCET Linux, is used to *remove a package along with its dependencies* that are no longer required by any other installed packages.
 
 import installAutoremove from "/docs/projects/tcet-linux/assets/install-autoremove.png";
 
@@ -78,7 +70,7 @@ import installAutoremove from "/docs/projects/tcet-linux/assets/install-autoremo
 The default package manager in TCET Linux is ***pacman*** but depending on circumstances you might need to install the packages form Arch User Repository (AUR) with AUR helper. There are many AUR helpers to install the AUR packages, but the most popular is **YAY**.
 
 ### Installing YAY
-To install the **yay AUR helper**, we need to install the `git` and `base-devel` group of package on the system. So to install the git and base-devel on the system, use the following command:
+It is recommended to synchronize the package database and perform a system upgrade before proceeding further. To install the **yay AUR helper**, we need to install the `git` and `base-devel` group of package on the system. So to install the git and base-devel on the system, use the following command:
 
 ```
 sudo pacman -S --needed base-devel git
