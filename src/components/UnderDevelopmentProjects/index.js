@@ -17,19 +17,19 @@ const UnderDevelopmentProjects = () => {
             "image": "/img/tl.png",
             "title": "TCET Linux",
             "description": "TCET Linux is GNU/Linux distribution, based on Arch Linux built for enhancing college infrastructure and promoting Linux in software engineering education. There is a latest and final release in its beta release engineering phase. ",
-            "github": "#"
+            "github": "https://github.com/tcet-opensource/tcet-linux"
         },
         {
             "image": "/img/resume.png",
             "title": "Resume Screener",
             "description": "FAANGM like ATS which uses AI to analyse your resume and give you recommendations on how to improve. It provides a standardized and unbiased approach to screening resumes.",
-            "github": "#"
+            "github": "https://github.com/tcet-opensource/resume-screener"
         },
         {
             "image": "/img/erp.png",
             "title": "ERP System",
             "description": "A software to store, analyze, manage and supervise the college data in an efficient way. It covers all aspects; administration, infrastructure, and employee, teacher and student activity.",
-            "github": "#"
+            "github": "https://github.com/tcet-opensource/erp-backend"
         },
     ];
 
