@@ -110,7 +110,7 @@ const Navbar = () => {
 
       {/* Mobile Nav Bar  */}
       {navOpen && (
-        <div class="transition duration-300 overflow-y-scroll">
+        <div class="transition duration-300 overflow-y-scroll border-solid border-[#070419] border-b-[#130a38]">
           <ul class="font-medium text-white text-sm text-center bg-[#070419]">
             {navLinks.map((n) => (
               <div>
