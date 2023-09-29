@@ -1,0 +1,35 @@
+---
+title: Perform
+id: perform
+description: Perform Function of mathematical script in Fill My Cycle Website 
+sidebar_label: Perform
+keywords: [Perform, mathematical Perform, function]
+---
+
+The **`perform()`** function helps us *find and work with specific tables, calculate the averages of the numbers in those tables*, and then move on to perform additional actions using the "check()" function. It's like a script for a show, where we do things in a specific order to make everything work smoothly!
+
+```jsx title="script.js"{2-6} showLineNumbers
+function perform(){
+	var tbl01=document.getElementById("tbl01");
+	avg(tbl01);
+	var tbl02=document.getElementById("tbl02");
+	avg(tbl02);
+	check();
+}
+```
+
+Let's go through each step of the code:
+
+1.	First, we **find a table** called `tbl01`. It's like a special chart with rows and columns. We use a special code called `document.getElementById()` to find this table.
+
+2.	Then, we do something special with this table. We call another function called `avg(tbl01)`. It's like telling someone to *find the average of the numbers in that table.* So, we're asking for the average of all the numbers in the table `tbl01`.
+
+3.	We **repeat the same process** with another table called `tbl02`. We find it using the same special code `.getElementById()` and then call the `avg(tbl02)` function to find the average of the numbers in that table too.
+
+4.	After finding the averages of both tables, we move on to the next task. We call another function called `check()`. It's like asking someone to *perform a checklist or a set of instructions.*
+
+5.	Inside the `check()` function, there might be more instructions and actions happening, this function helps us find things on a web page, move around when we type, do some calculations, and maybe show us some results later. 
+
+<br />
+
+ _We have successfully understood the [**Perform**](perform) function! Let's move on and understand the [**Table Updater**](table-updater) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

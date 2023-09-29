@@ -1,0 +1,78 @@
+---
+title: Input Handler
+id: input-handler
+description: Input Handler Component of mathematical script in Fill My Cycle Website 
+sidebar_label: Input Handler
+keywords: [Input Handler, mathematical Input Handler, function]
+---
+
+# Input Handler
+
+This *function is triggered* when a **key is pressed on an input field.** Let's break down the JavaScript function `expkeyup()` in simple terms:
+
+```jsx title="script.js"{2-9,15,18,21-22,24-25} showLineNumbers
+function expkeyup(){
+	if(event.keyCode==9 || event.keyCode==16)
+		return false;
+	var ip = event.target || event.srcElement;
+	if(ip.value){
+		if(ip.value.length>=2 && ip.value!="10"){
+			var next=ip.parentElement.parentElement.nextElementSibling
+			if(next){
+				next=next.lastElementChild.firstElementChild;
+			}
+			var last1=ip.parentElement.parentElement.parentElement.lastElementChild.lastElementChild.firstElementChild;
+			var last2=document.getElementById("tbl02").lastElementChild.lastElementChild.firstElementChild;
+			var val = parseInt(ip.value);
+			if(val<0){
+				ip.value=0;
+			}
+			else if(val>100){
+				ip.value=100;
+			}
+			if(ip==last2){
+				$(ip).blur();
+				location.replace("#result");
+			}
+			else if(ip==last1){
+				$("#tbl02 tr input:first").focus();			
+			}
+			else{
+				$(next).focus();
+			}
+		}
+	}
+	perform();
+}
+```
+
+  1.	We start by checking if the key code of the *pressed key is either 9 (Tab key) or 16 (Shift key).* If it is, we **stop further execution** of the function and **return false.** It's like ignoring certain keys that we don't want to respond to.
+  
+  2.	We *identify the input field where the key was pressed.* It's like finding the specific input field where we are typing.
+  
+  3.	We *check if the input field has a value.* If it does, we perform some actions inside this condition.
+  
+  4.	We check if the value in the **input field** has a **length of at least 2 characters and is not equal to "10".** If it meets these conditions, we proceed with further actions.
+  
+  5.	We *find the next input field by navigating* through the HTML elements. It's like finding the next input field in a sequence.
+  
+  6.	We also find the *last input field* in another table with the ID `tbl02`. These fields are located somewhere else in the HTML structure.
+  
+  7.	We **convert** the value in the *current input field to an integer* and store it in a variable called `val`. It's like reading the number entered in the input field.
+  
+  8.	We *check if the value is less than 0.* If it is, we set the value of the input field to 0. It's like ensuring that the value is not negative.
+  
+  9.	We *check if the value is greater than 100.* If it is, we set the value of the input field to 100. It's like ensuring that the value is not greater than 100.
+  
+  10.	We *check if the current input field is the last input field* in `tbl02`. If it is, we **blur the input field** (remove focus) and **replace** the location hash with **"#result".** It's like moving the focus away from the input field and updating the URL.
+  
+  11.	If the *current input field is not the last input field* in `tbl02`, we check if it is the last input field in its parent row. If it is, we find the *first input field in the first row of `tbl02` and give it focus.* It's like moving the focus to the first input field in the next row.
+  
+  12.	If none of the above conditions are met, we move the **focus to the next input field using jQuery's "$()" function.** It's like shifting the focus to the next input field in the sequence.
+  
+  13.	Finally, we call the `perform()` function, which is not defined in this code snippet but helps us find and define tables.
+        So, this function helps us respond to keyup events in input fields. It *performs validation on the input value, navigates to the next input field, updates the URL, and triggers the `perform()` function.* It's like a handler that listens to keyboard input and manages the flow of focus and actions accordingly!
+
+<br />
+
+ _We have successfully understood the [**Input Handler**](input-handler) function! Let's move on and understand the [**Table Calculator**](table-calculator) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._
