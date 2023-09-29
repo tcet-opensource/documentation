@@ -23,6 +23,7 @@ function Teams() {
       gradientEnd: "rgba(25, 65, 133, 0)",
       teamImg: FrontendCard,
       icon: WebIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/frontend-team"
     },
     {
       teamName: "Backend Team",
@@ -32,6 +33,7 @@ function Teams() {
       gradientEnd: "rgba(25, 65, 133, 0)",
       teamImg: BackendCard,
       icon: WebIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/backend-team"
     },
     {
       teamName: "UI/UX Team",
@@ -41,6 +43,7 @@ function Teams() {
       gradientEnd: "#00225D",
       teamImg: UIUXCard,
       icon: UIUXIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/ui-ux-team"
     },
     {
       teamName: "Docs Team",
@@ -50,6 +53,7 @@ function Teams() {
       gradientEnd: "#00225D",
       teamImg: DocsCard,
       icon: DocsIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/documentation-team"
     },
     {
       teamName: "DevOps Team",
@@ -59,6 +63,7 @@ function Teams() {
       gradientEnd: "#00225D",
       teamImg: DevOpsCard,
       icon: DevOpsIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/devops-team"
     },
     {
       teamName: "AI Team",
@@ -68,20 +73,23 @@ function Teams() {
       gradientEnd: "#00225D",
       teamImg: AiCard,
       icon: AITeamIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/ai-team"
     },
     {
-      teamName: "Creative Team",
+      teamName: "Graphics Team",
       description:
         " Works on branding, content creation and curation, and project management aspects. ",
       gradientStart: "#764F2B",
       gradientEnd: "#00225D",
       teamImg: CreativeCard,
       icon: CreativeIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/graphics-team"
     },
   ];
 
   const card = TeamsCard.map((data) => {
     return (
+      <a href={data.ref} target="_blank" rel="noopener noreferrer">
       <section id="team"
         className="lg:h-64 md:h-60 h-fit lg:w-[40%] max-w-xl overflow-hidden text-white flex flex-col md:flex-row lg:flex-wrap lg:rounded-2xl md:rounded-xl rounded-lg m-6 "
         style={{
@@ -100,6 +108,7 @@ function Teams() {
           <div className="text-base lg:text-sm xl:text-base text-[#D0D5DD]">{data.description}</div>
         </div>
       </section>
+      </a>
     );
   });
 
