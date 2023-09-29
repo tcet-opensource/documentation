@@ -12,71 +12,79 @@ import DevOpsIcon from "../../../static/img/TeamsSectionImages/DevOpsIcon.png";
 import DocsIcon from "../../../static/img/TeamsSectionImages/DocsIcon.png";
 import UIUXIcon from "../../../static/img/TeamsSectionImages/UIUXIcon.png";
 import WebIcon from "../../../static/img/TeamsSectionImages/WebIcon.png";
+import Link from "@docusaurus/Link";
 
 function Teams() {
   const TeamsCard = [
     {
       teamName: "Frontend Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on designing, developing, and maintaining the user experience aspects of the software.  ",
       gradientStart: "#2B4776",
       gradientEnd: "rgba(25, 65, 133, 0)",
       teamImg: FrontendCard,
       icon: WebIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/frontend-team"
     },
     {
       teamName: "Backend Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on creating and maintaining the server-side of the software and API development. ",
       gradientStart: "#2B4776",
       gradientEnd: "rgba(25, 65, 133, 0)",
       teamImg: BackendCard,
       icon: WebIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/backend-team"
     },
     {
       teamName: "UI/UX Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Provides positive user experience, visual layouts and aesthetics to the software.",
       gradientStart: "#762B43",
       gradientEnd: "#00225D",
       teamImg: UIUXCard,
       icon: UIUXIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/ui-ux-team"
     },
     {
       teamName: "Docs Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Maintains the updated information of the projects and makes it accessible and user-friendly. ",
       gradientStart: "#762B43",
       gradientEnd: "#00225D",
       teamImg: DocsCard,
       icon: DocsIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/documentation-team"
     },
     {
       teamName: "DevOps Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on efficient development, testing, deployment, and maintenance of the software. ",
       gradientStart: "#2B7669",
       gradientEnd: "#00225D",
       teamImg: DevOpsCard,
       icon: DevOpsIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/devops-team"
     },
     {
       teamName: "AI Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on automation, data analytics and development in AIML technologies. ",
       gradientStart: "#2B7669",
       gradientEnd: "#00225D",
       teamImg: AiCard,
       icon: AITeamIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/ai-team"
     },
     {
-      teamName: "Creative Team",
+      teamName: "Graphics Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        " Works on branding, content creation and curation, and project management aspects. ",
       gradientStart: "#764F2B",
       gradientEnd: "#00225D",
       teamImg: CreativeCard,
       icon: CreativeIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/graphics-team"
     },
   ];
 
@@ -94,10 +102,12 @@ function Teams() {
           className="object-cover h-40 md:h-auto md:rounded-l-xl lg:rounded-l-2xl md:w-1/2 "
         />
         <div className="p-6 md:w-1/2 lg:min-w-min">
+          <Link to={data.ref}>
           <img src={data.icon} className="h-11 w-11 mb-2" alt={data.teamName} />
           <div className="text-xl font-medium">{data.teamName}</div>
           <div className="border w-full my-3 bg-[#344054]" />
           <div className="text-base lg:text-sm xl:text-base text-[#D0D5DD]">{data.description}</div>
+          </Link>
         </div>
       </section>
     );

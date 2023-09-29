@@ -25,31 +25,26 @@ const About = () => {
               </div>
             </div>
             <div className="md:text-xl leading-7  text-[#D0D5DD]">
-              In the present scenario of globalization there is tremendous
-              demand for skilled manpower particularly in the area of
-              Engineering and Technology. Therefore, Training and Placement
-              (T&P) was set up with a view to provide necessary impetus to
-              launch our students into the real world where cut-throat
-              competition is the order of the day.
+              The motivation behind formation of the Organization was simple. An initiative undertaken for the students, by the students to streamline software engineering education and development under the banner of a single Organization, and to provide visibility to the projects being undertaken by the student community.
             </div>
             <div className="flex items-start justify-between gap-4 w-full flex-wrap">
               <div className="flex flex-col items-start p-3 w-max flex-1 gap-2 border border-[#60548A] bg-[#302261] rounded-xl">
                 <div className=" leading-9 text-3xl font-title w-max">
-                  <CountUp start={0} end={852} />+
+                  <CountUp start={0} end={20} />+
                 </div>
                 <div>
                   <div className="text-slate-300 md:text-md text-sm">
-                    Number of Line code
+                    Number of projects incubated
                   </div>
                 </div>
               </div>
               <div className="flex flex-col items-start p-3 w-max flex-1 gap-2 border border-[#60548A] bg-[#302261] rounded-xl">
                 <div className=" leading-9 text-3xl font-title w-max ">
-                  <CountUp start={0} end={7400} />+
+                  <CountUp start={0} end={100} />+
                 </div>
                 <div>
                   <div className="text-slate-300 md:text-md text-sm">
-                    Number of Line code
+                    Number of contributors
                   </div>
                 </div>
               </div>

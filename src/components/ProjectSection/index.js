@@ -14,34 +14,28 @@ import ProjectPreview from "./ProjectPreview";
 
 const projects = [
   {
-    name: "project1",
-    description: "random project description",
-    img: "project.jpg",
-    tools: ["react", "tailwind css", "brainkfu**"],
+    name: "T&P Website",
+    description: "A necessary website for all students to be aware of the current placement activities and upcoming opportunities.",
+    img: "tnp.png",
+    tools: ["Astro", "Typescript", "Javascript"],
   },
   {
-    name: "project2",
-    description: "random project description",
-    img: "project.jpg",
-    tools: ["react", "tailwind css", "brainkfu**"],
+    name: "TCET Linux Website",
+    description: " An introductory and guidance website on TCET Linux Operating System.",
+    img: "tl-web.png",
+    tools: ["Astro", "Javascript", "Typescript"],
   },
   {
-    name: "project3",
-    description: "random project description",
-    img: "project.jpg",
-    tools: ["react", "tailwind css", "brainkfu**"],
+    name: "Activity Dekho",
+    description: "For students, to have updated info on the events, student participation and attendance.",
+    img: "act-dekho.png",
+    tools: ["Typescript", "tailwind css",],
   },
   {
-    name: "project4",
-    description: "random project description",
-    img: "project.jpg",
-    tools: ["react", "tailwind css", "brainkfu**"],
-  },
-  {
-    name: "project5",
-    description: "random project description",
-    img: "project.jpg",
-    tools: ["react", "tailwind css", "brainkfu**"],
+    name: "Fill My Cycle Website",
+    description: "A basic index calculation web application, widely used in term work markings.",
+    img: "fmc.png",
+    tools: ["Javascript"],
   },
 ];
 
