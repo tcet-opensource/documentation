@@ -18,7 +18,7 @@ function Teams() {
     {
       teamName: "Frontend Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on designing, developing, and maintaining the user experience aspects of the software.  ",
       gradientStart: "#2B4776",
       gradientEnd: "rgba(25, 65, 133, 0)",
       teamImg: FrontendCard,
@@ -27,7 +27,7 @@ function Teams() {
     {
       teamName: "Backend Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on creating and maintaining the server-side of the software and API development. ",
       gradientStart: "#2B4776",
       gradientEnd: "rgba(25, 65, 133, 0)",
       teamImg: BackendCard,
@@ -36,7 +36,7 @@ function Teams() {
     {
       teamName: "UI/UX Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Provides positive user experience, visual layouts and aesthetics to the software.",
       gradientStart: "#762B43",
       gradientEnd: "#00225D",
       teamImg: UIUXCard,
@@ -45,7 +45,7 @@ function Teams() {
     {
       teamName: "Docs Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Maintains the updated information of the projects and makes it accessible and user-friendly. ",
       gradientStart: "#762B43",
       gradientEnd: "#00225D",
       teamImg: DocsCard,
@@ -54,7 +54,7 @@ function Teams() {
     {
       teamName: "DevOps Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on efficient development, testing, deployment, and maintenance of the software. ",
       gradientStart: "#2B7669",
       gradientEnd: "#00225D",
       teamImg: DevOpsCard,
@@ -63,7 +63,7 @@ function Teams() {
     {
       teamName: "AI Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        "Works on automation, data analytics and development in AIML technologies. ",
       gradientStart: "#2B7669",
       gradientEnd: "#00225D",
       teamImg: AiCard,
@@ -72,7 +72,7 @@ function Teams() {
     {
       teamName: "Creative Team",
       description:
-        "Works on designing, developing, and maintaining the user experience aspects of the software. ",
+        " Works on branding, content creation and curation, and project management aspects. ",
       gradientStart: "#764F2B",
       gradientEnd: "#00225D",
       teamImg: CreativeCard,
