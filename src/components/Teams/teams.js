@@ -12,6 +12,7 @@ import DevOpsIcon from "../../../static/img/TeamsSectionImages/DevOpsIcon.png";
 import DocsIcon from "../../../static/img/TeamsSectionImages/DocsIcon.png";
 import UIUXIcon from "../../../static/img/TeamsSectionImages/UIUXIcon.png";
 import WebIcon from "../../../static/img/TeamsSectionImages/WebIcon.png";
+import Link from "@docusaurus/Link";
 
 function Teams() {
   const TeamsCard = [
@@ -89,7 +90,6 @@ function Teams() {
 
   const card = TeamsCard.map((data) => {
     return (
-      <a href={data.ref} target="_blank" rel="noopener noreferrer">
       <section id="team"
         className="lg:h-64 md:h-60 h-fit lg:w-[40%] max-w-xl overflow-hidden text-white flex flex-col md:flex-row lg:flex-wrap lg:rounded-2xl md:rounded-xl rounded-lg m-6 "
         style={{
@@ -102,13 +102,14 @@ function Teams() {
           className="object-cover h-40 md:h-auto md:rounded-l-xl lg:rounded-l-2xl md:w-1/2 "
         />
         <div className="p-6 md:w-1/2 lg:min-w-min">
+          <Link to={data.ref}>
           <img src={data.icon} className="h-11 w-11 mb-2" alt={data.teamName} />
           <div className="text-xl font-medium">{data.teamName}</div>
           <div className="border w-full my-3 bg-[#344054]" />
           <div className="text-base lg:text-sm xl:text-base text-[#D0D5DD]">{data.description}</div>
+          </Link>
         </div>
       </section>
-      </a>
     );
   });
 
