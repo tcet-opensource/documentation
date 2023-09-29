@@ -65,7 +65,7 @@ const Navbar = () => {
           <button
             data-collapse-toggle="mobile-menu-2"
             type="button"
-            className="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg  focus:outline-none"
+            className="inline-flex items-center p-1 ml-1 text-sm text-white rounded-lg bg-[#070419]  focus:outline-none"
             aria-controls="mobile-menu-2"
             aria-expanded="false"
             onClick={() => setNavOpen(!navOpen)}
@@ -111,24 +111,24 @@ const Navbar = () => {
       {/* Mobile Nav Bar  */}
       {navOpen && (
         <div class="transition duration-300">
-          <ul class="font-medium text-white text-sm text-center bg-[#070419] ">
+          <ul class="font-medium text-white text-sm text-center bg-[#070419]">
             {navLinks.map((n) => (
-              <li>
-                <a href={n.href} class="block px-2 py-2">
+              <div>
+                <a href={n.href} class="block px-2 py-2 hover:text-gray-500">
                   {n.title}
                 </a>
-              </li>
+              </div>
             ))}
-            <li>
+            <div class="p-8">
               <a
                 href="https://github.com/tcet-opensource"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block px-2 py-2"
+                class=" text-gray-200 bg-slate-800 rounded-full z-10 lg:mb-3 mb-6 p-3"
               >
                 Contribute
               </a>
-            </li>
+            </div>
           </ul>
         </div>
       )}
