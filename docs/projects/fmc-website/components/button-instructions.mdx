@@ -1,0 +1,160 @@
+---
+Title: Button-Instructions
+id: button-instructions
+description: buttons and instructions in Fill My Cycle Website
+sidebar_label: Button and Instructions
+keywords: [button, instructions, buttoninstruction]
+---
+
+# Button and Instructions Section
+In this section we will explain you about various **buttons** we have included in **Fill my Cycle** website
+and their purpose. We will also introduce you the **instructions** to be followed.
+
+## Theme button
+We have included this button on the header section to change the theme of the web to light and dark mode.<br />
+
+**Let's now understand it's code now:**
+
+1. Firstly open **index.html** file.
+
+2. Here we have created `<div>` class called `id` button which has its value as `DARK` and it redirects to **script.js** and this button follows the image showing an icon of half moon which on clicking leads us to the dark theme.
+
+``` html title="index.html"{1-3} showLineNumbers
+<div id="btn-mode">
+			<div><p id="mode-text">DARK</p></div>
+			<div><img id="mode-icon" src="./assets/icons/moon-icon.svg" alt=""></div>
+</div>
+```
+3. Now let's open **script.js**.
+
+4. Here we have used if-else statement here, if darkMode is equal to **false**, it means the dark mode is currently **off.** In that case, the `darkModeProp()` function is called. 
+
+``` js title="script.js" {3,7,9-13,21,23} showLineNumbers
+const root = document.documentElement.style;
+
+document.addEventListener('DOMContentLoaded', function() {
+	let btnMode = document.getElementById('btn-mode');
+	let modetext = document.getElementById("mode-text");
+	const modeicon = document.getElementById("mode-icon")
+	let darkMode = false;
+
+	btnMode.addEventListener('click', function() {
+		if (darkMode == false) {
+			darkModeProp();
+		  } else {
+			lightModeProp();
+		  }
+	} );
+```    
+
+5. Function `darkModeProp` sets the style properties to define the dark mode appearance, updates the mode text to "LIGHT", changes the mode icon to a sun, and sets `darkMode` to **true** and uses the parameters given in the code. If `darkMode` is not equal to ***false*** it means dark mode is currently ***on.*** 
+
+``` js title="script.js" {3,6,7,8} showLineNumbers
+const root = document.documentElement.style;
+
+	function darkModeProp() {
+		root.setProperty("--lm-bg", "#131414");
+		// It's followed by similar parameters defined to obtain Dark Theme
+		modetext.innerText = "LIGHT";
+		modeicon.src = "./assets/icons/sun-icon.svg";
+		root.setProperty("--lm-icon-bg", "brightness(1000%)");
+		darkMode = true;
+		localStorage.setItem("dark-mode", true);
+	}
+
+```
+:::tip
+In the very same way we have also created for how to switch the user interface back to light mode, just changed the paramters values.
+::: 
+
+** As you see in the image below:**
+
+import pic5 from "/docs/projects/fmc-website/assets/darklightmode.png";
+import pic6 from "/docs/projects/fmc-website/assets/darkandlightmode1.png";
+
+<p align="center">
+<img src = {pic5} style={{ border: "2px solid gray" }} />
+<img src = {pic6} style={{ border: "2px solid gray" }} />
+
+</p>
+
+## Need help button
+
+We have included this button on the header section. If you click on it then it will direct you to 
+the instruction section on the bottom of the website.<br />
+
+** Now lets understand it's code **
+
+1. Overall, the code represents a row with a form that has a heading saying **"Need Help?"** and a **button** when the user clicks leads him to instructions part.
+
+2. The `<div>` class sets the styling and padding of the **Need Help** text , this text is followed by a clickable button.
+
+``` html title="index.html"{5} showLineNumbers
+<div class="row">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<form class="form-inline" action="" onsubmit="return false">
+				<div class="row">
+					<h5 class="mrg">Need Help? <button class="btn btn-success btn-xs instr-ref">Click here to see instructions</button></h5>
+				</div>
+``` 
+:::tip
+Using similar logic as above we have created buttons in this section. 
+:::
+
+** As you see in the image below:**
+
+import pic7 from "/docs/projects/fmc-website/assets/instructionbutton.png";
+
+<p align="center">
+<img src = {pic7} style={{ border: "2px solid gray" }} />
+
+</p>
+
+## New Feature Button
+This button will direct you to the instruction section (indication the third point to introduce new feature).<br />
+** As you see in the image below:**
+
+import pic8 from "/docs/projects/fmc-website/assets/newfeaturebutton.png";
+
+<p align="center">
+<img src = {pic8} style={{ border: "2px solid gray" }} />
+
+</p>
+
+## Reset button
+This button will reset all the data given by the user so that user can use the website again.<br />
+** As you see in the image below:**
+
+import pic9 from "/docs/projects/fmc-website/assets/reset.png";
+
+<p align="center">
+<img src = {pic9} style={{ border: "2px solid gray" }} />
+
+</p>
+
+## Manual Check button
+This button directs user to cycle display section. We have introduced this button to introduce the 
+manual check input mode feature. Here the user can manually tick the cells of cycle display section
+as per their requirement.<br />
+** As you see in the image below:**
+
+import pic10 from "/docs/projects/fmc-website/assets/manualcheckbutton.png";
+
+<p align="center">
+<img src = {pic10} style={{ border: "2px solid gray" }} />
+
+</p>
+
+## Instructions
+Here we have introduced instructions to be followed while using the fill my cycle website.
+** As you see in the image below:**<br />
+
+import pic11 from "/docs/projects/fmc-website/assets/instruction.png";
+
+<p align="center">
+<img src = {pic11} style={{ border: "2px solid gray" }} />
+
+</p>
+<br />
+
+_The [**Button and Instructions section**](button-instructions) is succesfully executed! Let's move on and see how we created the **[Footer](footer)** of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in)**._
