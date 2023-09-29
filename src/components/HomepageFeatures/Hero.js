@@ -47,7 +47,7 @@ export default function Hero() {
       </div>
       <img
         src={`/img/HeroImages/hero-section-left.svg`}
-        className="absolute lg:scale-100 sm:scale-75 scale-50 z-1 origin-left md:top-48 sm:top-44 top-28 left-0 "
+        className="absolute lg:scale-100 sm:scale-75 scale-50 z-2 origin-left md:top-48 sm:top-44 top-28 left-0 "
         data-speed="0.15"
         alt="hero-section-left"
       />
