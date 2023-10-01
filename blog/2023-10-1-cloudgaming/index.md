@@ -2,7 +2,7 @@
 slug: Cloud-gaming
 title: Exploring the Future of Gaming
 author:
-    - Om Hinge
+    name: Om Hinge
     title: A Cloud Enthusiast
     url: https://github.com/Aisu2635
     image_url: https://github.com/aisu2635.png
