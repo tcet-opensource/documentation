@@ -1,11 +1,11 @@
 ---
 slug: Cloud-gaming
 title: Exploring the Future of Gaming
-author:
-    name: Om Hinge
-    title: A Cloud Enthusiast
+authors:
+  - name: Om Hinge
+    title: Cloud Enthusiast & Gamer
     url: https://github.com/Aisu2635
-    image_url: https://github.com/aisu2635.png
+    image_url: https://github.com/Aisu2635.png
 tags: [cloud,gaming,cyberpunk,nvidia]
 ---
 
@@ -69,6 +69,8 @@ Current Status of Cloud Gaming
 Several cloud gaming services are making waves in the industry:
 
 + [x] Nvidia GeForce Now: This service is known for its low system requirements, compatibility with various devices, and a free trial period.
++ [x] XBox Game Cloud: Known for Various game titles for free to play in the subscription of Game Pass.
++ [x] JioGames Cloud: Building the Cloud gaming culture & infrastructe in India at reasonable rate.
 
 > Is Cloud Gaming Worth It?
 
@@ -80,4 +82,4 @@ In conclusion, cloud gaming is a game-changer with the potential to democratize 
 
 [Nvidia GeForce Now](https://www.nvidia.com/en-us/geforce-now/)
 [PlayStation Now](https://en.wikipedia.org/wiki/PlayStation_Now)
-Google Stadia
+~Google Stadia~ (closed right now)
