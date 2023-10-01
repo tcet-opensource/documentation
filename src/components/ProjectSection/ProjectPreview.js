@@ -6,11 +6,11 @@ const ProjectPreview = ({ img, tools }) => {
       <img  
         src={`/img/ProjectSection/${img}`}
         alt="project-img"
-        className="object-cover overflow-hidden rounded-none md:rounded-3xl"
+        className="object-cover overflow-hidden rounded md:rounded-3xl"
       />
       
       <div 
-        className="absolute rounded-none md:rounded-b-3xl w-[90%] pl-10 text-left hidden md:block bottom-0 pb-10"
+        className="absolute rounded md:rounded-b-3xl w-[90%] pl-10 text-left hidden md:block bottom-0 pb-10"
         style={{
           "--bg-opacity": 0.2,
           "backdrop-filter": "blur(2px)",

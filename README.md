@@ -30,6 +30,24 @@ Run the project live on your local system to make changes and check the updates.
 npm run start
 ```
 
+## .env File Setup  
+
+In addition to cloning the repository and setting up the project as described above, you will need to create a .env file to configure certain environment variables. These variables are essential for the proper functioning of the Documentation Website. Here's how you can set up the .env file:
+
++ Create the .env file: First, create a file named .env in the root directory of your cloned repository.
+
++ Add API Key and Application ID: Inside the .env file, you'll need to set two important variables: API_KEY and APPLICATION_ID. These variables are used for connecting to external services or APIs that the website may rely on.
+
+```
+API_KEY=<your_api_key>
+APPLICATION_ID=<your_id>
+```
+
++ API_KEY should be replaced with the actual API key required for your project. Make sure to obtain the API key from the respective service or provider you're using.
+
++ APPLICATION_ID should be replaced with the unique application ID required for your project. Again, obtain this ID from the relevant service or provider.
+
+
 <div align="center">
 <h3> Connect with us<a href="https://gifyu.com/image/Zy2f"><img src="https://github.com/milaan9/milaan9/blob/main/Handshake.gif" width="50px"></a>
 </h3> 
