@@ -1,9 +1,9 @@
 ---
 slug: blog-posting-guidelines
-title: First Blog - General Posting Guidelines
+title: General Posting Guidelines
 authors: [gaurang, vishal]
 tags: [free, open, source, software]
-description: First Blog - General Posting Guidelines
+description: General Posting Guidelines
 keywords: [free, open, source, software]
 ---
 
@@ -13,9 +13,11 @@ Welcome everyone to TCET Open Source's Blog Section. Here, we promote blogging i
 
 :::note
 
-This particular blog will have recurring adjustments.
+This particular blog will have recurring adjustments. Last revised on Oct 1st, 2023.
 
 :::
+
+<!--truncate-->
 
 ## General Blog Guidlines
 
@@ -40,11 +42,11 @@ Once you have cloned the project in your local storage, you will need to perform
 yyyy-mm-dd-blog-title
 ```
 * Here, the date stands for the date when the post is supposed to be released. The blog title should be relevant to the content within the post.
-3. Within the folder, create `index.md`. This file will serve as a text document where you can format your content which will reflect in the final post.
+3. Within the folder, create `index.mdx`. This file will serve as a text document where you can format your content which will reflect in the final post.
 
 ### Understand markdown files and syntax
 
-Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. The `index.md` file created in your blog folder is a markdown file, similar to how _index.html_ can be an HTML file. It is very essential for a blog contributor to understand the basic syntax of markdown. _Resource forum_ in our **Discord server** covers basic syntax of these files.
+Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. The `index.mdx` file created in your blog folder is a markdown file, similar to how _index.html_ can be an HTML file. It is very essential for a blog contributor to understand the basic syntax of markdown. _Resource forum_ in our **[Discord server](https://discord.com/invite/r7ZhAREg2M)** covers basic syntax of these files.
 
 ### First steps
 
@@ -61,12 +63,12 @@ These four information are necessary to be present in every post. Without these,
 :::info Mention Authors
 
 Authors can be added in two ways.
-- Internally in `index.md` (recommended, for outside organization contributors)
+- Internally in `index.mdx` (recommended, for outside organization contributors)
 - In the `authors.yml` file. (**TCET Open Source Members only**)
 
 If you are not a member of the organization, you can simply append your author(s) in the following way:
 
-```md
+```mdx
 authors:
   - name: Name of Author 1
     title: Designation, Post or About
@@ -90,7 +92,7 @@ authors:
 Tired of good ol' _textbook nerdy_ look on your post? Introducing: **images**. Images are a great way to keep the reader's attention to your posts, and now you can do that very easily:
 1. The image must be present within your blog folder. If it isn't, save the image in your blog folder.
 2. To add the image within your post, use the following syntax:
-```sh
+```mdx
 ![Alt text](image.png)
 ```
 * Here, `image.png` stands for the name of the image you have in the blog directory. Markdown supports a great amount of image formats, ranging from png, jpg, svg, and even gifs.
@@ -98,6 +100,28 @@ Tired of good ol' _textbook nerdy_ look on your post? Introducing: **images**. I
 :::note WONDERING
 Is gif pronounced _gif_ or _jif_? Something to ponder upon.
 :::
+
+### Utilizing truncate
+
+Many bloggers have many different ways to write their blogs. Many start off with a nice paragraph, some start off with images, and some do both! All blogging practices are welcome in the Organization. However it is important to **truncate**.
+
+Truncate is a custom breakpoint introduced in the blog to identify how much part of the blog should be visible in the feed. It cuts off the rest of the blog which can be read further by opening the blog itself. Here's a good example of how to use it:
+
+:::info This is a blogpost
+```mdx
+Hello and welcome to my blogpost.
+Today we will be covering everything you can imagine! 
+JAM Stack, Web3, ML, Data Science, my favourite food, Cybersecurity, and much more. 
+Sounds like a hefty lot, and it would be embarassing to flood out the entire blogs feed. 
+This might be a decent place to cut the rest of the blog out!
+
+<!--truncate-->
+
+Here's where the rest of the blog content goes
+```
+:::
+
+Hence in the output, only the above paragraph is visible on the feed. The rest of the blog would be visible once the viewer opens your blog.
 
 ### Congratulations
 
