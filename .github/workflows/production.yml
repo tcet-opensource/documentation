@@ -5,6 +5,11 @@ on:
     branches:
     - staging
 
+env: 
+  API_KEY: ${{secrets.API_KEY}}
+  APPLICATION_ID: ${{secrets.APPLICATION_ID}}
+  index: ${{secrets.index}}
+
 jobs:
   build:
     runs-on: ubuntu-latest
