@@ -1,0 +1,88 @@
+---
+title: Table Transformation
+id: table-transformation
+description: Table transformation function of mathematical script in Fill My Cycle Website 
+sidebar_label: Table Transformation
+keywords: [Table Transformatio, mathematical Table Transformation, function]
+---
+
+The `cycle(w0, w1)` function performs a cycle of actions on tables. It **displays values, performs calculations, and updates specific rows of a table based on the provided values.** It's like going through a sequence of steps to manage and update the tables accordingly!
+Let's go through each step:
+
+``` jsx title="script.js" {5-10,14-16,18,19,22-24,28-30,38-41,46-47} showLineNumbers
+function cycle(w0,w1){
+	var tbl1=document.getElementById("tbl1");
+	var tbl2=document.getElementById("tbl2");
+	var tbl3=document.getElementById("tbl3");
+	var w=[];
+	w[0]=w0,w[1]=w1;
+	w[2]=[],w[3]=[];
+	if(w[0]){
+		for(var i=0;i<6;i++){
+			tbl3.children[0].children[1+i].innerText=w[0][i];
+		}
+	}
+	else{
+		if(!man_mode){
+			for(var i=0;i<5;i++) for(var j=1;j<6;j++)
+				tbl1.children[i].children[j].innerHTML="";
+		}
+		for(var i=0;i<6;i++){
+			tbl3.children[0].children[1+i].innerText="";
+		}
+	}
+	if(w[1]){
+		for(var i=0;i<6;i++){
+			tbl3.children[1].children[1+i].innerText=w[1][i];
+		}
+	}
+	else{
+		if(!man_mode){
+			for(var i=0;i<5;i++) for(var j=1;j<6;j++)
+				tbl2.children[i].children[j].innerHTML="";
+		}
+		for(var i=0;i<6;i++){
+			tbl3.children[1].children[1+i].innerText="";
+		}
+	}
+	if(w[0] && w[1]){
+		for(var i=0;i<6;i++){
+			w[2][i]=w[0][i]+w[1][i];
+			w[3][i]=w[2][i]/2;
+			tbl3.children[2].children[1+i].innerText=w[2][i];
+			tbl3.children[3].children[1+i].innerText=w[3][i];
+		}
+	}
+	else{
+		for(var i=0;i<6;i++){
+			tbl3.children[2].children[1+i].innerText="";
+			tbl3.children[3].children[1+i].innerText="";
+		}
+	}
+}
+```
+1.	We start by **finding three tables:** "tbl1", "tbl2", and "tbl3". It's like picking specific tables.
+
+2.	We create an array called "w" to store values: **[w0, w1, [], []].** It's like having different containers for different things.
+
+3.	If the first element of "w" (w[0]) exists, we **update the first row** of "tbl3" with the values from w[0]. It's like displaying some values in the first row of a table.
+
+4.	If w[0] doesn't exist, we **clear the cells in "tbl1"** (except the first column) or leave them empty. It's like erasing or leaving empty cells in a table.
+
+5.	Regardless of w[0]'s existence, *we clear the first row of "tbl3"* or leave it empty. It's like erasing or leaving empty cells in the first row of a table.
+
+6.	If the second element of "w" (w[1]) exists, we update the second row of "tbl3" with the values from w[1]. It's like displaying some values in the second row of a table.
+
+7.	If w[1] doesn't exist, we clear the cells in "tbl2" (except the first column) or leave them empty. It's like erasing or leaving empty cells in a table.
+
+8.	Regardless of w[1]'s existence, we clear the second row of "tbl3" or leave it empty. It's like erasing or leaving empty cells in the second row of a table.
+
+9.	If **both w[0] and w[1] exist,** we perform calculations by **adding the corresponding values** from w[0] and w[1] and store them in w[2]. We also **calculate the average by dividing the values** in w[2] by 2 and store them in w[3].
+
+10.	We update the third row of "tbl3" with the values from w[2] and the fourth row of "tbl3" with the values from w[3]. It's like displaying calculated values in specific rows of a table.
+
+11.	If either w[0] or w[1] doesn't exist, we clear the cells in the third and fourth rows of "tbl3" or leave them empty. It's like erasing or leaving empty cells in specific rows of a table.
+
+<br />
+  
+  _We have successfully understood the [**Table Transformatio**](table-transformation) function! Let's move on and understand the [**Page Interaction**](page-interaction) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

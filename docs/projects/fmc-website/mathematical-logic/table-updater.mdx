@@ -1,0 +1,111 @@
+---
+title: Table Updater
+id: table-updater
+description: Table updater of mathematical script in Fill My Cycle Website 
+sidebar_label: Table Updater
+keywords: [Table updater, mathematical Table updater, function]
+---
+
+Consider a scenario where you have a form with different fields and tables, and you want to perform certain actions when one of the fields changes. This function "c11change()" helps us with that. Let's go through each step:
+
+``` jsx title="script.js" {2,4,7,12-13,23,30,36-37,47,49,58,60} showLineNumbers
+function c11change(){
+	var c10=parseInt($("#c10").text());
+	var c11=parseInt($("#c11").val());
+	var tbl01=document.getElementById("tbl01");
+	var tbl02=document.getElementById("tbl02");
+	var tbl3=document.getElementById("tbl3");
+	if(c11 || c11==0){
+		if(c11<=c10){
+			c11=c10;
+			$("#c11").val(c11);
+		}
+		var ct = tbl01.children.length;
+		var pc20 = parseInt($("#c20").text());
+		var pc21 = parseInt($("#c21").val());
+		if($("#c21").val()==""){
+			pc21=pc20+$("#tbl02").children().length-1;
+		}
+		var c20 = c11+1;
+		$("#c20").text(c20);
+		if(c11<ct){
+			var diff=ct-c11;
+			while(diff--){
+				$("#tbl02 tr:first").before(tbl01.lastElementChild);
+			}
+		}
+		else if(c11>=ct){
+			if(c11>=pc21){
+				var t=pc21-ct;
+				while(t--){
+					$("#tbl01").append(tbl02.firstElementChild);
+				}
+				$("#tbl02").append('<tr>\
+					<td>'+c20+'</td>\
+					<td><input class="form-control input-sm exp" type="number" min="0" max="100" step="1"/></td>\
+					</tr>');
+				var diff=c11-pc21;
+				var c=pc21+1;
+				while(diff--){
+					$("#tbl01").append('<tr>\
+						<td>'+c+'</td>\
+						<td><input class="form-control input-sm exp" type="number" min="0" max="100" step="1"/></td>\
+						</tr>');
+					c++;
+				}
+			}
+			else{
+				var diff=c11-ct;
+				while(diff--){
+					$("#tbl01").append(tbl02.firstElementChild);
+				}
+			}
+			$("input.exp").on("keyup", expkeyup);
+			$("input.exp").on("change", perform);
+		}
+
+		perform();
+	}
+	var ct1 = tbl01.children.length;
+	var ct2 = tbl02.children.length;
+	tbl3.children[0].children[0].innerText="1 to "+ct1;
+	tbl3.children[1].children[0].innerText=(ct1+1)+" to "+(ct1+ct2);
+}
+```
+1.	We start by getting the value from a special field called **"c10"** and *converting it to a number.* It's like looking at a specific spot and reading a number written there.
+
+2.	Next, we get the value from another field called **"c11"** and *convert it to a number as well.* 
+
+3.	Then, we find three special tables called `tbl01`, `tbl02`, and `tbl3`. These tables have rows and columns, and we use a special code called `document.getElementById()` to find them.
+
+4.	Now, we check if the *value of "c11" exists or if it's equal to zero.* If it does, we perform some actions inside this condition.
+
+5.	First, we check if the value of **"c11" is less than or equal to the value of "c10".** If it is, we **set** the value of **"c11" to be the same as "c10"** and update the field with this new value.
+
+6.	We calculate the number of rows in the `tbl01` table and store it in a variable called "ct". It's like counting how many rows are there in the table.
+
+7.	We also *get the value from a field called `c20` and convert it to a number.* This field is located somewhere else, and we read the number written there.
+
+8.	We check if the value of another field called `c21` is empty. If it is, we calculate its value by adding the value of `pc20` (which is another number we obtained from a different spot) with the number of rows in the "tbl02" table minus 1.
+
+9.	We **set the value of "c20" to be one more than the value of "c11".** It's like incrementing the number by one and updating the field with this new value.
+
+10.	We check if `c11` is less than the number of rows in `tbl01`. If it is, we perform a series of actions inside this condition.
+
+11.	We calculate the **difference between the number of rows** in `tbl01` and `c11`. It's like finding out how many rows we need to add or remove.
+
+12.	We move rows from the top of the `tbl02` table to the bottom of the `tbl01` table based on the calculated difference. It's like moving objects from one place to another.
+
+13.	If `c11` is not less than the number of rows in `tbl01`, we perform a different set of actions inside this condition.
+
+14.	We check if `c11` is greater than or equal to a number called `pc21`. If it is, we perform a series of actions inside this condition.
+
+15.	We calculate the **difference between `c11` and the number of rows in `tbl01`.** It's like finding out how many rows we need to add.
+
+16.	We **add rows to the `tbl01` table based on the calculated difference.** The number in the first column of each new row starts from `c20` and increments by one for each row added.
+
+17.	We also *add a new row* to the `tbl02` table. It contains two columns: one with the value of `c20` and another with an input field. It's like adding a new row to the table and filling it with values
+
+<br />
+
+ _We have successfully understood the [**Table Updater**](table-updater) function! Let's move on and understand the [**Table Row Updater**](table-row-updater) function of the **[Fill My Cycle](https://fillmycycle.tcetmumbai.in/)**._

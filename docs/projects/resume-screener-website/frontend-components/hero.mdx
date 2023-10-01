@@ -1,0 +1,136 @@
+---
+title: Hero Section
+id: hero
+description: Hero section in TCET Resume Screener Website
+sidebar_label: Hero
+keywords: [data.js, Title, Discription, Hero Section, index.astro]
+---
+
+The ***index.astro*** is used as the main component in the **first section** of the [**TCET Linux website**](https://rs.tcetmumbai.in/). This section of code is crucial because it combines content, interactivity, visual styling, and adaptability to create an engaging and visually appealing section on a web page. It contributes to a positive user experience and helps achieve the intended goals of the webpage or application.
+
+
+## Data Component
+
+The `data` variable is an array that contains a single object. This object represents a piece of information about a resume screener. It has two properties: `heading` and `description`. The `heading` property stores the text "The Best Resume Screener in the World", and the `description` property stores the text "Maecenas vitae eleifend dui vitae vitae. Risus nam faucibus aliquet at iaculis tempor sed." This line exports the `data` variable as the default export of the module. 
+
+
+```jsx title="data.js" {3,4} showLineNumbers
+        export const data = [
+            {
+                "heading": "The Best Resume Screener in the World",
+                "description": "Maecenas vitae eleifend dui vitae vitae. Risus nam faucibus aliquet at iaculis tempor sed."
+            },
+            // Similarly more objects can be created
+        ];
+            export default data;
+```
+
+
+
+## Imports
+
+This line of code is importing some data from a file called "data" located in the same directory as this code. The data will be used later in the code.
+
+
+```jsx title="index.astro" {1} showLineNumbers
+        import data from "./data";
+        // HTML Markup
+```
+
+
+
+
+## HTML Markup
+
+In this section we have discribed about title, discription button and some image components.
+
+### Title and Discription
+
+The first line of the html code represent a div tag. It creates a container with a dark background color. This block of code uses the imported `data` and maps over it. For each element in the `data` array, it creates a `<div>` element with some CSS classes. Inside this `<div>`, there are two more `<div>` elements. The first one contains a `<p>` element with a large font size and some text from the `ele.heading` property. The second `<div>` contains another `<p>` element with a smaller font size and some text from the `ele.description` property. This block of code will repeat for each element in the `data` array.
+
+
+```jsx title="index.astro" {2,4-17} showLineNumbers
+        // Imports
+        <div class="bg-[#0C1030] w-full  flex flex-col items-center relative ">
+        <div class=" mt-10 z-20">
+        {
+            data. Map((ele, index) => (
+                <div class=" flex flex-col items-center">
+                    <div class=" text-white  ">
+                        <p class=" p-6 font-rubik font-normal  text-4xl leading-14 text-center">
+                            {ele.heading}
+                        </p>
+                    </div>
+                    <div class=" w-10/12 md:w-5/12  text-white">
+                        <p class=" text-[#D0D5DD] font-normal  text-base leading-7 text-center">{ele.description}</p>
+                    </div>
+                </div>
+            ))
+        }
+            // Button Component
+        </div>
+        </div>
+```
+
+### Button Component
+
+This code block represents another `<div>` element with CSS classes. Inside it, there are two more `<div>` elements. The first one creates a button with the text "Resumer Screener tool". The second another button and the text "Contribute" with a purple background color and the transparent white background respectively  This button is a hyperlink (`<a>`) that leads to a GitHub page when clicked.
+
+
+```jsx title="index.astro" {4,7} showLineNumbers
+    //Title and discription
+        <div class=" flex flex-col sm:flex-row text-white  items-center justify-center gap-6 mt-4">
+            <div class=" bg-[#6938EF] inline-flex items-center justify-center w-auto  rounded-md px-4 py-2 text-base  leading-6 text-white  border border-transparent  md:w-auto hover:bg-[#6340c3]">
+                <button class="">Resumer Screener tool</button>
+            </div>
+            <div class=" bg-[#FFFFFF29] w-auto px-4 py-2 flex items-center justify-center rounded-md hover:bg-[#ffffff17] ">
+                <button><a href="https://github.com/tcet-opensource/resume-screener/issues" target="_blank">Contribute</a></button>
+            </div>
+        </div>
+    // Image Component
+```
+### Image Component
+
+In this code block, there's another `<div>` element with CSS classes. Inside it, there's a nested `<div>` with an inline CSS style. Inside this nested `<div>`, there's an `<img>` element that displays an image named "image.png" from a directory called "Hero-section". The image has a border around it.
+
+```jsx title="index.astro" {5} showLineNumbers
+    // Button Component
+        <div class="mt-16 lg:w-full md:w-full px-4 ">
+            <div style="background:linear-gradient(145.2deg, rgba(255, 255, 255, 0.065) 13.28%, rgba(255, 255, 255, 0.1) 87.52%);" class="
+        p-3 rounded-lg border-b-0">
+                <img src="/Hero-section/image.png" alt="heroSection" class=" border-8  border-[#FFFFFF] ">
+            </div>
+        </div>
+    // svg Component
+```
+
+### svg Component
+
+These last two lines of code create two more `<img>` elements that display two images named "right.svg" and "left.svg" from the "Hero-section" directory. They are positioned absolutely on the right and left sides of the container.
+
+```jsx title="index.astro" {2,3} showLineNumbers
+    // Image Component
+        <img src="/Hero-section/right.svg" class=" absolute right-0 z-10 w-3/5 md:w-auto" alt="" >
+        <img src="/Hero-section/left.svg" class="absolute left-0 z-10 w-3/5 md:w-auto" alt="" > 
+```
+
+
+
+## Output Image
+
+import hero from "/docs/projects/resume-screener-website/assets/hero-section.png";
+
+<img src = {hero} style={{ border: "2px solid gray" }} />
+
+<br />
+<center><b><figcaption>Hero Section of Resume Screener</figcaption></b></center>
+<br />
+
+
+_With this we have completed the **[Hero Section](hero)** of our **[Resume Screener Website](https://rs.tcetmumbai.in)**, lets move on forward to see how we integrated the **[About Us](about-us)** section of the website._
+
+
+
+
+
+

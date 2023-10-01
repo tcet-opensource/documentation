@@ -1,0 +1,121 @@
+---
+title: Features & Cards
+id: card
+description: Features of Resume Screener and cards
+sidebar_label: Features & Cards
+keyword: [features, cards, resume, screener]
+---
+
+The Features section on our website showcases a variety of features provided by **[TCET Resume Screener](https://rs.tcetmumbai.in)**. It highligts the need for **specific functionalities** and to **enhance the user experience** of students as well as the recruiters by providing the user with key features of our website .
+
+## Card Data
+
+**Below are the steps for implementation:**
+
+1.  Import `Group2 from "/ATSResumeTest/Group 2.svg"` &
+`import Group3 from "/ATSResumeTest/Group 3.svg"`
+
+2. We declared a contant variable called `card` and assign it a value in the form of **array**. 
+
+3. Then we define a key value pair inside the object where the key is `cardImg` , and the the value, i.e.,the image file associated with the card is named `Cloud.svg` .
+
+4. Now we have defined another key-value pair for the card's title . Here, the key is `cardTitle`, and the value is the title itself. Then we have added a short description using another key-value pair.
+
+    ```jsx title=index.astro {,2-3,7-10} showLineNumbers
+    ---
+        import Group2 from "/ATSResumeTest/Group 2.svg";
+        import Group3 from "/ATSResumeTest/Group 3.svg";
+
+        const card = [
+        {
+            "cardImg": "Cloud.svg",
+            "cardAlt": "Cloud Icon - Representing Unlimited ATS Resume Scans",
+            "cardTitle": "Unlimited ATS resume scans",
+            "cardText": "You get several free uploads to our resume scanner. If you have different versions of your resumes (and you should, especially if you are applying to different industries!), you can test"
+        },
+        {
+            !--- Other card data added ---> 
+        }
+        ]
+    ```
+
+<br/>
+
+:::tip
+Similar steps were carried out to add multiple card data in key-value format . 
+:::
+
+
+## Cards Construction
+
+```jsx title=index.astro {2,4-10} showLineNumbers
+    <div class="py-14 flex flex-col sm:flex-row flex-wrap items-stretch gap-8 sm:gap-10 md:gap-14 lg:gap-16">
+        { card.map(item => (
+                <div class="realtive z-10 px-5 pt-7 pb-4 bg-[#24294D] flex-1 sm:basis-1/3 lg:basis-1/4 flex flex-col rounded-2xl gap-3">
+                    <img 
+                        src={`/CardSection/${item.cardImg}`} alt={item.cardAlt}
+                        class="px-2 pb-3 w-max h-16 sm:h-20 md:h-24 object-cover object-center select-none "
+                    />
+
+                    <h1 class="font-rubik text-white font-bold text-2xl sm:text-3xl">{item.cardTitle}</h1>
+                    <p class="block font-sans font-normal mt-auto text-gray-300 text-sm sm:text-base">{item.cardText}</p>
+                </div>
+            )) }
+    </div>
+```
+**Below are the steps for implementation:**
+
+1. In the code, we firstly opened a `<div>` element . Then on **Line No. 2**  we used array `map()` method to iterate over the `card` array which passes  each item from the array to the provided function as `item`.
+
+2. Further moving on , you can change the image by changing the source of the image in `src` attribute in `<img>` tag. Here the  `alt` attribute is set to the `cardAlt` value from the `item` object.
+
+3. Then we had styled and named the card tiltle using `<h1>` tag and for the card description we used the `<p>` tag.
+
+After completing the above steps, we successfully incorporated the **Cards** section. **You can see the snapshot below:**
+
+import img1 from "/docs/projects/resume-screener-website/assets/cards.jpg";
+
+<p align="center">
+<img src={img1} style={{ border: "2px solid gray" }} /> 
+</p>
+
+## Section description and button component :
+
+```jsx title=index.astro {5-12,14-18} showLineNumbers
+       <div class="relative z-10">
+        <div class="p-0 md:w-[60%] text-[#FCFCFD]">
+            <p class="text-3xl font-rubik">Features of Resume Screener</p>
+            <p class="text-justify py-4">
+                We  created <b>The Resume Screener Website</b> as it serves a valuable purpose to the tnp department as well as students by <b>streamlining</b> and <b>optimizing</b> the initial screening of resumes for job openings and for other interview purposes. Here are some key features of resume screener:
+<p><b>
+    1. Unlimited ATS resume scans<br />
+    2. Effective Resume Scanner <br />
+    3. Free Resume Scanner <br />
+    4. Keyword matching <br />
+    5. Improved user experience <br />
+ </b></p>   
+            </p>
+            <button
+                class="bg-[#6938ef] hover:bg-[#6533ed] text-white py-2 px-5 md:py-3 md:px-8 rounded-lg mt-4"
+            >
+                Resume Screener Tool
+            </button>
+        </div>
+    </div>
+```
+
+1. At first, we can change the section description by changing the information in `<p>` tag.
+
+2. Further, we have used a `<button>`tag to add a button which links to the Resume Screener Tool.
+
+import img2 from "/docs/projects/resume-screener-website/assets/rstbutton.jpg";
+
+<p align="center">
+<img src={img2} style={{ border: "2px solid gray" }} /> 
+</p>
+
+<br />
+
+
+_After successfully implementing the **[Features & Cards](card)** component of the **[Resume Screener](https://rs.tcetmumbai.in/)** website, we were ready with our features component of the website. Next, we will be seeing the **[Footer](footer)** component of the **[Resume Screener](https://rs.tcetmumbai.in/)** website._
+
