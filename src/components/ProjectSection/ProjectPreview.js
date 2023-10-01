@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectPreview = ({ img, tools }) => {
   return (
-    <div className="relative flex flex-col object-cover px-6 h-[90%] text-white md:px-10 overflow-hidden">
+    <div className="relative flex flex-col object-cover px-8 h-auto text-white md:px-10 overflow-hidden">
       <img  
         src={`/img/ProjectSection/${img}`}
         alt="project-img"
