@@ -41,6 +41,7 @@ In addition to cloning the repository and setting up the project as described ab
 ```
 API_KEY=<your_api_key>
 APPLICATION_ID=<your_id>
+index=tcetopensource
 ```
 
 + API_KEY should be replaced with the actual API key required for your project. Make sure to obtain the API key from the respective service or provider you're using.
