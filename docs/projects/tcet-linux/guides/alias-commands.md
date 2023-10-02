@@ -6,7 +6,7 @@ sidebar_label: Alias Commands
 keywords: [Alias Commands, Terminal Shortcuts, autoremove, clr-cache, fix-keys, fsh-alias, grep, install, ll,local-install, ls, pkg-info, remove, run-help, search, search-local, sync, unlock, update, version, which-command]
 ---
 
-In this guide we will not only discover how to **creat and remove aliases** but also **discuss all the aliases installed by default in TCET Linux** which are added to achieve the *best possible user experience*.
+Explore the world of TCET Linux! Learn how to **create and remove aliases**, and get familiar with the **default aliases** for an *enhanced user experience*.
 
 ### Create Alias
 
