@@ -1,6 +1,6 @@
 ---
 slug: Cloud-gaming
-title: Exploring the Future of Gaming: Cloud Gaming Unveiled
+title: Exploring the Future of Gaming- Cloud Gaming Unveiled
 authors:
   - name: Om Hinge
     title: Cloud Enthusiast & Gamer
