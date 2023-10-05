@@ -88,7 +88,7 @@ const config = {
       announcementBar: {
         id: 'hacktoberfest23',
         content:
-          'Hacktober Fest 2023 is started!! <a target="_blank" rel="noopener noreferrer" href="https://events.mlh.io/events/10259-hacktoberfest-2023-in-mumbai">Register for the event.</a>',
+          'Hacktober Fest 2023 is started!! <a target="_blank" rel="noopener noreferrer" href="https://www.hacktoberfest-tcetopensource.tech/">Register for the event.</a>',
         backgroundColor: '#451d84',
         textColor: '#ffffff',
         isCloseable: true,
