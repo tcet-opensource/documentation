@@ -81,7 +81,7 @@ const config = {
           autoCollapseCategories: true,
         },
       },
-      metadata: [{name: 'TCET Open Source', content: ''}],
+      metadata: [{name: 'TCET Open Source', content: 'Empowering students via Open Source, in Education'}],
       // Do not remove announcement bar. Comment it when not required.
       announcementBar: {
         id: 'hacktoberfest23',
