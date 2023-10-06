@@ -75,13 +75,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/logo.png',
+      image: 'img/banner.png',
       docs: {
         sidebar: {
           autoCollapseCategories: true,
         },
       },
-      metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
+      metadata: [{name: 'TCET Open Source', content: ''}],
       // Do not remove announcement bar. Comment it when not required.
       announcementBar: {
         id: 'hacktoberfest23',
