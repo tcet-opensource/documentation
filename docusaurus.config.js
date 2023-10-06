@@ -79,16 +79,18 @@ const config = {
       docs: {
         sidebar: {
           autoCollapseCategories: true,
+          hideable: true,
+
         },
       },
-      metadata: [{name: 'TCET Open Source', content: ''}],
+      metadata: [{name: 'TCET Open Source', content: 'opensource'}],
       // Do not remove announcement bar. Comment it when not required.
       announcementBar: {
         id: 'hacktoberfest23',
         content:
-          'Hacktober Fest 2023 is starting on 1st October!! <a target="_blank" rel="noopener noreferrer" href="https://www.hacktoberfest-tcetopensource.tech/">Register for the event.</a>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
+          'Hacktober Fest 2023 is started!! <a target="_blank" rel="noopener noreferrer" href="https://www.hacktoberfest-tcetopensource.tech/">Register for the event.</a>',
+        backgroundColor: '#451d84',
+        textColor: '#ffffff',
         isCloseable: true,
       },
       navbar: {
