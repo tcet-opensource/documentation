@@ -28,7 +28,7 @@ function Footer() {
       </div>
       <div className="h-px bg-[#EBE9FE] bg-opacity-10 my-5" />
       <div className="flex flex-col md:flex-row justify-center items-center lg:justify-between flex-wrap">
-        <div className="text-[#FCFCFD] text-sm mr-8 lg:mx-0 text-center">
+        <div className="text-[#FCFCFD] text-sm lg:mx-0 text-center">
           Copyright 2022-2023 @ TCET Opensource.
         </div>
         <div className="text-[#FCFCFD] flex flex-row font-light my-4">
