@@ -83,7 +83,7 @@ const config = {
 
         },
       },
-      metadata: [{name: 'TCET Open Source', content: ''}],
+      metadata: [{name: 'TCET Open Source', content: 'opensource'}],
       // Do not remove announcement bar. Comment it when not required.
       announcementBar: {
         id: 'hacktoberfest23',
