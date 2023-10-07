@@ -34,7 +34,7 @@ export default function Home() {
         <UnderDevelopmentProjects />
         <About />
         <Teams />
-        <Footer/>
+        <Footer/> 
       </main>
     </div>
   );
