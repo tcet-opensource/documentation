@@ -15,8 +15,8 @@ keywords: [Blockchain, Data, Software, Technology, Bitcoin ]
 
 > Ever wondered what blockchain is and how it looks? Let's explore the realm of blockchain together. This blog focuses on the basics of blockchain technology along with its applications. In this evolving era, it is important to understand this technology because, according to  recent research, blockchain has the potential to reshape the future and the way we perceive it.
 
+<!--truncate-->
 <br />
-
 
 | ![Blockchain](BlockChain.jpg) |
 | :--: |
@@ -100,8 +100,6 @@ Blockchain technology provides a transparent system where all activities are vis
 
 4) <b>Intellectual Property (IP)</b><br/>
 Intellectual property (IP) in blockchain involves ownership of digital assets, patents for blockchain innovations, smart contracts for IP agreements, and open-source licensing. Few methods with which blockchain technology make use of IP is: Patent, Copyrights,Trademarks and Trade secrets.
-
-
 
 ##  *Applications of Blockchain*  
 <br/>
