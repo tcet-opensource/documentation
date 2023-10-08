@@ -32,10 +32,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  customFields: {
-    'apiKey': process.env.API_KEY,
-    'appId': process.env.APPLICATION_ID,
-  },
+  // customFields: {
+  //   'apiKey': process.env.API_KEY,
+  //   'appId': process.env.APPLICATION_ID,
+  // },
   presets: [
     [
       'classic',
@@ -181,9 +181,9 @@ const config = {
         ],
       },
       algolia: {
-        apiKey: process.env.API_KEY,
-        appId: process.env.APPLICATION_ID,
-        indexName: process.env.index
+        apiKey: '066a2ed9cfc332fb09112a9059ccdbf7',
+        appId: 'QFLBKAUEYJ',
+        indexName: 'tcetopensource'
       },
       footer: {
         style: 'dark',
