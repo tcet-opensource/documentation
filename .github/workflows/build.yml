@@ -8,11 +8,6 @@ on:
 
 permissions:
   contents: read
-
-env: 
-  API_KEY: ${{secrets.API_KEY}}
-  APPLICATION_ID: ${{secrets.APPLICATION_ID}}
-  index: ${{secrets.index}}
   
 jobs:
   build:
@@ -21,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
@@ -31,3 +26,7 @@ jobs:
         run: npm install
       - name: Build 
         run: npm run build
+        env: 
+          API_KEY: ${{vars.API_KEY}}
+          APPLICATION_ID: ${{vars.APPLICATION_ID}}
+          index: ${{vars.index}}
