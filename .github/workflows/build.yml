@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
       - main
+      - staging
+      - blogs
   workflow_dispatch:
 
 permissions:
@@ -26,7 +28,3 @@ jobs:
         run: npm install
       - name: Build 
         run: npm run build
-        env: 
-          API_KEY: ${{vars.API_KEY}}
-          APPLICATION_ID: ${{vars.APPLICATION_ID}}
-          index: ${{vars.index}}
