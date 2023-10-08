@@ -16,33 +16,27 @@ riya:
   url: https://github.com/riyavishwa981
   image_url: https://github.com/riyavishwa981.png
 
-saasha:
-  name: Saasha Gupta
-  title: Docs Team Member
-  url: https://github.com/saashaspace
-  image_url: https://github.com/saashaspace.png
-
 himanshu:
   name: Himanshu Agarwal
-  title: Docs Team Lead | 2x Kaggle Expert | Software Developer | Data Analyst
+  title: CEO @ TCET Open Source | 2x Kaggle Expert | Software Developer | Data Analyst
   url: https://github.com/himanshu-03
   image_url: https://github.com/himanshu-03.png
 
 mahima:
   name: Mahima Churi
-  title: UI/UX Team Member | Full Stack Web Developer
+  title: COO @ TCET Open Source | Full Stack Web Developer
   url: https://github.com/Mahitej28
   image_url: https://github.com/Mahitej28.png
 
 nikita:
   name: Nikita Shukla
-  title: Docs Team Member | Chairperson HRD @RCTCET
+  title: Docs Team Lead | Ex-Chairperson HRD @RCTCET
   url: https://github.com/NikitaSShukla
   image_url: https://github.com/NikitaSShukla.png
 
 jayesh:
   name: Jayesh Potlabattini
-  title: Web Team Lead | Typescript Enthusiast | Full Stack Web Developer
+  title: Ex-Web Team Lead | Typescript Enthusiast | Full Stack Web Developer
   url: https://github.com/JayeshVP24
   image_url: https://github.com/JayeshVP24.png
 
@@ -51,3 +45,9 @@ nidhi:
   title: Machine Learning Enthusiast
   url: https://github.com/Nidhi-1223
   image_url: https://github.com/Nidhi-1223.png
+
+saasha:
+  name: Saasha Gupta
+  title: Docs Team Member
+  url: https://github.com/saashaspace
+  image_url: https://github.com/saashaspace.png
