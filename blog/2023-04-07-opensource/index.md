@@ -23,7 +23,7 @@ And now you know what open source is. _In theory, this blog post could be done!_
 
 ### Beyond the marketing standpoint
 
-Technology is a concept which is ever-changing in how it is defined, its magnitude and how we as engineers develop it. In the world of technology we always find "buzz words" which reflect the recent advancements which are so efficient that they are slowly brought within the industry as a standard way of working on projects, as a team.
+Techno logy is a concept which is ever-changing in how it is defined, its magnitude and how we as engineers develop it. In the world of technology we always find "buzz words" which reflect the recent advancements which are so efficient that they are slowly brought within the industry as a standard way of working on projects, as a team.
 
 One such "buzz word" in the area of software development and project management is open source. Open source is a way of working on a software typically developed in a public, collaborative manner, with the source code made freely available to anyone who wants to use, modify, or distribute it. The term "open source" was coined in 1998 by a group of people in the software industry who wanted to create a new model of software development that was more collaborative and community-driven.
 
