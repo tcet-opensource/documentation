@@ -32,10 +32,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  customFields: {
-    'apiKey': process.env.API_KEY,
-    'appId': process.env.APPLICATION_ID,
-  },
+  // customFields: {
+  //   'apiKey': process.env.API_KEY,
+  //   'appId': process.env.APPLICATION_ID,
+  // },
   presets: [
     [
       'classic',
@@ -75,20 +75,22 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/logo.png',
+      image: 'img/banner.png',
       docs: {
         sidebar: {
           autoCollapseCategories: true,
+          hideable: true,
+
         },
       },
-      metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
+      metadata: [{name: 'TCET Open Source', content: 'Empowering students via Open Source, in Education'}],
       // Do not remove announcement bar. Comment it when not required.
       announcementBar: {
         id: 'hacktoberfest23',
         content:
-          'Hacktober Fest 2023 is starting on 1st October!! <a target="_blank" rel="noopener noreferrer" href="https://events.mlh.io/events/10259-hacktoberfest-2023-in-mumbai">Register for the event.</a>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
+          'Hacktober Fest 2023 is started!! <a target="_blank" rel="noopener noreferrer" href="https://www.hacktoberfest-tcetopensource.tech/">Register for the event.</a>',
+        backgroundColor: '#451d84',
+        textColor: '#ffffff',
         isCloseable: true,
       },
       navbar: {
@@ -179,9 +181,9 @@ const config = {
         ],
       },
       algolia: {
-        apiKey: process.env.API_KEY,
-        appId: process.env.APPLICATION_ID,
-        indexName: process.env.index
+        apiKey: '066a2ed9cfc332fb09112a9059ccdbf7',
+        appId: 'QFLBKAUEYJ',
+        indexName: 'tcetopensource'
       },
       footer: {
         style: 'dark',
