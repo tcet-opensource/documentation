@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[8442],{5310:e=>{e.exports=JSON.parse('{"permalink":"/blog/page/3","page":3,"postsPerPage":3,"totalPages":4,"totalCount":12,"previousPage":"/blog/page/2","nextPage":"/blog/page/4","blogDescription":"TCET Open Source Blogging Page","blogTitle":"Blogs"}')}}]);
