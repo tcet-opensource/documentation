@@ -58,7 +58,7 @@ function Footer() {
             <Instagram />
           </a>
           <a
-            href="discord.com/invite/r7ZhAREg2M"
+            href="https://discord.com/invite/r7ZhAREg2M"
             className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
           >
             <Discord />
