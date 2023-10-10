@@ -1,6 +1,6 @@
 # CNCF Zero to Merge - Your first step towards Open-Source
 
-![CNCF LOGO](CNCF_Logo.png)
+![CNCF LOGO](CNCF_Logo.jpg)
 
 ## Introduction
 
@@ -34,25 +34,25 @@ CNCF Zero to Merge is a great program for beginners to open source. It provides 
 
 Here's a summary of the process:
 
-**Find a Project:** Choose a CNCF incubating project that interests you and has welcoming maintainers.
+**1. Find a Project:** Choose a CNCF incubating project that interests you and has welcoming maintainers.
 
-**Understand the Issue:** Read the issue or bug report you want to work on thoroughly and clarify any doubts with the maintainers.
+**2. Understand the Issue:** Read the issue or bug report you want to work on thoroughly and clarify any doubts with the maintainers.
 
-**Fork the Repository:** Create a fork of the project's repository on your GitHub account to work on your changes separately.
+**3. Fork the Repository:** Create a fork of the project's repository on your GitHub account to work on your changes separately.
 
-**Make a Branch:** Create a new branch in your fork to isolate your work and make it easier to create a pull request later.
+**4. Make a Branch:** Create a new branch in your fork to isolate your work and make it easier to create a pull request later.
 
-**Make the Changes:** Code the fix or feature as described in the issue. You can do this locally and then push the changes to your forked repository.
+**5. Make the Changes:** Code the fix or feature as described in the issue. You can do this locally and then push the changes to your forked repository.
 
-**Test Your Changes:** Run any tests and commands mentioned in the project to ensure your changes work as intended. You may need to write new tests.
+**6. Test Your Changes:** Run any tests and commands mentioned in the project to ensure your changes work as intended. You may need to write new tests.
 
-**Create a Pull Request:** Using GitHub, create a pull request from your branch to the upstream repository. The maintainers will review your code and provide feedback.
+**7. Create a Pull Request:** Using GitHub, create a pull request from your branch to the upstream repository. The maintainers will review your code and provide feedback.
 
-**Iterate Based on Feedback:** Make any requested changes based on the review and commit these changes to your branch so that the pull request updates automatically.
+**8. Iterate Based on Feedback:** Make any requested changes based on the review and commit these changes to your branch so that the pull request updates automatically.
 
-**Merge:** Once the maintainers approve your changes, they will merge your pull request, and your contribution becomes part of the project.
+**9. Merge:** Once the maintainers approve your changes, they will merge your pull request, and your contribution becomes part of the project.
 
-**Celebrate:** Congratulations, you've successfully made your first open-source contribution! You are now an official contributor to the project.
+**10. Celebrate:** Congratulations, you've successfully made your first open-source contribution! You are now an official contributor to the project.
 
 This program is a great way to get started with open source and can be very rewarding. It's important to be patient and open to feedback from maintainers, as it helps improve your skills and contribute positively to the project.
 
