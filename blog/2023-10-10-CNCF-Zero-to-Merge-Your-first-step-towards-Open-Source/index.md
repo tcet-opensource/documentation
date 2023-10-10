@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This blog summarizes my experience with the Cloud Native Computing Foundation's first edition of the newly launched Zero to Merge Incubator Program. This program was launched with the primary aim of getting new folks involved in Open-Source. I learned about this program from one of the LinkedIn posts by Rohit Ghumare. If you are willing to register for the program, you can check out the link here. CNCF will not conduct any such programs as of this year, but you should keep an eye on the page for future proposals.
+This blog summarizes my experience with the Cloud Native Computing Foundation's first edition of the newly launched Zero to Merge Incubator Program. This program was launched with the primary aim of getting new folks involved in Open-Source. I learned about this program from one of the LinkedIn posts by [Rohit Ghumare](https://github.com/rohitg00). If you are willing to register for the program, you can check out the link [here](https://project.linuxfoundation.org/cncf-zero-to-merge-application). CNCF will not conduct any such programs as of this year, but you should keep an eye on the page for future proposals.
 
 The CNCF Zero to Merge Program is a 4-week long program with 2 sessions per week. According to the Indian Standard Time, the sessions were held on Monday and Thursday from 9:30 p.m. to 10:30 p.m. each week.
 
