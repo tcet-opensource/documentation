@@ -34,25 +34,25 @@ function Footer() {
         <div className="text-[#FCFCFD] flex flex-row font-light my-4">
           <a
             href="https://linkedin.com/company/tcet-opensource/"
-            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
+            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3 hover:scale-110"
           >
             <Linkedin />
           </a>
           <a
             href="https://www.youtube.com/@TCETMumbaiOfficial"
-            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
+            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3  hover:scale-110"
           >
             <Youtube />
           </a>
           <a
             href="https://twitter.com/tcetopensource"
-            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
+            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3  hover:scale-110"
           >
             <Twitter />
           </a>
           <a
             href="https://instagram.com/tcetopensource/"
-            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
+            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3  hover:scale-110"
           >
             <Instagram />
           </a>
