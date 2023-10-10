@@ -1,0 +1,139 @@
+---
+slug: web-crawling
+title: Web Crawling, A Beginner’s Perspective on Data Extraction
+authors: [mahima]
+tags: [web crawling, data extraction, automation]
+description: In this blog, you will explore the fundamentals of web crawling and how you can get started with your own data extraction projects.
+keywords: [web crawling, BeautifulSoup, scrapy, data extraction]
+---
+
+> _Web crawling, also known as web scraping, is the process of automatically extracting data from websites. 
+It allows us to gather valuable information from various sources on the internet efficiently and in a structured manner. 
+In this blog, we’ll explore the fundamentals of web crawling and how you can get started with your own data extraction projects._
+
+<br />
+
+<!--truncate-->
+
+import webcrawl from "./web_crawl.png"
+import benefits from "./benefits.png"
+import process from "./process.png"
+
+<figure>
+  <img src={webcrawl} style={{border: "2px solid grey"}}/>
+</figure>
+
+## What if I told you that web crawling could come to your rescue even in unexpected work scenarios? 🤔
+
+Imagine you’re on a relaxing weekend, enjoying your favorite Netflix series, when suddenly your boss calls with an urgent task.
+
+Let’s say your boss needs a comprehensive analysis of competitors’ pricing for an upcoming project. Manually collecting this data from various websites would be time-consuming and error-prone. 
+However, with web crawling, you can **automate the data extraction process**, quickly gathering pricing information from multiple sources and generating a detailed report. 
+Not only does this save you hours of manual work, but it also **ensures accuracy** and **provides valuable insights** for your boss.
+
+Web crawling can be a game-changer in various work scenarios. Need to gather customer reviews for a product launch? 
+Web crawling can swiftly scrape reviews from e-commerce platforms, allowing you to analyze sentiment and make data-driven decisions. 
+Want to monitor industry trends or track news updates? Web crawling can continuously fetch relevant information from news websites, keeping you up to date and enabling you to stay ahead of the competition.
+
+## Benefits 
+
+Let's have a look at the various benefits of web crawling that have made it a popular concept for seamless integration within large-scale enterprises.
+
+<figure>
+  <img src={benefits} style={{border: "2px solid black"}}/>
+  <center><figcaption>Benefits of Web Crawling</figcaption></center>
+</figure>
+
+## Process of Web Crawling
+
+<figure>
+  <img src={process} style={{border: "2px solid black"}}/>
+  <center><figcaption>Process of Web Crawling</figcaption></center>
+</figure>
+
+<details>
+<summary><b>💡 Discovery</b></summary>
+<div>
+In the discovery stage, a web crawler starts by identifying set of seed URLs. These seed URLs are the starting points from which the crawler begins exploring the web. 
+They can be manually provided or generated programmatically. The crawler then extracts the links present on the web page of the seed URLs and adds them to a queue for further processing.
+</div>
+</details>
+
+<details>
+<summary><b>🕷️ Crawling</b></summary>
+<div>
+The crawling stage involves visiting the URLs in the queue and retrieving the corresponding web pages. 
+The crawler sends HTTP requests to the web servers hosting the pages and receives HTTP responses in return. 
+The responses typically include HTML content, but they can also include other types of files such as images, CSS files, or JavaScript files. The crawler parses the HTML content to extract links and other relevant information for subsequent crawling.
+</div>
+</details>
+
+<details>
+<summary><b>⛏️ Fetching</b></summary>
+<div>
+During the fetching stage, the crawler retrieves the content of the web pages by downloading them from the web servers. 
+This process involves downloading the HTML and any associated files, such as images or scripts, required to render the page correctly. 
+The fetched content is then stored for further processing.
+</div>
+</details>
+
+<details>
+<summary><b>💻 Rendering</b></summary>
+<div>
+Rendering refers to the process of processing and executing JavaScript code present on web pages. Some web pages heavily rely on JavaScript to load and display content dynamically. 
+Modern web crawlers often include a rendering engine that can execute JavaScript code, allowing the crawler to handle pages that rely on client-side rendering.
+</div>
+</details>
+
+<details>
+<summary><b>📑 Indexing</b></summary>
+<div>
+Once the web pages are fetched and rendered, the crawler can extract the desired data from the pages. This data can include text content, metadata, links, or any other relevant information. 
+The extracted data is typically processed and stored in an organized manner, such as in a database or an index, for further analysis or retrieval.
+</div>
+</details>
+
+
+:::info
+It’s important to note that web crawling is an iterative process. 
+As the crawler discovers new links during the crawling stage, it adds them to the queue for subsequent crawling, continuing the process of discovery, crawling, fetching, rendering, and indexing for a broader coverage of the web.
+:::
+
+## Getting Started with Web Crawling
+
+- **Identify Your Data Needs**: Determine the specific information you want to extract from websites. 
+It could be product details, contact information, news articles, or any other relevant data.
+
+- **Choose a Web Crawling Tool**: There are various web crawling frameworks and libraries available, such as BeautifulSoup and Scrapy in Python. 
+Select a tool that aligns with your programming language and project requirements.
+
+> _You can learn more about Python Scrapy [**here**](https://docs.scrapy.org/en/latest/intro/tutorial.html)_
+
+- **Understand the Website Structure**: Familiarize yourself with the target website’s structure. Identify the HTML elements that contain the data you need, such as class names, IDs, or specific tags.
+Some key steps to follow here may include:
+    1. Inspect the web page
+
+    2. Explore the HTML Elements
+
+    3. Identify unique Identifiers
+
+```html
+Example: <div class="product-name">
+```
+
+- **Write the Crawling Code**: Utilize your chosen web crawling tool to write code that navigates through the website, locates the desired data, and extracts it. 
+This involves sending HTTP requests, parsing HTML content, and selecting the relevant elements.
+
+- **Handle Website-Specific Challenges**: Some websites may implement anti-crawling measures like CAPTCHA or rate limiting. 
+Implement strategies like rotating IP addresses or adding delays in your crawling code to handle such challenges.
+
+## Ethical Considerations
+
+While web crawling can be a powerful tool for data extraction, it’s important to respect website owners’ terms of service and adhere to ethical guidelines. Always ensure that your crawling activities are legal and ethical. 
+Be mindful of any website-specific crawling policies and consider reaching out to website owners for permission when necessary.
+
+## Conclusion
+
+Web crawling opens up a world of possibilities for data extraction and analysis. By automating the process of gathering data from websites, you can save time and collect valuable insights. Armed with the knowledge from this beginner’s guide, you’re ready to embark on your web crawling journey. 
+Remember to stay ethical, explore different tools, and continue learning as you dive deeper into the exciting world of web crawling.
+
