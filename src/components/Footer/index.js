@@ -59,7 +59,7 @@ function Footer() {
           </a>
           <a
             href="https://discord.com/invite/r7ZhAREg2M"
-            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
+            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3 hover:scale-110"
           >
             <Discord />
           </a>
