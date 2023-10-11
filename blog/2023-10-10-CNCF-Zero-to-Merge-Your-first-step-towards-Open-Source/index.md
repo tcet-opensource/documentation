@@ -1,3 +1,18 @@
+---
+slug: CNCF-Zero-to-Merge
+title: 'CNCF Zero to Merge - Your first step towards Open-Source'
+authors:
+  - name: Rajdeep Pal
+    title: Contributor
+    url: https://github.com/Rajdeep1311
+    image_url: https://github.com/Rajdeep1311.png
+tags: [open-source, CNCF, Zero-to-Merge]
+description: 'Blog on how to get started with open-source'
+keywords: [open-source, CNCF]
+---
+> CNCF Zero to Merge is a program by the Cloud Native Computing Foundation that helps newcomers make their first open-source contribution. It aims to lower the barrier for people who have never contributed to open source before, especially those from underrepresented groups. This blog summarizes my experience in the first-ever edition of the program
+<br/>
+
 # CNCF Zero to Merge - Your first step towards Open-Source
 
 ![CNCF LOGO](CNCF_Logo.jpg)
