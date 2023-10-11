@@ -6,7 +6,7 @@ sidebar_label: Troubleshoot Welcome App
 keywords: [Welcome App, Troubleshooting, Autostart, Yad]
 ---
 
-The **TCET Linux welcome app** is designed to provide a *helpful introduction whenever you start your computer.* However, like any software, there may be instances where you encounter issues or want to customize its behavior. In this guide, **we'll cover common troubleshooting scenarios and how to manage the welcome app.**
+The **TCET Linux welcome app** is designed to provide a *helpful introduction* whenever you start your computer. However, like any software, there may be instances where you encounter issues or want to customize its behavior. In this guide, we'll cover **common troubleshooting scenarios and how to manage the welcome app.**
 
 ### Autostarting the Welcome App
 
@@ -26,7 +26,7 @@ The welcome app is set to **autostart by default,** meaning it displays automati
 
 ### Yad and the Welcome App
 
-The **TCET Linux welcome app is built using Yad,** a utility for creating graphical dialogs in shell scripts. When you save your session and shut down or restart, *Yad may appear instead of the welcome app. This behavior is expected, as Yad is the underlying tool used to create the welcome app.*
+The **TCET Linux welcome app is built using Yad,** a utility for creating graphical dialogs in shell scripts. When you save your session and shut down or restart, Yad may appear instead of the welcome app. This behavior is expected, as Yad is the underlying tool used to create the welcome app.
 
 ### Troubleshooting Common Issues
 
@@ -51,8 +51,9 @@ The **TCET Linux welcome app is built using Yad,** a utility for creating graphi
 By following these troubleshooting steps, you can effectively manage and resolve common issues related to the TCET Linux welcome app. **If you encounter persistent problems or need further assistance, don't hesitate to reach out to the TCET Linux community for support.**
 
 
+import welcomeApp from "/docs/projects/tcet-linux/assets/welcome-app.png";
 
-<img src = "https://user-images.githubusercontent.com/53911515/266057292-11aabf1b-a8f2-46b4-b18e-3ba81a4f60e9.png" style={{ border: "2px solid gray" }} />
+<img src = {welcomeApp} style={{ border: "2px solid gray" }} />
 
 <br />
 <center><b><figcaption>TCET Linux Welcome App</figcaption></b></center>
