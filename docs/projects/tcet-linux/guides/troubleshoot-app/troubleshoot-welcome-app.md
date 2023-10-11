@@ -61,7 +61,7 @@ By following these troubleshooting steps, you can effectively manage and resolve
 
 :::tip
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
-2. For additional help ask on the **Devops Team** group on **[TCET Linux Discord Channel](https://discord.gg/r7ZhAREg2M)**.
+2. For additional help ask on the **TCET Linux Discussions Channel** group on **[TCET Linux Discord Server](https://discord.gg/r7ZhAREg2M)**.
 :::
 <br />
 
