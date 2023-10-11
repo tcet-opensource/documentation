@@ -32,10 +32,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  customFields: {
-    'apiKey': process.env.API_KEY,
-    'appId': process.env.APPLICATION_ID,
-  },
+  // customFields: {
+  //   'apiKey': process.env.API_KEY,
+  //   'appId': process.env.APPLICATION_ID,
+  // },
   presets: [
     [
       'classic',
@@ -83,7 +83,7 @@ const config = {
 
         },
       },
-      metadata: [{name: 'TCET Open Source', content: 'opensource'}],
+      metadata: [{name: 'TCET Open Source', content: 'Empowering students via Open Source, in Education'}],
       // Do not remove announcement bar. Comment it when not required.
       announcementBar: {
         id: 'hacktoberfest23',
@@ -181,9 +181,9 @@ const config = {
         ],
       },
       algolia: {
-        apiKey: process.env.API_KEY,
-        appId: process.env.APPLICATION_ID,
-        indexName: process.env.index
+        apiKey: '066a2ed9cfc332fb09112a9059ccdbf7',
+        appId: 'QFLBKAUEYJ',
+        indexName: 'tcetopensource'
       },
       footer: {
         style: 'dark',
