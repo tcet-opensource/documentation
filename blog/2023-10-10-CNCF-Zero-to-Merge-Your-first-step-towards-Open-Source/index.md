@@ -1,7 +1,11 @@
 ---
 slug: CNCF-Zero-to-Merge
 title: 'CNCF Zero to Merge - Your first step towards Open-Source'
-authors: [rajdeep]
+authors:
+  - name: Rajdeep Pal
+    title: Contributor
+    url: https://github.com/Rajdeep1311
+    image_url: https://github.com/Rajdeep1311.png
 tags: [open-source, CNCF, Zero-to-Merge]
 description: 'Blog on how to get started with open-source'
 keywords: [open-source, CNCF]
