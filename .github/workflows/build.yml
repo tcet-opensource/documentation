@@ -4,15 +4,12 @@ on:
   pull_request:
     branches:
       - main
+      - staging
+      - blogs
   workflow_dispatch:
 
 permissions:
   contents: read
-
-env: 
-  API_KEY: ${{secrets.API_KEY}}
-  APPLICATION_ID: ${{secrets.APPLICATION_ID}}
-  index: ${{secrets.index}}
   
 jobs:
   build:
@@ -21,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
