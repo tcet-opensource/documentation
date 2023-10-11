@@ -32,10 +32,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  // customFields: {
-  //   'apiKey': process.env.API_KEY,
-  //   'appId': process.env.APPLICATION_ID,
-  // },
+  customFields: {
+    'apiKey': process.env.API_KEY,
+    'appId': process.env.APPLICATION_ID,
+  },
   presets: [
     [
       'classic',
@@ -75,24 +75,22 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/banner.png',
+      image: 'img/logo.png',
       docs: {
         sidebar: {
           autoCollapseCategories: true,
-          hideable: true,
-
         },
       },
-      metadata: [{name: 'TCET Open Source', content: 'Empowering students via Open Source, in Education'}],
+      metadata: [{name: 'TCET Open Source', content: 'opensource, software'}],
       // Do not remove announcement bar. Comment it when not required.
-      announcementBar: {
-        id: 'hacktoberfest23',
-        content:
-          'Hacktober Fest 2023 is started!! <a target="_blank" rel="noopener noreferrer" href="https://www.hacktoberfest-tcetopensource.tech/">Register for the event.</a>',
-        backgroundColor: '#451d84',
-        textColor: '#ffffff',
-        isCloseable: true,
-      },
+      // announcementBar: {
+      //   id: 'openconf23',
+      //   content:
+      //     'OpenConf 2023 is on July  21st!!  <a target="_blank" rel="noopener noreferrer" href="https://lu.ma/openconf">Register for the event.</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: true,
+      // },
       navbar: {
         hideOnScroll: true,
         title: 'TCET Open Source',
@@ -181,9 +179,9 @@ const config = {
         ],
       },
       algolia: {
-        apiKey: '066a2ed9cfc332fb09112a9059ccdbf7',
-        appId: 'QFLBKAUEYJ',
-        indexName: 'tcetopensource'
+        apiKey: process.env.API_KEY,
+        appId: process.env.APPLICATION_ID,
+        indexName: process.env.index
       },
       footer: {
         style: 'dark',
@@ -260,19 +258,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins: [
-      async function myPlugin(context, options) {
-        return {
-          name: "docusaurus-tailwindcss",
-          configurePostCss(postcssOptions) {
-            // Appends TailwindCSS and AutoPrefixer.
-            postcssOptions.plugins.push(require("tailwindcss"));
-            postcssOptions.plugins.push(require("autoprefixer"));
-            return postcssOptions;
-          },
-        };
-      },
-    ],
 };
 
 module.exports = config;
