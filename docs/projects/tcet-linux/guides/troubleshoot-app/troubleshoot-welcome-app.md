@@ -1,12 +1,79 @@
 ---
-title: Troubleshoot Welcome App
+title: TCET Linux Welcome App
 id: troubleshoot-welcome-app
 description: Troubleshooting common issues with the TCET Linux welcome app.
 sidebar_label: Troubleshoot Welcome App
 keywords: [Welcome App, Troubleshooting, Autostart, Yad]
 ---
 
-The **TCET Linux welcome app** is designed to provide a *helpful introduction* whenever you start your computer. However, like any software, there may be instances where you encounter issues or want to customize its behavior. In this guide, we'll cover **common troubleshooting scenarios and how to manage the welcome app.**
+TCET Linux has a simple welcome app specifically written for [TCET Linux](https://github.com/tcet-opensource/tcet-linux) but it can be used on *Arch Linux and any Arch-based distributions.* This guide will cover the **features and usage of the Welcome App, installation and lastly troubleshooting common issues with the TCET Linux welcome app.**
+
+## Application
+The TCET Linux Welcome App is designed to assist users in getting started with the operating system and accessing various helpful features and resources. It provides a convenient interface to access essential functions and information. Here's an overview of the Welcome App's features:
+
+- **Update This PC**
+
+  - Ensure that your system stays up to date by using the **"Update This PC"** feature. This performs the **full system update** for your system.
+
+- **Fix Screen Resolution**
+
+  - For users running TCET Linux, this option helps adjust the screen resolution to **fit your display correctly**.
+
+- **Update Mirrors**
+
+  - Mirrors are servers from which your system downloads software packages. The **"Update Mirrors"** feature helps you select the **fastest and most up-to-date mirrors,** ensuring faster and more reliable package downloads.
+
+- **Arch User Repository (AUR)**
+
+  - Access the Arch User Repository, a **community-driven repository** for Arch Linux packages. Install applications not available in the official repositories using the AUR.
+
+- **Arch Wiki**
+
+  - Visit the Arch Wiki, a valuable resource for **detailed information, tutorials,** and **troubleshooting** related to Arch-based distributions.
+
+- **Join Discord Server**
+
+  - Connect with the **TCET Linux community on Discord.** Interact with other users, seek assistance, and stay updated with discussions and announcements.
+
+- **Contribute to TCET Linux**
+
+  - Interested in contributing to TCET Linux development? This option provides information on how to **get involved with the project.**
+
+- **About Us**
+
+  - **Learn more about TCET Linux,** its development team, and the philosophy behind this Arch-based distribution.
+
+- **Toggle Autostart in This App**
+
+  - This feature allows you to control whether the Welcome App automatically starts when you boot your computer. You can choose to **enable or disable the autostart feature** as per your preference.
+
+By using the Welcome App, you can make the most of TCET Linux and easily access the tools and resources you need for a smooth and efficient computing experience.
+
+## Installation
+
+**For Tcet-Linux**:
+
+You don't need to install the app as it is installed by default. 
+But if for reason its not installed, you can install it using the following command:
+```bash
+install tcet-linux-welcome
+```
+OR
+```bash
+sudo pacman -Sy tcet-linux-welcome
+```
+
+**For other Arch-based distributions**:
+
+You can go to [Tcet Linux Repo](https://github.com/tcet-opensource/tcet-linux-repo) and download the *.zst* file from there and install it using the following command:
+
+```bash
+sudo pacman -U <name of the zst file>
+```
+
+## Troubleshoot
+
+The **TCET Linux welcome app** is designed to provide a *helpful introduction* whenever you start your computer. However, like any software, there may be instances where you encounter issues or want to customize its behavior.
 
 ### Autostarting the Welcome App
 
@@ -26,7 +93,7 @@ The welcome app is set to **autostart by default,** meaning it displays automati
 
 ### Yad and the Welcome App
 
-The **TCET Linux welcome app is built using Yad,** a utility for creating graphical dialogs in shell scripts. When you save your session and shut down or restart, Yad may appear instead of the welcome app. This behavior is expected, as Yad is the underlying tool used to create the welcome app.
+The **TCET Linux welcome app is built using Yad and GTK-3.0,** a utility for creating graphical dialogs in shell scripts. When you save your session and shut down or restart, Yad may appear instead of the welcome app. This behavior is expected, as Yad is the underlying tool used to create the welcome app.
 
 ### Troubleshooting Common Issues
 
