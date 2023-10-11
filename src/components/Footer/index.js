@@ -4,6 +4,7 @@ import Instagram from "../../../static/img/FooterSectionIcons/instagram.svg";
 import Linkedin from "../../../static/img/FooterSectionIcons/linkedin.svg";
 import Twitter from "../../../static/img/FooterSectionIcons/twitter.svg";
 import Youtube from "../../../static/img/FooterSectionIcons/youtube.svg";
+import Discord from "../../../static/img/FooterSectionIcons/Discord.svg";
 import { navLinks } from "../Navbar";
 function Footer() {
   return (
@@ -55,6 +56,12 @@ function Footer() {
             className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
           >
             <Instagram />
+          </a>
+          <a
+            href="https://discord.com/invite/r7ZhAREg2M"
+            className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3"
+          >
+            <Discord />
           </a>
         </div>
       </div>
