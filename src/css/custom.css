@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600&display=swap%27'); */
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -5,6 +7,19 @@
  */
 
 /* You can override the default Infima variables here. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tailwind a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
 :root {
   --ifm-color-primary: #451d84;
   --ifm-color-primary-dark: #3e1a77;
@@ -17,18 +32,19 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #bd05bd;
-  --ifm-color-primary-dark: #aa05aa;
-  --ifm-color-primary-darker: #a104a1;
-  --ifm-color-primary-darkest: #840484;
-  --ifm-color-primary-light: #d006d0;
-  --ifm-color-primary-lighter: #d906d9;
-  --ifm-color-primary-lightest: #f607f6;
+  --ifm-color-primary: #3584e4;
+  --ifm-color-primary-dark: #1e75df;
+  --ifm-color-primary-darker: #1c6fd3;
+  --ifm-color-primary-darkest: #175bae;
+  --ifm-color-primary-light: #4e93e7;
+  --ifm-color-primary-lighter: #5a9be9;
+  --ifm-color-primary-lightest: #7fb1ee;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+html {
+  overflow-x: hidden;
 [data-theme='light'] .DocSearch {
   /* --docsearch-primary-color: var(--ifm-color-primary); */
   /* --docsearch-text-color: var(--ifm-font-color-base); */
@@ -67,4 +83,5 @@
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
+}
 }
