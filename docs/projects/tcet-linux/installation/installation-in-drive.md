@@ -11,29 +11,29 @@ TCET Linux Installation `element` is a step-by-step guide created by us that wil
 
 Download the latest version from our [**official website**](https://www.tcetlinux.com/downloads) .
 
-![TCET LINUX](/docs/projects/tcet-linux/assets/tldown.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/tldown.png) -->
 ### Step 2. Prepare the Bootable USB Stick
 
 - You need to create a bootable USB stick from which you will install your new operating system. You can use various tools for this purpose such as Rufus.
 
-![TCET LINUX](/docs/projects/tcet-linux/assets/rufus.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufus.png) -->
 
 - Firstly, you need to download and install [**Rufus software**](https://rufus.ie/) into your Windows PC.
-![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdown.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdown.png) -->
 
 - Then open Rufus in your device and you will get a prompt (saying do you want to allow this application to make changes to your device), click on **YES** .
 - A Rufus window will open . 
-![TCET LINUX](/docs/projects/tcet-linux/assets/rufusprom.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusprom.png) -->
 - Here, under device you will able to see the drive or usb device that you have plugged in your device port. 
 - Note that you have selected Disk or ISO image under the Boot selection option.
 - Then  click on `SELECT` and then you want to locateyour ISO which is probably going to be inside the downloads floder. Double click on it and as you can see that tcetlinux ISO flie has been selected.
 - You  want to make sure the partition scheme for the bootable usb is MBR and this will work on both BIOS and UEFI systems.
 - Now keeping everything else as default setting , the next thing we wwill do is go ahead and click on start.
-![TCET LINUX](/docs/projects/tcet-linux/assets/rufuspromfinal.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufuspromfinal.png) -->
 - Now after this there will be a menu box opend which will ask you wether you want to write an ISO image or write the same thing in DD mmode. So what you want to do is select DD mode , this is because in the first option the in ISO image a lot of distribution can't boot in UEFI/BIOS mode , thus DD mode is recommended.
-![TCET LINUX](/docs/projects/tcet-linux/assets/isofinal.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/isofinal.png) -->
 - NOw click on OK and a pop up menu will openn which will waarn you that all the data on the usb device is going to be wipped off, so this is where you want to make sure that you have already backed up all the data.
-![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdone.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdone.png) -->
 
 :::
 Make sure you select the correct drive where you want to create the bootable installer.
