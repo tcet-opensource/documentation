@@ -1,8 +1,8 @@
 ---
-title: Yay packages
+title: How To Use Yay To Install Packages
 id: yay-packages
 sidebar_label: How To Use Yay To Install Packages
-description: How To Use Yay To Install Packages
+description: Learn how to use Yay to install packages on Arch Linux and TCET Linux.
 keywords: [tcet, open-source, linux]
 ---
 
