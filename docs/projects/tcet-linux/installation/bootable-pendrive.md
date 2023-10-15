@@ -22,27 +22,27 @@ Download the latest version from our [**official website**](https://www.tcetlinu
 
 - You need to create a bootable USB stick from which you will install your new operating system. You can use various tools for this purpose such as Rufus.
 
-![TCET LINUX](/docs/projects/tcet-linux/assets/rufus.png)
+<!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufus.png) -->
 
 - Firstly, you need to download and install [**Rufus software**](https://rufus.ie/) into your Windows PC.
-  ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdown.png)
+  <!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdown.png) -->
 
 - Then open Rufus in your device and you will get a prompt (saying do you want to allow this application to make changes to your device), click on **YES** .
 - A Rufus window will open .
-  ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusprom.png)
+  <!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusprom.png) -->
 
 - Here, under device you will able to see the drive or usb device that you have plugged in your device port.
 - Note that you have selected Disk or ISO image under the Boot selection option.
-- Then click on `SELECT` and then you want to locateyour ISO which is probably going to be inside the downloads floder. Double click on it and as you can see that tcetlinux ISO flie has been selected.
+- Then click on `SELECT` and then you want to locate your ISO which is probably going to be inside the downloads folder. Double click on it and as you can see that tcet linux ISO file has been selected.
 - You want to make sure the partition scheme for the bootable usb is MBR and this will work on both BIOS and UEFI systems.
-- Now keeping everything else as default setting , the next thing we wwill do is go ahead and click on start.
-  ![TCET LINUX](/docs/projects/tcet-linux/assets/rufuspromfinal.png)
+- Now keeping everything else as default setting , the next thing we will do is go ahead and click on start.
+  <!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufuspromfinal.png) -->
 
-- Now after this there will be a menu box opend which will ask you wether you want to write an ISO image or write the same thing in DD mmode. So what you want to do is select DD mode , this is because in the first option the in ISO image a lot of distribution can't boot in UEFI/BIOS mode , thus DD mode is recommended.
-  ![TCET LINUX](/docs/projects/tcet-linux/assets/isofinal.png)
+- Now after this there will be a menu box opened which will ask you whether you want to write an ISO image or write the same thing in DD mmode. Choose DD mode for writing the ISO image. This is recommended because some distributions may encounter issues booting in UEFI/BIOS mode with the default option.
+  <!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/isofinal.png) -->
 
-- NOw click on OK and a pop up menu will openn which will waarn you that all the data on the usb device is going to be wipped off, so this is where you want to make sure that you have already backed up all the data.
-  ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdone.png)
+- Now click on OK and a pop up menu will openn which will warn you that all the data on the usb device is going to be wipped off, so this is where you want to make sure that you have already backed up all the data.
+  <!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/rufusdone.png) -->
 
 :::
 Make sure you select the correct drive where you want to create the bootable installer.
@@ -54,7 +54,7 @@ make sure you have backed up the data in the usb in other device, as once click 
 
 - Now insert the USB stick back into your computer and restart it.
 - The BIOS menu should appear with all available drives listed for installation. Select TCET Linux.
-- If you can't then restart and press esc button before the windows OS load.
+- If you can't then restart and press esc button before the Windows OS load.
 - This time you should be able to see the USB drive being detected by the system.
 - Move up until you get to "Boot Options" (Usually F9 or F10). Press Enter.
 - You'll now see an entry called "TCET Linux". Highlight this item and hit enter again.
