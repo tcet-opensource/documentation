@@ -79,20 +79,20 @@ Once Yay is installed, you can use it to easily install packages from the Arch U
 1. **Search for `visual-studio-code` Packages:**
    Search for available `visual-studio-code` packages on the AUR:
 
-      ```bash
-      yay -Ss visual-studio-code
-      ```
-   2. **Install visual-studio-code-bin**:
-      Choose the `visual-studio-code-bin` package and install it using the following command:
+   ```bash
+   yay -Ss visual-studio-code
+   ```
+2. **Install visual-studio-code-bin**:
+   Choose the `visual-studio-code-bin` package and install it using the following command:
 
-      ```bash
-      yay -S visual-studio-code-bin
-      ```
-   3. **Remove visual-studio-code-bin**:
-      If you need to remove the `visual-studio-code-bin` package, use the following command:
+   ```bash
+   yay -S visual-studio-code-bin
+   ```
+3. **Remove visual-studio-code-bin**:
+   If you need to remove the `visual-studio-code-bin` package, use the following command:
 
-      ```bash
-      yay -R visual-studio-code-bin
-      ```
-   Now you've successfully searched, installed, and removed the visual-studio-code-bin package using Yay on your Arch Linux or TCET Linux system.
+   ```bash
+   yay -R visual-studio-code-bin
+   ```
+Now you've successfully searched, installed, and removed the visual-studio-code-bin package using Yay on your Arch Linux or TCET Linux system.
 <br />
