@@ -1,6 +1,6 @@
 ---
 title: In Drive Istallation Steps
-id: in-drive-installation-steps
+id: installation-in-drive
 description: Installation Steps of Tcet Linux using a Bootable Drive
 sidebar_label: In-Drive Installation Steps
 keywords: [Installation Steps, Installation, Steps, Guide, linux guide ,  bootable drive]
