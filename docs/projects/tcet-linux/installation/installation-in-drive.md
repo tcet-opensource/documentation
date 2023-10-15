@@ -12,6 +12,8 @@ TCET Linux Installation `element` is a step-by-step guide created by us that wil
 Download the latest version from our [**official website**](https://www.tcetlinux.com/downloads) .
 
 <!-- ![TCET LINUX](/docs/projects/tcet-linux/assets/tldown.png) -->
+<!-- Above image routing is incorrect, refer the route below and update all image routes -->
+![TCET LINUX](../assets/tldown.png)
 ### Step 2. Prepare the Bootable USB Stick
 
 - You need to create a bootable USB stick from which you will install your new operating system. You can use various tools for this purpose such as Rufus.
