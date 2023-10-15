@@ -282,7 +282,7 @@ const sidebars =
                 'projects/tcet-linux/guides/install-remove-update-package',
                 'projects/tcet-linux/guides/alias-commands',
                 'projects/tcet-linux/guides/system-maintenance',
-		'projects/tcet-linux/guides/yay-install',
+		'projects/tcet-linux/guides/yay-packages',
                 {
                   type: 'category',
                   label: 'Application Troubleshooting',
