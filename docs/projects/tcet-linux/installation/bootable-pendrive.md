@@ -3,11 +3,10 @@ title: Steps to create bootable pendrive
 id: bootable-pendrive
 description: Installation Steps of Tcet Linux using a Bootable Drive
 sidebar_label: Using Bootable Pendrive
-keywords:
-  [Installation Steps, Installation, Steps, Guide, linux guide, bootable drive]
+keywords: [Installation Steps, Installation, Steps, Guide, linux guide, bootable drive]
 ---
 
-TCET Linux Installation `element` is a step-by-step guide created by us that will walk you through the process of installing [**TCET Linux**](https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/checksum) using a bootable pendrive on your system.This `Section` in the [**TCET Linux Website**](https://linux.tcetmumbai.in/) helps the user to easily install `TCET Linux` on their Device.
+TCET Linux Installation `element` is a step-by-step guide created by us that will walk you through the process of installing [**TCET Linux**](https://github.com/tcet-opensource/tcet-linux/releases/) using a bootable pendrive on your system.This `Section` in the [**TCET Linux Website**](https://linux.tcetmumbai.in/) helps the user to easily install **TCET Linux** on their Device.
 
 ### Step 1. Download the latest version of TCET LINUX
 
@@ -38,14 +37,16 @@ Download the latest version from our [**official website**](https://linux.tcetmu
 - Now after this there will be a menu box opend which will ask you wether you want to write an ISO image or write the same thing in DD mmode. So what you want to do is select DD mode , this is because in the first option the in ISO image a lot of distribution can't boot in UEFI/BIOS mode , thus DD mode is recommended.
 ![TCET LINUX](../assets/isofinal.png)
 
-- NOw click on OK and a pop up menu will openn which will waarn you that all the data on the usb device is going to be wipped off, so this is where you want to make sure that you have already backed up all the data.
+- Now click on OK and a pop up menu will openn which will waarn you that all the data on the usb device is going to be wipped off, so this is where you want to make sure that you have already backed up all the data.
 ![TCET LINUX](../assets/rufusdone.png)
 
-:::
+:::note
+
 Make sure you select the correct drive where you want to create the bootable installer.
 
 :::
-make sure you have backed up the data in the usb in other device, as once click `READY` the data is going to be wipped off.
+
+Make sure you have backed up the data in the usb in other device, as once click `READY` the data is going to be wipped off.
 
 ### Step 3.
 
