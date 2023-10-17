@@ -20,7 +20,7 @@ sudo pacman -S git
 ```
 # A. YAY Installation
 
-   1. Yay on Any Arch Linux System 
+   1. YAY on Any Arch Linux System 
 
       1. Clone the `yay` repository:
 
