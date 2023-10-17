@@ -1,8 +1,8 @@
 ---
-title: How To Use Yay To Install Packages
-id: yay-packages
-sidebar_label: How To Use Yay To Install Packages
-description: Learn how to use Yay to install packages on Arch Linux and TCET Linux.
+title: How To Use `yay` To Install AUR Packages
+id: yay
+sidebar_label: How To Use `yay` To Install AUR Packages
+description: Learn how to use `yay` to install AUR packages on Arch Linux and TCET Linux.
 keywords: [tcet, open-source, linux]
 ---
 
@@ -18,7 +18,7 @@ Open a terminal and install `git` if not already installed:
 ```bash
 sudo pacman -S git
 ```
-# A. Yay Installation
+# A. `yay` Installation
 
    1. Yay on Any Arch Linux System 
 
@@ -40,7 +40,7 @@ sudo pacman -S git
          makepkg -si
          ```
 
-   2. Yay on TCET Linux
+   2. `yay` on TCET Linux
 
       1. Open Terminal:
 
@@ -49,9 +49,9 @@ sudo pacman -S git
          ```
 
 
-# B. Install AUR Packages through Yay
+# B. Install AUR Packages through `yay`
 
-Once Yay is installed, you can use it to easily install packages from the Arch User Repository (AUR). Here's how you can do it:
+Once `yay` is installed, you can use it to easily install packages from the Arch User Repository (AUR). Here's how you can do it:
 
    1. **Search for Packages:**
       To search for a package in the AUR, use the following command:
@@ -94,5 +94,5 @@ Once Yay is installed, you can use it to easily install packages from the Arch U
    ```bash
    yay -R visual-studio-code-bin
    ```
-Now you've successfully searched, installed, and removed the visual-studio-code-bin package using Yay on your Arch Linux or TCET Linux system.
+Now you've successfully searched, installed, and removed the visual-studio-code-bin package using `yay` on your Arch Linux or TCET Linux system.
 <br />
