@@ -1,12 +1,12 @@
 ---
-title: How To Use `yay` To Install AUR Packages
+title: How To Use YAY To Install AUR Packages
 id: yay
-sidebar_label: How To Use `yay` To Install AUR Packages
-description: Learn how to use `yay` to install AUR packages on Arch Linux and TCET Linux.
+sidebar_label: How To Use YAY To Install AUR Packages
+description: Learn how to use YAY to install AUR packages on Arch Linux and TCET Linux.
 keywords: [tcet, open-source, linux]
 ---
 
-`yay` is an AUR (Arch User Repository) helper for Arch Linux. It simplifies the process of installing and managing software not available in the official Arch repositories. With a user-friendly interface, `yay` streamlines the installation of packages, handling dependencies and updates seamlessly. 
+YAY is an AUR (Arch User Repository) helper for Arch Linux. It simplifies the process of installing and managing software not available in the official Arch repositories. With a user-friendly interface, YAY streamlines the installation of packages, handling dependencies and updates seamlessly. 
 It enhances the Arch Linux experience by providing a convenient way to access a vast array of community-contributed packages.
 
 To provide an efficient, customizable, and user-friendly environment suitable for a diverse range of users, TCET Linux was conceived with several key goals in mind.
@@ -18,7 +18,7 @@ Open a terminal and install `git` if not already installed:
 ```bash
 sudo pacman -S git
 ```
-# A. `yay` Installation
+# A. YAY Installation
 
    1. Yay on Any Arch Linux System 
 
@@ -40,7 +40,7 @@ sudo pacman -S git
          makepkg -si
          ```
 
-   2. `yay` on TCET Linux
+   2. YAY on TCET Linux
 
       1. Open Terminal:
 
@@ -49,7 +49,7 @@ sudo pacman -S git
          ```
 
 
-# B. Install AUR Packages through `yay`
+# B. Install AUR Packages through YAY
 
 Once `yay` is installed, you can use it to easily install packages from the Arch User Repository (AUR). Here's how you can do it:
 
