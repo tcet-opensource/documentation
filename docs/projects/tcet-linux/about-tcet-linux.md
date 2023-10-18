@@ -1,7 +1,7 @@
 ---
 title: TCET Linux
 id: about-tcet-linux
-sidebar_label: What is TCET Linux
+sidebar_label: About TCET Linux
 description: A brief overview of TCET Linux
 keywords: [tcet, open-source, linux]
 ---
