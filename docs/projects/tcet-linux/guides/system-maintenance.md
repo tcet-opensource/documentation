@@ -104,4 +104,4 @@ You can visit to some learning resources listed on **[Resource Page](/docs/proje
 :::
 <br />
 
-_The [**System Maintenance**](system-maintenance) was successfully executed! Let's move on and see how we use [**Application Troubleshooting**](troubleshoot-app/troubleshoot-application) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
+_The [**System Maintenance**](system-maintenance) was successfully executed! Let's move on and see how we use [**Application Troubleshooting**](application/troubleshoot-application) of **[TCET Linux](https://linux.tcetmumbai.in/)**._

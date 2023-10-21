@@ -288,12 +288,12 @@ const sidebars =
                   link:
                   {
                     type: 'doc',
-                    id: 'projects/tcet-linux/guides/troubleshoot-app/getting-started-with-application',
+                    id: 'projects/tcet-linux/guides/application/getting-started-with-application',
                   },
                   items: 
                   [
-                    'projects/tcet-linux/guides/troubleshoot-app/welcome-app',
-                    'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-application',
+                    'projects/tcet-linux/guides/application/welcome-app',
+                    'projects/tcet-linux/guides/application/troubleshoot-application',
                   ],
                 },
               ],
