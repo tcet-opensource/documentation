@@ -286,15 +286,16 @@ const sidebars =
 		'projects/tcet-linux/guides/yay',
                 {
                   type: 'category',
-                  label: 'Application Troubleshooting',
+                  label: 'Application',
                   link:
                   {
                     type: 'doc',
-                    id: 'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-application',
+                    id: 'projects/tcet-linux/guides/application/getting-started-with-application',
                   },
                   items: 
                   [
-                    'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-welcome-app',
+                    'projects/tcet-linux/guides/application/welcome-app',
+                    'projects/tcet-linux/guides/application/troubleshoot-application',
                   ],
                 },
               ],

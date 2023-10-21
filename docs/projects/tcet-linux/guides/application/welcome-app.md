@@ -1,8 +1,8 @@
 ---
 title: TCET Linux Welcome App
-id: troubleshoot-welcome-app
-description: Troubleshooting common issues with the TCET Linux welcome app.
-sidebar_label: Troubleshoot Welcome App
+id: welcome-app
+description: About TCET Linux welcome app.
+sidebar_label: Welcome App
 keywords: [Welcome App, Troubleshooting, Autostart, Yad]
 ---
 
@@ -10,6 +10,13 @@ TCET Linux has a simple welcome app specifically written for [TCET Linux](https:
 
 ## Application
 The TCET Linux Welcome App is designed to assist users in getting started with the operating system and accessing various helpful features and resources. It provides a convenient interface to access essential functions and information. Here's an overview of the Welcome App's features:
+
+import welcomeApp from "/docs/projects/tcet-linux/assets/welcome-app.png";
+
+<center>
+  <img src={welcomeApp} style={{ border: "2px solid gray" }} />
+  <b><figcaption>TCET Linux Welcome App</figcaption></b>
+</center>
 
 - **Update This PC**
 
@@ -117,20 +124,10 @@ The **TCET Linux welcome app is built using Yad and GTK-3.0,** a utility for cre
 
 By following these troubleshooting steps, you can effectively manage and resolve common issues related to the TCET Linux welcome app. **If you encounter persistent problems or need further assistance, don't hesitate to reach out to the TCET Linux community for support.**
 
-
-import welcomeApp from "/docs/projects/tcet-linux/assets/welcome-app.png";
-
-<img src = {welcomeApp} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>TCET Linux Welcome App</figcaption></b></center>
-<br />
-
-
 :::tip
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
 2. For additional help ask on the **TCET Linux Discussions Channel** group on **[TCET Linux Discord Server](https://discord.gg/r7ZhAREg2M)**.
 :::
 <br />
 
-_The [**Troubleshoot Welcome App**](troubleshoot-welcome-app) was successfully executed! Let's move on and see how we can [**Contribute to TCET Linux**](../../contribute-tcet-linux) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
+_The [**Welcome App**](welcome-app) was successfully executed! Let's move on and see how we can [**Contribute to TCET Linux**](../../contribute-tcet-linux) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
