@@ -1,8 +1,8 @@
 ---
 title: TCET Linux Welcome App
-id: troubleshoot-welcome-app
-description: Troubleshooting common issues with the TCET Linux welcome app.
-sidebar_label: Troubleshoot Welcome App
+id: welcome-app
+description: About TCET Linux welcome app.
+sidebar_label: Welcome App
 keywords: [Welcome App, Troubleshooting, Autostart, Yad]
 ---
 
@@ -133,4 +133,4 @@ import welcomeApp from "/docs/projects/tcet-linux/assets/welcome-app.png";
 :::
 <br />
 
-_The [**Troubleshoot Welcome App**](troubleshoot-welcome-app) was successfully executed! Let's move on and see how we can [**Contribute to TCET Linux**](../../contribute-tcet-linux) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
+_The [**Troubleshoot Welcome App**](welcome-app) was successfully executed! Let's move on and see how we can [**Contribute to TCET Linux**](../../contribute-tcet-linux) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
