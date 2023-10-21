@@ -288,11 +288,11 @@ const sidebars =
                   link:
                   {
                     type: 'doc',
-                    id: 'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-application',
+                    id: 'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-welcome-app',
                   },
                   items: 
                   [
-                    'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-welcome-app',
+                    'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-applications',
                   ],
                 },
               ],
