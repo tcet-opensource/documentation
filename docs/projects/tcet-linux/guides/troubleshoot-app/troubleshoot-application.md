@@ -18,22 +18,21 @@ If an application fails to launch, follow these steps:
 
 2. *Reinstall the Application:* If the application is still not working, try reinstalling it. Use the package manager, Pacman, to remove and then reinstall the application. For example:
    
-   bash
+   ```bash
    sudo pacman -Rns application-name
    sudo pacman -S application-name
+   ```
    
 
 3. *Dependency Issues:* Sometimes, applications depend on specific libraries. Ensure that all necessary dependencies are installed. Use Pacman to install missing libraries if needed.
-
-   bash
+   ```bash
    sudo pacman -S missing-library
-   
+   ```
 
-4. *Check for Updates:* Ensure your system and the application are up-to-date. Run the following commands to update your system and the installed packages:
-
-   bash
+5. *Check for Updates:* Ensure your system and the application are up-to-date. Run the following commands to update your system and the installed packages:
+   ```bash
    sudo pacman -Syu
-   
+   ```
 
 ## Slow Performance
 
@@ -44,16 +43,14 @@ If you notice that applications are running slowly or consuming excessive resour
 2. *Close Background Applications:* Ensure that other applications running in the background are not causing performance issues. Close unnecessary applications and processes.
 
 3. *Optimize System:* Regularly maintain your TCET Linux system. Clean up temporary files, remove unnecessary packages, and optimize system services.
-
-   bash
+   ```bash
    sudo pacman -Sc
-   
+   ```
 
 4. *Update Graphics Drivers:* If your system has a dedicated graphics card, ensure that you have the appropriate graphics drivers installed and keep them up to date.
-
-   bash
+   ```bash
    sudo mhwd -a pci nonfree 0300
-   
+   ```
 
 ## Application Crashes
 
@@ -68,4 +65,3 @@ If an application frequently crashes or becomes unresponsive:
 4. *Use Alternatives:* If the problem remains unresolved, consider using alternative applications that serve the same purpose.
 
 Remember, troubleshooting may require a certain level of expertise, and it's always a good practice to back up your data before making significant changes to your system. In case you encounter complex or unique issues, consider seeking help from the TCET Linux community forums or support channels to resolve them efficiently.
-```
