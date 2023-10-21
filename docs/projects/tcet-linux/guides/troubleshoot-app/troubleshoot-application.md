@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Applications
-id: troubleshoot-applications
+id: troubleshoot-application
 description: Troubleshooting Applications Common Issues .
 sidebar_label: Troubleshooting Applications
 keywords: [troubleshoot, pacman, performance]

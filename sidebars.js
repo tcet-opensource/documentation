@@ -292,7 +292,7 @@ const sidebars =
                   },
                   items: 
                   [
-                    'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-applications',
+                    'projects/tcet-linux/guides/troubleshoot-app/troubleshoot-application',
                   ],
                 },
               ],
