@@ -78,6 +78,7 @@ or
 source ~/.zshrc
 ```
 
+
 TCET Linux is an **Arch-based distribution** designed to provide a **user-friendly** and **efficient computing environment**. It comes with the **XFCE desktop environment** and a range of **pre-installed applications** to enhance your computing experience. This guide will help you understand **Desktop Environment**, **Power Options**, **System Controls**, **Delete**, **Trash**, **Wallpaper**, **Screenshot**, **Neofetch**, M**an Command**, **File System** for ***TCET Linux system*** and in **Arch based distributions**. This is a very beginner-friendly guide that provides explanations for these topics so that you can perform your basic daily routine.
 
 ## Desktop Environment
@@ -153,6 +154,8 @@ import deleteAndMTTrash from "/docs/projects/tcet-linux/assets/Delete&MTTrash.pn
   <img src = {deleteAndMTTrash} style={{ border: "2px solid gray" }} />
   <b><figcaption>Delete & Move To Trash</figcaption></b>
 </center>
+
+
 
 import trash from "/docs/projects/tcet-linux/assets/Trash.png";
 
