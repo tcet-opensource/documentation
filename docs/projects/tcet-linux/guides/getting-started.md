@@ -5,7 +5,7 @@ sidebar_label: Getting Started
 ---
 
 :::warning minimum hardware requirements
-https://github.com/tcet-opensource/documentation/pull/297/conflict?name=docs%252Fprojects%252Ftcet-linux%252Fguides%252Fgetting-started.md&base_oid=f2d4775c73f8765b617967d6ecb6482e0a1c3a01&head_oid=7d6c50bbeb00e3ff7d5646b1fb9869b6fcefdafd
+
 Operating System development and testing is a resource intensive process. We recommend doing this on computers with atleast the following specifications:
 
 - A 4C, 8T CPU, with each core running at 3.5 Ghz and above.
@@ -77,11 +77,6 @@ or
 ```bash
 source ~/.zshrc
 ```
-=======
-description: Desktop Environment, Power Options, System Controls, Delete, Trash, Wallpaper, Screenshot, Neofetch, Man Command, File System
-sidebar_label: Getting Started
-keywords: [Desktop Environment, Power Options, System Controls, Delete, Trash, Wallpaper, Screenshot, Neofetch, Man Command, File System]
----
 
 TCET Linux is an **Arch-based distribution** designed to provide a **user-friendly** and **efficient computing environment**. It comes with the **XFCE desktop environment** and a range of **pre-installed applications** to enhance your computing experience. This guide will help you understand **Desktop Environment**, **Power Options**, **System Controls**, **Delete**, **Trash**, **Wallpaper**, **Screenshot**, **Neofetch**, M**an Command**, **File System** for ***TCET Linux system*** and in **Arch based distributions**. This is a very beginner-friendly guide that provides explanations for these topics so that you can perform your basic daily routine.
 
@@ -105,11 +100,10 @@ The desktop environment provides a user-friendly and efficient workspace for you
 
 import applicationMenu from "/docs/projects/tcet-linux/assets/ApplicationMenu.png";
 
-<img src = {applicationMenu} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Desktop Environment</figcaption></b></center>
-
+<center>
+  <img src = {applicationMenu} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Desktop Environment</figcaption></b>
+</center>
 
 ## Power Options
 This options are accessed by clicking on the *start button* on the taskbar and then top right of the application menu clicking on the power options button. This dialog window consists of:
@@ -134,11 +128,10 @@ This options are accessed by clicking on the *start button* on the taskbar and t
 
 import powerOptions from "/docs/projects/tcet-linux/assets/ShutDown.png";
 
-<img src = {powerOptions} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Power Options</figcaption></b></center>
-
+<center>
+  <img src = {powerOptions} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Power Options</figcaption></b>
+</center>
 
 ## Delete & Trash
 TCET Linux system offer you **trash folder** so that you can delete **any file and if needed retrieve them again**. You have two ways to delete files and trash options:
@@ -156,18 +149,17 @@ TCET Linux system offer you **trash folder** so that you can delete **any file a
 
 import deleteAndMTTrash from "/docs/projects/tcet-linux/assets/Delete&MTTrash.png";
 
-<img src = {deleteAndMTTrash} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Delete & Move To Trash</figcaption></b></center>
-<br />
+<center>
+  <img src = {deleteAndMTTrash} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Delete & Move To Trash</figcaption></b>
+</center>
 
 import trash from "/docs/projects/tcet-linux/assets/Trash.png";
 
-<img src = {trash} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Trash Window: Delete & Restore</figcaption></b></center>
+<center>
+  <img src = {trash} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Trash Window: Delete & Restore</figcaption></b>
+</center>
 
 ## Wallpaper
 
@@ -182,11 +174,10 @@ You can easily customize the look of your TCET Linux desktop. You can follow the
 
 import wallpaper from "/docs/projects/tcet-linux/assets/Wallpaper.png";
 
-<img src = {wallpaper} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Wallpapers</figcaption></b></center>
-<br />
+<center>
+  <img src = {wallpaper} style={{ border: "2px solid gray" }} />>
+  <b><figcaption>Wallpapers</figcaption></b>
+</center>
 
 
 ## Screenshot
@@ -199,11 +190,10 @@ TCET Linux provides a **straightforward and convenient screenshot tool** that he
 
 import screenshot from "/docs/projects/tcet-linux/assets/Screenshot.png";
 
-<img src = {screenshot} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Screenshot Dialog</figcaption></b></center>
-<br />
+<center>
+  <img src = {screenshot} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Screenshot Dialog</figcaption></b>
+</center>
 
 
 ## Neofetch
@@ -237,11 +227,10 @@ Here's a breakdown of the information displayed by neofetch
 
 import Neofetch from "/docs/projects/tcet-linux/assets/neofetch.jpg";
 
-<img src = {Neofetch} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Neofetch</figcaption></b></center>
-<br />
+<center>
+  <img src = {Neofetch} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Neofetch</figcaption></b>
+</center>
 
 
 ## Man Command
@@ -260,11 +249,10 @@ To use this command open the terminal emulator and type `man` **followed by the 
 
 import manCommand from "/docs/projects/tcet-linux/assets/manCommand.png";
 
-<img src = {manCommand} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Man Command</figcaption></b></center>
-<br />
+<center>
+  <img src = {manCommand} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Man Command</figcaption></b>
+</center>
 
 
 ## File System
@@ -290,12 +278,10 @@ import manCommand from "/docs/projects/tcet-linux/assets/manCommand.png";
 
 import fileSystem from "/docs/projects/tcet-linux/assets/FileSystem.png";
 
-<img src = {fileSystem} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>File System</figcaption></b></center>
-<br />
-
+<center>
+  <img src = {fileSystem} style={{ border: "2px solid gray" }} />
+  <b><figcaption>File System</figcaption></b>>
+</center>
 
 :::tip
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
