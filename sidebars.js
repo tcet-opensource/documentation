@@ -284,7 +284,7 @@ const sidebars =
                 'projects/tcet-linux/guides/system-maintenance',
                 {
                   type: 'category',
-                  label: 'Application Troubleshooting',
+                  label: 'Application',
                   link:
                   {
                     type: 'doc',
