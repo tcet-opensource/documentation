@@ -21,6 +21,8 @@ This section provides guidance on identifying and resolving common installation-
 
 - Verify that the TCET Linux installation image on the USB drive is correctly created. Use tools like Rufus on Windows or dd on Linux to create a bootable USB drive.
 
+- You can usually access the boot menu by pressing one of the function keys (F10, F11, F9, etc.) during the initial stages of your computer's startup. The specific key might vary depending on your laptop manufacturer, so consult your laptop's manual or look for on-screen prompts.
+
 ### 2. Installation Hangs or Freezes
 
 *Problem:* The installation process freezes or hangs at a certain point, and progress is halted.
@@ -29,9 +31,10 @@ This section provides guidance on identifying and resolving common installation-
 
 - Check your system's hardware compatibility with TCET Linux. Ensure that your CPU, RAM, and other components meet the minimum requirements.
 
-- Test the installation media for errors or corruption. The ISO image may be damaged. You can verify the integrity of the image using checksums.
+- Test the installation media for errors or corruption. The ISO image may be damaged. You can verify the integrity of the image using checksums. TCET Linux provide checksums (MD5, SHA1, or SHA256) on their download pages. Compare the checksum of your downloaded ISO file with the provided checksum to ensure it's not corrupted.
 
-- Try booting into the "safe mode" or "nomodeset" option if available. This can help bypass hardware-related issues.
+- Try booting into the "safe mode" or "nomodeset" option if available. This can help bypass hardware-related issues. These modes use generic drivers and minimal settings, which can be useful if your hardware is causing compatibility issues.
+
 
 ### 3. Disk Space Insufficient
 
@@ -41,7 +44,7 @@ This section provides guidance on identifying and resolving common installation-
 
 - Confirm that you have at least 10GB of free disk space on the target drive. If not, free up space or select a different drive with sufficient space for installation.
 
-- During the installation process, you can choose to manually partition the disk. Ensure that you allocate sufficient space for the root partition ("/") and any other necessary partitions.
+- During the installation process, you can choose to manually partition the disk. Ensure that you allocate sufficient space for the root partition ("/"), home partition and any other necessary partitions.
 
 ## Post-Installation Issues
 
@@ -64,22 +67,23 @@ This section provides guidance on identifying and resolving common installation-
 - Verify your network hardware. Ensure that your Ethernet or Wi-Fi adapter is recognized and functioning correctly.
 
 - Check your network settings in the system preferences or use the ip command in the terminal to diagnose network issues.
+  
+1. Check Network Manager status.
 
-- If using Wi-Fi, ensure that you have entered the correct Wi-Fi password.
+  ```bash
+  sudo systemctl status NetworkManager.service
+  ```
 
-### 3. Installation Errors
+2. If status is inactive then enable and start Network Manager.
 
-*Problem:* You encountered errors during the installation process, such as package download failures.
+  ```bash
+  sudo systemctl enable NetworkManager.service
+  sudo systemctl start NetworkManager.service
+  ```
 
-*Solution:*
+:::tip
+1. If you choose manual partitioning, ensure you have knowledge about partitioning and correctly set up boot, root, home, and swap partitions.
+2. Make sure you are using the latest TCET Linux ISO for installation. Downloading the latest ISO ensures that you benefit from the most recent updates, bug fixes, and improvements.
+:::
 
-- Ensure that your internet connection is stable and not interrupted during the installation. A stable connection is crucial for downloading packages.
-
-- Try running the following command to update the package database and system after installation: 
-```
-sudo pacman -Syu
-```
-
-- If specific packages fail to install, you can manually install them using the pacman package manager after the installation is complete.
-
-These troubleshooting steps should help you resolve common installation issues in TCET Linux. If you encounter complex or unique problems, consider seeking assistance from the TCET Linux community forums or support channels for more personalized help and solutions.
+These troubleshooting steps should help you resolve common installation issues in TCET Linux. If you encounter complex or unique problems, consider seeking assistance from the TCET Linux community forums or discord channel for more personalized help and solutions.
