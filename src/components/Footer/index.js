@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../../static/img/logo.png";
 import Instagram from "../../../static/img/FooterSectionIcons/instagram.svg";
 import Linkedin from "../../../static/img/FooterSectionIcons/linkedin.svg";
-import Twitter from "../../../static/img/FooterSectionIcons/twitter.svg";
+import X from "../../../static/img/FooterSectionIcons/x.svg";
 import Youtube from "../../../static/img/FooterSectionIcons/youtube.svg";
 import Discord from "../../../static/img/FooterSectionIcons/Discord.svg";
 import { navLinks } from "../Navbar";
@@ -49,7 +49,7 @@ function Footer() {
             href="https://twitter.com/tcetopensource"
             className="hover:no-underline hover:text-[#FCFCFD] mx-4 my-3  hover:scale-110"
           >
-            <Twitter />
+            <X />
           </a>
           <a
             href="https://instagram.com/tcetopensource/"
