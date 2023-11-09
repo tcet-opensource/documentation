@@ -1,4 +1,11 @@
-# TCET LINUX VARIANT AND VERSION RELEASES
+---
+title: Variants & Releases
+id: variants-releases
+sidebar_label: Variants & Releases
+description: Variants & Releases of TCET Linux
+keywords: [Variants, Releases]
+---
+
 In the world of Linux, variant releases refers to the different distributions or *distros* in linux. These may be developed by the organisation, or a community or an individual and further they keep on updating. These distributions include the Linux kernel along with supporting system software and libraries to create a complete operating system.
 
 In context to TCET Linux, there have been 2 major release phases, namely **OPEN ALPHA** and **BETA RELEASE ENGINEERING**. 

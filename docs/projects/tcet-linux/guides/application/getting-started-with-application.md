@@ -6,8 +6,6 @@ sidebar_label: Getting Started With Application
 keywords: [applications, apps, default]
 ---
 
-## Getting Started with Applications in TCET Linux
-
 TCET Linux comes pre-loaded with a variety of applications to enhance your computing experience. Whether you're a beginner or an advanced user, these applications cover a wide range of tasks. Let's explore how to get started with them
 
 Here are some examples of applications that are pre-installed in TCET Linux:
