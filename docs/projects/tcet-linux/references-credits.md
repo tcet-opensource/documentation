@@ -29,7 +29,7 @@ They are linked below-
 
 9. [Calamares Repo](https://github.com/calamares/calamares)
 
-10. [Arch Linux Gui](https://github.com/arch-linux-gui)
+10. [Arch Linux GUI](https://github.com/arch-linux-gui)
 
 
 There is never an end to what you can build by learning on your own and everything you'll ever need is just one google search away. 
