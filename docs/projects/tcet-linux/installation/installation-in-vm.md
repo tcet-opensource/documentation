@@ -16,7 +16,6 @@ Before you begin, make sure you have the following:
 
 - A Virtual Machine software (e.g., VirtualBox, VMware, or Hyper-V) installed on your host machine.
 - The TCET Linux ISO image downloaded from the TCET Linux website.
-- Sufficient system resources allocated to the VM (at least 2GB of RAM and 20GB of virtual disk space recommended).
 
 ## Steps to Install TCET Linux on a Virtual Machine
 
@@ -46,7 +45,7 @@ Before you begin, make sure you have the following:
    - The TCET Linux installer will guide you through the installation process.
    - Choose your preferred language and keyboard layout.
    - Select the "Disk Setup" option to partition your virtual hard disk. You can choose to use the entire disk or create custom partitions.
-   - When prompted, choose the desktop environment and software packages you want to install. The default XFCE desktop environment is recommended for beginners.
+   - When prompted, choose the desktop environment and software packages you want to install.
 
 5. *Configure Network and User:*
 
@@ -75,4 +74,4 @@ Congratulations, you've successfully installed TCET Linux on a Virtual Machine! 
 
 ## Troubleshooting
 
-If you encounter any issues during the installation or have questions about using TCET Linux on your VM, you can refer to the troubleshooting section in the TCET Linux documentation or seek assistance from the TCET Linux community forums.
+If you encounter any issues during the installation or have questions about using TCET Linux on your VM, you can refer to the troubleshooting section in the TCET Linux documentation or seek assistance from the TCET Open Source's Discord Server.
