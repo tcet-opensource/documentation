@@ -1,7 +1,7 @@
 ---
 title: How To Use YAY To Install AUR Packages
 id: yay
-sidebar_label: How To Use YAY To Install AUR Packages
+sidebar_label: Install AUR Packages
 description: Learn how to use YAY to install AUR packages on Arch Linux and TCET Linux.
 keywords: [tcet, open-source, linux]
 ---
