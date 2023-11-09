@@ -21,7 +21,7 @@ These requirements ensure that TCET Linux runs smoothly on your computer, whethe
 
 To get started with TCET Linux, you can download the latest ISO image from the TCET Linux website. We recommend the following steps for downloading and creating a bootable USB drive:
 
-1. Visit the TCET Linux website at [URL](insert your download link here).
+1. Visit the TCET Linux website at **[TCET Linux Website](https://linux.tcetmumbai.in/)**.
 2. Locate the download section and select the latest TCET Linux ISO image.
 3. Download the ISO image to your computer.
 
@@ -67,7 +67,7 @@ Follow these steps based on your operating system:
 
 After running the verification command, compare the returned hash value with the provided SHA256SUM below. Ensure that they match to confirm the authenticity of your download.
 
-The Updated SHA256SUM for TCET Linux ISO is provided on the **[TCET Linux Website Verify Section](https://linux.tcetmumbai.in/#verify)** of the **[TCET Linux Website](https://linux.tcetmumbai.in/)**
+The Updated SHA256SUM for TCET Linux ISO is provided on the **[TCET Linux Website Verify Section](https://linux.tcetmumbai.in/#verify)** of the **[TCET Linux Website](https://linux.tcetmumbai.in/)**.
 
 
 By following these steps and confirming the match of the hash values, you can proceed with confidence, knowing that your TCET Linux installation file is genuine and secure. If the hash values do not match, consider re-downloading the ISO file to avoid potential issues during installation.
@@ -81,8 +81,9 @@ Once you have downloaded the TCET Linux ISO image, you'll need to create a boota
 
 - *Linux:* You can use the 'dd' command to create a bootable USB drive on Linux. Open a terminal and run the following command (replace /dev/sdX with the appropriate drive designation of your USB drive):
   
-  ```bash
-  sudo dd bs=4M if=/path/to/tcet-linux.iso of=/dev/sdX status=progress```
+```bash
+  sudo dd bs=4M if=/path/to/tcet-linux.iso of=/dev/sdX status=progress
+```
 
 :::tip
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
