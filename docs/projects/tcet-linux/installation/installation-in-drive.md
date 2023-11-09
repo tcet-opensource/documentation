@@ -41,7 +41,7 @@ Download the latest version from our [official website](https://linux.tcetmumbai
 5. Choose DD mode in the pop-up menu and click `OK`. Be aware that all data on the USB will be erased.
 
 :::note
-Ensure you select the correct drive to avoid data loss.
+    Ensure you select the correct drive to avoid data loss.
 :::
 
 ### Step 3: Boot from USB
@@ -56,10 +56,11 @@ Ensure you select the correct drive to avoid data loss.
 For Linux users, employ the 'dd' command in the terminal:
 
 ```bash
-sudo dd bs=4M if=/path/to/tcet-linux.iso of=/dev/sdX status=progress
+    sudo dd bs=4M if=/path/to/tcet-linux.iso of=/dev/sdX status=progress
 ```
 
 After completing the bootable pendrive installation, your USB is ready. Proceed to the next section to learn how to install TCET Linux using a virtual machine.
 
 Explore the potential of [TCET Linux](https://linux.tcetmumbai.in/) and enjoy a seamless open-source experience!
-_After successfully implementing the **[bootable pendrive installation](bootable-pendrive)** of **[TCET Linux](https://linux.tcetmumbai.in/)**, we were ready with a bootable drive. Next, we will be seeing how we can install it using virtual machine ._
+
+_After successfully implementing the **[bootable pendrive installation](installation-in-drive)** of **[TCET Linux](https://linux.tcetmumbai.in/)**, we were ready with a bootable drive. Next, we will be seeing how we can install it using virtual machine ._
