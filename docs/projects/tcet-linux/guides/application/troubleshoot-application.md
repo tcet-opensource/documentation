@@ -6,8 +6,6 @@ sidebar_label: Troubleshooting Applications
 keywords: [troubleshoot, pacman, performance]
 ---
 
-# Troubleshooting Applications
-
 TCET Linux offers a range of applications and tools to enhance your computing experience. However, issues can sometimes arise. This section provides guidance on identifying and resolving common application-related problems in TCET Linux.
 
 ## Application Not Launching
