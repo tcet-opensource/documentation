@@ -31,30 +31,32 @@ For coders and advanced users, these resources delve into more complex topics:
 6. [XFCE Getting Started](https://docs.xfce.org/xfce/getting-started): A guide to getting started with XFCE, a lightweight desktop environment.
 7. [LibreOffice Documentation](https://documentation.libreoffice.org/en/english-documentation/): Official documentation for LibreOffice, a free and open-source office suite.
 8. [VS Code Basics](https://code.visualstudio.com/docs/introvideos/basics): Introductory videos for Visual Studio Code, a popular code editor.
+9. [AUR](https://wiki.archlinux.org/title/Arch_User_Repository): This is a wiki page on the Arch User Repository. The Arch User Repository is a community-maintained repository of Arch Linux packages.
+10. [Arch Wiki](https://wiki.archlinux.org/): This is the official Arch Linux wiki. The Arch Linux wiki is a great resource for learning about Arch Linux.
 
 ## Youtube Videos
 
-* https://youtu.be/Jqa7Bu6e4KM?si=bGS_bfMKKjQo-_iY: This is a video tutorial on the Arch Linux installation on a Raspberry Pi
-* https://youtu.be/Ov3yi-9jbFI?si=ilmLB1WIjblPF07C: This is a video tutorial on the Arch Linux installation process.
-* https://wiki.archlinux.org/title/Arch_User_Repository: This is a wiki page on the Arch User Repository. The Arch User Repository is a community-maintained repository of Arch Linux packages.
-* https://wiki.archlinux.org/: This is the official Arch Linux wiki. The Arch Linux wiki is a great resource for learning about Arch Linux.
-* https://youtu.be/cAuIvKVNDQo?si=iUI2getFPq_IEHAu: This is a video tutorial on the Arch Linux Pacman package manager.
-* https://youtu.be/kltOBWBcNBE?si=dMHMlHCrKqvZ1YZz: This is a video tutorial on the Arch Linux AUR (Arch User Repository).
-* https://youtu.be/RGOj5yH7evk?si=BZMkdQo3kgISFDvT: This is a video tutorial on the Arch Linux systemd system and service manager.
-* https://youtu.be/b3W7Ky_aaaY?si=z_vbPNf3Z6RhmGEW: This is a video tutorial on the Arch Linux GRUB bootloader.
-* https://youtu.be/2qojOpT8HXs?si=zq9oMUkBk3Z5Tovc: This is a video tutorial on the Arch Linux Xorg window server.
-* https://youtu.be/7ND2fiaFfic?si=-YCeXwFL_0529QH5: This is a video tutorial on the Arch Linux NetworkManager network management tool.
-* https://youtu.be/wtZjRXOny7Q?si=uB09lhE3T8zS-XGs: This is a video tutorial on the Arch Linux system utilities.
-* https://youtu.be/RJs70jQi7Wk?si=Oz5H2u_hXDbxQ_mM: This is a video tutorial on the Arch Linux troubleshooting.
-* https://youtu.be/BwvQUtv1eM0?si=S8lnZfH8SOn4yhS8: This is a video tutorial on the Arch Linux customization.
+* [ISO](https://youtu.be/Jqa7Bu6e4KM?si=bGS_bfMKKjQo-_iY): This is a video tutorial on How to build your personal ALG ISO.
+* [Neofetch](https://youtu.be/Ov3yi-9jbFI?si=ilmLB1WIjblPF07C): This is a video tutorial on Customizing Neofetch.
+
+* [Thunar](https://youtu.be/cAuIvKVNDQo?si=iUI2getFPq_IEHAu): This is a video tutorial on the Thunar custom actions, productivity, automation.
+* [Thunar](https://youtu.be/kltOBWBcNBE?si=dMHMlHCrKqvZ1YZz): This is a video tutorial on Thunar Customization.
+* [Git & Github](https://youtu.be/RGOj5yH7evk?si=BZMkdQo3kgISFDvT): This is a video tutorial on Git and GitHub for Beginners - Crash Course Free Code Camp.
+* [Bash](https://youtu.be/b3W7Ky_aaaY?si=z_vbPNf3Z6RhmGEW): This is a video tutorial on How to Use Bash Language.
+
+* [Starship](https://youtu.be/2qojOpT8HXs?si=zq9oMUkBk3Z5Tovc): This is a video tutorial on How to Customize your shell with starship.
+* [Bootable Linux USB in Windows 11 | Rufus | Legacy/UEFI](https://youtu.be/7ND2fiaFfic?si=-YCeXwFL_0529QH5): This is a video tutorial on How to Make bootable Linux USB in Windows 11 | Rufus | Legacy/UEFI.
+* [Arch Linux GUI Downloads with Secure Hash Algorithm](https://youtu.be/wtZjRXOny7Q?si=uB09lhE3T8zS-XGs): This is a video tutorial on Verify Your Arch Linux GUI Downloads with Secure Hash Algorithm.
+* [Install & Setup VirtualBox](https://youtu.be/RJs70jQi7Wk?si=Oz5H2u_hXDbxQ_mM): This is a video tutorial on How to Install & Setup VirtualBox in Arch Linux.
+* [Software from the Arch User Repository](https://youtu.be/BwvQUtv1eM0?si=S8lnZfH8SOn4yhS8): This is a video tutorial on How to Install Software from the Arch User Repository.
 
 
 For additional resources and discussions, please visit the [TCET Linux Discord Server](https://discord.com/channels/1077233618109337691/1096352605883609108).
 
 
 :::tip
-1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
+1. You can visit **[Github Repository](https://github.com/tcet-opensource/tcet-linux)** of TCET Linux.
 :::
 <br />
 
-_The [**TCET Linux Resource Guide**](resources) was succesfully executed! Let's move on and see how we use [**Package Management**](install-remove-update-package) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
+_The [**TCET Linux Resource Guide**](resources) was succesfully executed! Let's move on and see [**iso-profile**](iso-profile) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
