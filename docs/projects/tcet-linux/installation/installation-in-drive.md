@@ -7,6 +7,9 @@ keywords: [Installation Steps, Installation, Steps, Guide, linux guide, bootable
 ---
 
 Welcome to the TCET Linux Installation guide! This comprehensive walkthrough will assist you in installing [TCET Linux](https://github.com/tcet-opensource/tcet-linux/releases/) using a bootable pendrive. Follow this guide on the [TCET Linux Website](https://linux.tcetmumbai.in/) for a seamless installation experience.
+You can use tools like Rufus, Balena Etcher, or Win32 Disk Imager to create a bootable USB drive. Follow the instructions provided by your chosen tool to flash the TCET Linux ISO to the USB drive.
+
+Here's an example with Rufus
 
 ### Step 1: Download TCET Linux
 
