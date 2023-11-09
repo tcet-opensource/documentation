@@ -2,7 +2,7 @@
 title: Steps to create bootable pendrive
 id: installation-in-drive
 description: Installation Steps of Tcet Linux using a Bootable Drive
-sidebar_label: Using Bootable Pendrive
+sidebar_label: Installation In Drive
 keywords: [Installation Steps, Installation, Steps, Guide, linux guide, bootable drive]
 ---
 
