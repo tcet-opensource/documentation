@@ -73,18 +73,6 @@ The Updated SHA256SUM for TCET Linux ISO is provided on the **[TCET Linux Websit
 By following these steps and confirming the match of the hash values, you can proceed with confidence, knowing that your TCET Linux installation file is genuine and secure. If the hash values do not match, consider re-downloading the ISO file to avoid potential issues during installation.
 
 
-## Creating a Bootable USB Drive
-
-Once you have downloaded the TCET Linux ISO image, you'll need to create a bootable USB drive to install TCET Linux on your computer. You can use various tools for this, depending on your current operating system:
-
-- *Windows:* You can use tools like Rufus, Balena Etcher, or Win32 Disk Imager to create a bootable USB drive. Follow the instructions provided by your chosen tool to flash the TCET Linux ISO to the USB drive.
-
-- *Linux:* You can use the 'dd' command to create a bootable USB drive on Linux. Open a terminal and run the following command (replace /dev/sdX with the appropriate drive designation of your USB drive):
-  
-```bash
-  sudo dd bs=4M if=/path/to/tcet-linux.iso of=/dev/sdX status=progress
-```
-
 :::tip
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
 :::
