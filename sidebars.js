@@ -302,21 +302,30 @@ const sidebars =
             },
             'projects/tcet-linux/contribute-tcet-linux',
             'projects/tcet-linux/resources',
-            {
-              type: 'category',
-              label: 'ISO Profile',
-              link:
-              {
-                type: 'doc',
-                id: 'projects/tcet-linux/iso-profile/iso-profile',
-              },
-              items: 
-              [
-                'projects/tcet-linux/iso-profile/rootfs',
-                'projects/tcet-linux/iso-profile/bootloaders',
-                'projects/tcet-linux/iso-profile/scripts',
-              ],
-            },
+            // {
+            //   type: 'category',
+            //   label: 'ISO Profile',
+            //   link:
+            //   {
+            //     type: 'doc',
+            //     id: 'projects/tcet-linux/iso-profile/iso-profile',
+            //   },
+            //   items: 
+            //   [
+            //     'projects/tcet-linux/iso-profile/rootfs',
+            //     'projects/tcet-linux/iso-profile/bootloaders',
+            //     'projects/tcet-linux/iso-profile/scripts',
+            //   ],
+            // },
+
+            /*As rootfs, bootloaders and scripts aren't documented
+            the above category is commented out and replaced
+            with the route below.
+            
+            Once the above files are completed, uncomment the above routes
+            and delete the route below*/
+
+            'projects/tcet-linux/iso-profile/iso-profile',
             'projects/tcet-linux/references-credits',
           ],
         },
