@@ -251,7 +251,57 @@ const sidebars =
           },
           items: 
           [
-            'projects/tcet-linux/getting-started',
+            'projects/tcet-linux/about-tcet-linux',
+            'projects/tcet-linux/idea-behind-creating-tcet-linux',
+            'projects/tcet-linux/variants-releases',
+            {
+              type: 'category',
+              label: 'Installation Steps',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tcet-linux/installation/requirements-download-verify',
+              },
+              items: 
+              [
+                'projects/tcet-linux/installation/installation-in-drive',
+                'projects/tcet-linux/installation/installation-in-vm',
+                'projects/tcet-linux/installation/installation-steps',
+                'projects/tcet-linux/installation/troubleshoot-installation',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Guides',
+              link:
+              {
+                type: 'doc',
+                id: 'projects/tcet-linux/guides/getting-started',
+              },
+              items: 
+              [
+                'projects/tcet-linux/guides/install-remove-update-package',
+                'projects/tcet-linux/guides/alias-commands',
+                'projects/tcet-linux/guides/system-maintenance',
+		'projects/tcet-linux/guides/yay',
+                {
+                  type: 'category',
+                  label: 'Application',
+                  link:
+                  {
+                    type: 'doc',
+                    id: 'projects/tcet-linux/guides/application/getting-started-with-application',
+                  },
+                  items: 
+                  [
+                    'projects/tcet-linux/guides/application/welcome-app',
+                    'projects/tcet-linux/guides/application/troubleshoot-application',
+                  ],
+                },
+              ],
+            },
+            'projects/tcet-linux/contribute-tcet-linux',
+            'projects/tcet-linux/resources',
             {
               type: 'category',
               label: 'ISO Profile',
@@ -262,11 +312,12 @@ const sidebars =
               },
               items: 
               [
-                  'projects/tcet-linux/iso-profile/rootfs',
-                  'projects/tcet-linux/iso-profile/bootloaders',
-                  'projects/tcet-linux/iso-profile/scripts',
+                'projects/tcet-linux/iso-profile/rootfs',
+                'projects/tcet-linux/iso-profile/bootloaders',
+                'projects/tcet-linux/iso-profile/scripts',
               ],
             },
+            'projects/tcet-linux/references-credits',
           ],
         },
       ],
