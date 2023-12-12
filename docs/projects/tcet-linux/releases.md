@@ -1,8 +1,8 @@
 ---
-title: Variants & Releases
-id: variants-releases
-sidebar_label: Variants & Releases
-description: Variants & Releases of TCET Linux
+title: Releases
+id: releases
+sidebar_label: Releases
+description: Releases of TCET Linux
 keywords: [Variants, Releases]
 ---
 
@@ -31,4 +31,13 @@ There have been 3 major releases as of now and the prime changes include:
 - Fixed resolutions for virtual machine.
 
 Several other issues and bugs have been fixed and new improvements have been made in this release phase. 
+
+## 3. Official Release
+
+The Official Release marks a significant milestone for TCET Linux, representing **a stable and feature-rich version** *ready for widespread use*. Each official release undergoes rigorous testing and includes a curated set of enhancements, fixes, and new features.
+
+:::tip
+1. You can visit here get the latest information on  **[Official Releases](https://github.com/tcet-opensource/tcet-linux/releases)** for TCET Linux.
+:::
+<br />
 Stay tuned in for more updates as there's no stopping to it!
