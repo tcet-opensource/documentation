@@ -54,4 +54,4 @@ Before you begin, ensure you have:
 10. **Installation Setup:**
     - Follow installation instructions to set up your system.
 
-Congratulations! You've successfully partitioned your drive for TCET Linux alongside Windows.
+_Congratulations! You've successfully done [**partitioning of your drive**](partitioning). Let's move on and see how we can proceed with [**Installer**](installation-steps) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
