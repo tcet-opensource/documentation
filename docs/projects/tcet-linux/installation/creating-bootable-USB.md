@@ -1,8 +1,8 @@
 ---
 title: Steps to create bootable pendrive
-id: installation-in-drive
+id: creating-bootable-USB
 description: Installation Steps of Tcet Linux using a Bootable Drive
-sidebar_label: Installation In Drive
+sidebar_label: Creating Bootable USB
 keywords: [Installation Steps, Installation, Steps, Guide, linux guide, bootable drive]
 ---
 
