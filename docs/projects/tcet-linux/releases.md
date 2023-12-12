@@ -8,12 +8,12 @@ keywords: [Variants, Releases]
 
 In the world of Linux, variant releases refers to the different distributions or *distros* in linux. These may be developed by the organisation, or a community or an individual and further they keep on updating. These distributions include the Linux kernel along with supporting system software and libraries to create a complete operating system.
 
-In context to TCET Linux, there have been 2 major release phases, namely **OPEN ALPHA** and **BETA RELEASE ENGINEERING**. 
+In context to TCET Linux, there have been 3 major release phases, namely **OPEN ALPHA**, **BETA RELEASE ENGINEERING** and **OFFICIAL RELEASE**.
 
 Here is a brief about both of them-
 
 ## 1. Open Alpha
-Under this release phase, there were 3 major releases consecutively.
+Under this release phase, there were 3 major releases consecutively.    
 - Open Alpha Build 1
 - Open Alpha Build 5
 - Open Alpha Build 9
