@@ -162,7 +162,7 @@ import installFinish from "/docs/projects/tcet-linux/assets/installFinish.png";
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
 2. For additional help ask on the **TCET Linux Discussions Channel** group on **[TCET Linux Discord Server](https://discord.gg/r7ZhAREg2M)**.
 3. You can see how we can resolve any issues while installation in [**Troubleshoot-Installation**](troubleshoot-installation) section for **[TCET Linux](https://linux.tcetmumbai.in/).
-4. You can also read the installation steps guide in our website **[TCET Linux](https://linux.tcetmumbai.in/#installation).
+4. You can also read the installation steps guide in our website **[TCET Linux](https://linux.tcetmumbai.in/#installation).**
 :::
 <br />
 
