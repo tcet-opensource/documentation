@@ -12,10 +12,12 @@ keywords: [Installation Steps, Calamares Installer]
 
 import installWelcome from "/docs/projects/tcet-linux/assets/installWelcome.png";
 
+
+<center>
 <img src = {installWelcome} style={{ border: "2px solid gray" }} />
 
-<br />
-<center><b><figcaption>Welcome Page</figcaption></b></center>
+
+<b><figcaption>Welcome Page</figcaption></b></center>
 <br />
 
 ## **Set Your Location**
@@ -25,10 +27,11 @@ import installWelcome from "/docs/projects/tcet-linux/assets/installWelcome.png"
 
 import installLocation from "/docs/projects/tcet-linux/assets/installLocation.png";
 
+<center>
 <img src = {installLocation} style={{ border: "2px solid gray" }} />
 
-<br />
-<center><b><figcaption>Location Page</figcaption></b></center>
+
+<b><figcaption>Location Page</figcaption></b></center>
 <br />
 
 ## **Choose Keyboard Layout**
@@ -37,10 +40,11 @@ import installLocation from "/docs/projects/tcet-linux/assets/installLocation.pn
 
 import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.png";
 
+<center>
 <img src = {installKeyboard} style={{ border: "2px solid gray" }} />
 
-<br />
-<center><b><figcaption>Keyboard Page</figcaption></b></center>
+
+<b><figcaption>Keyboard Page</figcaption></b></center>
 <br />
 
 ## **Storage Partitioning**
@@ -85,12 +89,21 @@ import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.pn
      - **Finalize and Apply:**
        Confirm your choices and apply the changes. Double-check to avoid data loss. 
 
-import installPartition from "/docs/projects/tcet-linux/assets/installPartition.png";
-
-<img src = {installPartition} style={{ border: "2px solid gray" }} />
+:::warning
+**Important Note for Multiple OS Installation:**
+- If you intend to have multiple operating systems on your disk, such as dual-booting with another OS, it is recommended to choose manual partitioning.
+- Use **"Erase Full Disk & Install" only if** you are installing **TCET Linux as a Virtual Machine** OR **You Want TCET Linux to be the sole operating system** on your machine. This option will erase the entire disk, including other operating systems and data.
+:::
 
 <br />
-<center><b><figcaption>Partition Page</figcaption></b></center>
+
+import installPartition from "/docs/projects/tcet-linux/assets/installPartition.png";
+
+<center>
+<img src = {installPartition} style={{ border: "2px solid gray" }} />
+
+
+<b><figcaption>Partition Page</figcaption></b></center>
 <br />
 
 ## **User Details**
@@ -99,10 +112,11 @@ import installPartition from "/docs/projects/tcet-linux/assets/installPartition.
 
 import installUser from "/docs/projects/tcet-linux/assets/installUser.png";
 
+<center>
 <img src = {installUser} style={{ border: "2px solid gray" }} />
 
-<br />
-<center><b><figcaption>User Page</figcaption></b></center>
+
+<b><figcaption>User Page</figcaption></b></center>
 <br />
 
 ## **Summary**
@@ -111,10 +125,11 @@ import installUser from "/docs/projects/tcet-linux/assets/installUser.png";
 
 import installSummary from "/docs/projects/tcet-linux/assets/installSummary.png";
 
+<center>
 <img src = {installSummary} style={{ border: "2px solid gray" }} />
 
-<br />
-<center><b><figcaption>Summary Page</figcaption></b></center>
+
+<b><figcaption>Summary Page</figcaption></b></center>
 <br />
 
 ## **Installation Process**
@@ -123,10 +138,11 @@ import installSummary from "/docs/projects/tcet-linux/assets/installSummary.png"
 
 import installInstall from "/docs/projects/tcet-linux/assets/installInstall.png";
 
+<center>
 <img src = {installInstall} style={{ border: "2px solid gray" }} />
 
-<br />
-<center><b><figcaption>Installation Process Page</figcaption></b></center>
+
+<b><figcaption>Installation Process Page</figcaption></b></center>
 <br />
 
 ## **Installation Complete**
@@ -135,17 +151,18 @@ import installInstall from "/docs/projects/tcet-linux/assets/installInstall.png"
 
 import installFinish from "/docs/projects/tcet-linux/assets/installFinish.png";
 
+<center>
 <img src = {installFinish} style={{ border: "2px solid gray" }} />
 
-<br />
-<center><b><figcaption>Finish Page</figcaption></b></center>
+
+<b><figcaption>Finish Page</figcaption></b></center>
 <br />
 
 :::tip
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
 2. For additional help ask on the **TCET Linux Discussions Channel** group on **[TCET Linux Discord Server](https://discord.gg/r7ZhAREg2M)**.
 3. You can see how we can resolve any issues while installation in [**Troubleshoot-Installation**](troubleshoot-installation) section for **[TCET Linux](https://linux.tcetmumbai.in/).
-4. You can also read the installation steps guide in our website **[TCET Linux](https://linux.tcetmumbai.in/#installation).
+4. You can also read the installation steps guide in our website **[TCET Linux](https://linux.tcetmumbai.in/#installation).**
 :::
 <br />
 
