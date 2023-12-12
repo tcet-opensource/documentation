@@ -264,7 +264,7 @@ const sidebars =
               },
               items: 
               [
-                'projects/tcet-linux/installation/installation-in-drive',
+                'projects/tcet-linux/installation/creating-bootable-USB',
                 'projects/tcet-linux/installation/partitioning',
                 'projects/tcet-linux/installation/installation-in-vm',
                 'projects/tcet-linux/installation/installation-steps',

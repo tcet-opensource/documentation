@@ -78,4 +78,4 @@ By following these steps and confirming the match of the hash values, you can pr
 :::
 <br />
 
-_The [**Requirements Download & Verify**](requirements-download-verify) was succesfully executed! Let's move on and see how we can [**Install In Drive**](installation-in-drive) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
+_The [**Requirements Download & Verify**](requirements-download-verify) was succesfully executed! Let's move on and see how we can [**Create a Bootable Pendrive & Partitioning of Drive**](creating-bootable-USB) of **[TCET Linux](https://linux.tcetmumbai.in/)**._
