@@ -63,4 +63,4 @@ After completing the bootable pendrive installation, your USB is ready. Proceed 
 
 Explore the potential of [TCET Linux](https://linux.tcetmumbai.in/) and enjoy a seamless open-source experience!
 
-_After successfully implementing the **[bootable pendrive installation](installation-in-drive)** of **[TCET Linux](https://linux.tcetmumbai.in/)**, we were ready with a bootable drive. Next, we will be seeing how we can install it using virtual machine ._
+_After successfully implementing the **[bootable pendrive installation](creating-bootable-USB)** of **[TCET Linux](https://linux.tcetmumbai.in/)**, we were ready with a bootable drive. Next, we will be seeing how we can do partitioning of the drive._
