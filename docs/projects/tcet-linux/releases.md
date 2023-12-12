@@ -10,7 +10,7 @@ In the world of Linux, variant releases refers to the different distributions or
 
 In context to TCET Linux, there have been 3 major release phases, namely **OPEN ALPHA**, **BETA RELEASE ENGINEERING** and **OFFICIAL RELEASE**.
 
-Here is a brief about both of them-
+Here is a brief about all of them-
 
 ## 1. Open Alpha
 Under this release phase, there were 3 major releases consecutively.    
@@ -34,7 +34,7 @@ Several other issues and bugs have been fixed and new improvements have been mad
 
 ## 3. Official Release
 
-The Official Release marks a significant milestone for TCET Linux, representing **a stable and feature-rich version** *ready for widespread use*. Each official release undergoes rigorous testing and includes a curated set of enhancements, fixes, and new features.
+The Official Release marks a significant milestone for TCET Linux, representing ***a stable and feature-rich version*** **ready for widespread use**. Each official release undergoes rigorous testing and includes a curated set of enhancements, fixes, and new features.
 
 :::tip
 1. You can visit here get the latest information on  **[Official Releases](https://github.com/tcet-opensource/tcet-linux/releases)** for TCET Linux.
