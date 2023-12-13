@@ -18,13 +18,6 @@ If you've forgotten the root password on your TCET Linux system, you can reset i
 
     - Interrupt the booting process by pressing the 'e' key on the keyboard. This allows you to make changes to the boot entry.
 
-import resetPassword1 from "/docs/projects/tcet-linux/assets/resetPassword1.jpg";
-
-<center>
-  <img src = {resetPassword1} style={{ border: "2px solid gray" }} />
-  <b><figcaption>Grub Boot Menu</figcaption></b>
-</center>
-
 
 3. Modify Boot Entry:
 
@@ -42,13 +35,6 @@ import resetPassword1 from "/docs/projects/tcet-linux/assets/resetPassword1.jpg"
   linux          /boot/vmlinuz-linux init=/bin/bash
   ```
 
-import resetPassword2 from "/docs/projects/tcet-linux/assets/resetPassword2.jpg";
-
-<center>
-  <img src = {resetPassword2} style={{ border: "2px solid gray" }} />
-  <b><figcaption>Change Grub Boot Entry</figcaption></b>
-</center>
-
 4. Boot into Single-User Mode:
 
     - Press `Ctrl + X` to boot into single-user mode with the root filesystem mounted with read-only (ro) access rights.
@@ -61,12 +47,6 @@ import resetPassword2 from "/docs/projects/tcet-linux/assets/resetPassword2.jpg"
   mount -n -o remount,rw /
   ```
 
-import resetPassword3 from "/docs/projects/tcet-linux/assets/resetPassword3.jpg";
-
-<center>
-  <img src = {resetPassword3} style={{ border: "2px solid gray" }} />
-  <b><figcaption>Mount Root Filesystem</figcaption></b>
-</center>
 
 6. Reset Root Password:
 
@@ -78,12 +58,6 @@ import resetPassword3 from "/docs/projects/tcet-linux/assets/resetPassword3.jpg"
 
     - Specify your new root password and confirm it. If the process is successful, you will see the output: 'password updated successfully'.
 
-import resetPassword4 from "/docs/projects/tcet-linux/assets/resetPassword4.jpg";
-
-<center>
-  <img src = {resetPassword4} style={{ border: "2px solid gray" }} />
-  <b><figcaption>Reset Root Password</figcaption></b>
-</center>
 
 7. Save Changes and Restart:
 
