@@ -288,6 +288,7 @@ const sidebars =
                 'projects/tcet-linux/guides/system-maintenance',
 		            'projects/tcet-linux/guides/yay',
 		            'projects/tcet-linux/guides/backup-restore-timeshift',
+		            'projects/tcet-linux/guides/chroot',
                 {
                   type: 'category',
                   label: 'Application',
