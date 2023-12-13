@@ -6,18 +6,56 @@ description: A brief overview of Installation in VM
 keywords: [tcet, open-source, linux]
 ---
 
-# Installing TCET Linux on a Virtual Machine
-
 In this guide, we'll walk you through the steps to download and install TCET Linux on a Virtual Machine (VM). TCET Linux is a customizable Linux distribution based on Arch Linux, suitable for a wide range of use cases. By running it on a VM, you can explore its features without affecting your primary operating system.
 
 ## Prerequisites
 
 Before you begin, make sure you have the following:
 
-- A Virtual Machine software (e.g., VirtualBox, VMware, or Hyper-V) installed on your host machine.
+- A Virtual Machine software (e.g., VirtualBox, VMware, or Hyper-V) installed on your host machine. In this guide we have considered virtual box as the virtual machine software.
 - The TCET Linux ISO image downloaded from the TCET Linux website.
 
 ## Steps to Install TCET Linux on a Virtual Machine
+
+### Additional Steps for Arch Linux Hosts
+
+1. **Check your Kernel:**
+
+   Before installing TCET Linux, it's essential to check your Linux kernel version. Open a terminal and run the following command:
+
+   ```bash
+   uname -r
+   ```
+
+   This command will display your current Linux kernel version.
+
+2. **Installation Steps based on Kernel:**
+
+   - If you have a regular linux kernel, follow these steps:
+     ```bash
+     # Install necessary dependencies
+     sudo pacman -S linux-headers
+
+     # Install VirtualBox or your preferred VM software
+     sudo pacman -S virtualbox
+
+     # Install host modules
+     sudo pacman -S virtualbox-host-modules-arch
+     ```
+
+   - If you have an LTS (Long-Term Support) or any other kernel, follow these steps:
+     ```bash
+     # Install necessary dependencies
+     sudo pacman -S linux-lts-headers
+
+     # Install VirtualBox or your preferred VM software
+     sudo pacman -S virtualbox
+
+     # Install host modules
+     sudo pacman -S virtualbox-host-dkms
+     ```
+
+### Common Steps:
 
 1. *Create a New Virtual Machine:*
 
