@@ -1,7 +1,7 @@
 ---
 title: TCET Linux Variant
 id: variant
-sidebar_label: TCET Linux Variant
+sidebar_label: Variants
 description: TCET Linux Variant 
 keywords: [tcet, open-source, linux, Variant]
 ---
