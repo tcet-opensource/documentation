@@ -253,6 +253,7 @@ const sidebars =
           [
             'projects/tcet-linux/about-tcet-linux',
             'projects/tcet-linux/idea-behind-creating-tcet-linux',
+            'projects/tcet-linux/variant',
             'projects/tcet-linux/releases',
             {
               type: 'category',
