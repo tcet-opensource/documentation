@@ -282,6 +282,7 @@ const sidebars =
               },
               items: 
               [
+                'projects/tcet-linux/guides/reset-password',
                 'projects/tcet-linux/guides/install-remove-update-package',
                 'projects/tcet-linux/guides/alias-commands',
                 'projects/tcet-linux/guides/system-maintenance',
