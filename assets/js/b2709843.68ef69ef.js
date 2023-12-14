@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[3554],{6951:e=>{e.exports=JSON.parse('{"label":"Mental Model","permalink":"/blog/tags/mental-model","allTagsPath":"/blog/tags","count":1}')}}]);

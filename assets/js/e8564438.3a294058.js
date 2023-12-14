@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[899],{4542:e=>{e.exports=JSON.parse('{"label":"Zero-to-Merge","permalink":"/blog/tags/zero-to-merge","allTagsPath":"/blog/tags","count":1}')}}]);
