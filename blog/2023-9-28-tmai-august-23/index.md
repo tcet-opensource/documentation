@@ -1,5 +1,14 @@
 ---
-author: [Arya, Saurabha, Vrushali]
+authors:
+  - name: Sharukhali Syed
+    title: President - Mind Benders
+    url: https://github.com/ai-apex-dev
+  - name: Arya Mane
+    title: Publication Head - Mind Benders
+  - name: Saurabha Sawant
+    title: Opensource -  Mind Benders
+  - name: Vrushali Sandam
+    title: Technical Head - Mind Benders
 title: This Month in AI - August 2023
 lastmod: "2023-10-17"
 date: "2023-09-28"
