@@ -76,7 +76,7 @@ In the dynamic landscape of artificial intelligence, November brought forth a wa
    - Elon Musk's Neuralink captures widespread interest as thousands line up for brain chip implants. Approved for human trials, the brain-computer interface aims to empower those with neurological disorders, opening avenues from device control to mind-based communication.
 
 
- ![](neural_link.avif)
+ ![](neural_link.png)
 
 ## 8. Stable Video Diffusion: Revolutionizing Generative Video [^8]
    - Stability AI introduces Stable Video Diffusion, a potent foundation model for generative video. Publicly accessible on GitHub and Hugging Face, this model has the potential to generate customizable frames at varying frame rates, shaping the future of AI-driven video generation.
