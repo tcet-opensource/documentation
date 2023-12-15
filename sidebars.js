@@ -253,7 +253,8 @@ const sidebars =
           [
             'projects/tcet-linux/about-tcet-linux',
             'projects/tcet-linux/idea-behind-creating-tcet-linux',
-            'projects/tcet-linux/variants-releases',
+            'projects/tcet-linux/variant',
+            'projects/tcet-linux/releases',
             {
               type: 'category',
               label: 'Installation Steps',
@@ -264,7 +265,8 @@ const sidebars =
               },
               items: 
               [
-                'projects/tcet-linux/installation/installation-in-drive',
+                'projects/tcet-linux/installation/creating-bootable-USB',
+                'projects/tcet-linux/installation/partitioning',
                 'projects/tcet-linux/installation/installation-in-vm',
                 'projects/tcet-linux/installation/installation-steps',
                 'projects/tcet-linux/installation/troubleshoot-installation',
@@ -280,10 +282,13 @@ const sidebars =
               },
               items: 
               [
+                'projects/tcet-linux/guides/reset-password',
                 'projects/tcet-linux/guides/install-remove-update-package',
                 'projects/tcet-linux/guides/alias-commands',
                 'projects/tcet-linux/guides/system-maintenance',
-		'projects/tcet-linux/guides/yay',
+		            'projects/tcet-linux/guides/yay',
+		            'projects/tcet-linux/guides/backup-restore-timeshift',
+		            'projects/tcet-linux/guides/chroot',
                 {
                   type: 'category',
                   label: 'Application',

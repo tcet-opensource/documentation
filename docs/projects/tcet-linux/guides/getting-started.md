@@ -103,7 +103,7 @@ You can easily customize the look of your TCET Linux desktop. You can follow the
 import wallpaper from "/docs/projects/tcet-linux/assets/Wallpaper.png";
 
 <center>
-  <img src = {wallpaper} style={{ border: "2px solid gray" }} />>
+  <img src = {wallpaper} style={{ border: "2px solid gray" }} />
   <b><figcaption>Wallpapers</figcaption></b>
 </center>
 
@@ -208,7 +208,7 @@ import fileSystem from "/docs/projects/tcet-linux/assets/FileSystem.png";
 
 <center>
   <img src = {fileSystem} style={{ border: "2px solid gray" }} />
-  <b><figcaption>File System</figcaption></b>>
+  <b><figcaption>File System</figcaption></b>
 </center>
 
 :::tip
