@@ -246,8 +246,11 @@ const sidebars =
           label: 'TCET Linux',
           link: 
           {
-            type: 'doc',
-            id: 'projects/tcet-linux/about-tcet-linux',
+            type: 'generated-index',
+            title: 'TCET Linux',
+            description: 'TCET Linux is an open-source operating system providing basic services, and various software packages that make up the user-space applications, utilities and it is highly customized. Our goal in creating this operating system is to provide a platform that combines robust functionality with a user-friendly experience. Built from the ground up, TCET Linux boasts efficient performance, customization options, and a range of features tailored to meet the needs of both casual users and enthusiasts.',
+            keywords: ['organization, resources'],
+      
           },
           items: 
           [
@@ -258,13 +261,10 @@ const sidebars =
             {
               type: 'category',
               label: 'Installation Steps',
-              link:
-              {
-                type: 'doc',
-                id: 'projects/tcet-linux/installation/requirements-download-verify',
-              },
+             
               items: 
               [
+                'projects/tcet-linux/installation/requirements-download-verify',
                 'projects/tcet-linux/installation/creating-bootable-USB',
                 'projects/tcet-linux/installation/partitioning',
                 'projects/tcet-linux/installation/installation-in-vm',
@@ -275,13 +275,10 @@ const sidebars =
             {
               type: 'category',
               label: 'Guides',
-              link:
-              {
-                type: 'doc',
-                id: 'projects/tcet-linux/guides/getting-started',
-              },
+              
               items: 
               [
+                'projects/tcet-linux/guides/getting-started',
                 'projects/tcet-linux/guides/reset-password',
                 'projects/tcet-linux/guides/install-remove-update-package',
                 'projects/tcet-linux/guides/alias-commands',
@@ -292,13 +289,10 @@ const sidebars =
                 {
                   type: 'category',
                   label: 'Application',
-                  link:
-                  {
-                    type: 'doc',
-                    id: 'projects/tcet-linux/guides/application/getting-started-with-application',
-                  },
+                 
                   items: 
                   [
+                    'projects/tcet-linux/guides/application/getting-started-with-application',
                     'projects/tcet-linux/guides/application/welcome-app',
                     'projects/tcet-linux/guides/application/troubleshoot-application',
                   ],
