@@ -1,11 +1,11 @@
 ---
-title: Troubleshoot Installation
+title: Troubleshooting While Installation
 id: troubleshoot-installation
 sidebar_label: Troubleshoot Installation
 description: A brief overview of Troubleshoot Installation
 keywords: [tcet, open-source, linux]
 ---
-# Troubleshooting Installation in TCET Linux
+
 
 This section provides guidance on identifying and resolving common installation-related problems in TCET Linux. If you encounter issues during the installation process, follow these steps to troubleshoot and overcome them.
 
