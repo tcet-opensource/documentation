@@ -1,7 +1,7 @@
 ---
-title: Requirements Download & Verify
+title: Requirements, Download & Verify
 id: requirements-download-verify
-sidebar_label: Requirement Download Verify
+sidebar_label: Requirements, Download & Verify
 description: A brief overview of Requirements Download Verify
 keywords: [Open Source, TCET Linux, Requirements, Download, Verify, Checksum, SHA256SUM ]
 ---
