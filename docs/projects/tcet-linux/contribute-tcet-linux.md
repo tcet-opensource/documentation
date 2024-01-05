@@ -1,5 +1,5 @@
 ---
-title: Contribute to TCET LINUX!
+title: Contribute to TCET Linux
 id: contribute-tcet-linux
 sidebar_label: Contribute to TCET Linux
 description: Contribute to TCET Linux
