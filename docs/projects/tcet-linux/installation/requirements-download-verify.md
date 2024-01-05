@@ -19,18 +19,17 @@ These requirements ensure that TCET Linux runs smoothly on your computer, whethe
 
 ## Downloading TCET Linux
 
-To get started with TCET Linux, you can download the latest ISO image from the TCET Linux website. We recommend the following steps for downloading and creating a bootable USB drive:
+To get started with TCET Linux, you can download the latest ISO file from the TCET Linux website. We recommend the following steps for downloading and creating a bootable USB drive:
 
 1. Visit the TCET Linux website at **[TCET Linux Website](https://linux.tcetmumbai.in/)**.
-2. Locate the download section and select the latest TCET Linux ISO image.
-3. Download the ISO image to your computer.
+2. Locate the download section and select the latest TCET Linux ISO file.
+3. Download the ISO file to your computer.
 
 ## Verify
 ### Step 1: Verify the Integrity of the TCET Linux ISO
 
 Before proceeding with the installation, it's crucial to verify the integrity of the downloaded TCET Linux ISO file.
 
-- Here *IMAGE:* Refers to the downloaded ISO file (iso-name.iso in Step 1).
 - The verification is performed to guarantee the integrity of the downloaded file and to prevent potential corruption during the download process.
 - TCET Linux provides a unique checksum for each OS release, enhancing security and ensuring that users have an authentic and unaltered file.
 
