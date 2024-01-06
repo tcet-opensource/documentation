@@ -11,14 +11,14 @@ It enhances the Arch Linux experience by providing a convenient way to access a 
 
 To provide an efficient, customizable, and user-friendly environment suitable for a diverse range of users, TCET Linux was conceived with several key goals in mind.
 
-# Dependency
+## Dependency
 
 Open a terminal and install `git` if not already installed:
 
 ```bash
 sudo pacman -S git
 ```
-# A. YAY Installation
+## YAY Installation
 
    1. YAY on Any Arch Linux System 
 
@@ -49,7 +49,7 @@ sudo pacman -S git
          ```
 
 
-# B. Install AUR Packages through YAY
+## Install AUR Packages through YAY
 
 Once `yay` is installed, you can use it to easily install packages from the Arch User Repository (AUR). Here's how you can do it:
 
@@ -74,7 +74,7 @@ Once `yay` is installed, you can use it to easily install packages from the Arch
       yay -R <package_name>
       ```
 
-# C. Example: Installing `visual-studio-code-bin`
+## Example: Installing visual-studio-code-bin
 
 1. **Search for `visual-studio-code` Packages:**
    Search for available `visual-studio-code` packages on the AUR:

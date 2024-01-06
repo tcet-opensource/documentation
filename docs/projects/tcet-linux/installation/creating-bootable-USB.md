@@ -16,27 +16,73 @@ Here's an example with Rufus
 
 Download the latest version from our [official website](https://linux.tcetmumbai.in/#download).
 
-![Download TCET Linux](../assets/tldown.png)
+import tldown from "/docs/projects/tcet-linux/assets/tldown.png";
+
+
+<center>
+<img src = {tldown} style={{ border: "2px solid gray" }} />
+
+
+<b><figcaption>Download TCET Linux</figcaption></b></center>
+<br />
+
 
 ### Step 2: Prepare the Bootable USB Stick with Rufus
 
 1. Download and install [Rufus](https://rufus.ie/) on your Windows PC.
 
-   ![Download Rufus](../assets/rufusdown.png)
+
+import rufusdown from "/docs/projects/tcet-linux/assets/rufusdown.png";
+
+
+<center>
+<img src = {rufusdown} style={{ border: "2px solid gray" }} />
+
+
+<b><figcaption>Download Rufus</figcaption></b></center>
+<br />
+
 
 2. Open Rufus, granting necessary permissions.
 
-   ![Rufus Window](../assets/rufusprom.png)
+import rufusprom from "/docs/projects/tcet-linux/assets/rufusprom.png";
+
+
+<center>
+<img src = {rufusprom} style={{ border: "2px solid gray" }} />
+
+
+<b><figcaption>Rufus Window</figcaption></b></center>
+<br />
+
 
 3. Select your USB device under "Device" and choose the TCET Linux ISO by clicking on `SELECT`.
 
-   ![Rufus ISO Selection](../assets/rufuspromfinal.png)
+
+import rufuspromfinal from "/docs/projects/tcet-linux/assets/rufuspromfinal.png";
+
+
+<center>
+<img src = {rufuspromfinal} style={{ border: "2px solid gray" }} />
+
+
+<b><figcaption>Rufus ISO Selection</figcaption></b></center>
+<br />
 
 4. Configure the settings: 
    - Ensure the partition scheme is MBR for compatibility with both BIOS and UEFI systems.
    - Click `START`.
 
-   ![Rufus Settings](../assets/isofinal.png)
+import isofinal from "/docs/projects/tcet-linux/assets/isofinal.png";
+
+
+<center>
+<img src = {isofinal} style={{ border: "2px solid gray" }} />
+
+
+<b><figcaption>Rufus Settings</figcaption></b></center>
+<br />
+
 
 5. Choose DD mode in the pop-up menu and click `OK`. Be aware that all data on the USB will be erased.
 
