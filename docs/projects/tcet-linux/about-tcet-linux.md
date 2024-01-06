@@ -73,7 +73,7 @@ You can visit to some learning resources listed on **[Resource Page](/docs/proje
 
 - **Contribute to TCET Linux**: Contribution guide for TCET Linux.
 
-- **Resources**: Resources for TCET Linux.
+- **Resources**: Resources referred and used for development of TCET Linux.
 
 - **ISO Profile**: ISO Profile of TCET Linux.
 
