@@ -11,7 +11,7 @@ keywords: [tcet, open-source, linux]
 TCET Linux is GNU/Linux distribution, based on Arch Linux built for enhancing college infrastructure and promoting Linux in software engineering education. 
 
 
-## Here are some key features : ##
+## Whats Offered in TCET Linux: ##
 
 1) Desktop Environment (XFCE): TCET Linux uses the XFCE desktop environment, known for its lightweight and intuitive design. Customize your desktop, panels, and appearance to suit your preferences.
 
@@ -25,29 +25,13 @@ TCET Linux is GNU/Linux distribution, based on Arch Linux built for enhancing co
 
 6) Customizing TCET Linux: Tailor your system to your liking by changing themes, icons, and installing additional software packages through the pacman package manager.
 
-## System Administration ##
-
-1) User Management: Learn to create, modify, and manage user accounts for a personalized computing environment.
-
-2) Package Management (Pacman): Explore Pacman, the package manager for Arch-based distributions. Install, update, and remove software packages with ease.
-
-3) Networking Configuration: Configure network settings, connect to Wi-Fi, and troubleshoot network issues.
-
-4) Security Guidelines: Discover essential security practices to protect your system from threats and vulnerabilities.
-
-5) Troubleshooting Tips: Troubleshoot common issues with our troubleshooting guide and seek help from the TCET Linux community.
-
-## Development and Customization ##
-
-1) Building Custom Packages: Explore how to build [custom package](https://wiki.archlinux.org/title/PKGBUILD) and build your own package.
+7) Application Manager: Gives you to choose which software should be installed in your system. So that, you can tailor your system with your choices of softwares.
 
 
-
-2) Customizing XFCE: Personalize your desktop environment with themes, icons, and keyboard shortcuts.
 
 ## Community and Support ##
 
-Join the TCET Linux [discord server](https://discord.com/channels/1077233618109337691/1096352605883609108) to connect with fellow users, report bugs, and seek help. Engage with a supportive community dedicated to making your TCET Linux experience exceptional.
+Join the [TCET Linux Discussion Group](https://discord.com/channels/1077233618109337691/1096352605883609108) to connect with other users, and seek help.
 
 *Contributing to TCET Linux*
 
