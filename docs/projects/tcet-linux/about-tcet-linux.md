@@ -59,9 +59,24 @@ You can visit to some learning resources listed on **[Resource Page](/docs/proje
 
 *Appendices*
 
-- Glossary: Find explanations for common Linux and TCET Linux terms.
-- References: Access additional resources and documentation for further learning.
-- Changelog: Stay informed about TCET Linux updates and improvements.
-- License Information: Understand the licensing terms for TCET Linux components.
+- **About TCET Linux**: A brief overview of TCET Linux.
+
+- **Idea for creating TCET Linux**: A motivation and idea for creating TCET Linux.
+
+- **Variants**: TCET Linux Variant.
+
+- **Releases**: Releases and Verions Information for TCET Linux.
+
+- **Installation Steps**: Installation Steps and Troubleshooting while Installation.
+
+- **Guides**: Basic Guide, Application Guide and Application Troubleshooting.
+
+- **Contribute to TCET Linux**: Contribution guide for TCET Linux.
+
+- **Resources**: Resources for TCET Linux.
+
+- **ISO Profile**: ISO Profile of TCET Linux.
+
+- **References and Credits**: List of all References and Credits for TCET Linux.
 
 TCET Linux empowers users with a powerful, flexible, and efficient Linux distribution tailored to diverse needs. With this documentation, you have the resources to harness the full potential of TCET Linux and embark on a journey of exploration, customization, and productivity. Welcome to the TCET Linux community!
