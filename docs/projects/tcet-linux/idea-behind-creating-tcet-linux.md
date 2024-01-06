@@ -15,7 +15,7 @@ import yayInstallChrome from "/docs/projects/tcet-linux/assets/linuxidea.png";
 
 TCET Linux is a custom Linux distribution rooted in the Arch Linux ecosystem. Its creation is driven by a core idea: to provide an efficient, customizable, and user-friendly environment suitable for a diverse range of users. TCET Linux was conceived with several key goals in mind:
 
-1. **Customization:** TCET Linux aims to give users the freedom to tailor their computing experience to their specific needs. This extends to the choice of desktop environment, software packages, and system configurations.
+1. **Customization:** The XFCE Desktop Environment that is provided with the distribution gives users the freedom to tailor their computing experience to their specific needs. This extends to the choice of desktop environment, software packages, and system configurations.
 
 2. **Optimization:** The distribution emphasizes efficiency and performance, ensuring that it runs smoothly on a variety of hardware configurations, from older machines to modern systems.
 
