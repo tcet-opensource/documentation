@@ -153,7 +153,7 @@ Here's a breakdown of the information displayed by neofetch
 - **GPU**: Information about your graphics processing unit.
 - **Memory**: RAM usage information.
 
-import Neofetch from "/docs/projects/tcet-linux/assets/neofetch.jpg";
+import Neofetch from "/docs/projects/tcet-linux/assets/neofetch.png";
 
 <center>
   <img src = {Neofetch} style={{ border: "2px solid gray" }} />
