@@ -25,11 +25,10 @@ unalias LA
 
 import editAliasCommand from "/docs/projects/tcet-linux/assets/edit-alias-commands.png";
 
-<img src = {editAliasCommand} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>Add & Remove Alias Example</figcaption></b></center>
-<br />
+<center>
+  <img src = {editAliasCommand} style={{ border: "2px solid gray" }} />
+  <b><figcaption>Add & Remove Alias Example</figcaption></b>
+</center>
 
 
 ## All Alias Commands
@@ -345,12 +344,10 @@ Replace `command_name` with the name of the command you want to locate. *The `wh
 
 import aliasCommands from "/docs/projects/tcet-linux/assets/alias-commands.png";
 
-<img src = {aliasCommands} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>All Default Installed Alias Commands</figcaption></b></center>
-<br />
-
+<center>
+  <img src = {aliasCommands} style={{ border: "2px solid gray" }} />
+  <b><figcaption>All Default Installed Alias Commands</figcaption></b>
+</center>
 
 
 :::tip

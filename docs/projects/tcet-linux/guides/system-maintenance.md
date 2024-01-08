@@ -92,11 +92,10 @@ Performing this full system upgrade regularly helps keep your TCET Linux system 
 
 import systemUpdate from "/docs/projects/tcet-linux/assets/systemUpdate.png";
 
-<img src = {systemUpdate} style={{ border: "2px solid gray" }} />
-
-<br />
-<center><b><figcaption>System Update</figcaption></b></center>
-<br />
+<center>
+  <img src = {systemUpdate} style={{ border: "2px solid gray" }} />
+  <b><figcaption>System Update</figcaption></b>
+</center>
 
 
 :::tip
