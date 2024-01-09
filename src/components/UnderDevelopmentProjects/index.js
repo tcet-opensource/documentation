@@ -16,7 +16,7 @@ const UnderDevelopmentProjects = () => {
         {
             "image": "/img/tl.png",
             "title": "TCET Linux",
-            "description": "TCET Linux is GNU/Linux distribution, based on Arch Linux built for enhancing college infrastructure and promoting Linux in software engineering education. There is a latest and final release in its beta release engineering phase. ",
+            "description": "TCET Linux is Custom Linux distribution, based on Arch Linux built for enhancing college infrastructure and promoting Linux in software engineering education. Checkout the the project and official release of TCET Linux now!",
             "github": "https://github.com/tcet-opensource/tcet-linux"
         },
         {
