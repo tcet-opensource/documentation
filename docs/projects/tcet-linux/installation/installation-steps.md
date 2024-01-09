@@ -55,10 +55,10 @@ import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.pn
 
 <br />
 
-import installPartition from "/docs/projects/tcet-linux/assets/installPartitionEraseDisk.png";
+import installPartitionEraseDisk from "/docs/projects/tcet-linux/assets/installPartitionEraseDisk.png";
 
 <center>
-<img src = {installPartition} style={{ border: "2px solid gray" }} />
+<img src = {installPartitionEraseDisk} style={{ border: "2px solid gray" }} />
 <b><figcaption>Partition Page</figcaption></b></center>
 <br />
 
@@ -108,10 +108,10 @@ import installPartition from "/docs/projects/tcet-linux/assets/installPartitionE
 
 <br />
 
-import installPartition from "/docs/projects/tcet-linux/assets/installPartitionManual.png";
+import  installPartitionManual from "/docs/projects/tcet-linux/assets/installPartitionManual.png";
 
 <center>
-<img src = {installPartition} style={{ border: "2px solid gray" }} />
+<img src = {installPartitionManual} style={{ border: "2px solid gray" }} />
 
 
 <b><figcaption>Partition Page</figcaption></b></center>
