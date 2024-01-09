@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2114],{53655:s=>{s.exports=JSON.parse('{"label":"cyberpunk","permalink":"/blog/tags/cyberpunk","allTagsPath":"/blog/tags","count":1}')}}]);

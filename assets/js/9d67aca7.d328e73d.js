@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[1737],{6542:l=>{l.exports=JSON.parse('{"label":"cultural","permalink":"/blog/tags/cultural","allTagsPath":"/blog/tags","count":1}')}}]);
