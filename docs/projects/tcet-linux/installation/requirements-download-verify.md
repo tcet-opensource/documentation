@@ -12,7 +12,7 @@ Before you begin your journey with TCET Linux, it's essential to ensure that you
 
 - 64-bit processor
 - At least 2GB of RAM
-- 15GB of free disk space
+- 20GB of free disk space
 - An internet connection for updates and software installation
 
 These requirements ensure that TCET Linux runs smoothly on your computer, whether it's a modern system or a resource-constrained machine.
