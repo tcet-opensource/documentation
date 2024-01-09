@@ -63,42 +63,41 @@ import installPartitionEraseDisk from "/docs/projects/tcet-linux/assets/installP
 <br />
 
 
-   - **Manual Partitioning (Advanced):**
-   
-     For advanced users who want complete control over their disk partitions.
+- **Manual Partitioning (Advanced):**
+For advanced users who want complete control over their disk partitions.
 
-     - **Select Disk:**
-       Choose the disk where TCET Linux will be installed. This could be your SSD or HDD.
+- **Select Disk:**
+Choose the disk where TCET Linux will be installed. This could be your SSD or HDD.
 
-     - **Existing Partitions:**
-       If there are existing partitions, you'll see them listed. Decide whether to modify, delete, or keep them.
+- **Existing Partitions:**
+If there are existing partitions, you'll see them listed. Decide whether to modify, delete, or keep them.
 
-     - **Create Partitions:**
-       - **EFI System Partition (ESP):**
-         - Size: Typically around 800MB.
-         - Filesystem: FAT32.
-         - Mount Point: /boot/efi.
+- **Create Partitions:**
+  - **EFI System Partition (ESP):**
+    - Size: Typically around 800MB.
+    - Filesystem: FAT32.
+    - Mount Point: /boot/efi.
          
-       - **Root Partition (/):**
-         - Size: Allocate a sufficient amount, at least 12GB.
-         - Filesystem: ext4.
-         - Mount Point: /.
+  - **Root Partition (/):**
+    - Size: Allocate a sufficient amount, at least 12GB.
+    - Filesystem: ext4.
+    - Mount Point: /.
 
-       - **Home Partition (optional):**
-         - Size: As per your storage needs.
-         - Filesystem: ext4.
-         - Mount Point: /home.
+  - **Home Partition (optional):**
+    - Size: As per your storage needs.
+    - Filesystem: ext4.
+    - Mount Point: /home.
          
-       - **Swap Partition (optional):**
-         - Size: Recommended to be equal to or double your RAM.
-         - Filesystem: Swap.
+  - **Swap Partition (optional):**
+    - Size: Recommended to be equal to or double your RAM.
+    - Filesystem: Swap.
          
 
-     - **Filesystem and Mount Points:**
-       Assign a filesystem (e.g., ext4) and mount points for each partition correctly.
+- **Filesystem and Mount Points:**
+Assign a filesystem (e.g., ext4) and mount points for each partition correctly.
 
-     - **Finalize and Apply:**
-       Confirm your choices and apply the changes. Double-check to avoid data loss. 
+- **Finalize and Apply:**
+Confirm your choices and apply the changes. Double-check to avoid data loss. 
 
 :::warning
 **Important Note for Multiple OS Installation:**
