@@ -49,9 +49,19 @@ import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.pn
 
 ## **Storage Partitioning**
 
-   - **Automatic Setup (Recommended):**
+   - **Erase Disk (Recommended):**
    
-     The installer defaults to an automatic setup, creating a Fat32 EFI System Partition and a root partition with the ext4 filesystem. This is recommended for most users.
+     The installer defaults to an automatic setup, creating partitions depending on the available storage. The home and root partitions will be on the same partition, and swap may or may not be created. This option is highly recommended for beginners.
+
+<br />
+
+import installPartition from "/docs/projects/tcet-linux/assets/installPartitionEraseDisk.png";
+
+<center>
+<img src = {installPartition} style={{ border: "2px solid gray" }} />
+<b><figcaption>Partition Page</figcaption></b></center>
+<br />
+
 
    - **Manual Partitioning (Advanced):**
    
@@ -65,26 +75,27 @@ import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.pn
 
      - **Create Partitions:**
        - **EFI System Partition (ESP):**
-         - Size: Typically around 300MB.
+         - Size: Typically around 800MB.
          - Filesystem: FAT32.
          - Mount Point: /boot/efi.
          
        - **Root Partition (/):**
-         - Size: Allocate a sufficient amount, at least 20GB.
+         - Size: Allocate a sufficient amount, at least 12GB.
          - Filesystem: ext4.
          - Mount Point: /.
+
+       - **Home Partition (optional):**
+         - Size: As per your storage needs.
+         - Filesystem: ext4.
+         - Mount Point: /home.
          
        - **Swap Partition (optional):**
          - Size: Recommended to be equal to or double your RAM.
          - Filesystem: Swap.
          
-       - **Home Partition (optional):**
-         - Size: As per your storage needs.
-         - Filesystem: ext4.
-         - Mount Point: /home.
 
      - **Filesystem and Mount Points:**
-       Assign a filesystem (e.g., ext4) and mount points for each partition.
+       Assign a filesystem (e.g., ext4) and mount points for each partition correctly.
 
      - **Finalize and Apply:**
        Confirm your choices and apply the changes. Double-check to avoid data loss. 
@@ -97,7 +108,7 @@ import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.pn
 
 <br />
 
-import installPartition from "/docs/projects/tcet-linux/assets/installPartition.png";
+import installPartition from "/docs/projects/tcet-linux/assets/installPartitionManual.png";
 
 <center>
 <img src = {installPartition} style={{ border: "2px solid gray" }} />
