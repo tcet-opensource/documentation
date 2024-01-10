@@ -53,23 +53,23 @@ The Download component represents the Second section of the [**TCET Linux websit
     // Download Button
   ```
 
-3. This `<a> tag` *link element* represents the ***download button***. It has classes for styling, including a blue background color, padding, cursor style, rounded corners, and a border. The button contains the text ***Download*** and an image of a ***download icon***. The href attribute specifies the Github URL to downloadable ***iso image file*** which is linked to the [***Download***](https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/tcetlinux-2023.05.05-x86_64.iso). It is represented by line **1-4**. The `button` element in this section represents a **clickable** button. It has styles applied as per our requirements.
+3. This `<a> tag` *link element* represents the ***download button***. It has classes for styling, including a blue background color, padding, cursor style, rounded corners, and a border. The button contains the text ***Download*** and an image of a ***download icon***. The href attribute specifies the Github URL to downloadable ***iso image file*** which is linked to the [***Download***](https://github.com/tcet-opensource/tcet-linux/releases/download/v1.1/tcetlinux-2024.01.09-x86_64.iso). It is represented by line **1-4**. The `button` element in this section represents a **clickable** button. It has styles applied as per our requirements.
 
 ``` jsx title="DownloadSection.astro" {2-4} showLineNumbers
     // Discription
-            <a class="flex flex-row bg-blue-900 w-fit py-3 px-5 cursor-pointer gap-5 items-center justify-center rounded-full border-custom-w border-custom-border-color hover:bg-blue-500 font-semibold text-base" href="https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/tcetlinux-2023.05.05-x86_64.iso" >
+            <a class="flex flex-row bg-blue-900 w-fit py-3 px-5 cursor-pointer gap-5 items-center justify-center rounded-full border-custom-w border-custom-border-color hover:bg-blue-500 font-semibold text-base" href="https://github.com/tcet-opensource/tcet-linux/releases/download/v1.1/tcetlinux-2024.01.09-x86_64.iso" >
                 Download
                 <img class="w-full h-full" src="images/download-icon.svg" alt="" />
            </a>
     // Checksum Button
 ```
 
-4. This `<a> tag` *link element* represents the ***checksum button***. It has classes for styling, including border, padding, cursor style, and rounded corners. The button contains the text **Checksum** and an image of a **download icon**. The href attribute specifies the URL for the checksum section in the website. It has the text and downward arrow  displaying **"Checksum"** which is linked to the [*Checksum File*](https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/checksum). It is represented by line **2**. The `button` element in this section represents a **clickable** button.
+4. This `<a> tag` *link element* represents the ***checksum button***. It has classes for styling, including border, padding, cursor style, and rounded corners. The button contains the text **Checksum** and an image of a **download icon**. The href attribute specifies the URL for the checksum section in the website. It has the text and downward arrow  displaying **"Checksum"** which is linked to the [*Checksum File*](https://github.com/tcet-opensource/tcet-linux/releases/download/v1.1/checksum). It is represented by line **2**. The `button` element in this section represents a **clickable** button.
 
    ``` jsx title="DownloadSection.astro" {3,6,8} showLineNumbers
     // Download Button
          <a
-          href="https://github.com/tcet-opensource/tcet-linux/releases/download/v0.5-beta/checksum"
+          href="https://github.com/tcet-opensource/tcet-linux/releases/download/v1.1/checksum"
           class="flex flex-row w-max h-fit p-2 px-4 cursor-pointer gap-2 items-center justify-center border rounded-full border-white hover:bg-blue-50 hover:bg-opacity-20 text-white"
           id="req-btn">
               <span class="md:font-semibold">Checksum</span>
