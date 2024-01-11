@@ -36,7 +36,7 @@ TCET Linux is designed to run smoothly even on low-end hardware. In contrast to 
 ### **Department-Specific Configurations** 
 TCET Linux is adaptable to different academic departments. In the future, it aims to have TCET Linux installed and configured according to departmental requirements, enhancing its utility in various educational settings.
 
-### **Community-DrivenDevelopment** 
+### **Community-Driven Development** 
 TCET Linux is developed by a small group of individuals who are passionate about learning and enhancing the Linux ecosystem. It is a community-driven project that continually evolves to meet the needs of its users.
 
 TCET Linux is not just a Linux distribution; it's a reflection of a community's commitment to making Linux a valuable and accessible resource in the world of education and learning.
