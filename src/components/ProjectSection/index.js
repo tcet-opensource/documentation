@@ -20,8 +20,14 @@ const projects = [
     tools: ["Astro", "Typescript", "Javascript"],
   },
   {
+    name: "TCET Linux",
+    description: "TCET Linux is a custom Linux distribution rooted in the Arch Linux ecosystem. Its creation is driven by a core idea: to provide an efficient, customizable, and user-friendly environment suitable for a diverse range of users. Checkout the the project and official release of TCET Linux now!",
+    img: "TLProject.png",
+    tools: ["Arch Linux", "AUR", "XFCE", "& Many More"],
+  },
+  {
     name: "TCET Linux Website",
-    description: " An introductory and guidance website on TCET Linux Operating System.",
+    description: "An introductory and guidance website on TCET Linux Operating System.",
     img: "tl-web.png",
     tools: ["Astro", "Javascript", "Typescript"],
   },
