@@ -49,45 +49,55 @@ import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.pn
 
 ## **Storage Partitioning**
 
-   - **Automatic Setup (Recommended):**
+   - **Erase Disk (Recommended):**
    
-     The installer defaults to an automatic setup, creating a Fat32 EFI System Partition and a root partition with the ext4 filesystem. This is recommended for most users.
+     The installer defaults to an automatic setup, creating partitions depending on the available storage. The home and root partitions will be on the same partition, and swap may or may not be created. This option is highly recommended for beginners.
 
-   - **Manual Partitioning (Advanced):**
-   
-     For advanced users who want complete control over their disk partitions.
+<br />
 
-     - **Select Disk:**
-       Choose the disk where TCET Linux will be installed. This could be your SSD or HDD.
+import installPartitionEraseDisk from "/docs/projects/tcet-linux/assets/installPartitionEraseDisk.png";
 
-     - **Existing Partitions:**
-       If there are existing partitions, you'll see them listed. Decide whether to modify, delete, or keep them.
+<center>
+<img src = {installPartitionEraseDisk} style={{ border: "2px solid gray" }} />
+<b><figcaption>Partition Page</figcaption></b></center>
+<br />
 
-     - **Create Partitions:**
-       - **EFI System Partition (ESP):**
-         - Size: Typically around 300MB.
-         - Filesystem: FAT32.
-         - Mount Point: /boot/efi.
+
+- **Manual Partitioning (Advanced):**
+For advanced users who want complete control over their disk partitions.
+
+- **Select Disk:**
+Choose the disk where TCET Linux will be installed. This could be your SSD or HDD.
+
+- **Existing Partitions:**
+If there are existing partitions, you'll see them listed. Decide whether to modify, delete, or keep them.
+
+- **Create Partitions:**
+  - **EFI System Partition (ESP):**
+    - Size: Typically around 800MB.
+    - Filesystem: FAT32.
+    - Mount Point: /boot/efi.
          
-       - **Root Partition (/):**
-         - Size: Allocate a sufficient amount, at least 20GB.
-         - Filesystem: ext4.
-         - Mount Point: /.
-         
-       - **Swap Partition (optional):**
-         - Size: Recommended to be equal to or double your RAM.
-         - Filesystem: Swap.
-         
-       - **Home Partition (optional):**
-         - Size: As per your storage needs.
-         - Filesystem: ext4.
-         - Mount Point: /home.
+  - **Root Partition (/):**
+    - Size: Allocate a sufficient amount, at least 12GB.
+    - Filesystem: ext4.
+    - Mount Point: /.
 
-     - **Filesystem and Mount Points:**
-       Assign a filesystem (e.g., ext4) and mount points for each partition.
+  - **Home Partition (optional):**
+    - Size: As per your storage needs.
+    - Filesystem: ext4.
+    - Mount Point: /home.
+         
+  - **Swap Partition (optional):**
+    - Size: Recommended to be equal to or double your RAM.
+    - Filesystem: Swap.
+         
 
-     - **Finalize and Apply:**
-       Confirm your choices and apply the changes. Double-check to avoid data loss. 
+- **Filesystem and Mount Points:**
+Assign a filesystem (e.g., ext4) and mount points for each partition correctly.
+
+- **Finalize and Apply:**
+Confirm your choices and apply the changes. Double-check to avoid data loss. 
 
 :::warning
 **Important Note for Multiple OS Installation:**
@@ -97,10 +107,10 @@ import installKeyboard from "/docs/projects/tcet-linux/assets/installKeyboard.pn
 
 <br />
 
-import installPartition from "/docs/projects/tcet-linux/assets/installPartition.png";
+import  installPartitionManual from "/docs/projects/tcet-linux/assets/installPartitionManual.png";
 
 <center>
-<img src = {installPartition} style={{ border: "2px solid gray" }} />
+<img src = {installPartitionManual} style={{ border: "2px solid gray" }} />
 
 
 <b><figcaption>Partition Page</figcaption></b></center>
@@ -161,7 +171,7 @@ import installFinish from "/docs/projects/tcet-linux/assets/installFinish.png";
 :::tip
 1. You can visit on some learning resources listed on **[Resource Page](/docs/projects/tcet-linux/resources.md)** of TCET Linux documentation.
 2. For additional help ask on the **TCET Linux Discussions Channel** group on **[TCET Linux Discord Server](https://discord.gg/r7ZhAREg2M)**.
-3. You can see how we can resolve any issues while installation in [**Troubleshoot-Installation**](troubleshoot-installation) section for **[TCET Linux](https://linux.tcetmumbai.in/).
+3. You can see how we can resolve any issues while installation in [**Troubleshoot-Installation**](troubleshoot-installation) section for **[TCET Linux](https://linux.tcetmumbai.in/).**
 4. You can also read the installation steps guide in our website **[TCET Linux](https://linux.tcetmumbai.in/#installation).**
 :::
 <br />

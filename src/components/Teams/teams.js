@@ -3,6 +3,7 @@ import AiCard from "../../../static/img/TeamsSectionImages/AICard.png";
 import BackendCard from "../../../static/img/TeamsSectionImages/BackendCard.png";
 import CreativeCard from "../../../static/img/TeamsSectionImages/CreativeCard.png";
 import DevOpsCard from "../../../static/img/TeamsSectionImages/DevOpsCard.png";
+import TLTeam from "../../../static/img/TeamsSectionImages/TLTeam.png";
 import DocsCard from "../../../static/img/TeamsSectionImages/DocsCard.png";
 import FrontendCard from "../../../static/img/TeamsSectionImages/FrontendCard.png";
 import UIUXCard from "../../../static/img/TeamsSectionImages/UIUXCard.png";
@@ -67,10 +68,20 @@ function Teams() {
       ref: "https://github.com/orgs/tcet-opensource/teams/devops-team"
     },
     {
+      teamName: "Production and Linux Team",
+      description:
+        "Plays a crucial role in development, maintenance of TCET Linux.",
+      gradientStart: "#2B7669",
+      gradientEnd: "#00225D",
+      teamImg: TLTeam,
+      icon: WebIcon,
+      ref: "https://github.com/orgs/tcet-opensource/teams/devops-team"
+    },
+    {
       teamName: "AI Team",
       description:
         "Works on automation, data analytics and development in AIML technologies. ",
-      gradientStart: "#2B7669",
+      gradientStart: "#764F2B",
       gradientEnd: "#00225D",
       teamImg: AiCard,
       icon: AITeamIcon,
