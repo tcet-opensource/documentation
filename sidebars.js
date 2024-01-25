@@ -246,27 +246,86 @@ const sidebars =
           label: 'TCET Linux',
           link: 
           {
-            type: 'doc',
-            id: 'projects/tcet-linux/about-tcet-linux',
+            type: 'generated-index',
+            title: 'TCET Linux',
+            description: 'TCET Linux is an open-source operating system providing basic services, and various software packages that make up the user-space applications, utilities and it is highly customized. Our goal in creating this operating system is to provide a platform that combines robust functionality with a user-friendly experience. Built from the ground up, TCET Linux boasts efficient performance, customization options, and a range of features tailored to meet the needs of both casual users and enthusiasts.',
+            keywords: ['organization, resources'],
+      
           },
           items: 
           [
-            'projects/tcet-linux/getting-started',
+            'projects/tcet-linux/about-tcet-linux',
+            'projects/tcet-linux/idea-behind-creating-tcet-linux',
+            'projects/tcet-linux/variant',
+            'projects/tcet-linux/releases',
             {
               type: 'category',
-              label: 'ISO Profile',
-              link:
-              {
-                type: 'doc',
-                id: 'projects/tcet-linux/iso-profile/iso-profile',
-              },
+              label: 'Installation Steps',
+             
               items: 
               [
-                  'projects/tcet-linux/iso-profile/rootfs',
-                  'projects/tcet-linux/iso-profile/bootloaders',
-                  'projects/tcet-linux/iso-profile/scripts',
+                'projects/tcet-linux/installation/requirements-download-verify',
+                'projects/tcet-linux/installation/creating-bootable-USB',
+                'projects/tcet-linux/installation/partitioning',
+                'projects/tcet-linux/installation/installation-in-vm',
+                'projects/tcet-linux/installation/installation-steps',
+                'projects/tcet-linux/installation/troubleshoot-installation',
               ],
             },
+            {
+              type: 'category',
+              label: 'Guides',
+              
+              items: 
+              [
+                'projects/tcet-linux/guides/getting-started',
+                'projects/tcet-linux/guides/reset-password',
+                'projects/tcet-linux/guides/install-remove-update-package',
+                'projects/tcet-linux/guides/alias-commands',
+                'projects/tcet-linux/guides/system-maintenance',
+		            'projects/tcet-linux/guides/yay',
+		            'projects/tcet-linux/guides/backup-restore-timeshift',
+		            'projects/tcet-linux/guides/chroot',
+                {
+                  type: 'category',
+                  label: 'Application',
+                 
+                  items: 
+                  [
+                    'projects/tcet-linux/guides/application/getting-started-with-application',
+                    'projects/tcet-linux/guides/application/welcome-app',
+                    'projects/tcet-linux/guides/application/troubleshoot-application',
+                  ],
+                },
+              ],
+            },
+            'projects/tcet-linux/contribute-tcet-linux',
+            'projects/tcet-linux/resources',
+            // {
+            //   type: 'category',
+            //   label: 'ISO Profile',
+            //   link:
+            //   {
+            //     type: 'doc',
+            //     id: 'projects/tcet-linux/iso-profile/iso-profile',
+            //   },
+            //   items: 
+            //   [
+            //     'projects/tcet-linux/iso-profile/rootfs',
+            //     'projects/tcet-linux/iso-profile/bootloaders',
+            //     'projects/tcet-linux/iso-profile/scripts',
+            //   ],
+            // },
+
+            /*As rootfs, bootloaders and scripts aren't documented
+            the above category is commented out and replaced
+            with the route below.
+            
+            Once the above files are completed, uncomment the above routes
+            and delete the route below*/
+
+            'projects/tcet-linux/iso-profile/iso-profile',
+            'projects/tcet-linux/references-credits',
           ],
         },
       ],

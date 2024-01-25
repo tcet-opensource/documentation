@@ -85,14 +85,14 @@ const config = {
       },
       metadata: [{name: 'TCET Open Source', content: 'Empowering students via Open Source, in Education'}],
       // Do not remove announcement bar. Comment it when not required.
-      announcementBar: {
-        id: 'hacktoberfest23',
-        content:
-          'Hacktober Fest 2023 is started!! <a target="_blank" rel="noopener noreferrer" href="https://www.hacktoberfest-tcetopensource.tech/">Register for the event.</a>',
-        backgroundColor: '#451d84',
-        textColor: '#ffffff',
-        isCloseable: true,
-      },
+      // announcementBar: {
+      //   id: 'hacktoberfest23',
+      //   content:
+      //     'Hacktober Fest 2023 is started!! <a target="_blank" rel="noopener noreferrer" href="https://www.hacktoberfest-tcetopensource.tech/">Register for the event.</a>',
+      //   backgroundColor: '#451d84',
+      //   textColor: '#ffffff',
+      //   isCloseable: true,
+      // },
       navbar: {
         hideOnScroll: true,
         title: 'TCET Open Source',
